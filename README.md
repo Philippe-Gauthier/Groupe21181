@@ -5,3 +5,4 @@
 ## Étudiants
 - Nathan Paradis
 - Félix-Olivier Rioux
+- Éloïk Giguère
