@@ -6,3 +6,4 @@
 - Nathan Paradis
 - Félix-Olivier Rioux
 - Éloïk Giguère
+- Kenneth Lopez
