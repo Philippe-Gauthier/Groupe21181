@@ -7,3 +7,4 @@
 - Félix-Olivier Rioux
 - Éloïk Giguère
 - Kenneth Lopez
+- Attiepo Cedric
