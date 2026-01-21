@@ -4,3 +4,4 @@
 
 ## Étudiants
 - Nathan Paradis
+- Félix-Olivier Rioux
