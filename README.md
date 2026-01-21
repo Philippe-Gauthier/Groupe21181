@@ -3,4 +3,4 @@
 - Philippe Gauthier
 
 ## Étudiants
-- 
+- Nathan Paradis
