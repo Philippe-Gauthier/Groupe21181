@@ -8,3 +8,4 @@
 - Éloïk Giguère
 - Kenneth Lopez
 - Attiepo Cedric
+- David Caicedo
