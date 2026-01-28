@@ -1,1 +1,4 @@
-print("hello")
+print("allo")
+
+if i=0
+print("vrai")
