@@ -6,3 +6,4 @@ if(woaw > 10):
 
 # euh, bin j'ai fait le code dire qu'on est rich
     
+    print("damn you rich")SLDWLJAHAWBLHDBK
