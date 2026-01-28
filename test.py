@@ -5,5 +5,6 @@ print(4)
 i = input("???")
 print (i)
 
+# PRINT 2 IS BACK
 
-print("non")
+print(2)
