@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Nathan=17
 print("How old is Nathan?")
 
@@ -7,3 +8,10 @@ else:
     print("he's freshly out the womb!")
 
     print("cogrunlatis!"); 
+=======
+print("cogrunlatis!")
+print("whadafuk man")
+Print("sowwy")
+print("Who is Baba?")
+Print("it's youuuuuu!")
+>>>>>>> main
