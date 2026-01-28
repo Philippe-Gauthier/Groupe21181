@@ -1,1 +1,2 @@
-print("Bonjour")
+print("A+B=99")
+print("petit")
