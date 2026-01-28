@@ -1,2 +1,5 @@
+print("cogrunlatis!")
+print("whadafuk man")
+Print("sowwy")
 print("Who is Baba?")
 Print("it's youuuuuu!")
