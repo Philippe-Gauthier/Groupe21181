@@ -1,5 +1,5 @@
-#contrôle:print
+#contrôle:print(tu est un joueur de soccer tu as 17 ans)
 
-#entrées:input 
+#entrées:input(tu choisis poste) (choisir la proposition)
 
-#sorties:print
+#sorties:print(dépendant poste, propostion d'équipe sportif) (simulation de première session+ quelques choix+ équipe national)
