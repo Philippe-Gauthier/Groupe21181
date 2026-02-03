@@ -10,4 +10,4 @@ Sorties: tout se fait a partir du terminal. le logiciel va afficher du texte sel
 controle: structure en arbre, un seul chemin valide pour se rendre a chaque résultat, et non une infinité de chemins possibles. il y aura toujours une facon de retourner a l'étape précédente en rentrant un mot ou un chiffre dans le terminal, 
 
 
-Petit synopsis du livre ici
+Vous etes une voyante et votre boule de crystal est brisée, inventez le futur de vos clients
