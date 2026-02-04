@@ -56,7 +56,7 @@ Ceci est un deuxième paragraphe.
 
 ##Ceci est un paragraphe je suis en train d'écrire des choses qui sont formatées automatiquement.##
 
-###Ceci est un deuxième paragraphe.###
+#Firefoxxx#
 ##**Contributing**##
 ##**Resources**##
 ---
@@ -74,39 +74,77 @@ print("aaa")
 - Quick Installation:
 - Compiling:
 - Notes
+
+## Flashpoint
+- Building from source
+- Development Setup
+- Package Scripts
+- Troubleshooting
+    
 - Frequently Asked Questions
 - Community
 - Contribute
 - Packaging status
 - Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - Contents
--Installation
--Usage
--Contributing
--License
--Announcements   #
--Getting Started
--Features
--Supported Platforms
--Related Open Source Projects
--Contributing Changes    
--About
--Quick start
--Projects and Softwares using Spleeter
--Development and Testing
--Reference
--Disclaimer
--Troubleshooting
--Windows users
--Contributing
--Note
--Approach
--Setup
--Available models and languages
--Command-line usage
--Python usage
--More examples
--License
+- Installation
+- Usage
+- Contributing
+- License
+- Announcements   #
+- Getting Started
+- Features
+- Supported Platforms
+- Related Open Source Projects
+- Contributing Changes    
+- About
+- Quick start
+- Projects and Softwares using Spleeter
+- Development and Testing
+- Reference
+- Disclaimer
+- Troubleshooting
+- Windows users
+- Contributing
+- Note
+- Approach
+- Setup
+- Available models and languages
+- Command-line usage
+- Python usage
+- More examples
+- License
   
 **Announcements**
 **Documentation Updates**
