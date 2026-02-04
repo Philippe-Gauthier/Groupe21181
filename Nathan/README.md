@@ -16,6 +16,13 @@ Vous etes une voyante mais votre boule de crystal est brisée, inventez le futur
 
 
 
+
+
+# NE PAS LIRE PLUS BAS POUR NE PAS SE SPOILER #
+
+
+
+
 # notes
 
 Mini tutoriel en imput avec une option: start
@@ -37,20 +44,20 @@ Martine:
 
 
 Devin: 
-- Devin vous demande si vous pouvez lui parler de son futur amoureux ou de temps de sorties de jeux videos (vous ne conaissez rien aux jeux videos).
-  - jeux videos: vous lui dites que l'amour est difficile a lire en ces temps incertains (l'ombre de vénus vous bloque la vue) mais que vous voyez clairement le futur des jeux videos. Tout excité soudainement, Devin vous demande avec passion quel jeu sortira le premier.
-    - Elder Scrolls 6: Vous lui dites qu'Elder Scrolls 6 sortira avant les autres, mais qu'il sera décevant après toute cette attente. Il sA'ffaissa un peu, avant de se redressir et dire "vous ne connaissez rien sur ce sujet, vous etes une fraude!". Il part en vous payant en dessous de votre taux habituel. Vous continuez a fixer la sortie de votre tente pour quelques secondes avant de vous dire que vous etes trop vieille pour faire ce travail et que vous devriez prendre votre retraite.
-    - Bloodborne 2: vous lui dites que vous n'etes pas sur pour quel jeu sortira en premier, mais vous lui dites avec certitude que Bloodborne 2 est un jeu qui ne sortira jamais. Son visage s'affaisse, il sort son portefeuille, vous paye, et s'en va. Vous venez de perdre un futur client.
+- Devin vous demande si vous pouvez lui parler de son futur amoureux ou du futur des jeux videos (vous ne conaissez rien aux jeux videos).
+  - jeux videos: vous lui dites que l'amour est difficile a lire en ces temps incertains (l'ombre de vénus vous bloque la vue) mais que vous voyez clairement le futur des jeux videos. Soudainement tout excité, Devin vous demande avec passion quel jeu sortira le premier.
+    - Elder Scrolls 6: Vous lui dites qu'Elder Scrolls 6 sortira avant les autres, mais qu'il sera décevant après toute cette attente. Vous voyez qu'il est décu de votre réponse, il dit "vous ne connaissez rien sur ce sujet, vous etes une fraude!". Il part en vous payant en dessous de votre taux habituel. Vous continuez a fixer la sortie de votre tente pour quelques secondes avant de vous dire que vous etes trop vieille pour faire ce travail et que vous devriez prendre votre retraite.
+    - Bloodborne 2: vous lui dites que vous n'etes pas sur quel jeu sortira en premier, mais vous lui dites avec certitude que Bloodborne 2 ne sortira jamais. Son visage s'affaisse, il sort son portefeuille, vous paye, et s'en va. Vous venez de perdre un futur client.
     - Half-Life 3: vous lui dites que Half-Life 3 sortira le premier, et de plus, ce sera plus tot qu'il l'esperait! Devin sourit, et vous paye généreusement. Vous vous etes fait un nouveau client régulier.
+  
   - Amour: Vous lui dites que le futur en termes de sorties de jeux est assez flou ce matin (mercure retrograde) mais vous voyez clairement son futur amoureux. Il vous demande de lui en dire plus.
     - amour: Vous lui dites qu'il va rencontrer tres bientot l'amour de sa vie, vous le voyez clairement dans votre boule de crystale (brisée, mais vous ne mentionnez pas cela). Il vous supplie de lui en dire plus.
-      - good ending: vous lui dites qu'il vivre une tres belle vie, qu'il aura des enfants, et que ses enfants auront des enfants, et qu'il allait paisiblement main dans la main avec sa femme. Il vous revele alors qu'il est homosexuel et vous traite d'homophobe, il part sans payer, vous aviez besoin de cet argent pour votre abonnement netflix sans pubs, vous tombez donc dans la depression
+      - good ending: vous lui dites qu'il va vivre une tres belle vie, qu'il aura des enfants, et que ses enfants auront des enfants, et qu'il allait mourrir paisiblement main dans la main avec sa femme. Il vous fait un drole de visage, puis vous revele alors qu'il est homosexuel. Il vous traite d'homophobe, et il part sans payer. Vous aviez besoin de cet argent pour votre abonnement netflix sans pubs, vous tombez donc dans la depression
       - bad ending: vous lui dites que les apparences sont trompeuse, et qu'il finira par se divorcer, et de tomber dans l'alcoolisme. Il vous regarde d'un regard vide, et puis il vous remercie de l'avoir prévenu. Il part apres avoir payé pour votre service, vous vous sentez mal de détruire les espoirs d,un si jeune homme mais vous vous dites que c'est pour le plus grand bien (pouvoir vous payer votre abonnement amazon prime pour la livraison gratuite).
-    - pas d'amour: Vous lui dites qu'il n'aura tristement pas la chance de vivre l'amour dans sa vie, mais c'est l'opportunité pour lui de se consacrer a d'autres passions, tels que le pickle ball professionnel. Vous voyez Devin s'affaisser un peu, puis il se leve, et quitte. Vous croyez entendre des pleurs venant de l'exterieur de votre tente. Vous realisez alors qu'il ne vous a pas payé, vous aviez besoin de l'argent pour payer votre spotify premium, vous tombez donc en depression nerveuse.
+    - pas d'amour: Vous lui dites qu'il n'aura tristement pas la chance de vivre l'amour dans sa vie, mais c'est l'opportunité pour lui de se consacrer a d'autres passions, telles que le pickle ball professionnel. Vous voyez Devin s'affaisser un peu, puis il se leve, et quitte. Vous croyez entendre des pleurs venant de l'exterieur de votre tente. Vous realisez alors qu'il ne vous a pas payé, vous aviez besoin de l'argent pour payer votre spotify premium, vous tombez donc en depression nerveuse.
 
 
   
-- quand gta6/half life 3/bloodborne 2 va sortir
 
 
 idées de futurs possibles: 
