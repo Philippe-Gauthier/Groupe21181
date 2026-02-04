@@ -22,6 +22,8 @@ Mini tutoriel en imput avec une option: start
 
 minimum 50 choix pour l'arbre
 
+
+
 idées de futurs possibles: 
 -santé/pas santé - maladies possibles
 -chance malchance - exemples malchance exemples chance
@@ -33,3 +35,18 @@ idées de futurs possibles:
 -
 -
 -
+
+
+
+
+
+
+
+
+
+
+# Fonctions
+
+Fonction pour afficher le résultat d'un choix en page de texte (la page correspondante)
+entrée: input de choix dans le terminal
+sortie: texte dans le terminal
