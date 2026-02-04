@@ -1,0 +1,3 @@
+controle: c'est la partie du processus qui permet de gerer les instructions de qui doit s'executer en premier lieu.Le nombre de fois que cela est mentionnee dans la condition.
+Entree: en python, les entrees se font principalement avec la fonction input(),qui lit le contenu a l'interieur des parentheses et l'envoie au controle qui va l'executer.
+Sortie: c'est le resultat final de ce qu'on aimerait que l'ordinateur face pour nous. Il s'affiche a l'ecran lors le programme est completement executer grace a la fonction Print().
