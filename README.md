@@ -51,4 +51,6 @@ Ceci est un deuxième paragraphe.
 code
 prendre en compte saut à la ligne
 print("aaa")
-```
+```utilisation de la session MemCache
+SendScriptWhatsApp
+Utilisation
