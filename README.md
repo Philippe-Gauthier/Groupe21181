@@ -62,5 +62,8 @@ print("aaa")
 - Notes
 - Frequently Asked Questions
 - Community
+- Contribute
+- Packaging status
+- Releases
 
   
