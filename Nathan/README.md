@@ -39,12 +39,28 @@ Quel client prendre en premier:
 
 futurs par client:
 Martine:
-- chance - lotterie (tu gagne en volant le billet gagnant) - 
-- Malchance - lotterie (tu te fais voler le billet gagnant) -
+- Martine rentre dans votre tente, c'est une femme un peu plus agée que vous, mais pas de beaucoup, c'est votre cliente la plus loyale. Elle vous demande de lui dire sa chance pour la semaine ou de lui dire si sa santé sera bonne dans les prochaines années.
+  - Chance
+    - chance: Vous lui dites qu'elle sera très chanceuse dans les prochaines semaines, l'étoile Véga lui est favorable, vous lui recommendez meme d'acheter un billet de lotterie quelcoque
+      - lotterie (tu gagne en volant le billet gagnant) - 
+    - Malchance - lotterie (tu te fais voler le billet gagnant) -
+  - Santé
+
+
+
+Serge:
+- Serge rentre dans votre tente, c'est un homme d'a peu près votre age. Il s'assoit devant vous et votre boule de crystal et vous demande si vous pouvez lui dire si le Canadien va gagner le match de ce soir contre les Bruins
+  - Oui: Serge dit "Yes! jvais parier gros dessus ce soir debord" Vous soupirez, vous savez qu'il aurait parié sur le match peu importe ce que vous auriez dit
+  - Non: Serge dit "Shit, j'ai deja parié 417 piasses sur le Canadien" Vous soupirez, Serge est clairement décu, mais il n'apprendra pas sa lecon, vous le savez, car Serge revient ici a chaque match de hockey, il ne gagne jamais ses paris, que votre boule de crystal soit brisée ou pas. Serge vous demande ensuite si vous savez si les hotdogs du Costco vont monter de prix dans les prochaines années.
+    - Oui
+    - Non
+  
+
+
 
 
 Devin: 
-- Devin vous demande si vous pouvez lui parler de son futur amoureux ou du futur des jeux videos (vous ne conaissez rien aux jeux videos).
+- Votre premier client de la journée rentre dans votre tente, c'est un jeune homme d'environ vingt-trente ans, il vous donne son nom: Devin. Devin vous demande si vous pouvez lui parler de son futur amoureux ou du futur des jeux videos (vous ne conaissez rien aux jeux videos, ca commence bien la journée...).
   - jeux videos: vous lui dites que l'amour est difficile a lire en ces temps incertains (l'ombre de vénus vous bloque la vue) mais que vous voyez clairement le futur des jeux videos. Soudainement tout excité, Devin vous demande avec passion quel jeu sortira le premier.
     - Elder Scrolls 6: Vous lui dites qu'Elder Scrolls 6 sortira avant les autres, mais qu'il sera décevant après toute cette attente. Vous voyez qu'il est décu de votre réponse, il dit "vous ne connaissez rien sur ce sujet, vous etes une fraude!". Il part en vous payant en dessous de votre taux habituel. Vous continuez a fixer la sortie de votre tente pour quelques secondes avant de vous dire que vous etes trop vieille pour faire ce travail et que vous devriez prendre votre retraite.
     - Bloodborne 2: vous lui dites que vous n'etes pas sur quel jeu sortira en premier, mais vous lui dites avec certitude que Bloodborne 2 ne sortira jamais. Son visage s'affaisse, il sort son portefeuille, vous paye, et s'en va. Vous venez de perdre un futur client.
