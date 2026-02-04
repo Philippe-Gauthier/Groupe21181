@@ -44,7 +44,21 @@ Ceci est un deuxième paragraphe.
 **gras**
 
 ***italique gras***
+#Titre#
+##sous-titre##
+###sous-sous-titre###
+#sous-sous-sous-titre#
+#sous-sous-sous-sous-titre#
+#sous-sous-sous-sous-sous-titre#
+#liste#
+#liste2#
+#liste3#
 
+##Ceci est un paragraphe je suis en train d'écrire des choses qui sont formatées automatiquement.##
+
+###Ceci est un deuxième paragraphe.###
+##**Contributing**##
+##**Resources**##
 ---
 
 ```python
@@ -52,8 +66,6 @@ code
 prendre en compte saut à la ligne
 print("aaa")
 ```
-
-Frequently Asked Questions
 
 ## Nintendont
 - Features:
@@ -69,3 +81,10 @@ Frequently Asked Questions
 - Package Scripts
 - Troubleshooting
     
+- Frequently Asked Questions
+- Community
+- Contribute
+- Packaging status
+- Releases
+
+  
