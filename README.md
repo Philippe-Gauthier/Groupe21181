@@ -52,3 +52,5 @@ code
 prendre en compte saut à la ligne
 print("aaa")
 ```
+
+Frequently Asked Questions
