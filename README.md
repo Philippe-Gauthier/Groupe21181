@@ -62,3 +62,10 @@ Frequently Asked Questions
 - Quick Installation:
 - Compiling:
 - Notes
+
+## Flashpoint
+- Building from source
+- Development Setup
+- Package Scripts
+- Troubleshooting
+    
