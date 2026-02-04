@@ -66,3 +66,15 @@ code
 prendre en compte saut à la ligne
 print("aaa")
 ```
+
+## Nintendont
+- Features:
+- Features: (Wii only)
+- What Nintendont will never support:
+- Quick Installation:
+- Compiling:
+- Notes
+- Frequently Asked Questions
+- Community
+
+  
