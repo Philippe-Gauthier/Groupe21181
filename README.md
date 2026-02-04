@@ -65,6 +65,18 @@ Ceci est un deuxième paragraphe.
 code
 prendre en compte saut à la ligne
 print("aaa")
+<<<<<<< HEAD
+`Prepare Data
+``Build and Train Models
+Deploy and Monitor
+Generative AI
+ML Ops
+Responsible AI
+ License
+  Contributing
+  Building in a custom directory
+  Building OpenJDK from a non-Adoptium repository
+=======
 ```
 
 ## Nintendont
@@ -86,33 +98,51 @@ print("aaa")
 - Contribute
 - Packaging status
 - Releases
-
 - Contents
--Installation
+- Installation
+- Usage
+- Contributing
+- License
+- Announcements   
+- Getting Started
+- Features
+- Supported Platforms
+- Related Open Source Projects
+- Contributing Changes    
+- About
+- Quick start
+- Projects and Softwares using Spleeter
+- Development and Testing
+- Reference
+- Disclaimer
+- Troubleshooting
+- Windows users
+- Contributing
+- Note
+- Approach
+- Setup
+- Available models and languages
+- Command-line usage
+- Python usage
+- More examples
+- License
+=======
+**Announcements**
+**Documentation Updates**
+
+
 -Usage
--Contributing
--License
--Announcements   #
--Getting Started
+-Configuration
 -Features
--Supported Platforms
--Related Open Source Projects
--Contributing Changes    
--About
--Quick start
--Projects and Softwares using Spleeter
--Development and Testing
--Reference
--Disclaimer
--Troubleshooting
--Windows users
--Contributing
--Note
--Approach
--Setup
--Available models and languages
--Command-line usage
--Python usage
--More examples
--License
-  
+-Screenshots and videos
+-Authors
+-licence
+-downloads
+-getting help
+-reporting issues
+-hardware compatibility
+-installation
+-update
+-dependencies
+-plugins
+
