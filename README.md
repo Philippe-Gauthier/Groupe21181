@@ -53,8 +53,6 @@ prendre en compte saut à la ligne
 print("aaa")
 ```
 
-Frequently Asked Questions
-
 ## Nintendont
 - Features:
 - Features: (Wii only)
@@ -62,3 +60,7 @@ Frequently Asked Questions
 - Quick Installation:
 - Compiling:
 - Notes
+- Frequently Asked Questions
+- Community
+
+  
