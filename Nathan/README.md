@@ -19,3 +19,17 @@ Vous etes une voyante et votre boule de crystal est brisée, inventez le futur d
 # notes
 
 Mini tutoriel en imput avec une option: start
+
+minimum 50 choix pour l'arbre
+
+idées de futurs possibles: 
+-santé/pas santé - maladies possibles
+-chance malchance - exemples malchance exemples chance
+-riche/pauvre - possesions riches/itinérant pauvre
+-amour/pas d'amour - divorce/vie heureuse
+-lotterie
+-voyages 
+-quand gta6/half life 3/bloodborne 2 va sortir
+-
+-
+-
