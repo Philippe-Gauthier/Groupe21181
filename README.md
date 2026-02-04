@@ -89,43 +89,12 @@ Frequently Asked Questions
 - Contribute
 - Packaging status
 - Releases
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - Contents
 - Installation
 - Usage
 - Contributing
 - License
-- Announcements   #
+- Announcements   
 - Getting Started
 - Features
 - Supported Platforms
@@ -151,4 +120,22 @@ Frequently Asked Questions
   
 **Announcements**
 **Documentation Updates**
+<<<<<<< HEAD
+>>>>>>> main
+=======
+
+-Usage
+-Configuration
+-Features
+-Screenshots and videos
+-Authors
+-licence
+-downloads
+-getting help
+-reporting issues
+-hardware compatibility
+-installation
+-update
+-dependencies
+-plugins
 >>>>>>> main
