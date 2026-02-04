@@ -54,3 +54,11 @@ print("aaa")
 ```
 
 Frequently Asked Questions
+
+## Nintendont
+- Features:
+- Features: (Wii only)
+- What Nintendont will never support:
+- Quick Installation:
+- Compiling:
+- Notes
