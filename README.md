@@ -52,3 +52,7 @@ code
 prendre en compte saut à la ligne
 print("aaa")
 ```
+
+**Material Symbols / Material Icons**
+**Announcements**
+**Documentation Updates**
