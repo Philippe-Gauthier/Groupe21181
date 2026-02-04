@@ -98,64 +98,35 @@ Responsible AI
 - Contribute
 - Packaging status
 - Releases
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - Contents
--Installation
--Usage
--Contributing
--License
--Announcements   #
--Getting Started
--Features
--Supported Platforms
--Related Open Source Projects
--Contributing Changes    
--About
--Quick start
--Projects and Softwares using Spleeter
--Development and Testing
--Reference
--Disclaimer
--Troubleshooting
--Windows users
--Contributing
--Note
--Approach
--Setup
--Available models and languages
--Command-line usage
--Python usage
--More examples
--License
-  
->>>>>>> c7993baedcd457a9263afd74b58587ed09d13b30
+- Installation
+- Usage
+- Contributing
+- License
+- Announcements   
+- Getting Started
+- Features
+- Supported Platforms
+- Related Open Source Projects
+- Contributing Changes    
+- About
+- Quick start
+- Projects and Softwares using Spleeter
+- Development and Testing
+- Reference
+- Disclaimer
+- Troubleshooting
+- Windows users
+- Contributing
+- Note
+- Approach
+- Setup
+- Available models and languages
+- Command-line usage
+- Python usage
+- More examples
+- License
+=======
+**Announcements**
+**Documentation Updates**
+
