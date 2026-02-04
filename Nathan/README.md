@@ -11,3 +11,11 @@ controle: structure en arbre, un seul chemin valide pour se rendre a chaque rés
 
 
 Vous etes une voyante et votre boule de crystal est brisée, inventez le futur de vos clients
+
+
+
+
+
+# notes
+
+Mini tutoriel en imput avec une option: start
