@@ -51,4 +51,13 @@ Ceci est un deuxième paragraphe.
 code
 prendre en compte saut à la ligne
 print("aaa")
-```
+`Prepare Data
+``Build and Train Models
+Deploy and Monitor
+Generative AI
+ML Ops
+Responsible AI
+ License
+  Contributing
+  Building in a custom directory
+  Building OpenJDK from a non-Adoptium repository
