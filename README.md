@@ -74,7 +74,45 @@ print("aaa")
 - Quick Installation:
 - Compiling:
 - Notes
+
+## Flashpoint
+- Building from source
+- Development Setup
+- Package Scripts
+- Troubleshooting
+    
 - Frequently Asked Questions
 - Community
+- Contribute
+- Packaging status
+- Releases
 
+- Contents
+-Installation
+-Usage
+-Contributing
+-License
+-Announcements   #
+-Getting Started
+-Features
+-Supported Platforms
+-Related Open Source Projects
+-Contributing Changes    
+-About
+-Quick start
+-Projects and Softwares using Spleeter
+-Development and Testing
+-Reference
+-Disclaimer
+-Troubleshooting
+-Windows users
+-Contributing
+-Note
+-Approach
+-Setup
+-Available models and languages
+-Command-line usage
+-Python usage
+-More examples
+-License
   
