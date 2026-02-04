@@ -130,3 +130,19 @@ Responsible AI
 **Announcements**
 **Documentation Updates**
 
+
+-Usage
+-Configuration
+-Features
+-Screenshots and videos
+-Authors
+-licence
+-downloads
+-getting help
+-reporting issues
+-hardware compatibility
+-installation
+-update
+-dependencies
+-plugins
+
