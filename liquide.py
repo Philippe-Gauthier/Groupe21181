@@ -1,0 +1,9 @@
+verre_lait="lait"
+verre_eau="eau"
+print(verre_eau)
+print(verre_lait)
+temp=verre_lait
+verre_lait=verre_eau
+verre_eau=temp
+print(verre_eau)
+print(verre_lait)
