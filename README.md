@@ -44,6 +44,19 @@ Ceci est un deuxième paragraphe.
 **gras**
 
 ***italique gras***
+#Titre#
+##sous-titre##
+###sous-sous-titre###
+#sous-sous-sous-titre#
+#sous-sous-sous-sous-titre#
+#sous-sous-sous-sous-sous-titre#
+#liste#
+#liste2#
+#liste3#
+
+##Ceci est un paragraphe je suis en train d'écrire des choses qui sont formatées automatiquement.##
+
+
 
 ---
 
@@ -51,10 +64,35 @@ Ceci est un deuxième paragraphe.
 code
 prendre en compte saut à la ligne
 print("aaa")
-```utilisation de la session MemCache
-SendScriptWhatsApp
-Utilisation
-Amazon - Clone avec ReactJs
-Technologie que nous avons utilisée
-Fonctionnalités     
-Étapes à exécuter dans votre machine
+```
+
+
+---
+
+## Utilisateur
+- Fonctionnalités
+- Limitations
+- Installation
+- FAQ
+- Communauté
+- Table des matières
+- Utilisation
+- Résumé du projet
+- Exemples
+- Images, vidéos, screenshot
+## Programmeur
+- Créer son environnement de développement
+- Lien vers ressource externe
+- Comment régler des problèmes
+- Communauté
+- Versionnage (nouveautés)
+- Test
+- Problèmes connus
+- Calendrier fonctionnalités à venir
+- Chose à faire
+- Dépendance
+- Requis
+## Légal
+- License
+- Contribution
+- Remerciement
