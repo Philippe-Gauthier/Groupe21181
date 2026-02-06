@@ -1,1 +1,0 @@
-Joseph est une étudiant en électronique programmable qui a pour ambition de valider se session.
