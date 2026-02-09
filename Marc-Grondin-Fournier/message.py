@@ -6,7 +6,9 @@ def menu():
 def roulette_bienvenu():
     return "Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n"
 def roulette_next():
-    return "Vous avez survécu! Au tour de l'adversaire! \n Prêt ? O/N\n"    
+    return "Vous avez survécu! Au tour de l'adversaire! \n Prêt ? O/N\n"
+def roulette_adv_survi():
+    return "Votre adversaire a survécu! À votre tour! Prêt? O/N\n"    
 def roulette_win():
     return "Votre adversaire est mort! Rejouer? O/N\n"
 def roulette_lose():
