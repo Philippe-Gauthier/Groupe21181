@@ -20,14 +20,14 @@ def roulette_russe():
                     reset=reset.upper()  
                     
                     for choix in range(roll):                       
+                        reset=input(message.roulette_next())
+                        reset=reset.upper()
                         tour_adv=choix+1 
                         if(choix==roll): 
                             reset=input(message.roulette_lose()) 
                             reset=reset.upper()     
-                            break
+                            if(reset=="N"):break
                         elif(tour_adv==roll):
-                            reset=input(message.roulette_next())
-                            reset=reset.upper()
                             reset=input(message.roulette_win())
                             reset=reset.upper()                            
                             if(reset=="N"):break                           
