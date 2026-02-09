@@ -6,6 +6,7 @@ while menu != "Q":
     menu=input(message.menu())
     menu=menu.upper()
     match menu:
-        case "A":               
+        case "A":
+
             jeux_repertoire.roulette_russe() 
 
