@@ -1,9 +1,9 @@
 import random
 import jeux_repertoire
+import message
 menu=""
 while menu != "Q":
-    print("Menu jeux", "\n", "A: Roulette russe", "\n","B: Pile ou face", "\n", "C: Courte paille", "\n","D: Roche, papier, ciseau","\n", "Q: Quitter","\n" )
-    menu=input("Sélectionner un jeu!\n")
+    menu=input(message.menu())
     menu=menu.upper()
     match menu:
         case "A":               
