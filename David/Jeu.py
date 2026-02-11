@@ -114,7 +114,7 @@ contexte_bayern = "Quelques belles entrées, 8 passes décisives. Le directeur s
 Question_4_choix_15 ="Prolonger au Bayern - Sécurité, meilleure formation, mais toujours remplaçant"
 Question_4_choix_16 ="Dortmund - 20M€ - 70k€/semaine, titulaire probable, club formateur de jeunes"
 
-
+#dernier choix
 Question_5 = "Qu'est-ce qui t'arrive dans ton équipe? que vas tu faire ? "
 Contexte_real_2 = "Les mois passent. Tu ne joues toujours pas. Dernier match de la saison, le Real a déjà gagné la Liga. \
     85e minute, le coach te fait enfin entrer sous les applaudissements polis du Bernabéu. 5 minutes de jeu. Frustrant."
