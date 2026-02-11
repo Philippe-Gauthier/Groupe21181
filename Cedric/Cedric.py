@@ -78,7 +78,7 @@ réponse ("Port Bouet", "Abobo Doumé", "Accra", "3")
 
 #Niveau 2 du jeu de quiz educatif: Mathématiques
 
-print("niveau_2 Capital des pays")
+print("niveau_2 Mathématiques")
 print("---------------------------")
 
 
