@@ -116,36 +116,67 @@ Question_4_choix_16 ="Dortmund - 20M€ - 70k€/semaine, titulaire probable, cl
 
 
 Question_5 = "Qu'est-ce qui t'arrive dans ton équipe? que vas tu faire ? "
+Contexte_real_2 = ""
 Question_5_choix_1 =""
 Question_5_choix_2 =""
+
+contexte_getafe =""
 Question_5_choix_3 =""
 Question_5_choix_4 =""
+
+contexte_sporting_2 =""
 Question_5_choix_5 =""
 Question_5_choix_6 =""
+
+contexte_Naple =""
 Question_5_choix_7 =""
 Question_5_choix_8 =""
+
+contexte_villareal_2 =""
 Question_5_choix_9 =""
 Question_5_choix_10 =""
+
+contexte_Seville =""
 Question_5_choix_11 =""
 Question_5_choix_12 =""
+
+contexte_même_poste =""
 Question_5_choix_13=""
 Question_5_choix_14=""
+
+contexte_poste_différent =""
 Question_5_choix_15 =""
 Question_5_choix_16 =""
+
+contexte_bayern_2 =""
 Question_5_choix_17 =""
 Question_5_choix_18 =""
+
+conexte_durtmund =""
 Question_5_choix_19 =""
 Question_5_choix_20 =""
+
+contexe_atletico =""
 Question_5_choix_21 =""
 Question_5_choix_22 =""
+
+contexe_newcastle =""
 Question_5_choix_23 =""
 Question_5_choix_24 =""
+
+contexte_palmeiras_2 = ""
 Question_5_choix_25 =""
 Question_5_choix_26 =""
+
+contexte_benfica = ""
 Question_5_choix_27 =""
 Question_5_choix_28 =""
+
+contexte_flamengo_2 =""
 Question_5_choix_29 =""
 Question_5_choix_30 =""
+
+contexte_FC_porto = ""
 Question_5_choix_31 =""
 Question_5_choix_32 =""
 
