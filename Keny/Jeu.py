@@ -28,6 +28,6 @@ demander_choix(1,2)
 
 print(f"Joseph gere bien son horaire")
 if demander_choix == "choix_3":
-        print(f"1- joseph arrive a l'heure")
+        print(f" joseph arrive a l'heure")
 else:
         print(f"Joseph arrive souvent en retard")
