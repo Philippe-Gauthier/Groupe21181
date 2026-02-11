@@ -59,8 +59,7 @@ def resultat_choix(reponse):
 
 
 #inserer des variables dans une variable pour essayer de faire une fonction plus bas
-niveau1_1 = [1, variable_4]
-variable_4 = 4
+niveau1_1 = 1
 niveau1_2 = 2
 niveau1_3 = 3
 niveau1 = [niveau1_1, niveau1_2, niveau1_3]
@@ -119,6 +118,89 @@ def loop_niveaux(input_niveau):
 
     return niveau
 
-print(loop_niveaux(niveau1))
+"""print(loop_niveaux(niveau1))"""
 
 #if every variable is a list, I can call the text, or the next set of variables for the level
+
+
+text1_1_1 = "yipee"
+
+text1_1_2 = 2
+
+text1_1_3 = 3
+
+
+text1_1 = "test1_1"
+lvl1_1_1 = [text1_1_1, 1_1_1, 0, 0]
+lvl1_1_2 = [text1_1_2, 1_1_2, 0, 0]
+lvl1_1_3 = [text1_1_3, 1_1_3, 0, 0]
+
+
+text1_2 = "test1_2"
+lvl1_2_1 = 1_2_1
+lvl1_2_2 = 1_2_2
+lvl1_2_3 = 1_2_3
+
+text1_3 = "test1_3"
+lvl1_3_1 = 1_3_1
+lvl1_3_2 = 1_3_2
+lvl1_3_3 = 1_3_3
+
+
+lvl1_1 = [text1_1, lvl1_1_1, lvl1_1_2, lvl1_1_3]
+lvl1_2 = [text1_2, lvl1_2_1, lvl1_2_2, lvl1_2_3]
+lvl1_3 = [text1_3, lvl1_3_1, lvl1_3_2, lvl1_3_3]
+
+text1 = "test1"
+lvl1 = [text1, lvl1_1, lvl1_2, lvl1_3]
+
+
+
+def level_extractor2(niveau_selectionne):
+    variable_test0 = niveau_selectionne[0]
+    variable_test1 = niveau_selectionne[1]
+    variable_test2 = niveau_selectionne[2]
+    variable_test3 = niveau_selectionne[3]
+    return variable_test0, variable_test1, variable_test2, variable_test3
+
+
+def presentation_choix2(situation0, choix_1, choix_2, choix_3):
+    print(situation0)
+    print(choix_1[0])
+    print(choix_2[0])
+    print(choix_3[0])
+    reponse = int(input("quel est votre choix? "))
+    return reponse
+
+
+def resultat_choix2(reponse):
+    if reponse == 1:
+        choix_final = 1
+    elif reponse == 2:
+        choix_final = 2
+    elif reponse == 3:
+        choix_final = 3
+    else:
+        choix_final = 4
+    
+    return choix_final
+
+
+def loop_niveaux2(input_niveau):
+    while True:
+        situation0, description1, description2, description3 = level_extractor2(input_niveau)
+        reponse_user = presentation_choix2(situation0, description1, description2, description3)
+
+        verif_reponse = resultat_choix2(reponse_user)
+        if verif_reponse == 4:
+            print(choix_fail)
+            time.sleep(1.5)
+        elif verif_reponse != 4:
+            niveau = input_niveau[verif_reponse] #passer au prochain niveau et return cela
+            break
+
+    return niveau
+
+next_level = loop_niveaux2(lvl1)
+
+next_level2 = loop_niveaux2(next_level)
