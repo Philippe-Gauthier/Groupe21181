@@ -26,7 +26,5 @@ Ce n'est pas ton problème.
 Les rues sont désertes, te donnant l'impression d'être l'unique personne en vie sur cette terre.
 
 C'est alors que tu marches sur le trottoir que soudainement tu entend "Hee Hee!". 
+-------------------------------------------------"""
 
-
-
-"""
