@@ -44,7 +44,7 @@ print ("9- Quelle est la capitale de l'Anglterre ?")
 réponse ("Manchester", "Liverpool", "Londres", "3" )
 
 print ("10- Quelle est la capitale de la Cote - d'Ivoire")
-réponse ("Abidjan","Yamoussoukro", "Abobo Doumé" "2")
+réponse ("Abidjan","Yamoussoukro", "Abobo Doumé", "2")
 
 print ("11- Quelle est la capitale du Maroc ?")
 réponse ("Casablanca", "Marraketch", "Rabat", "3")
