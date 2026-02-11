@@ -15,8 +15,8 @@ choix_3 = variable_text3
 option_1 = variable_text1_1
 
 
-
-
+#pour pouvoir utiliser time.sleep plus loin dans le code
+import time
 
 
 #module de présentation des choix
@@ -45,38 +45,74 @@ def resultat_choix(reponse):
 
 #faire sur qu'on pose les memes questions si le user entre une mauvaise valeur
 #while True:
-    reponse_user = print(presentation_choix(variables_niveau1, variables_niveau2, variables_niveau3))
+#    reponse_user = print(presentation_choix(variables_niveau1, variables_niveau2, variables_niveau3))
 
-    verif_reponse = print(resultat_choix(reponse_user))
-    if verif_reponse != 4:
-        break
-
-
-
-
-
-#faire des loop while pour chaque niveau, fonction pour ca?
-
-def loop_niveaux(niveau):
-    while True:
-        reponse_user = print(presentation_choix(variable_text1, variable_text2, variable_text3))
-
-        verif_reponse = print(resultat_choix(reponse_user))
-        if verif_reponse != 4:
-            niveau + 1
-            break
-    
-    return niveau
-
-print(loop_niveaux(niveau1))
+#    verif_reponse = print(resultat_choix(reponse_user))
+#    if verif_reponse != 4:
+#        break
 
 
 
 
-#trouver une facon de nest des variables dans une variable niveau, liste? ( variable = [liste1, liste2] )
 
+
+
+
+#inserer des variables dans une variable pour essayer de faire une fonction plus bas
 niveau1_1 = 1
 niveau1_2 = 2
 niveau1_3 = 3
 niveau1 = [niveau1_1, niveau1_2, niveau1_3]
 
+
+
+#faire des loop while pour chaque niveau, fonction pour ca?
+def loop_niveaux(niveau):
+    while True:
+        reponse_user = presentation_choix(variable_text1, variable_text2, variable_text3)
+
+        verif_reponse = resultat_choix(reponse_user)
+        if verif_reponse == 4:
+            print(choix_fail)
+            time.sleep(1.5)
+        elif verif_reponse != 4:
+            break
+
+    return niveau
+
+# print(loop_niveaux(niveau1))
+
+
+
+
+#fonction qui prend le niveau, extract les variables specifiques de niveau, et les entre dans la variable ci dessus?
+
+
+
+
+def level_extractor(niveau_selectionne)
+    variable_test1 = niveau_selectionne[0]
+    variable_test2 = niveau_selectionne[1]
+    variable_test3 = niveau_selectionne[2]
+    return variable_test1, variable_test2, variable_test3
+
+
+input_niveau = niveau1 #niveau precedent
+level_extractor(input_niveau)
+
+
+
+def loop_niveaux(niveau):
+    while True:
+        reponse_user = presentation_choix(variable_test1, variable_test2, variable_test3)
+
+        verif_reponse = resultat_choix(reponse_user)
+        if verif_reponse == 4:
+            print(choix_fail)
+            time.sleep(1.5)
+        elif verif_reponse != 4:
+            break
+
+    return niveau
+
+print(loop_niveaux(niveau1))
