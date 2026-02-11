@@ -28,3 +28,20 @@ Les rues sont désertes, te donnant l'impression d'être l'unique personne en vi
 C'est alors que tu marches sur le trottoir que soudainement tu entend "Hee Hee!". 
 -------------------------------------------------"""
 
+page0_12 = """
+-tourne toi-
+
+Lors ce que tu te retourne, tu vois un homme portant un gant blanc et un fedora. Son visage est presque humain. On dirais une créature portant un masque humain. Une fois qu'il remarque ton regard, il se retourne et marche dans ta direction opposé. étrangement, chaque pas qui devrait l'éloigner de toi le rapproche! serais-ce... Le legendaire Moonwalk!? tout autour de toi d'autre cris résonnent.
+
+*press enter* (fais jouer hee hee)
+
+
+"Heee Heee"
+"Heee heee" 
+
+Deux autres créatures identiques apparaissent. 
+
+Tu es entouré! 
+
+Que fais-tu?
+-------------------------------------------------"""
