@@ -122,3 +122,6 @@ def loop_niveaux(input_niveau):
 print(loop_niveaux(niveau1))
 
 #if every variable is a list, I can call the text, or the next set of variables for the level
+
+
+
