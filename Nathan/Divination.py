@@ -44,13 +44,13 @@ def resultat_choix(reponse):
 
 
 #faire sur qu'on pose les memes questions si le user entre une mauvaise valeur
-#while True:
-#    reponse_user = print(presentation_choix(variables_niveau1, variables_niveau2, variables_niveau3))
+"""while True:
+    reponse_user = print(presentation_choix(variables_niveau1, variables_niveau2, variables_niveau3))
 
-#    verif_reponse = print(resultat_choix(reponse_user))
-#    if verif_reponse != 4:
-#        break
-
+    verif_reponse = print(resultat_choix(reponse_user))
+    if verif_reponse != 4:
+        break
+"""
 
 
 
@@ -59,10 +59,12 @@ def resultat_choix(reponse):
 
 
 #inserer des variables dans une variable pour essayer de faire une fonction plus bas
-niveau1_1 = 1
+niveau1_1 = [1, variable_4]
+variable_4 = 4
 niveau1_2 = 2
 niveau1_3 = 3
 niveau1 = [niveau1_1, niveau1_2, niveau1_3]
+
 
 
 
@@ -80,7 +82,7 @@ def loop_niveaux(niveau):
 
     return niveau
 
-# print(loop_niveaux(niveau1))
+"""print(loop_niveaux(niveau1))"""
 
 
 
@@ -118,3 +120,5 @@ def loop_niveaux(input_niveau):
     return niveau
 
 print(loop_niveaux(niveau1))
+
+#if every variable is a list, I can call the text, or the next set of variables for the level
