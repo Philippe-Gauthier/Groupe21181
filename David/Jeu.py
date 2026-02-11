@@ -116,69 +116,88 @@ Question_4_choix_16 ="Dortmund - 20M€ - 70k€/semaine, titulaire probable, cl
 
 
 Question_5 = "Qu'est-ce qui t'arrive dans ton équipe? que vas tu faire ? "
-Contexte_real_2 = ""
-Question_5_choix_1 =""
-Question_5_choix_2 =""
+Contexte_real_2 = "Les mois passent. Tu ne joues toujours pas. Dernier match de la saison, le Real a déjà gagné la Liga. \
+    85e minute, le coach te fait enfin entrer sous les applaudissements polis du Bernabéu. 5 minutes de jeu. Frustrant."
+Question_5_choix_1 ="Tu décide de rester et tu ne joues pas beaucoup "
+Question_5_choix_2 ="Tu décides de rompre ton contrat et essayer de te trouver des sélections pour d'autres équipe grâce à tes contacts"
 
-contexte_getafe =""
-Question_5_choix_3 =""
-Question_5_choix_4 =""
+contexte_getafe ="Premier match, tu es titulaire. L'ambiance est différente, plus modeste, mais tu joues enfin ! \
+    Les semaines passent, tu accumules du temps de jeu. Dernier match de la saison, coup franc à 20 mètres, 1-1, 88e minute."
+Question_5_choix_3 ="Tirer le coup franc : Tenter de marquer "
+Question_5_choix_4 ="Faire un centre : Chercher un coéquipier dans la surface"
 
-contexte_sporting_2 =""
-Question_5_choix_5 =""
-Question_5_choix_6 =""
+contexte_sporting_2 ="Tu continues de briller. Dernier match de la saison, finale de la Coupe du Portugal. \
+    90e minute, contre-attaque adverse, leur attaquant file seul vers ton gardien. Tu cours derrière lui."
+Question_5_choix_5 ="Rattraper et tenter de lui prendre le ballon - Risqué mais propre"
+Question_5_choix_6 ="Le tacler par derrière - Efficace mais carton rouge assuré"
 
-contexte_Naple =""
-Question_5_choix_7 =""
-Question_5_choix_8 =""
+contexte_Naple ="Bon accueil, du temps de jeu. Fin de saison : 6 buts, 4 passes, 18 matchs. Bonne adaptation !\
+    Ils veulent te signer définitivement "
+Question_5_choix_7 ="Tu signe avec Naple"
+Question_5_choix_8 ="Tu retournes au Sporting"
 
-contexte_villareal_2 =""
-Question_5_choix_9 =""
-Question_5_choix_10 =""
+contexte_villareal_2 ="Tu continues à bien travailler. Dernier match, 70e minute, tu reçois le ballon devant le gardien. \
+    Un défenseur arrive sur toi, mais ton coéquipier est démarqué à ta droite."
+Question_5_choix_9 ="Tirer au but - Tenter ta chance seul"
+Question_5_choix_10 ="Passer à ton coéquipier - pour qu'il tire au but "
 
-contexte_Seville =""
-Question_5_choix_11 =""
-Question_5_choix_12 =""
+contexte_Seville ="Les premiers mois sont difficiles. Le niveau est élevé, tu peines à t'adapter. \
+    Dernier match de la saison, tu joues mal, plusieurs passes ratées. L'entraîneur te remplace à la 60e minute. \
+    Les supporters sifflent."
+Question_5_choix_11 ="Ils veulent te prêter pour que tu reprennes confiance"
+Question_5_choix_12 ="Tu restes remplaçant ici."
 
-contexte_même_poste =""
-Question_5_choix_13=""
-Question_5_choix_14=""
+contexte_même_poste ="Tu ne joues plus vraiment, quand tu rentres sur le jeu tu ne fais pas vraiment la différence que tu voudrais et que l'entraineur voudrait.\
+      Avec les matchs qui passe tu joues de moins en moins"
+Question_5_choix_13="Il t'envoie en prêt à Everton"
+Question_5_choix_14="Tu reste remplaçant en espérant que ton temps de jeu augmente"
 
-contexte_poste_différent =""
-Question_5_choix_15 =""
-Question_5_choix_16 =""
+contexte_poste_différent ="Tu deviens buteur. Avec le temps de deviens de plus en plus bon. Tu marques de toutes les façons. \
+    Pied gauche, droite, de coup franc, te tête, de penalties. Tu es en lice pour être le meilleur buteur du monde de cette année. \
+    Tu as 39 buts et il te reste 1 match Lors du dernier match de la ligue tu as ta chance de marquer un tour du chapeau \
+        et être le meilleur car le deuxième à 41. Ton coéquipier veut tirer le penalty, car il a eu une saison difficile."
+Question_5_choix_15 ="Tu laisse tirer ton coéquipier et tu ne gagnes pas le trophée su meilleur buteur "
+Question_5_choix_16 ="Tu tires le penalty et tu es le meilleur buteur de l'année"
 
-contexte_bayern_2 =""
-Question_5_choix_17 =""
-Question_5_choix_18 =""
+contexte_bayern_2 ="Tu joues de plus en plus et tu joues très bien, mais tu te blesse. \
+    Tu es fâché, car tu commençais as avoir tu temps de jeu et tu jouais très bien les fans t'adore.\
+    L'entraineur veut savoir si tu peux jouer le dernier match de la saison pour déterminer si le Bayern gagne la Bundesliga"
+Question_5_choix_17 ="Tu lui ment et tu lui dis que tu te sens bien et tu peux jouer"
+Question_5_choix_18 ="Tu lui dit la vérité et tu lui dis que tu as vraiment mal et que tu ne peux pas jouer."
 
-conexte_durtmund =""
-Question_5_choix_19 =""
-Question_5_choix_20 =""
+conexte_durtmund ="Très mauvais choix, \
+    tu ne joues plus les dirigeants t'envoie en pour jouer avec l'équipe B ou il rompe ton contrat "
+Question_5_choix_19 ="Tu joue pour l'équipe B"
+Question_5_choix_20 ="Tu ne joue plus pour eux et tu essaie de trouver un plan B"
 
-contexe_atletico =""
-Question_5_choix_21 =""
-Question_5_choix_22 =""
+contexe_atletico ="Mauvais choix. Tu ne joues presque pas. \
+    Fin de saison : 0 but, 1 passe, 6 matchs. Régression. Ils vont rompre ton contrat "
+Question_5_choix_21 ="Un coéquipier te propose de donner ton nom a un entraineur de liga B, \
+    mais ce n'est pas très payants, mais tu vas être titulaire indiscutable "
+Question_5_choix_22 ="Tu arrêtes de jouer au soccer et tu essaie d'aller à l'université et devenir entraineur "
 
-contexe_newcastle =""
-Question_5_choix_23 =""
-Question_5_choix_24 =""
+contexe_newcastle ="Excellente expérience ! Fin de saison : 7 buts, 5 passes, 20 matchs titulaire"
+Question_5_choix_23 ="Il te propose d'augmenter ton salaire "
+Question_5_choix_24 ="Il te propose d'aller au Real Madrid pour devenir titulaire "
 
-contexte_palmeiras_2 = ""
-Question_5_choix_25 =""
-Question_5_choix_26 =""
+contexte_palmeiras_2 = "Tu continues de dominer. Fin de saison : 12 buts, 8 passes, 30 matchs. Roi du Brasileirão !"
+Question_5_choix_25 ="Les dirigeants te propose de rester le reste de ta carrière à Palmeras\
+      et avoir ton avis dans plusieurs choix "
+Question_5_choix_26 ="partir en Europe à Lyon pour être titulaire"
 
-contexte_benfica = ""
-Question_5_choix_27 =""
-Question_5_choix_28 =""
+contexte_benfica = "Tu as très bien joué, tu es un des plus important, mais tu t'es blessé tu as 2 choix "
+Question_5_choix_27 ="Tu acceptes la chirurgie et de manquer 6 mois "
+Question_5_choix_28 ="Tu prends de la médication"
 
-contexte_flamengo_2 =""
-Question_5_choix_29 =""
-Question_5_choix_30 =""
+contexte_flamengo_2 ="Il t'annonce que tu as très bien jouer, mais puisqu'il y a 2 équipes qui propose 75 millions+ bonus pour toi. \
+    Les dirigeants vont te vendre, mais te laisse choisir ta futur équipe"
+Question_5_choix_29 ="Tu pars à Leverkusen et tu es titulaire"
+Question_5_choix_30 ="Tu pars à Marseille et tu es titulaire"
 
-contexte_FC_porto = ""
-Question_5_choix_31 =""
-Question_5_choix_32 =""
+contexte_FC_porto = "Tu joues très bien. C'est la final de la champions League et on est rendu aux tirs au but, tu es le dernier à tirer. \
+    Si tu marques vous gagnez et si tu ne marques pas peut-être que vous perdez"
+Question_5_choix_31 ="Tu tire à gauche très fort "
+Question_5_choix_32 ="Tu tire de panenka "
 
 
 
