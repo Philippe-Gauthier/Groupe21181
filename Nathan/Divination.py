@@ -90,27 +90,29 @@ def loop_niveaux(niveau):
 
 
 
-def level_extractor(niveau_selectionne)
+def level_extractor(niveau_selectionne):
     variable_test1 = niveau_selectionne[0]
     variable_test2 = niveau_selectionne[1]
     variable_test3 = niveau_selectionne[2]
     return variable_test1, variable_test2, variable_test3
 
-
+"""
 input_niveau = niveau1 #niveau precedent
-level_extractor(input_niveau)
+print(level_extractor(input_niveau))
 
+"""
 
-
-def loop_niveaux(niveau):
+def loop_niveaux(input_niveau):
     while True:
-        reponse_user = presentation_choix(variable_test1, variable_test2, variable_test3)
+        description1, description2, description3 = level_extractor(input_niveau)
+        reponse_user = presentation_choix(description1, description2, description3)
 
         verif_reponse = resultat_choix(reponse_user)
         if verif_reponse == 4:
             print(choix_fail)
             time.sleep(1.5)
         elif verif_reponse != 4:
+            #passer au prochain niveau et return cela
             break
 
     return niveau
