@@ -2,6 +2,9 @@
 
 import Texteprojet1
 
-Print(texte1)
-Print("nope")
-Input()
+print(Texteprojet1.page0)
+input("""\nSortir de la maison:
+       \nfaire Enter.""")
+
+print(texteprojet1.page0_1)
+input("\ntourne toi!: faire Enter")

@@ -4,3 +4,4 @@ REM permet de choisir la maximum de ligne et collonnes utiliser. Standardise pou
 mode con: cols=50 lines=30
 REM ouvre le jeu lui même.
 python jeu.py
+pause
