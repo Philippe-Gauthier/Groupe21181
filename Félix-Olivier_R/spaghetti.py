@@ -1,9 +1,55 @@
+# Félx-Olivier Rioux        Projet 1: histoire intéractive
+
 import time, sys
 JOUER=True
-rejouer="0"
-while(JOUER==True): 
-    # Code emprunté de monsieur copilot. Effet typewritter (une lettre à la fois)
-    def texte_delai(text, delay=0.05, newline=True):
+
+rejouer=("0") # Défénir les variable qui décide si le jeu fonctionne ou non. Pour pas que le jeu break 
+nb_lecture=0
+char_1=0
+phone_1=0
+
+def choice_user2(choix1,choix2): # Fonction de question à 2 options
+    result=0
+    print("\n______________________________________________")
+    print(f"|     1 = {choix1}")
+    print(f"|     2 = {choix2}")
+    while(result!=1 and result!=2):
+        decision=input("       Entrée: ")
+        while True:
+            try:
+                result=int(decision)
+                break
+            except ValueError:
+                decision=input("\nVeuillez entrer un nombre: ")
+    return result
+
+def choice_user3(choix1,choix2,choix3):   # Fonction de question à 3 options
+    result=0
+    print("\n______________________________________________")
+    print(f"|     1 = {choix1}")
+    print(f"|     2 = {choix2}")
+    print(f"|     3 = {choix3}")
+    while(result!=1 and result!=2 and result!=3):
+        decision=input("       Entrée: ")
+        while True:
+            try:
+                result=int(decision)
+                break
+            except ValueError:
+                decision=input("\nVeuillez entrer un nombre: ")
+    return result
+
+def choice_num(question): # Permet à la commande de looper jusqu'à ce que l'utilisateur ait rentré un nombre entier
+    while True: 
+        number=input(f"{question} : ") 
+        try:
+            result=int(number)
+            break
+        except ValueError:
+            print("\nVeuillez entrer un nombre.")
+    return result
+
+def texte_delai(text, delay=0.05, newline=True): # Code emprunté de monsieur copilot. une lettre à la fois
         for ch in text:
             sys.stdout.write(ch)
             sys.stdout.flush()   
@@ -11,98 +57,94 @@ while(JOUER==True):
         if newline:
             sys.stdout.write("\n")
             sys.stdout.flush()
-    print("La création, la musique, l'art en général, j'ai jamais réussi à trouver une bonne raison d'abandonner tout et de m'y mettre pour de bon. J'ai 21 ans, en ce moment je travail dans le provigo du coin. Chu, comme, zéro populaire, par contre c'est plus par choix que pas résultat de mes actions ou whatever. Je dirais pas que j'ai beaucoup d'argent, mais j'ai quand même un ford raptor 2017.   -Suite") 
-    print()
-    attendre=input("  **Veuillez appuyer sur ENTER pour continuer. Lisez le README s'il y a confusion.**  ")
-    print("Très bon prix d'ailleurs. Ça me rappele l'interaction que j'ai eu avec le vendeur, c'était quand même vraiment mongole. Après avoir démontré mon intérêt sur l'annonce facebook le gars m'avais donné un coup de fil.     -Suite")
-    attendre=input() # Permet d'attendre l'input de l'utilisateur avant de continuer
 
-    # Premier évènement: coup de téléphone
-    phone_1="0"
-    print("     -Bonjour, est-ce que je parle à Nicolas?")
-    while(phone_1 != "1" and phone_1 != "2") :
-        print()
-        print("** Insérez le NOMBRE de l'option choisie, regarder le README si vous êtes confus.**")
-        print("     Option 1 = Oui")
-        phone_1=input(str("     Option 2 = Non      Nombre: "))  # Options réponse Évènement 1
-    char_1=("0")
-    if(phone_1=="1"): # phone_1 OUI
-        print("-Oui c'est bien moi.")
+input("Commencer?   -Suite")
+
+while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa lecture
+    
+    
+    
+    print("\nLa création, la musique, l'art en général, j'ai jamais réussi à trouver une bonne raison, \nou je dirais que j'ai pas encore trouvé l'occasion d'abandonner tout et de m'y mettre pour de bon.\nJ'ai 21 ans, en ce moment je travail dans le provigo du coin. Chu, comme, zéro populaire,\npar contre c'est plus par choix que pas résultat de mes actions ou whatever.\nJe dirais pas que j'ai beaucoup d'argent, mais j'ai quand même un ford raptor 2017.   -Suite") 
+    input()
+    print("Très bon prix d'ailleurs. Ça me rappele l'interaction que j'ai eu avec le vendeur, c'était quand même vraiment mongole.\nAprès avoir démontré mon intérêt sur l'annonce facebook le gars m'avais donné un coup de fil.     -Suite")
+    input() # Permet d'attendre l'input de l'utilisateur avant de continuer
+
+    print("     -Bonjour, est-ce que je parle à Nicolas?\n")
+    time.sleep(0)
+    print("   **Regardez le README s'il y a confusion.** ")
+    phone_1=choice_user2("Oui","Non")  # Évènement appel pour la voiture
+
+    if(phone_1==1): # phone_1 OUI
+        print("\n-Oui c'est bien moi.")
         time.sleep(0)
         print("-Je m'adresse à qui?")
         time.sleep(0)
         print("     -C'est George, voyons criss tu sonne bin jeune, c'est tu vraiment toi sur facebook?")
         time.sleep(0)
         texte_delai("ouch" , delay=(0))
-        while(char_1 != "1" and char_1 != "2" and char_1 != "3"):  # Options réponse. Évènement 2
-            print()
-            print("     1 = -Ouais on me le dit souvent")
-            print("     2 = Racrocher")
-            char_1=input(str("     3 = -Es-tu sérieux pour le truck ou non?    : "))
-            if(char_1=="1"): #char_1 option 1
-                print("-Oui c'est moi, on me le dit souvent, toé t'as quel age? Tu sonnes crissement vieux.")
-                time.sleep(0)
-                print("J'ai pas pu me retenir sa voix criait la vieillesse.")
-                time.sleep(0)
-                print("Au final il m'avait offert de passer chez eux la même journée.")
-                time.sleep(0)
-            elif(char_1=="2"): #char_1 option 2
-                print("Bon, j'ai racroché.")
-                time.sleep(0)
-            elif(char_1=="3"): #char_1 option 3
-                print("Scuse moi, mais es-tu sérieux avec le truck ou tu va perdre mon temps?")
-                time.sleep(0)
-                print("Excuse moi, tu souhaites le voir? Viens à l'adresse indiqué sur l'annonce ajourd'hui à partir de 3h si tu peux.      -Suite")
-                attendre=input()
-                print("C'est bon, on va se voir.")
-                time.sleep(0)
-    else: # phone_1 NON
-        if(phone_1=="2"):
-            print("-Non scuse moi lgros, tu dois avoir le mauvais numéro.") 
+
+        char_1=choice_user3("Oui c'est moi","Racrocher","Es-tu sérieux pour le truck ou non?") # Options réponse. Évènement 2
+
+        if(char_1==1): #char_1 option 1
+            print("-Oui c'est moi, on me le dit souvent, toé t'as quel age? Tu sonnes crissement vieux.")
             time.sleep(0)
-            print("J'étais sûr c'était un foutu spam, j'ai pas réfléchi..   -Suite")
-            attendre=input()
-            print("     -Ah je suis désolé. Tu n'es pas la personne qui m'avait envoyé un message pour le ford ce matin?")
+            print("J'ai pas pu me retenir sa voix criait la vieillesse.")
             time.sleep(0)
-            texte_delai("Ah, shit." , delay=(0)) # type writter
-            time.sleep(0)
-            print("Je ne pouvais pas retourner la situation, je sais pas si j'avais simplement pas allumé, mais j'ai choké. J'avais 18 ans je sais pas trop quoi te dire. Compte-tenu qu'il savait pas j'étais qui je ne me suis pas retenue..       -Suite")
-            attendre=input()
-            print("-Non désolé. Je vous souhaite une bonne journée.")
-            time.sleep(0)
-            print("     -Ah pardon, bonne journée à vous aussi.")
+            print("Au final il m'avait offert de passer chez eux la même journée.")
             time.sleep(0)
 
-    print("Je dois l'admettre j'étais un peu impuslif..")
-    time.sleep(0)
-    print("Un ti peu...")
-    time.sleep(0)
-    print("Au moins j'ai le char.       -Suite")
-    attendre=input()
-    if(char_1=="2" or phone_1=="2"):
-        print("Au final chu juste aller voir le gars sans m'annoncer.")
+        elif(char_1==2): #char_1 option 2
+            print("Bon.. J'ai racroché.")
+            time.sleep(0)
+
+        elif(char_1==3): #char_1 option 3
+            print("-Scuse moi, mais es-tu sérieux avec le truck ou tu va perdre mon temps?")
+            time.sleep(0)
+            print("     -Pardonne moi, tu souhaites le voir? Viens à l'adresse indiqué sur l'annonce ajourd'hui à partir de 3h si tu peux.      -Suite")
+            attendre=input()
+            print("C'est bon, on va se voir.")  
+            time.sleep(0)
+
+    elif(phone_1==2): # phone_1 NON
+        print("-Non scuse moi lgros, tu dois avoir le mauvais numéro.") 
         time.sleep(0)
+        print("J'étais sûr c'était un foutu spam, j'ai pas réfléchi..   -Suite")
+        input()
+        print("     -Ah je suis désolé. C'est pas toi qui m'avait envoyé un message pour le ford ce matin?")
+        time.sleep(0)
+        texte_delai("Ah, shit.",delay=(0)) # Effet type writter
+        time.sleep(0)
+        print("Je ne pouvais pas retourner la situation, je sais pas si j'avais simplement pas allumé, mais j'ai choké.\nJ'avais 18 ans je sais pas trop quoi te dire. Compte-tenu qu'il savait pas j'étais qui je ne me suis pas retenue..       -Suite")
+        input()
+
+        print("-Non désolé. Je te souhaite une bonne journée.")
+        time.sleep(0)
+        print("     -Ah pardon, bonne journée à toi aussi.")
+        time.sleep(0)
+
+    print("Je dois l'admettre j'étais un peu impuslif..\nAu moins j'ai le char.       -Suite")
+    input()
+
+    if(char_1==2 or phone_1==2):
+        print("Au final chu juste aller voir le gars sans m'annoncer. Quand même content que tout ait fonctionné.")
+        time.sleep(0)
+    
+
     print("     -Chérie? T'avais tu fais la lessive ou pas encore? Moi et ton père on a du linge à laver pour la semaine prochaine.")
     time.sleep(0)
     print("Ouaip, j'habite encore chez mes parents, tu serais fou de croire que je peux me permettre un chez moi dans cette économie.    -Suite")
-    attendre=input()
+    input()
+
     print("Ils s'en vont en vacances la semaine prochaine, j'ai quand même hâte ça va me donner tellement de temps pour moi. ")
     time.sleep(0)
     print("-Ouais je m'en vais justement sortir mon stock tu va pouvoir y aller.")
     time.sleep(0)
-    print("     -Merci. Il fait combien dehors aujourd'hui?")
+    print("-Vous partez quand déjà?")
     time.sleep(0)
-    print("")
-
-    while True: 
-        choix_temp_1=input("Température: ") # Permet à la commande de looper jusqu'à ce que l'utilisateur ait rentré un INT aka nombre
-        print("")
-        try:
-            num_temp_1=int(choix_temp_1)
-            break
-        except ValueError:
-            print("Veuillez entrer un nombre.")
-       
+    print("     -Dimanche vers 11 heures. Dit moi, il fait combien dehors aujourd'hui?\n")
+    time.sleep(0)
+    
+    num_temp_1=choice_num("Température: ")
     if(num_temp_1 >= 20 and num_temp_1 < 40): # Commande pour défénire la saison pour le reste de l'histoire
         saison = "été"
     elif(num_temp_1 < 20 and num_temp_1 >= -5):
@@ -113,7 +155,7 @@ while(JOUER==True):
         saison="+été"
     elif(num_temp_1 <= -35):
         saison="+hiver"
-    pluschaud=num_temp_1+8
+    pluschaud=num_temp_1+9
 
     print(f"Il fait {num_temp_1} avec du soleil dehors. Au plus chaud {pluschaud}.")
     if(saison=="+hiver"):
@@ -128,18 +170,40 @@ while(JOUER==True):
         print("     -Sérieux?? Cibole, je penses que je me suis trop habillé ce matin.")
 
     time.sleep(0)
-    print("-Bonne journée à ce soir.")
+    print("-Bonne journée et à ce soir.")
     time.sleep(0)
-    print("Ce matin je dois aller porter ma soeur à son cégep, sa voiture a eu un pépin. Au moins c'est vendredi pas besoin d'y aller demain.       -Suite")
-    attendre=input()
-    if(rejouer=="0" or rejouer=="1"): 
+    print("Ce matin je dois aller porter ma soeur à son cégep, sa voiture a eu un pépin. Au moins c'est vendredi j'ai pas besoin d'y aller demain.       -Suite")
+    input()
+    print("Je dois me rendre à la job pour un shift de 8 heures après. Trop long si tu me demandes mais au moins mon buddy Alex va être là.")
+
+    if(saison=="été" or saison=="automne" or saison=="+été"): 
+        print("Il fait beau la route va être plaisante. Je vais pouvoir blaster ma musique.     -Suite")
+        attendre=input()
+        print("Fallait je m'ouvre la geule, il y a un accident sur le coin de ma rue, je suis dans un foutu cul de sac.\nOn peut même pas sortir de notre rue.\nJe suis encore content que ma soeur commence ses cours aussi tôt j'ai 30 minutes de buffer ce matin.\nMoins cool pour elle par contre, mais moi je suis sur le point de me faire virer donc je veux pas jouer avec le feu.       -Suite")
+        
+        police_1=0
+
+        choice_user2("Aller voir les policiers","Attendre") # Évènement policiers
+
+    elif(saison=="hiver" or saison=="+hiver"): 
+        print("Pas hâte de conduire, on va pas se mentir c'est vraiment laid sur les routes ce matin. \nEncore une chance que c'est supposé de réchauffer cette semaine.      -Suite")
+        attendre=input()
+        print("J'embarquais sur l'autoroute et là... mon truck fait un gros 'CLANK', vraiment pas rassurant.\nPas rien entendu d'anormal après mais j'ai pas trippé on va pas ce mentir.. Ma soeur non plus d'ailleurs, le bruit était de son bord.")
+    print("Après avoir déposé ma soeur je repartais avant d'avoir reçu un texto d'un numéro inconnu qui me disait de ne pas venir à la job.\nJ'aurais aimé le voir avant de partir, j'ai seulement vu le message quand j'étais arrivé.      -Suite")
+    input()
+    print("Au final chu juste arrivé et j'ai rien vu de flagrant. Le texto disait rien.")
+
+    if(rejouer=="0"): 
+        nb_lecture=nb_lecture+1
         while(rejouer != "1" and rejouer != "2"):
-            print()
+           
+            print(f"\nCela vous fait {nb_lecture} lectures.")
             print("Souhaitez vous recommencer l'histoire?")
-            print("1: Oui")
-            rejouer=input(str("2: Non : "))
+            print("|    1 = Oui")
+            rejouer=(input("|   2 = Non : "))
         if(rejouer=="2"):
             print(rejouer)
             JOUER=False
-        rejouer="0"
-    
+        rejouer=str("0")
+print("Fin")
+time.sleep(0)
