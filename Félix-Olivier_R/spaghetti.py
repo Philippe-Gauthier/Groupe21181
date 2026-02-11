@@ -7,6 +7,7 @@ rejouer=("0") # Défénir les variable qui décide si le jeu fonctionne ou non. 
 nb_lecture=0
 char_1=0
 phone_1=0
+police_1=0
 
 def choice_user2(choix1,choix2): # Fonction de question à 2 options
     result=0
@@ -61,9 +62,7 @@ def texte_delai(text, delay=0.05, newline=True): # Code emprunté de monsieur co
 input("Commencer?   -Suite")
 
 while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa lecture
-    
-    
-    
+
     print("\nLa création, la musique, l'art en général, j'ai jamais réussi à trouver une bonne raison, \nou je dirais que j'ai pas encore trouvé l'occasion d'abandonner tout et de m'y mettre pour de bon.\nJ'ai 21 ans, en ce moment je travail dans le provigo du coin. Chu, comme, zéro populaire,\npar contre c'est plus par choix que pas résultat de mes actions ou whatever.\nJe dirais pas que j'ai beaucoup d'argent, mais j'ai quand même un ford raptor 2017.   -Suite") 
     input()
     print("Très bon prix d'ailleurs. Ça me rappele l'interaction que j'ai eu avec le vendeur, c'était quand même vraiment mongole.\nAprès avoir démontré mon intérêt sur l'annonce facebook le gars m'avais donné un coup de fil.     -Suite")
@@ -128,7 +127,6 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     if(char_1==2 or phone_1==2):
         print("Au final chu juste aller voir le gars sans m'annoncer. Quand même content que tout ait fonctionné.")
         time.sleep(0)
-    
 
     print("     -Chérie? T'avais tu fais la lessive ou pas encore? Moi et ton père on a du linge à laver pour la semaine prochaine.")
     time.sleep(0)
@@ -157,7 +155,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
         saison="+hiver"
     pluschaud=num_temp_1+9
 
-    print(f"Il fait {num_temp_1} avec du soleil dehors. Au plus chaud {pluschaud}.")
+    print(f"Il fait {num_temp_1} avec du soleil dehors. Au plus chaud {pluschaud}.")        # Définir la saison selon la température entrée par l'utilisateur.
     if(saison=="+hiver"):
         print("     -C'est sûr tu me niaise. Ok merci, je vais prendre ma tuque. À tantôt.")
     elif(saison=="hiver"):
