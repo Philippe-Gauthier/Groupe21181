@@ -15,11 +15,11 @@ def roulette_russe():
                     #Identification bool du joueur
                     modu_player=choix%2
                      
-                    reset=input("Premier tour! Prêt? O/N\n")
-                    reset=reset.upper()  
+                    reset=input("Premier tour! Prêt?\n")
+                    reset=reset.upper()
+
                     if(reset=="N"):break
                     for k in range(choix,roll+1):
-
                             if(choix+k %2 == modu_player):                                    
                                 if(choix+k<roll):                                      
                                     reset=input(message.roulette_next())

@@ -1,4 +1,4 @@
-# lib de la fonction pile ou face
+# lib messages
 
 import random
 
