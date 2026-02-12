@@ -40,7 +40,7 @@ def choice_user3(choix1,choix2,choix3):   # Fonction de question à 3 options
                 decision=input("\nVeuillez entrer un nombre: ")
     return result
 
-def choice_num(question): # Permet à la commande de looper jusqu'à ce que l'utilisateur ait rentré un nombre entier
+def choice_num(question): # Permet à la fonction de looper jusqu'à ce que l'utilisateur ait rentré un nombre entier
     while True: 
         number=input(f"{question} : ") 
         try:
@@ -50,7 +50,7 @@ def choice_num(question): # Permet à la commande de looper jusqu'à ce que l'ut
             print("\nVeuillez entrer un nombre.")
     return result
 
-def texte_delai(text, delay=0.05, newline=True): # Code emprunté de monsieur copilot. une lettre à la fois
+def texte_delai(text, delay=0.05, newline=True): # Code emprunté de monsieur copilot. Permet d'écrire une lettre à la fois
         for ch in text:
             sys.stdout.write(ch)
             sys.stdout.flush()   
@@ -71,7 +71,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     print("     -Bonjour, est-ce que je parle à Nicolas?\n")
     time.sleep(0)
     print("   **Regardez le README s'il y a confusion.** ")
-    phone_1=choice_user2("Oui","Non")  # Évènement appel pour la voiture
+    phone_1=choice_user2("Oui","Non")  # Évènement 1 - phone_1 appel pour la voiture
 
     if(phone_1==1): # phone_1 OUI
         print("\n-Oui c'est bien moi.")
@@ -82,7 +82,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
         time.sleep(0)
         texte_delai("ouch" , delay=(0))
 
-        char_1=choice_user3("Oui c'est moi","Racrocher","Es-tu sérieux pour le truck ou non?") # Options réponse. Évènement 2
+        char_1=choice_user3("Oui c'est moi","Racrocher","Es-tu sérieux pour le truck ou non?") # char_1 réponse - Évènement 2
 
         if(char_1==1): #char_1 option 1
             print("-Oui c'est moi, on me le dit souvent, toé t'as quel age? Tu sonnes crissement vieux.")
@@ -124,7 +124,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     print("Je dois l'admettre j'étais un peu impuslif..\nAu moins j'ai le char.       -Suite")
     input()
 
-    if(char_1==2 or phone_1==2):
+    if(char_1==2 or phone_1==2): 
         print("Au final chu juste aller voir le gars sans m'annoncer. Quand même content que tout ait fonctionné.")
         time.sleep(0)
 
@@ -153,9 +153,9 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
         saison="+été"
     elif(num_temp_1 <= -35):
         saison="+hiver"
-    pluschaud=num_temp_1+9
 
-    print(f"Il fait {num_temp_1} avec du soleil dehors. Au plus chaud {pluschaud}.")        # Définir la saison selon la température entrée par l'utilisateur.
+
+    print(f"Il fait {num_temp_1} avec du soleil dehors. Au plus chaud {num_temp_1+8}.")        # Définir la saison selon la température entrée par l'utilisateur.
     if(saison=="+hiver"):
         print("     -C'est sûr tu me niaise. Ok merci, je vais prendre ma tuque. À tantôt.")
     elif(saison=="hiver"):
