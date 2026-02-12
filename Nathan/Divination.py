@@ -123,7 +123,25 @@ def loop_niveaux(input_niveau):
 #if every variable is a list, I can call the text, or the next set of variables for the level
 
 
-text1_1_1 = "yipee"
+
+
+
+
+
+# variable list
+choix_retour = "retour au début de la journée..."
+choix_fail = "Cela ne fesait pas partie des choix, réessayez"
+the_end = "the end"
+
+testfailure = "fail"
+testagain = "blabla i guess"
+otherv = "blabla" 
+otherv2 = "againagian" 
+
+text1_1_1 = "blablsa"
+lvl41 = [testagain, testfailure, otherv, otherv2]
+lvl42 = []
+lvl43 = []
 
 text1_1_2 = 2
 
@@ -131,7 +149,7 @@ text1_1_3 = 3
 
 
 text1_1 = "test1_1"
-lvl1_1_1 = [text1_1_1, 1_1_1, 0, 0]
+lvl1_1_1 = [text1_1_1, lvl41, lvl42, lvl42]
 lvl1_1_2 = [text1_1_2, 1_1_2, 0, 0]
 lvl1_1_3 = [text1_1_3, 1_1_3, 0, 0]
 
@@ -156,6 +174,28 @@ lvl1 = [text1, lvl1_1, lvl1_2, lvl1_3]
 
 
 
+#formattage variables: niveau-nombre = [text-niveau, choix1 ou "fail", choix2, choix3]
+
+
+
+
+#function defining
+
+def failstate_detector(niveau_selectionne):
+    if niveau_selectionne[1] == "fail":
+        print(niveau_selectionne[0])
+        reponse_fin = input(f"{the_end} voulez vous recommencer? y/n ")
+        if reponse_fin == "y":
+            print(choix_retour)
+            time.sleep(1.5)
+            loop_niveaux2(lvl1) #retour au niveau1
+        else:
+            print("Allez toucher du gazon alors")
+
+
+
+
+
 def level_extractor2(niveau_selectionne):
     variable_test0 = niveau_selectionne[0]
     variable_test1 = niveau_selectionne[1]
@@ -165,6 +205,7 @@ def level_extractor2(niveau_selectionne):
 
 
 def presentation_choix2(situation0, choix_1, choix_2, choix_3):
+    print("(A tout moment, entrez 000 pour retourner au début de la journée)")
     print(situation0)
     print(choix_1[0])
     print(choix_2[0])
@@ -180,6 +221,8 @@ def resultat_choix2(reponse):
         choix_final = 2
     elif reponse == 3:
         choix_final = 3
+    elif reponse == 000:
+        choix_final = 000
     else:
         choix_final = 4
     
@@ -188,19 +231,124 @@ def resultat_choix2(reponse):
 
 def loop_niveaux2(input_niveau):
     while True:
+
         situation0, description1, description2, description3 = level_extractor2(input_niveau)
         reponse_user = presentation_choix2(situation0, description1, description2, description3)
 
         verif_reponse = resultat_choix2(reponse_user)
         if verif_reponse == 4:
             print(choix_fail)
-            time.sleep(1.5)
+            time.sleep(1.5) #retour aux choix
+        elif verif_reponse == 000:
+            confirmation = input("Voulez vous vraiment retourner au début de la journée? (y/n) ")
+            if confirmation == "y":
+                print(choix_retour)
+                time.sleep(1.5)
+                loop_niveaux2(lvl1) #retour au niveau1
+            elif confirmation == "n":
+                print("continuons alors...")
+                time.sleep(1.5) #retour aux choix
+            else:
+                print("Bon, tu parles chinois maintenant, j'imagine qu'on continue alors...")
+                time.sleep(1.5) #retour aux choix
         elif verif_reponse != 4:
-            niveau = input_niveau[verif_reponse] #passer au prochain niveau et return cela
+            niveau = input_niveau[verif_reponse] #passer au prochain niveau
             break
 
     return niveau
 
+
+
+
+#actual code
+"""
 next_level = loop_niveaux2(lvl1)
+print(next_level)
 
 next_level2 = loop_niveaux2(next_level)
+
+next_level3 = loop_niveaux2(next_level2)
+
+#seems like there is a big error in my code lol
+#essayer d'identifier les variables avec des valeurs incrementales
+"""
+
+
+"""ce que je veux: une variable qui equivaut a du texte et une question (liste???), ensuite, je veux prendre cette variable et incrémenter
+un chiffre de facon a me faire passer a la prochaine variable
+
+
+
+lvl = text (meme methode que tantot mais avec une variable que je transforme en string et reconvertis en variable?)
+lvl +_1 = text-lvl1_1?
+
+
+text1 = "blibliblu"
+lvl1 = text1
+
+text2 = "blabliblo"
+lvl1_1 = text2
+
+
+
+#USE DICTIONARIES NOMDICTIONNAIRE = {
+    "brand": test1
+    "model": test2
+}
+"""
+
+
+
+
+
+
+
+def level_extractor2(niveau_selectionne):
+    lvlstr = str(niveau_selectionne)
+    variable_test0 = f"{lvlstr}_1"
+    
+    return variable_test0
+
+
+
+
+def presentation_choix2(situation0, choix_1, choix_2, choix_3):
+    print("(A tout moment, entrez 000 pour retourner au début de la journée)")
+    print(situation0)
+    print(choix_1[0])
+    print(choix_2[0])
+    print(choix_3[0])
+    reponse = int(input("quel est votre choix? "))
+    return reponse
+
+
+def resultat_choix2(reponse):
+    if reponse == 1:
+        choix_final = 1
+    elif reponse == 2:
+        choix_final = 2
+    elif reponse == 3:
+        choix_final = 3
+    elif reponse == 000:
+        choix_final = 000
+    else:
+        choix_final = 4
+    
+    return choix_final
+
+
+
+
+
+dynamic_vars = {}
+# Use a variable to form a key name and assign a value
+name_part = "user"
+full_name = f"{name_part}_1"
+dynamic_vars[full_name] = "some value"
+
+# Access the value using the dynamic key name
+print(dynamic_vars["user_1"])
+
+
+
+
