@@ -2,9 +2,8 @@
 import random
 import jeux_message
 def roulette_russe():
-    reset="O"  
-
-    while reset == "O":                                        
+    reset=""  
+    while reset != "N":                                        
                     #Sélection entre les 6 positionnements possibles du barrilet
                     choix =int(input(jeux_message.roulette_bienvenu()))
                     k=choix
