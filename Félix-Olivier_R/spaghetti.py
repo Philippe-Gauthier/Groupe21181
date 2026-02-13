@@ -106,7 +106,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
             print("\n-Scuse moi, mais es-tu sérieux avec le truck ou tu va perdre mon temps?")
             time.sleep(0)
             print("     -Pardonne moi, tu souhaites le voir? Viens à l'adresse indiqué sur l'annonce ajourd'hui à partir de 3h si tu peux.      -Suite")
-            attendre=input()
+            input()
             print("C'est bon, on va se voir.")  
             time.sleep(0)
 
@@ -184,20 +184,28 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
 
     if(saison=="été" or saison=="automne" or saison=="+été"): 
         print("Il fait beau la route va être plaisante. Je vais pouvoir blaster ma musique.     -Suite")
-        attendre=input()
-        print("Fallait je m'ouvre la geule, il y a un accident sur le coin de ma rue, je suis dans un foutu cul de sac.\nOn peut même pas sortir de notre rue.\nJe suis encore content que ma soeur commence ses cours aussi tôt j'ai 30 minutes de buffer ce matin.\nMoins cool pour elle par contre, mais moi je suis sur le point de me faire virer donc je veux pas jouer avec le feu.       -Suite")
-        
-        police_1=0
+        input()
+        print("Fallait je m'ouvre la geule, il y a un accident sur le coin de ma rue, je suis dans un foutu cul de sac.\nOn peut même pas sortir de notre rue.\nJe suis encore content que ma soeur commence ses cours aussi tôt j'ai du buffer ce matin.\nMoins cool pour elle par contre, mais moi je suis sur le point de me faire virer donc je veux pas jouer avec le feu.       -Suite")
 
         choice_user2("Aller voir les policiers","Attendre") # Évènement policiers
-
+        if(police_1==1):
+            print("J'étais sortie du char pour aller voir c'était quoi le deal. Rendu à la auteur de leur voiture,\nj'ai vu leur char complètement détruit, y'avait une bmw sur le side qui était rentré dans une pole.\nTypique. Chépa trop comment ils ont fait mais c'était pas beau à voir.     -Suite")
+            input()
+            print("Ils m'ont dit que d'ici une vingtaines ils allait être en route. Au final moi et ma soeur on est rentré chez nous.\nPuis, enfin, 1 heure plus tard, de chez nous on les avait vu parir.")
+        elif(police_1==2):
+            print("On doit avoir attendu une bonne heure avant que les ambulances puis tout soit arrivé. C'était pénible. Au moins on avait l'aire climatisé dans le char.     -Suite")
+            input()
     elif(saison=="hiver" or saison=="+hiver"): 
         print("Pas hâte de conduire, on va pas se mentir c'est vraiment laid sur les routes ce matin. \nEncore une chance que c'est supposé de réchauffer cette semaine.      -Suite")
-        attendre=input()
-        print("J'embarquais sur l'autoroute et là... mon truck fait un gros 'CLANK', vraiment pas rassurant.\nPas rien entendu d'anormal après mais j'ai pas trippé on va pas ce mentir.. Ma soeur non plus d'ailleurs, le bruit était de son bord.")
+        input()
+        print("J'embarquais sur l'autoroute et là... mon truck fait un gros 'CLANK', vraiment pas rassurant.\nPas rien entendu d'anormal après mais j'ai pas trippé on va pas se mentir.. Ma soeur non plus d'ailleurs, le bruit était de son bord.     -Suite")
+        input()
     print("Après avoir déposé ma soeur je repartais avant d'avoir reçu un texto d'un numéro inconnu qui me disait de ne pas venir à la job.\nJ'aurais aimé le voir avant de partir, j'ai seulement vu le message quand j'étais arrivé.      -Suite")
     input()
     print("Au final chu juste arrivé et j'ai rien vu de flagrant. Le texto disait rien.")
+    time.sleep(0)
+    print("     -Yo Nico comment tu vas aujourd'hui?")
+    choice_user()
 
     if(rejouer=="0"): 
         nb_lecture=nb_lecture+1
