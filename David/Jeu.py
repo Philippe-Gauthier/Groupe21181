@@ -223,9 +223,29 @@ Resultat_final_palmeiras_lyon = "L'Europe t'appelle. Tu signes à Lyon, titulair
       Mais un an plus tard, Lyon rachète un attaquant étranger pour 40M€ et tu perds ta place.Tu te retrouves sur le banc, loin de chez toi, \
     regrettant parfois la chaleur du Maracanã."
 
-Resultat_final_newcastle_rester = ""
+Resultat_final_newcastle_rester = "Le président pose un nouveau contrat sur la table. Salaire doublé, statut de légende, capitaine à vie. \
+    Tu signes sans hésiter.Tu termines ta carrière au Newcastle avec 5 titres nationaux et une coupe de Champions League. \
+    Le club t'offre un match d'adieu devant 50 000 fans en larmes."
 
-Resultat_final_newcastle_real = ""
+Resultat_final_newcastle_real = "Real Madrid. Titulaire assuré. C'est le rêve de tout footballeur. \
+      Tu dis au revoir à l'anglettre, la gorge serrée.Au Bernabéu, tu t'imposes rapidement. Les galactiques t'acceptent, \
+     le public t'adore. Deux Ligues des Champions plus tard, tu es considéré comme l'un des meilleurs joueurs de ta génération.À ta retraite, \
+    tu reçois un hommage au Bernabéu"
+
+Resultat_final_atletico_ligue_b= ": Tu acceptes. Le niveau est moins élevé, le stade moins grand, le salaire bien plus modeste. Mais tu joues. \
+    Tu retrouves le plaisir du football, ta confiance revient semaine après semaine.Deux ans plus tard, un club de première division te repère et te signe."
+
+Resultat_final_atletico_entraineur = "Tu ranges tes crampons et tu t'inscris en sciences du sport. Dix ans plus tard, tu es l'un des meilleurs entraîneurs du monde. \
+      Real Madrid, équipe nationale, Ligue des Champions. Les journalistes adorent te couvrir, mais savent que tu n'as pas ta langue dans ta poche.  \
+        Parfois tu t'emportes en conférence de presse, parfois tu rentres dans les arbitres, parfois tu recales un joueur publiquement sans hésiter.Les gens t'appellent  The Chosen One. \
+     Pas seulement pour tes résultats, mais parce que tu as le caractère d'un champion."
+
+Resultat_final_dortmund_équipe_b = ""
+
+
+Resultat_final_dortmund_plan_b =""
+
+
 
 
 
