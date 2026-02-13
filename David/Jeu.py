@@ -114,7 +114,7 @@ contexte_bayern = "Quelques belles entrées, 8 passes décisives. Le directeur s
 Question_4_choix_15 ="Prolonger au Bayern - Sécurité, meilleure formation, mais toujours remplaçant"
 Question_4_choix_16 ="Dortmund - 20M€ - 70k€/semaine, titulaire probable, club formateur de jeunes"
 
-#dernier choix
+#dernier choix 
 Question_5 = "Qu'est-ce qui t'arrive dans ton équipe? que vas tu faire ? "
 Contexte_real_2 = "Les mois passent. Tu ne joues toujours pas. Dernier match de la saison, le Real a déjà gagné la Liga. \
     85e minute, le coach te fait enfin entrer sous les applaudissements polis du Bernabéu. 5 minutes de jeu. Frustrant."
@@ -240,11 +240,62 @@ Resultat_final_atletico_entraineur = "Tu ranges tes crampons et tu t'inscris en 
         Parfois tu t'emportes en conférence de presse, parfois tu rentres dans les arbitres, parfois tu recales un joueur publiquement sans hésiter.Les gens t'appellent  The Chosen One. \
      Pas seulement pour tes résultats, mais parce que tu as le caractère d'un champion."
 
-Resultat_final_dortmund_équipe_b = ""
+Resultat_final_dortmund_équipe_b = "Tu acceptes sans trop aimer l'idée. L'équipe B, c'est un niveau en dessous, moins de pression, mais moins de gloire aussi. \
+    Les premiers matchs sont étranges. Tu croises parfois les pros à l'entraînement, tu les regardes partir vers le grand stade pendant que toi tu prends l'autre direction.\
+    Mais tu travailles. Tu marques, tu brilles, et trois mois plus tard le coach de l'équipe première te rappelle."
 
 
-Resultat_final_dortmund_plan_b =""
+Resultat_final_dortmund_plan_b =": Deux mois sans club. Tu t'entraînes seul le matin pour rester en forme. Puis un petit club de troisième division t'appelle.\
+      Pas glamour, mais c'est une porte.Tu signes. Parfois une carrière repart de zéro."
 
+Resultat_final_bayern_mensonge = "Tu lui mensTu le regardes dans les yeux et tu dis. Je suis prêt coach. Il sourit et t'aligne titulaire. Dès la 20e minute, sur un simple appui, ton genou lâche.\
+      Tu t'effondres sur la pelouse. Le stade se tait. Tu sors sur civière, les larmes aux yeux.Le Bayern perd 1-0. Pas de Bundesliga. Dans le vestiaire, le coach te regarde, déçu.\
+     Pourquoi tu ne m'as pas dit la vérité ? Tu n'as pas de réponse."
+
+
+Resultat_final_bayern_verite = "Tu baisses les yeux : Coach, j'ai vraiment mal. Je ne peux pas vous donner mon 100%. Il hoche la tête : \
+    Merci pour ton honnêteté. Le Bayern perd quand même 1-0. Pas de Bundesliga cette année. Le vestiaire est silencieux, la déception est lourde. \
+    Mais toi, tu te soignes correctement. Toute l'intersaison, tu travailles plus dur que jamais. Tu reviens en feu la saison suivante,\
+     tu es le meilleur joueur du Bayern et tu les portes jusqu'au titre. Dans le vestiaire en fête, le coach lève son verre. Ce titre, c'est grâce à toi."
+
+Resultat_final_aston_poste_diff_coéquipier_tire = "Tu laisses tirer ton coéquipier et tu ne gagnes pas le trophée du meilleur buteur.\
+      Ton coéquipier tire et le gardien l'arrête, mais ce n'est pas grave, car tu es la pour le rebond et tu marques et tu gagnes le trophée du meilleur buteur de l'année"
+
+Resultat_final_aston_poste_diff_tu_tire = "- tu tires le penalty et tu es le meilleur buteur de l'année : Tu le marques. Tu deviens meilleur,\
+      mais ton coéquipier est déçu et te considère comme égoïste."
+
+Resultat_final_aston_meme_poste_everton= "Tu deviens un bon joueur. Les fans t'aiment, mais après tu signe avec l'équipe adverse.\
+      Liverpool. Les fans d'Everton te déteste. Il te jette des choses quand tu joues contre eux."
+
+Resultat_final_aston_meme_poste_remplacant = "Tu restes remplaçant en espérant que ton temps de jeu augmente : Au début tu ne joues pas trop. \
+    Après quelques saisons un nouvel entraineur arrive et tu deviens titulaire."
+
+Resultat_final_seville_pret = "Tu regagne confiance en toi. Tu joues de plus en plus. À la fin Seville veut te ramener, mais tu décides de rester dans ton nouvel club."
+
+Resultat_final_seville_remplacant = "Tu ne joues pas vraiment. Quand tu joues c'est juste pour jouer 15 minutes. Tu aurais dû partir."
+
+Resultat_final_villarreal_tire = "Tu ne réfléchis plus. Tu te fais confiance. Tu armes ton pied droit, tu frappes sec, précis, puissant.\
+      Le ballon file entre le gant du gardien et le poteau.BUT ! Le stade rugit. Tes coéquipiers te sautent dessus."
+
+Resultat_final_villarreal_passe = "Tu fais une passe parfaite, tranchante, millimétrée. Mais ton coéquipier manque complètement sa frappe. Le stade soupire… et toi, tu le sais au fond. \
+    tu aurais dû tirer, tu n'aurais jamais dû douter de ton talent."
+
+Resulat_final_naples_sporting =""
+
+Resultat_final_naple_rester = ""
+
+
+Resultat_final_sporting_tacle_propore =""
+
+Resultat_final_sporting_tacle_assasin =""
+
+Resultat_final_getafe_tire = ""
+
+Resultat_final_getafe_centre =""
+
+Resulat_final_real_reste = ""
+
+Resultat_final_real_rompre_contrat =""
 
 
 
