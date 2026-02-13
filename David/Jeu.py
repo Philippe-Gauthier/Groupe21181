@@ -280,22 +280,37 @@ Resultat_final_villarreal_tire = "Tu ne réfléchis plus. Tu te fais confiance. 
 Resultat_final_villarreal_passe = "Tu fais une passe parfaite, tranchante, millimétrée. Mais ton coéquipier manque complètement sa frappe. Le stade soupire… et toi, tu le sais au fond. \
     tu aurais dû tirer, tu n'aurais jamais dû douter de ton talent."
 
-Resulat_final_naples_sporting =""
+Resulat_final_naples_sporting ="Tu regardes le contrat… puis tu le refermes doucement.Tu prends l'avion pour rentrer à Lisbonne. \
+    Dès ton arrivée, le Sporting t'accueille comme un fils qui revient à la maison. Le stade te reconnaît, le staff te serre dans ses bras. \
+    Tu sais que tu as fait le choix du cœur. Ici, tout a commencé — et tu veux encore écrire ton nom dans leur histoire."
 
-Resultat_final_naple_rester = ""
+Resultat_final_naple_rester = "Le directeur sportif te tend le contrat. Tu poses ton stylo, ton nom brille en bas de la page. Le lendemain, tu arrives à Naples.\
+      soleil brûlant, supporters en feu, chants dans les rues. Tu entres dans ton nouveau vestiaire… ton maillot flotte déjà sur ton casier. \
+    Tu souris. Une nouvelle histoire commence."
 
 
-Resultat_final_sporting_tacle_propore =""
+Resultat_final_sporting_tacle_propore ="Tu sprintes comme jamais, chaque pas résonne dans le stade… mais tu ne le rattrapes pas. \
+    Ton gardien sort en catastrophe, le percute, stoppe l'action… faute. Jaune pour lui. Penalty. Ils marquent. La finale vous échappe.\
+     Et toi, tu restes là, genoux au sol, le souffle brisé."
 
-Resultat_final_sporting_tacle_assasin =""
+Resultat_final_sporting_tacle_assasin ="Tu comprends que tu ne le rattraperas jamais. Alors tu te lances tu lui fais un tacle assassin, violent, total,\
+      celui qu'on fait quand la saison entière tient sur une seule action. L'attaquant s'écroule, probablement touché pour un bon moment. \
+     Le rouge sort immédiatement. Mais le stade explose. Les fans hurlent ton nom, célébrant ton courage et ton sacrifice. Tu es expulsé… mais grâce à toi, l'équipe tient, se bat,\
+     et finit par gagner la finale."
 
-Resultat_final_getafe_tire = ""
+Resultat_final_getafe_tire = "Tu poses le ballon… puis tu recules, exactement comme ton idole, Cristiano Ronaldo. Large écart des jambes, souffle court, regard glacé.\
+      Tu t'élances. Ta frappe part sèche, montante, flottante, la signature CR7. Le ballon file en pleine lucarne. BUT ! Tu exploses, tu cours vers le coin du terrain, tu hurles ta joie."
 
-Resultat_final_getafe_centre =""
+Resultat_final_getafe_centre =": Personne ne s'attend au centre… mais toi, tu as vu ton coéquipier démarqué. Tu envoies un centre parfait. Il coupe de la tête. \
+    BUT ! Vous célébrez ensemble, vous sautez, vous tombez dans les bras. Mais c'est lui que la foule acclame. Toi, tu restes en retrait, sourire discret…Parce que tu le sais : \
+    sans ta passe, ce but n'existe pas."
 
-Resulat_final_real_reste = ""
+Resulat_final_real_reste = " Malgré la frustration qui brûle dans ta poitrine, tu décides de rester : \
+    continuer à t'entraîner, attendre ton moment, même si le banc devient ton quotidien.Le rêve continue… mais il avance sans toi."
 
-Resultat_final_real_rompre_contrat =""
+Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Real. Alors tu prends une décision courageuse, presque folle. Tu romps ton contrat, \
+    tu appelles tes contacts, agents, directeurs sportifs, anciens coachs. Tu pars à la conquête d'un nouveau club où tu pourras jouer, exister, briller. \
+    Tu quittes géant parmi les géants… pour redevenir un joueur qui compte."
 
 
 
