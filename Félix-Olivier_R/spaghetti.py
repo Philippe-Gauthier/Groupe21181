@@ -5,9 +5,10 @@ JOUER=True
 
 rejouer=("0") # Défénir les variable qui décide si le jeu fonctionne ou non. Pour pas que le jeu break 
 nb_lecture=0
-char_1=0
-phone_1=0
-police_1=0
+phone_1=0 # Évènement 1
+char_1=0 # Évènement 2
+police_1=0 # Évènement 3
+
 
 def choice_user2(choix1,choix2): # Fonction de question à 2 options
     result=0
@@ -59,9 +60,14 @@ def texte_delai(text, delay=0.05, newline=True): # Code emprunté de monsieur co
             sys.stdout.write("\n")
             sys.stdout.flush()
 
-input("Commencer?   -Suite")
+
 
 while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa lecture
+    
+    if(nb_lecture>0):
+        input("\nContinuer?   -Suite") # Permet d'afficher un message différent selon le nombre de fois que l'utilisateur a joué
+    else:
+        input("\nCommencer?   -Suite")
 
     print("\nLa création, la musique, l'art en général, j'ai jamais réussi à trouver une bonne raison, \nou je dirais que j'ai pas encore trouvé l'occasion d'abandonner tout et de m'y mettre pour de bon.\nJ'ai 21 ans, en ce moment je travail dans le provigo du coin. Chu, comme, zéro populaire,\npar contre c'est plus par choix que pas résultat de mes actions ou whatever.\nJe dirais pas que j'ai beaucoup d'argent, mais j'ai quand même un ford raptor 2017.   -Suite") 
     input()
@@ -85,7 +91,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
         char_1=choice_user3("Oui c'est moi","Racrocher","Es-tu sérieux pour le truck ou non?") # char_1 réponse - Évènement 2
 
         if(char_1==1): #char_1 option 1
-            print("-Oui c'est moi, on me le dit souvent, toé t'as quel age? Tu sonnes crissement vieux.")
+            print("\n-Oui c'est moi, on me le dit souvent, toé t'as quel age? Tu sonnes crissement vieux.")
             time.sleep(0)
             print("J'ai pas pu me retenir sa voix criait la vieillesse.")
             time.sleep(0)
@@ -93,11 +99,11 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
             time.sleep(0)
 
         elif(char_1==2): #char_1 option 2
-            print("Bon.. J'ai racroché.")
+            print("\nBon.. J'ai racroché.")
             time.sleep(0)
 
         elif(char_1==3): #char_1 option 3
-            print("-Scuse moi, mais es-tu sérieux avec le truck ou tu va perdre mon temps?")
+            print("\n-Scuse moi, mais es-tu sérieux avec le truck ou tu va perdre mon temps?")
             time.sleep(0)
             print("     -Pardonne moi, tu souhaites le voir? Viens à l'adresse indiqué sur l'annonce ajourd'hui à partir de 3h si tu peux.      -Suite")
             attendre=input()
@@ -105,7 +111,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
             time.sleep(0)
 
     elif(phone_1==2): # phone_1 NON
-        print("-Non scuse moi lgros, tu dois avoir le mauvais numéro.") 
+        print("n-Non scuse moi lgros, tu dois avoir le mauvais numéro.") 
         time.sleep(0)
         print("J'étais sûr c'était un foutu spam, j'ai pas réfléchi..   -Suite")
         input()
@@ -142,30 +148,32 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     print("     -Dimanche vers 11 heures. Dit moi, il fait combien dehors aujourd'hui?\n")
     time.sleep(0)
     
-    num_temp_1=choice_num("Température: ")
-    if(num_temp_1 >= 20 and num_temp_1 < 40): # Commande pour défénire la saison pour le reste de l'histoire
+    num_temp_1=choice_num("Température: ") # Commande pour défénire la saison pour le reste de l'histoire
+    if(num_temp_1 >= 30):
+        saison="+été" 
+    elif(num_temp_1 > 15): 
         saison = "été"
-    elif(num_temp_1 < 20 and num_temp_1 >= -5):
+    elif(num_temp_1>=-5):
         saison = "automne"
-    elif(num_temp_1 < -5 and num_temp_1 >-35): 
+    elif(num_temp_1 > -30): 
         saison = "hiver"
-    elif(num_temp_1 >= 40):
-        saison="+été"
-    elif(num_temp_1 <= -35):
+    elif(num_temp_1 <= -30):
         saison="+hiver"
 
 
     print(f"Il fait {num_temp_1} avec du soleil dehors. Au plus chaud {num_temp_1+8}.")        # Définir la saison selon la température entrée par l'utilisateur.
-    if(saison=="+hiver"):
-        print("     -C'est sûr tu me niaise. Ok merci, je vais prendre ma tuque. À tantôt.")
-    elif(saison=="hiver"):
-        print("     -Merci chérie. On se revoit tantôt.")
-    elif(saison=="automne"):
-        print("     -Ok, merci, je penses que je vais me mettre une veste.")
+    time.sleep(0)
+    if(saison=="+été"): 
+        print("     -Sérieux?? Cibole, je penses que je me suis trop habillé ce matin.")
     elif(saison=="été"):
         print("     -Parfait comme température, je vais pouvoir manger dehors. Bonne journée.")
-    elif(saison=="+été"): 
-        print("     -Sérieux?? Cibole, je penses que je me suis trop habillé ce matin.")
+    elif(saison=="automne"):
+        print("     -Ok, merci, je penses que je vais me mettre une veste.")
+    elif(saison=="hiver"):
+        print("     -Merci chérie. On se revoit tantôt.")
+    elif(saison=="+hiver"):
+        print("     -C'est sûr tu me niaise. Ok merci, je vais prendre ma tuque. À tantôt.")
+    
 
     time.sleep(0)
     print("-Bonne journée et à ce soir.")
