@@ -198,11 +198,34 @@ contexte_FC_porto = "Tu joues très bien. C'est la final de la champions League 
     Si tu marques vous gagnez et si tu ne marques pas peut-être que vous perdez"
 Question_5_choix_31 ="Tu tire à gauche très fort "
 Question_5_choix_32 ="Tu tire de panenka "
+# Les résulats final de chaque choix
+Resultat_final_porto_panenka = "Tu poses le ballon calmement. Tu regardes le gardien dans les yeux. Ta décision est déjà prise. Tu prends ton élan lentement. \
+    Le gardien plonge à droite... et tu soulèves délicatement le ballon au centre. \
+    Il retombe doucement au fond des filets.Silence. Puis le stade explose. Tes coéquipiers te sautent dessus."
+Resultat_final_porto_gauche = "Tu poses le ballon, tu recules. Le stade est silencieux. Tu fonces et frappes de toutes tes forces vers la gauche. \
+    Le gardien avait deviné. Il plonge et repousse le ballon sur le poteau. Vous perdezTu restes là, tu regardes dans le vide,  \
+    tu n'en reviens pas. Tu restes comme ça longtemps que maintenant on te surnomme l'homme qui est mort debout"
 
+Resultat_final_flamengo_leverkusen = "Une blessure t'a brisé dans ton élan. Tu as mis deux ans à retrouver ton niveau. \
+    Carrière correcte mais loin de ce que tu aurais pu accomplir."
+Resultat_final_flamengo_marseille ="En général tu as eu une bonne carrière. Tu es apprécié par les fans."
 
+Resultat_final_benfica_chirurgie = "Tu signes les papiers. La rééducation est longue et douloureuse. Mais six mois plus tard, tu reviens plus fort que jamais.\
+      Le coach sourit. Ta place t'attendait."
+Resultat_final_benfica_médication = ": Les anti-douleurs masquent tout. Tu joues, mais ton corps résiste. Trois matchs plus tard, ton genou lâche sur un simple appui.\
+      Le médecin soupire. Tu aurais dû opérer. Maintenant c'est 12 mois."
 
+Resultat_final_palmeiras_rester = "Les dirigeants te propose de rester le reste de ta carrière à Palmeras et avoir ton avis dans plusieurs choix.\
+    Le président te tend la main. On veut que tu finisses ta carrière ici. Tu seras capitaine, et ton avis comptera dans nos décisions.\
+    Tu deviens l'âme du club. Les supporters scandent ton nom à chaque match. À ta retraite, Palmeiras retire ton numéro de maillot."
 
+Resultat_final_palmeiras_lyon = "L'Europe t'appelle. Tu signes à Lyon, titulaire assuré. Les premiers mois sont bons, tu marques régulièrement.\
+      Mais un an plus tard, Lyon rachète un attaquant étranger pour 40M€ et tu perds ta place.Tu te retrouves sur le banc, loin de chez toi, \
+    regrettant parfois la chaleur du Maracanã."
 
+Resultat_final_newcastle_rester = ""
+
+Resultat_final_newcastle_real = ""
 
 
 
