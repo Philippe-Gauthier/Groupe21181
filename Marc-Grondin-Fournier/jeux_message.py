@@ -58,7 +58,7 @@ def courte_paille_bienvenu():
     message=int(message)
     return message
 def courte_paille_select(total):
-    message=input(F"Quelles pailles choisissez-vous parmi les {total} pailles?\n")
+    message=input(F"Choisir parmi les {total+1} pailles!\n")
     message=int(message)
     return message
 def courte_paille_loser():
@@ -66,14 +66,14 @@ def courte_paille_loser():
     message=message.upper()
     return message   
 def courte_paille_user(k):
-    message=input(F"Vous avez tiré la paille numéro {k}! Enter pour continuer ou Q pour quitter.")
+    message=input(F"Vous avez tiré la paille numéro {k+1}! Enter pour continuer ou Q pour quitter.")
     message=message.upper()
     return message   
 def courte_paille_next(k):
-    message=input(F"Le joueur numéro {k} a tiré une paille! Enter pour continuer ou Q pour quitter.")       
+    message=input(F"Le joueur numéro {k+1} a tiré une paille! Enter pour continuer ou Q pour quitter.")       
     message=message.upper()
     return message      
 def courte_paille_winner(a):
-    message=input(F"Le joueur numéro {a} la mauvaise paille! Voulez-vous rejouer(O) ou quitter(Q)?")
+    message=input(F"Le joueur numéro {a+1} la mauvaise paille! Voulez-vous rejouer(O) ou quitter(Q)?")
     message=message.upper()
     return message 
