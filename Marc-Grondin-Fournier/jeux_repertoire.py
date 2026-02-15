@@ -50,10 +50,12 @@ def courte_paille():
         choix=jeux_message.courte_paille_bienvenu()
         total=int(choix)
         joueur=[]
-        for nb_joueur in joueur:
-            joueur[nb_joueur]=nb_joueur
+        for nb_joueur in range(0,total):
+            new_joueur=[nb_joueur]
+            joueur.extend(new_joueur)
+
         for nb_joueur in range(len(joueur)):
-            joueur[nb_joueur] =nb_joueur
+            joueur[nb_joueur] +=nb_joueur
         
         choix=jeux_message.courte_paille_select(total)       
         paille_loser=random.randint(1,total)
