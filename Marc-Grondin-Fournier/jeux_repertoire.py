@@ -45,10 +45,11 @@ def pile_face():
         else:jeux_message.pile_face_lose(choix)
 
 def courte_paille():
+    exit=""
     while exit != "Q":
-        choix=input(jeux_message.courte_paille_bienvenu())
-        total=choix
-        for nb_joueur in choix+1:
+        choix=jeux_message.courte_paille_bienvenu()
+        total=int(choix)
+        for nb_joueur in total:
             joueur=list.insert(nb_joueur, nb_joueur)
             joueur[nb_joueur]=nb_joueur+1
 

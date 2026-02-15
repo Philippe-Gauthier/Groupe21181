@@ -1,9 +1,9 @@
 import random
 import jeux_repertoire
 import jeux_message
-menu=""
+menu="O"
 while menu != "Q":
-    menu=jeux_message.menu(menu)
+    menu=jeux_message.menu()
     menu=menu.upper()
     match menu:
         case "A":

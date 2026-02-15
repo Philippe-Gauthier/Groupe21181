@@ -54,7 +54,7 @@ def pile_face_lose(choix):
 
 #messages courte paille
 def courte_paille_bienvenu():
-    message="Bienvenu au jeu de la courte paille! Combien de joueurs?:\n"
+    message=input("Bienvenu au jeu de la courte paille! Combien de joueurs?:\n")
     message=int(message)
     return message
 def courte_paille_select(total):
