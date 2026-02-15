@@ -2,7 +2,7 @@
 import random
 import jeux_message
 def roulette_russe():
-    reset=""  
+    reset=""
     while reset != "N":                                        
         #Sélection entre les 6 positionnements possibles du barrilet
         choix =int(input(jeux_message.roulette_bienvenu()))
@@ -40,6 +40,32 @@ def pile_face():
         elif(choix=="F"):choix=1
 # pile ou face lancé        
         result=random.randint(0,1)
-# message gagnant ou perdant selon son choix
+# message gagnant ou perdant selon le choix
         if(choix==result):jeux_message.pile_face_win(choix)
         else:jeux_message.pile_face_lose(choix)
+
+def courte_paille():
+    while exit != "Q":
+        choix=input(jeux_message.courte_paille_bienvenu())
+        total=choix
+        for nb_joueur in choix+1:
+            joueur=list.insert(nb_joueur, nb_joueur)
+            joueur[nb_joueur]=nb_joueur+1
+
+        choix=jeux_message.courte_paille_select(total)       
+        paille_loser=random.randint(1,total)
+
+        for k in total+1:
+            if(joueur[k]==choix):
+                exit=jeux_message.courte_paille_user()                
+            else:             
+                exit=jeux_message.courte_paille_next(k)                    
+
+        if(choix==paille_loser):
+            exit=jeux_message.courte_paille_loser()
+        else:
+            exit=jeux_message.courte_paille_winner(joueur[paille_loser])
+
+
+
+        
