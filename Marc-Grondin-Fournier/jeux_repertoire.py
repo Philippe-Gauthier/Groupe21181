@@ -38,36 +38,43 @@ def pile_face():
         choix=input(jeux_message.pile_face_bienvenu())
         if(choix=="P"):choix=0
         elif(choix=="F"):choix=1
-# pile ou face lancé        
+        # pile ou face lancé        
         result=random.randint(0,1)
-# message gagnant ou perdant selon le choix
+        # message gagnant ou perdant selon le choix
         if(choix==result):jeux_message.pile_face_win(choix)
         else:jeux_message.pile_face_lose(choix)
 
 def courte_paille():
     exit=""
     while exit != "Q":
+        #choix du nb de joueur
         choix=jeux_message.courte_paille_bienvenu()
         total=int(choix)
         total-=1
+        joueur=[1]
 
-        joueur=[]
+        #creation d'une liste de joueurs
         for nb_joueur in range(0,total):
             new_joueur=[nb_joueur]
             joueur.extend(new_joueur)
 
+        #nombre attribué à chaque joueur
         for nb_joueur in range(len(joueur)):
-            joueur[nb_joueur] +=nb_joueur
-        
-        choix=jeux_message.courte_paille_select(total)       
+            joueur[nb_joueur] =nb_joueur
+
+        #choix de la paille
+        choix=jeux_message.courte_paille_select(total)
+
+        #creation de la plus courte paille      
         paille_loser=random.randint(1,total)
 
+        #début tirage
         for k in range(len(joueur)):
             if(joueur[k]==choix-1):
                 exit=jeux_message.courte_paille_user(k)                
             else:             
                 exit=jeux_message.courte_paille_next(k)                    
-
+        #conclusion
         if(choix==paille_loser):
             exit=jeux_message.courte_paille_loser()
         else:
