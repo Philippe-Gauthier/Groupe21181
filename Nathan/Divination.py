@@ -4,6 +4,8 @@ import time
 
 #definition des variables
 
+regles_instructions = "placeholder instructions (Au moment de choisir, entrez 0 si vous voulez retourner au début de la journée)"
+
 choix_retour = "retour au début de la journée..."
 choix_fail = "Cela ne fesait pas partie des choix, réessayez"
 
@@ -75,12 +77,16 @@ def level_extractor(niveau_selectionne):
 
 #module de présentation des choix
 def presentation_choix(situation0, choix_1, choix_2, choix_3):
-    print("(A tout moment, entrez 0 pour retourner au début de la journée)")
-    print(situation0)
-    print(choix_1)
-    print(choix_2)
-    print(choix_3)
-    reponse = int(input("quel est votre choix? "))
+    time.sleep(0.5)
+    print(f"{situation0}\n")
+    time.sleep(1.5)
+    print(f"1: {choix_1}\n")
+    time.sleep(0.5)
+    print(f"2: {choix_2}\n")
+    time.sleep(0.5)
+    print(f"3: {choix_3}\n")
+    time.sleep(0.5)
+    reponse = int(input("Quel est votre choix? "))
     return reponse
 
 
@@ -134,6 +140,30 @@ def loop_niveau(input_niveau):
 
 
 #début du code du jeu (i have to nest everything under one single if statement)
+
+
+print(regles_instructions)
+time.sleep(1.5)
+while True:
+    start_confirmation = input("Pret a jouer? (y/n) ")
+    if start_confirmation == "y":
+        print("Alors c'est parti!")
+        time.sleep(0.5)
+        print(f"\r.", end="")
+        time.sleep(0.7)
+        print(f"\r..", end="")
+        time.sleep(0.9)
+        print(f"\r...", end="")
+        time.sleep(1.2)
+        print("\n")
+        break
+    elif start_confirmation == "n":
+        print("Ah bon, au revoir alors")
+        time.sleep(1.5)
+    else:
+        print("Bon.. ca commence bien la journée ca...")
+        time.sleep(1.5)
+        
 
 niveau = loop_niveau(lvl1)
 
