@@ -50,7 +50,7 @@ def courte_paille():
         choix=jeux_message.courte_paille_bienvenu()
         total=int(choix)
         joueur=[]
-        for nb_joueur in range(0,total):
+        for nb_joueur in range(0,total+1):
             new_joueur=[nb_joueur]
             joueur.extend(new_joueur)
 
@@ -62,7 +62,7 @@ def courte_paille():
 
         for k in range(len(joueur)):
             if(joueur[k]==choix):
-                exit=jeux_message.courte_paille_user()                
+                exit=jeux_message.courte_paille_user(k)                
             else:             
                 exit=jeux_message.courte_paille_next(k)                    
 
