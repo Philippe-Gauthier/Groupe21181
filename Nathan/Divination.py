@@ -7,7 +7,7 @@ import time
 regles_instructions = "placeholder instructions (Au moment de choisir, entrez 0 si vous voulez retourner au début de la journée)"
 
 choix_retour = "retour au début de la journée..."
-choix_fail = "Cela ne fesait pas partie des choix, réessayez"
+choix_fail = "Cela ne faisait pas partie des choix, réessayez"
 
 
 
@@ -65,6 +65,30 @@ lvl1 = [text1, option1_1, option1_2, option1_3]
 
 
 #definition des fonctions du jeu
+
+#fonction pour demander au jouer s'il est pret a commencer le jeu
+def start_game():
+    while True:
+        start_confirmation = input("Pret a jouer? (y/n) ")
+        if start_confirmation == "y":
+            print("Alors c'est parti!")
+            time.sleep(0.5)
+            print(f"\r.", end="")
+            time.sleep(0.7)
+            print(f"\r..", end="")
+            time.sleep(0.9)
+            print(f"\r...", end="")
+            time.sleep(1.2)
+            print("\n")
+            break
+        elif start_confirmation == "n":
+            print("Ah bon, au revoir alors")
+            time.sleep(1.5)
+        else:
+            print("Bon.. ca commence bien la journée ca...")
+            time.sleep(1.5)
+
+
 
 #module d'extraction d'information de niveau
 def level_extractor(niveau_selectionne):
@@ -143,27 +167,10 @@ def loop_niveau(input_niveau):
 
 
 print(regles_instructions)
+
 time.sleep(1.5)
-while True:
-    start_confirmation = input("Pret a jouer? (y/n) ")
-    if start_confirmation == "y":
-        print("Alors c'est parti!")
-        time.sleep(0.5)
-        print(f"\r.", end="")
-        time.sleep(0.7)
-        print(f"\r..", end="")
-        time.sleep(0.9)
-        print(f"\r...", end="")
-        time.sleep(1.2)
-        print("\n")
-        break
-    elif start_confirmation == "n":
-        print("Ah bon, au revoir alors")
-        time.sleep(1.5)
-    else:
-        print("Bon.. ca commence bien la journée ca...")
-        time.sleep(1.5)
-        
+
+start_game()
 
 niveau = loop_niveau(lvl1)
 
