@@ -49,15 +49,16 @@ def courte_paille():
     while exit != "Q":
         choix=jeux_message.courte_paille_bienvenu()
         total=int(choix)
-        joueur=1
-        for nb_joueur in range(1,total):
-
+        joueur=[]
+        for nb_joueur in joueur:
             joueur[nb_joueur]=nb_joueur
-
+        for nb_joueur in range(len(joueur)):
+            joueur[nb_joueur] =nb_joueur
+        
         choix=jeux_message.courte_paille_select(total)       
         paille_loser=random.randint(1,total)
 
-        for k in total+1:
+        for k in range(len(joueur)):
             if(joueur[k]==choix):
                 exit=jeux_message.courte_paille_user()                
             else:             
