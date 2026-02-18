@@ -50,15 +50,18 @@ Question_3_choix_2 ="FLAMENGO 35 000€/semaine pour 3 ans - Rôle  : Titulaire 
 Question_3_choix_3 ="SPORTING LISBONNE 25 000€/semaine pour 3 ans - Rôle : Titulaire assuré  \n \
     L'académie qui a formé Ronaldo. Salaire modeste, mais tu seras titulaire dès le début. Temps de jeu maximal pour te développer."
 Question_3_choix_4 ="REAL MADRID 100 000€/semaine pour 3 ans - Rôle : Réserviste Le géant blanc. \n \
-    Santiago Bernabéu, 80 000 fans, salaire de star. Mais tu seras réserviste avec peu de temps de jeu au début. La concurrence est féroce."
+    Santiago Bernabéu, 80 000 fans, salaire de star. Mais tu seras réserviste avec peu de temps de jeu au début. \n \
+    La concurrence est féroce."
 Question_3_choix_5 ="VILLARREAL 75 000€/semaine pour 3 ans - Rôle : Titulaire assuré. \n \
     Excellent salaire et statut de titulaire garanti. Développement optimal et confiance du club dès le premier jour."
 Question_3_choix_6 ="ASTON VILLA 50 000€/semaine pour 3 ans - Rôle : Titulaire Premier League.\n \
       Salaire correct, statut de titulaire. Exposition mondiale immédiate et compétition intense chaque semaine."
 Question_3_choix_7 ="MANCHESTER UNITED 75 000€/semaine  pour 3 ans - Rôle : Remplaçant\n \
-      Old Trafford. Excellent salaire, club mythique de Premier League. Tu seras remplaçant avec des opportunités régulières de prouver ta valeur."
+      Old Trafford. Excellent salaire, club mythique de Premier League. Tu seras remplaçant avec des \n \
+    opportunités régulières de prouver ta valeur."
 Question_3_choix_8 ="BAYERN MUNICH 90 000€/semaine pour 3 ans - Rôle : Remplaçant. \n \
-     Allianz Arena, excellence allemande, domination en Bundesliga. Très bon salaire mais tu seras remplaçant. Formation rigoureuse et professionnalisme absolu."
+     Allianz Arena, excellence allemande, domination en Bundesliga. Très bon salaire mais tu seras remplaçant. \n \
+     Formation rigoureuse et professionnalisme absolu."
 
 
 
@@ -78,8 +81,9 @@ contexte_flamengo ="Star de l'équipe,  buts, adoré au Maracanã.Ton agent déb
 Question_4_choix_3 ="Rester à Flamengo - Continuer à dominer au Brésil, gloire locale assurée"
 Question_4_choix_4 ="FC Porto - 18M€ - 55k€/semaine, Ligue des Champions, club formateur, titulaire probable"
 
-contexte_sporting = "Tu es incroyable , 8 buts en 18 matchs.Ton téléphone explose. Ton agent est excité : 1 grand club veut te prendre en prêt maintenant !\n \
-    Le Sporting ne veut pas te vendre, mais ils ne peuvent pas refuser certaines offres."
+contexte_sporting = "Tu es incroyable , 8 buts en 18 matchs.Ton téléphone explose. Ton agent est excité : \n \
+1 grand club veut te prendre en prêt maintenant ! Le Sporting ne veut pas te vendre, \n \
+mais ils ne peuvent pas refuser certaines offres."
 Question_4_choix_5 ="Rester au Sporting - Continuer ton excellente progression, stabilité"
 Question_4_choix_6 ="Naples prêt - 30M€ - Serie A, 45k€/semaine, titulaire probable, style de jeu technique"
 
@@ -100,8 +104,8 @@ Question_4_choix_11 ="Tu changes de poste"
 Question_4_choix_12 ="Tu garde ton poste et tu es remplaçant"
 
 contexte_man_Utd = "Tu as joué 12 matchs depuis la blessure du titulaire, performances correctes Le coach te convoque.\n \
-    Le titulaire revient le mois prochain. Je suis désolé de t'annoncer ceci, mais tu n'es plus dans les plans de l'entraineur. \n \
-    On va te vendre il y a deux équipes intéresser en toi. On te laisse le choix de choisir laquelle tu veux "
+    Le titulaire revient le mois prochain. Je suis désolé de t'annoncer ceci, mais tu n'es plus dans les plans de  \n \
+    l'entraineur.On va te vendre il y a deux équipes intéresser en toi. On te laisse le choix de choisir laquelle tu veux "
 Question_4_choix_13 ="Newcastle - Premier League, titulaire assuré, projet ambitieux"
 Question_4_choix_14 ="Atlético Madrid - 25M€ - 80k€/semaine, La Liga, remplaçant mais gros club"
 
@@ -144,8 +148,8 @@ contexte_Seville ="Les premiers mois sont difficiles. Le niveau est élevé, tu 
 Question_5_choix_11 ="Ils veulent te prêter pour que tu reprennes confiance"
 Question_5_choix_12 ="Tu restes remplaçant ici."
 
-contexte_même_poste ="Tu ne joues plus vraiment, quand tu rentres sur le jeu tu ne fais pas vraiment la différence que tu voudrais et que l'entraineur voudrait.\n \
-    Avec les matchs qui passe tu joues de moins en moins"
+contexte_même_poste ="Tu ne joues plus vraiment, quand tu rentres sur le jeu tu ne fais pas vraiment la différence que tu voudrais \n \
+    et que l'entraineur voudrait.Avec les matchs qui passe tu joues de moins en moins"
 Question_5_choix_13="Il t'envoie en prêt à Everton"
 Question_5_choix_14="Tu reste remplaçant en espérant que ton temps de jeu augmente"
 
@@ -197,25 +201,26 @@ Question_5_choix_31 ="Tu tire à gauche très fort "
 Question_5_choix_32 ="Tu tire de panenka "
 
 # Les résulats final de chaque choix
-Resultat_final_porto_panenka = "Tu poses le ballon calmement. Tu regardes le gardien dans les yeux. Ta décision est déjà prise. Tu prends ton élan lentement. \n \
-    Le gardien plonge à droite... et tu soulèves délicatement le ballon au centre. \n \
+Resultat_final_porto_panenka = "Tu poses le ballon calmement. Tu regardes le gardien dans les yeux. Ta décision est déjà prise.\n \
+      Tu prends ton élan lentement. Le gardien plonge à droite... et tu soulèves délicatement le ballon au centre. \n \
     Il retombe doucement au fond des filets.Silence. Puis le stade explose. Tes coéquipiers te sautent dessus."
-Resultat_final_porto_gauche = "Tu poses le ballon, tu recules. Le stade est silencieux. Tu fonces et frappes de toutes tes forces vers la gauche. \n \
-    Le gardien avait deviné. Il plonge et repousse le ballon sur le poteau. Vous perdezTu restes là, tu regardes dans le vide,  \n \
+Resultat_final_porto_gauche = "Tu poses le ballon, tu recules. Le stade est silencieux. Tu fonces et frappes de toutes tes forces vers\n \
+      la gauche.Le gardien avait deviné. Il plonge et repousse le ballon sur le poteau. Vous perdezTu restes là, tu regardes dans le vide,\n \
     tu n'en reviens pas. Tu restes comme ça longtemps que maintenant on te surnomme l'homme qui est mort debout"
 
 Resultat_final_flamengo_leverkusen = "Une blessure t'a brisé dans ton élan. Tu as mis deux ans à retrouver ton niveau. \n \
     Carrière correcte mais loin de ce que tu aurais pu accomplir."
 Resultat_final_flamengo_marseille ="En général tu as eu une bonne carrière. Tu es apprécié par les fans."
 
-Resultat_final_benfica_chirurgie = "Tu signes les papiers. La rééducation est longue et douloureuse. Mais six mois plus tard, tu reviens plus fort que jamais.\n \
-    Le coach sourit. Ta place t'attendait."
-Resultat_final_benfica_médication = ": Les anti-douleurs masquent tout. Tu joues, mais ton corps résiste. Trois matchs plus tard, ton genou lâche sur un simple appui.\n \
-    Le médecin soupire. Tu aurais dû opérer. Maintenant c'est 12 mois."
+Resultat_final_benfica_chirurgie = "Tu signes les papiers. La rééducation est longue et douloureuse. Mais six mois plus tard,\n \
+      tu reviens plus fort que jamais. Le coach sourit. Ta place t'attendait."
+Resultat_final_benfica_médication = ": Les anti-douleurs masquent tout. Tu joues, mais ton corps résiste. Trois matchs plus tard, \n \
+    ton genou lâche sur un simple appui.Le médecin soupire. Tu aurais dû opérer. Maintenant c'est 12 mois."
 
-Resultat_final_palmeiras_rester = "Les dirigeants te propose de rester le reste de ta carrière à Palmeras et avoir ton avis dans plusieurs choix.\n \
-    Le président te tend la main. On veut que tu finisses ta carrière ici. Tu seras capitaine, et ton avis comptera dans nos décisions.\n \
-    Tu deviens l'âme du club. Les supporters scandent ton nom à chaque match. À ta retraite, Palmeiras retire ton numéro de maillot."
+Resultat_final_palmeiras_rester = "Les dirigeants te propose de rester le reste de ta carrière à Palmeras et avoir ton avis \n \
+ dans plusieurs choix. Le président te tend la main. On veut que tu finisses ta carrière ici. Tu seras capitaine,\n \
+et ton avis comptera dans nos décisions.Tu deviens l'âme du club. Les supporters scandent ton nom à chaque match. À ta retraite, \n \
+Palmeiras retire ton numéro de maillot."
 
 Resultat_final_palmeiras_lyon = "L'Europe t'appelle. Tu signes à Lyon, titulaire assuré. Les premiers mois sont bons, tu marques régulièrement.\n \
     Mais un an plus tard, Lyon rachète un attaquant étranger pour 40M€ et tu perds ta place.Tu te retrouves sur le banc, loin de chez toi, \n \
@@ -233,9 +238,10 @@ Resultat_final_newcastle_real = "Real Madrid. Titulaire assuré. C'est le rêve 
 Resultat_final_atletico_ligue_b= ": Tu acceptes. Le niveau est moins élevé, le stade moins grand, le salaire bien plus modeste. Mais tu joues. \n \
     Tu retrouves le plaisir du football, ta confiance revient semaine après semaine.Deux ans plus tard, un club de première division te repère et te signe."
 
-Resultat_final_atletico_entraineur = "Tu ranges tes crampons et tu t'inscris en sciences du sport. Dix ans plus tard, tu es l'un des meilleurs entraîneurs du monde. \n \
-    Real Madrid, équipe nationale, Ligue des Champions. Les journalistes adorent te couvrir, mais savent que tu n'as pas ta langue dans ta poche.  \n \
-    Parfois tu t'emportes en conférence de presse, parfois tu rentres dans les arbitres, parfois tu recales un joueur publiquement sans hésiter.Les gens t'appellent  The Chosen One. \n \
+Resultat_final_atletico_entraineur = "Tu ranges tes crampons et tu t'inscris en sciences du sport. Dix ans plus tard, \n \
+    tu es l'un des meilleurs entraîneurs du monde.Real Madrid, équipe nationale, Ligue des Champions. Les journalistes adorent te couvrir,\n \
+     mais savent que tu n'as pas ta langue dans ta poche.  \n \Parfois tu t'emportes en conférence de presse, parfois tu rentres dans les arbitres,\n \
+     parfois tu recales un joueur publiquement sans hésiter.Les gens t'appellent  The Chosen One. \n \
      Pas seulement pour tes résultats, mais parce que tu as le caractère d'un champion."
 
 Resultat_final_dortmund_équipe_b = "Tu acceptes sans trop aimer l'idée. L'équipe B, c'est un niveau en dessous, moins de pression, mais moins de gloire aussi. \n \
@@ -246,9 +252,9 @@ Resultat_final_dortmund_équipe_b = "Tu acceptes sans trop aimer l'idée. L'équ
 Resultat_final_dortmund_plan_b =": Deux mois sans club. Tu t'entraînes seul le matin pour rester en forme. Puis un petit club de troisième division t'appelle.\n \
     Pas glamour, mais c'est une porte.Tu signes. Parfois une carrière repart de zéro."
 
-Resultat_final_bayern_mensonge = "Tu lui mensTu le regardes dans les yeux et tu dis. Je suis prêt coach. Il sourit et t'aligne titulaire. Dès la 20e minute, sur un simple appui, ton genou lâche.\n \
-    Tu t'effondres sur la pelouse. Le stade se tait. Tu sors sur civière, les larmes aux yeux.Le Bayern perd 1-0. Pas de Bundesliga. Dans le vestiaire, le coach te regarde, déçu.\n \
-    Pourquoi tu ne m'as pas dit la vérité ? Tu n'as pas de réponse."
+Resultat_final_bayern_mensonge = "Tu lui mensTu le regardes dans les yeux et tu dis. Je suis prêt coach. Il sourit et t'aligne titulaire. Dès la 20e minute,\n \
+    sur un simple appui, ton genou lâche.  Tu t'effondres sur la pelouse. Le stade se tait. Tu sors sur civière, les larmes aux yeux.Le Bayern perd 1-0. \n \
+    Pas de Bundesliga. Dans le vestiaire, le coach te regarde, déçu.Pourquoi tu ne m'as pas dit la vérité ? Tu n'as pas de réponse."
 
 
 Resultat_final_bayern_verite = "Tu baisses les yeux : Coach, j'ai vraiment mal. Je ne peux pas vous donner mon 100%. Il hoche la tête : \n \
@@ -275,8 +281,8 @@ Resultat_final_seville_remplacant = "Tu ne joues pas vraiment. Quand tu joues c'
 Resultat_final_villarreal_tire = "Tu ne réfléchis plus. Tu te fais confiance. Tu armes ton pied droit, tu frappes sec, précis, puissant.\n \
     Le ballon file entre le gant du gardien et le poteau.BUT ! Le stade rugit. Tes coéquipiers te sautent dessus."
 
-Resultat_final_villarreal_passe = "Tu fais une passe parfaite, tranchante, millimétrée. Mais ton coéquipier manque complètement sa frappe. Le stade soupire… et toi, tu le sais au fond. \n \
-    tu aurais dû tirer, tu n'aurais jamais dû douter de ton talent."
+Resultat_final_villarreal_passe = "Tu fais une passe parfaite, tranchante, millimétrée. Mais ton coéquipier manque complètement sa frappe.\n \
+    Le stade soupire… et toi, tu le sais au fond. Tu aurais dû tirer, tu n'aurais jamais dû douter de ton talent."
 
 Resulat_final_naples_sporting ="Tu regardes le contrat… puis tu le refermes doucement.Tu prends l'avion pour rentrer à Lisbonne. \n \
     Dès ton arrivée, le Sporting t'accueille comme un fils qui revient à la maison. Le stade te reconnaît, le staff te serre dans ses bras. \n \
@@ -293,7 +299,7 @@ Resultat_final_sporting_tacle_propore ="Tu sprintes comme jamais, chaque pas ré
 
 Resultat_final_sporting_tacle_assasin ="Tu comprends que tu ne le rattraperas jamais. Alors tu te lances tu lui fais un tacle assassin, violent, total,\n \
     celui qu'on fait quand la saison entière tient sur une seule action. L'attaquant s'écroule, probablement touché pour un bon moment. \n \
-    Le rouge sort immédiatement. Mais le stade explose. Les fans hurlent ton nom, célébrant ton courage et ton sacrifice. Tu es expulsé… mais grâce à toi, l'équipe tient, se bat,\n \n \
+    Le rouge sort immédiatement. Mais le stade explose. Les fans hurlent ton nom, célébrant ton courage et ton sacrifice. Tu es expulsé… mais grâce à toi, l'équipe tient, se bat,\n \
     et finit par gagner la finale."
 
 Resultat_final_getafe_tire = "Tu poses le ballon… puis tu recules, exactement comme ton idole, Cristiano Ronaldo. Large écart des jambes, souffle court, regard glacé.\n \
