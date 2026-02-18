@@ -1,5 +1,5 @@
 """
-Histoire intéractif
+Histoire intéractive
 Auteur: Joseph Boka
 """
 
@@ -14,7 +14,7 @@ def demander_choix(choix_1,choix_2, question):
     print("Joseph est un étudiant en electronique programmable")
     print("joseph a pour ambition de reussir sa session")
 
-    print(question)
+    print("\n" + question)
     choix = int(input(f"Vous pouvez entrez votre choix svp ({choix_1} ou {choix_2})"))
     
     print("-" * 50)
@@ -84,4 +84,4 @@ else:
      print("Joseph echoue son examen")
 print("-" * 50)
 
-#Fin du programme
+# Fin du programme
