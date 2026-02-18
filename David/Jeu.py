@@ -71,7 +71,7 @@ print("À domicile: stade Allianz Arena - Jour 1 de la Bundesliga.Tu entres à l
 """
 # Les 2 premier sont si tu as choisis Palmeiras,après Flamengo, Sporting, Real, Villarreal, Aston, Man utd et Bayern
 Question_4 = "Les tranferts d'hivers sont arrivés. Ton club va te proposer 2 choix. À toi de choisir."
-contexte_palmeiras ="Tu es un itulaire indiscutable, 16 buts, idole des supporters.\
+contexte_palmeiras ="Tu es un titulaire indiscutable, 16 buts, idole des supporters.\
     Le président te parle franchement: Tu es notre joyau. Mais l'Europe t'appelle. Benfica veut te recruter. C'est à toi de décider."
 Question_4_choix_1 ="Rester à Palmeiras - Héros du club, confort, mais tu retardes ton passage en Europe"
 Question_4_choix_2 ="Benfica - 12M€ - 40k€/semaine, Ligue des Champions, tremplin européen, titulaire assuré"
@@ -165,7 +165,7 @@ contexte_bayern_2 ="Tu joues de plus en plus et tu joues très bien, mais tu te 
 Question_5_choix_17 ="Tu lui ment et tu lui dis que tu te sens bien et tu peux jouer"
 Question_5_choix_18 ="Tu lui dit la vérité et tu lui dis que tu as vraiment mal et que tu ne peux pas jouer."
 
-conexte_durtmund ="Très mauvais choix, \
+contexte_durtmund ="Très mauvais choix, \
     tu ne joues plus les dirigeants t'envoie en pour jouer avec l'équipe B ou il rompe ton contrat "
 Question_5_choix_19 ="Tu joue pour l'équipe B"
 Question_5_choix_20 ="Tu ne joue plus pour eux et tu essaie de trouver un plan B"
@@ -198,6 +198,7 @@ contexte_FC_porto = "Tu joues très bien. C'est la final de la champions League 
     Si tu marques vous gagnez et si tu ne marques pas peut-être que vous perdez"
 Question_5_choix_31 ="Tu tire à gauche très fort "
 Question_5_choix_32 ="Tu tire de panenka "
+
 # Les résulats final de chaque choix
 Resultat_final_porto_panenka = "Tu poses le ballon calmement. Tu regardes le gardien dans les yeux. Ta décision est déjà prise. Tu prends ton élan lentement. \
     Le gardien plonge à droite... et tu soulèves délicatement le ballon au centre. \
@@ -284,7 +285,7 @@ Resulat_final_naples_sporting ="Tu regardes le contrat… puis tu le refermes do
     Dès ton arrivée, le Sporting t'accueille comme un fils qui revient à la maison. Le stade te reconnaît, le staff te serre dans ses bras. \
     Tu sais que tu as fait le choix du cœur. Ici, tout a commencé — et tu veux encore écrire ton nom dans leur histoire."
 
-Resultat_final_naple_rester = "Le directeur sportif te tend le contrat. Tu poses ton stylo, ton nom brille en bas de la page. Le lendemain, tu arrives à Naples.\
+Resultat_final_naples_rester = "Le directeur sportif te tend le contrat. Tu poses ton stylo, ton nom brille en bas de la page. Le lendemain, tu arrives à Naples.\
       soleil brûlant, supporters en feu, chants dans les rues. Tu entres dans ton nouveau vestiaire… ton maillot flotte déjà sur ton casier. \
     Tu souris. Une nouvelle histoire commence."
 
@@ -338,16 +339,41 @@ if choix == 1:
             choix = (int(input(formater_question(Question_4, Question_4_choix_1, Question_4_choix_2, contexte_palmeiras))))
             if choix == 1:
                  choix = (int(input(formater_question(Question_5, Question_5_choix_25, Question_5_choix_26, contexte_palmeiras_2 ))))
+                 if choix == 1:
+                      print(Resultat_final_palmeiras_rester)
+                 elif choix == 2:
+                      print(Resultat_final_palmeiras_lyon)
+                 else:
+                      print("erreur veuillez choisir un choix")
             elif choix == 2:
                  choix = (int(input(formater_question(Question_5, Question_5_choix_27, Question_5_choix_28, contexte_benfica ))))
+                 if choix == 1:
+                      print(Resultat_final_benfica_chirurgie)
+                 elif choix == 2:
+                      print(Resultat_final_benfica_médication)
+                 else:
+                       print("erreur veuillez choisir un choix")
+                      
             else : 
                 print("erreur veuillez choisir un choix")
         elif choix == 2 :
             choix = (int(input(formater_question(Question_4, Question_4_choix_3, Question_4_choix_4, contexte_flamengo)))) 
             if choix == 1:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_29, Question_5_choix_30, contexte_flamengo_2 ))))
+                    if choix == 1:
+                         print(Resultat_final_flamengo_leverkusen)
+                    elif choix == 2:
+                         print(Resultat_final_flamengo_marseille)
+                    else:
+                          print("erreur veuillez choisir un choix")
             elif choix == 2:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_31, Question_5_choix_32, contexte_FC_porto ))))
+                    if choix == 1:
+                         print(Resultat_final_porto_gauche)
+                    elif choix == 2:
+                         print(Resultat_final_porto_panenka)
+                    else:
+                          print("erreur veuillez choisir un choix")
             else:
                     print("erreur veuillez choisir un choix")
                     
@@ -360,16 +386,40 @@ if choix == 1:
             choix = (int(input(formater_question(Question_4, Question_4_choix_5, Question_4_choix_6, contexte_sporting))))
             if choix == 1:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_5, Question_5_choix_6, contexte_sporting_2 ))))
+                    if choix == 1:
+                         print(Resultat_final_sporting_tacle_propore)
+                    elif choix == 2:
+                         print(Resultat_final_sporting_tacle_assasin)
+                    else:
+                          print("erreur veuillez choisir un choix")
             elif choix == 2:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_7, Question_5_choix_8, contexte_Naple ))))
+                    if choix == 1:
+                         print(Resultat_final_naples_rester)
+                    elif choix == 2:
+                         print(Resulat_final_naples_sporting)
+                    else:
+                          print("erreur veuillez choisir un choix")
             else:
                  print("erreur veuillez choisir un choix")
         elif choix == 2 :
                 choix = (int(input(formater_question(Question_4, Question_4_choix_7, Question_4_choix_8, contexte_real)))) 
                 if choix == 1:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_1, Question_5_choix_2, Contexte_real_2 ))))
+                    if choix == 1:
+                         print(Resulat_final_real_reste)
+                    elif choix == 2:
+                         print(Resultat_final_real_rompre_contrat)
+                    else:
+                          print("erreur veuillez choisir un choix")
                 elif choix == 2:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_3, Question_5_choix_4, contexte_getafe ))))
+                    if choix == 1:
+                         print(Resultat_final_getafe_tire)
+                    elif choix == 2:
+                         print(Resultat_final_getafe_centre)
+                    else:
+                          print("erreur veuillez choisir un choix")
                 else:
                  print("erreur veuillez choisir un choix")
         else : 
@@ -386,16 +436,41 @@ elif choix == 2:
             choix = (int(input(formater_question(Question_4, Question_4_choix_9, Question_4_choix_10, contexte_villareal))))
             if choix == 1:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_9, Question_5_choix_10, contexte_villareal_2 ))))
+                    if choix == 1:
+                         print(Resultat_final_villarreal_tire)
+                    elif choix ==2:
+                         print(Resultat_final_villarreal_passe)
+                    else:
+                          print("erreur veuillez choisir un choix")
             elif choix == 2:
                     choix = (int(input(formater_question(Question_5, Question_5_choix_11, Question_5_choix_12, contexte_Seville ))))
+                    if choix ==1:
+                         print(Resultat_final_seville_pret)
+                    elif choix == 2:
+                         print(Resultat_final_seville_remplacant)
+                    else:
+                          print("erreur veuillez choisir un choix")
+                         
             else:
                  print("erreur veuillez choisir un choix")
         elif choix == 2 :    
                 choix = (int(input(formater_question(Question_4, Question_4_choix_11, Question_4_choix_12, contexte_aston))))
                 if choix == 1:
-                    choix = (int(input(formater_question(Question_5, Question_5_choix_13, Question_5_choix_14, contexte_poste_différent ))))
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_15, Question_5_choix_16, contexte_poste_différent ))))
+                    if choix == 1:
+                         print(Resultat_final_aston_poste_diff_coéquipier_tire)
+                    elif choix ==2:
+                         print(Resultat_final_aston_poste_diff_tu_tire)
+                    else:
+                          print("erreur veuillez choisir un choix")
                 elif choix == 2:
-                    choix = (int(input(formater_question(Question_5, Question_5_choix_15, Question_5_choix_16, contexte_même_poste ))))
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_13, Question_5_choix_14, contexte_même_poste ))))
+                    if choix == 1:
+                         print(Resultat_final_aston_meme_poste_everton)
+                    elif choix == 2:
+                         print(Resultat_final_aston_meme_poste_remplacant)
+                    else:
+                          print("erreur veuillez choisir un choix")
                 else:
                  print("erreur veuillez choisir un choix") 
         else : 
@@ -407,11 +482,44 @@ elif choix == 2:
              choix = (int(input(formater_question(Question_4, Question_4_choix_13, Question_4_choix_14, contexte_man_Utd))))
              if choix == 1:
                   choix = (int(input(formater_question(Question_5, Question_5_choix_23, Question_5_choix_24, contexte_newcastle ))))
+                  if choix == 1:
+                       print(Resultat_final_newcastle_rester)
+                  elif choix == 2:
+                       print(Resultat_final_newcastle_real)
+                  else:
+                        print("erreur veuillez choisir un choix")
              elif choix == 2:
-                  choix = (int(input(formater_question(Question_5, Question_5_choix_23, Question_5_choix_24, contexte_ ))))
+                  choix = (int(input(formater_question(Question_5, Question_5_choix_21, Question_5_choix_22, contexte_atletico ))))
+                  if choix == 1:
+                       print(Resultat_final_atletico_ligue_b)
+                  elif choix == 2:
+                       print(Resultat_final_atletico_entraineur)
+                  else:
+                        print("erreur veuillez choisir un choix")
+             else:
+                  print("erreur veuillez choisir un choix")
+
              
         elif choix == 2 :    
             choix = (int(input(formater_question(Question_4, Question_4_choix_15, Question_4_choix_16, contexte_bayern)))) 
+            if choix == 1:
+                 choix = (int(input(formater_question(Question_5, Question_5_choix_17, Question_5_choix_18, contexte_bayern_2 ))))
+                 if choix ==  1:
+                      print(Resultat_final_bayern_mensonge)
+                 elif choix == 2:
+                      print(Resultat_final_bayern_verite)
+                 else:
+                       print("erreur veuillez choisir un choix")
+            elif choix == 2:
+                 choix = (int(input(formater_question(Question_5, Question_5_choix_19, Question_5_choix_20, contexte_durtmund ))))
+                 if choix == 1:
+                      print(Resultat_final_dortmund_équipe_b)
+                 elif choix == 2:
+                      print(Resultat_final_dortmund_plan_b)
+                 else:
+                       print("erreur veuillez choisir un choix")
+            else:
+                 print("erreur veuillez choisir un choix")
         else : 
             print("erreur veuillez choisir un choix")
     else : 
