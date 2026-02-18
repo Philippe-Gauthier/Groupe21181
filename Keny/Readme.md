@@ -70,3 +70,30 @@ chaque choix influence l'histoire de Joseph.
 - faire des interfaces graphiques
 - Ajout des couleurs dans le terminal
 
+# Chose à venir
+- Ajouter plus de scénario
+
+# Dépendance
+- le programme n'a aucune dépendance externe
+- le programme utilise uniquement Python standard.
+
+# Requis
+Python 3.10 et plus
+terminal fonctionnel
+
+## Légal
+
+# Licence
+- Projet éducatif libre d'itulisation dans un cadre scolaire
+
+# Contribution
+- les contributions sont acceptées:
+- Ajout de question
+- Amélioration du code
+- Correction de bugs
+
+# Remerciement
+- Enseignant du cour de programmation 1 au Cegep de Sherbrooke
+- Mes collegues du groupe 21181
+- Joseph_Boka developpeur du projet
+
