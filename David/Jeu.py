@@ -332,7 +332,7 @@ Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Re
     Tu pars à la conquête d'un nouveau club où tu pourras jouer, exister, briller. \n \
     Tu quittes géant parmi les géants… pour redevenir un joueur qui compte."
 
-#Quand j ai pas de contexte je me aucun pour qu'il n'y ait pas d'erreur 
+#Quand je n'ai pas de contexte je met aucun pour qu'il n'y ait pas d'erreur 
 aucun =""
 '''
 
