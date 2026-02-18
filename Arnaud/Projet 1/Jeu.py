@@ -38,7 +38,7 @@ if choix == 2:
             choix = prochainepage(Texteprojet1.page9)
             if choix == 1:
                 choix == prochainepage(Texteprojet1.page11)
-                if choix =  
+                
             if choix == 2:
                 choix = prochainepage(Texteprojet1.page10)
 

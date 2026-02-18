@@ -210,7 +210,7 @@ Inspiré de ton expérience en téléréalité, tu décides de te présenter au 
 2 - un couteau dans l'oeil
 """
 
-page 12 = """
+page12 = """
 -un couteau dans l'oeil-
 
 Un beau matin tu ne te réveille pas.
@@ -220,6 +220,10 @@ Mauvaise Fin
 Ferme et recommence
 """
 
+page13 = """
+-un couteau au niveau du coeur-
 
+Tu te réveilles avec un couteau dans le torse et une terrible douleur au rein. A cause de l<inco 
 
+"""
 
