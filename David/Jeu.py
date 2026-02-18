@@ -6,7 +6,7 @@ Introduction = "Tu as 17 ans et ce jour est celui que tu attends depuis toujours
 devenir footballeur professionnel. Les recruteurs t'ont remarqué, les portes s'ouvrent, et ton destin est sur le point de basculer.\
 Mais avant tout, qui es-tu vraiment ?"
 
-Question_1 = "quelle est ton poste sur le terrain"  
+Question_1 = "Quelle est ton poste sur le terrain"  
 Question_1_choix_1 = "Attaquant : Tu es un finisseur né. Vitesse, instinct, sang-froid devant le but. Tu vis pour marquer et faire exploser les stades."
 Question_1_choix_2 ="Milieu de terrain : Tu es le maestro. Vision du jeu, passes décisives, contrôle du tempo. Tu orchestres chaque attaque."
 
@@ -313,56 +313,43 @@ Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Re
     Tu quittes géant parmi les géants… pour redevenir un joueur qui compte."
 
 
-print(Titre)
+# la fonction pour le formatage
+
+def formater_question(texte, choix1, choix2):
+    page = f"Vous devez répondre à la question suivante: {texte}"
+    page = page +"\n" 
+    page = page +"\n" +"vous devez choisir parmis ces choix"
+    page = page + "\n" + "1  " + choix1 + "\n" + "2  " + choix2 
+    return page 
+
+
+print(Titre) 
+
 print(Introduction)
-print(Question_1)
-choix = int(input(f"1.{Question_1_choix_1} ou 2.{Question_1_choix_2}"))
+
+choix = int(input(formater_question(Question_1, Question_1_choix_1,Question_1_choix_2)))
+
 if choix == 1:
-    print(f"{Question_2} Tu préfère la {Question_2_choix_1} ou la {Question_2_choix_2}")
+    print(int(input(formater_question(Question_2, Question_2_choix_1,Question_2_choix_2))))
+    if choix == 1:
+        print(int(input(formater_question(Question_3, Question_3_choix_1, Question_3_choix_2))))
+    elif choix == 2:
+        print(int(input(formater_question(Question_3, Question_3_choix_3, Question_3_choix_4))))
+    else : 
+        print("erreur veuillez choisir un choix")
+
 
 elif choix == 2:
-    print(Question_2)
+    print(int(input(formater_question(Question_2, Question_2_choix_3,Question_2_choix_4))))
+    if choix == 1:
+        print(int(input(formater_question(Question_3, Question_3_choix_5, Question_3_choix_6))))
+    elif choix == 2:
+        print(int(input(formater_question(Question_3, Question_3_choix_7, Question_3_choix_8))))
+    else : 
+        print("erreur veuillez choisir un choix")
 
-else:
+else :
     print("erreur veuillez choisir un choix")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-def formater_question(Titre, Introduction):
-    page = f"Vous devez répondre à la question suivante:{Titre}"
-    page = page +"/n" +"____________________________________"
-    page = page +"/n" +"vous devez choisir parmis ces choix"
-    page = page +Introduction
-    return page 
-
-choix = input(formater_question(Choix_1, Choix_1_rep_1, Choix_1_rep_2))
-"""
