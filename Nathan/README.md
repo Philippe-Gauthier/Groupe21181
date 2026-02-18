@@ -45,7 +45,7 @@ minimum 40 choix pour l'arbre
 "Vous êtes la grande Yisma, voyante reconnue a travers le monde (le monde étant Longueil), mais ce matin vous avez échappé votre boule de crystal en vous faisant un bol de céréales, vous devez donc inventer de toutes pieces le futur de vos clients de la journée, en attente de voir le réparateur de boules de crystal (qui est occupé pour les 3 prochaines semaines, son service est très en demande, les boules sont devenues glissantes de nos jours)."
 
 lvl1:
-Vous arrivez a votre tente au milieu d'un petit centre d'achat, juste a coté du dollarama, pour attirer toutes les superstitieuses qui magasinnent là bas. Vous avez une petite file devant votre tente, une couple de personnes et un chien (?).
+Vous arrivez a votre tente au milieu d'un petit centre d'achat, juste a coté du dollarama, pour attirer toutes les superstitieuses qui magasinnent là bas. Vous avez une petite file devant votre tente, deux personnes et un chien (?).
 
 Lequel faites vous entrer en premier?
 
@@ -95,7 +95,14 @@ Devin:
       - bad ending: vous lui dites que les apparences sont trompeuse, et qu'il finira par se divorcer, et de tomber dans l'alcoolisme. Il vous regarde d'un regard vide, et puis il vous remercie de l'avoir prévenu. Il part apres avoir payé pour votre service, vous vous sentez mal de détruire les espoirs d,un si jeune homme mais vous vous dites que c'est pour le plus grand bien (pouvoir vous payer votre abonnement amazon prime pour la livraison gratuite).
     - pas d'amour: Vous lui dites qu'il n'aura tristement pas la chance de vivre l'amour dans sa vie, mais c'est l'opportunité pour lui de se consacrer a d'autres passions, telles que le pickle ball professionnel. Vous voyez Devin s'affaisser un peu, puis il se leve, et quitte. Vous croyez entendre des pleurs venant de l'exterieur de votre tente. Vous realisez alors qu'il ne vous a pas payé, vous aviez besoin de l'argent pour payer votre spotify premium, vous tombez donc en depression nerveuse.
 
-  - Lui demander d'ou vient son nom: Vous l'interrompez et lui demandez d'ou vient son nom. Vous pensez 
+  - Lui demander d'ou vient son nom: Vous l'interrompez et lui demandez d'ou vient son nom. Vous pensiez que seuls les devins de grandes familles pouvaient s'appeller Devin, mais vous trouvez que ce jeune homme n'a vraiment pas l'air du genre "famille riche et connue avec des pouvoirs divinatoires". Vous lui demandez si:
+    - Il est devin: Il vous dit que oui il s'appelle Devin, vous le regardez dans les yeux et lui posez la question
+      - non, êtes vous devin: Il vous regarde fixemment et vous dit très lentement: "oui... je... m'appelle... Devin". Vous lui expliquez alors ce qu'est un devin, il rougit s'excuse alors de son ignorance. Il est si désemparé qu'il vous paye et quitte la tente après ses excuses. Vous regardez l'entré de votre tente et vous dites a vous memes: "les jeunes de nos jours...". Vous vous dites que vous ne voulez pas gérer ce genre de personnages aujourd'hui, et vous retournez vous couchez chez vous.
+      - my bad fam: Il accepte votre excuse, et, passant a la suite, il vous demande si vous savez s'il sera riche dans le futur
+        - #####OPTIONS HERE IF MORE NEEDED#####if not end it here somehow########
+      - (Rien dire et rouler des yeux): Il fronce les sourcils, "me prennez vous pour un idiot?", et vous répondez "oui" avec confiance. Il sort de votre tente, enragé. Vous avez perdu un client
+    - Il est riche: A la premiere mention d'argent, Il devient fou et vous saute a la gorge, et vous crie "MONEEEYYYYYYY" (vous ne parlez pas anglais donc ne savez aucunement ce que cela veut dire), vous sortez calmement votre spray au poivre et l'arrosez en plein dans les yeux, il vous lache et se met a pleurernicher et vous dire qu'il n'a jamais eu beaucoup d'argent, que ses parents avaient seulement un manoir, deux maisons, un bloc appartement, 11 roulottes et un chalet d'été a Hawai, qu'il avait toujours conduit une vieille lamborghini de 2021, et qu'il n'avait jamais été gâté de sa vie a part la fois ou ses parents lui ont donné une carte de crédit pour qu'il puisse s'acheter tout ce qu'il voulait a leur compte. Vous n'avez rien de plus a dire sur la situation. Et, de plus, en tant qu'écrivain de cette histoire je ne sais meme pas ou je veux aller avec cette branche, alors honêtement elle va finir drette la, boom, finito, allez voir les autres branches a la place.
+    - Il savait que son nom était très spécial: Il vous demande si vous le prennez pour un handicapé a le traiter de "spécial" comme ca, et quitte votre tente. Vous vous demandez ce qui rend ces jeunes si susceptibles de nos jours. Un peu découragée, vous retournez chez vous pour écouter la lutte professionelle (votre sport préféré).
 
   
 
