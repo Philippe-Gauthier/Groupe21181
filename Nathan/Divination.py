@@ -121,7 +121,7 @@ def start_game():
 
 
 
-#failstate detector
+#Fonction pour detecter la fin d'une branche
 def failstate_detect(niveau_selectionne):
     while True:
         fail_check = len(niveau_selectionne)

@@ -42,11 +42,20 @@ Pas de retour en arriere d'un seul choix, certaines chemins sont beaucoup plus c
 minimum 40 choix pour l'arbre
 
 
-Premiere option:
-Quel client prendre en premier:
-- Martine 
-- Serge
-- Devin
+"Vous êtes la grande Yisma, voyante reconnue a travers le monde (le monde étant Longueil), mais ce matin vous avez échappé votre boule de crystal en vous faisant un bol de céréales, vous devez donc inventer de toutes pieces le futur de vos clients de la journée, en attente de voir le réparateur de boules de crystal (qui est occupé pour les 3 prochaines semaines, son service est très en demande, les boules sont devenues glissantes de nos jours)."
+
+lvl1:
+Vous arrivez a votre tente au milieu d'un petit centre d'achat, juste a coté du dollarama, pour attirer toutes les superstitieuses qui magasinnent là bas. Vous avez une petite file devant votre tente, une couple de personnes et un chien (?).
+
+Lequel faites vous entrer en premier?
+
+- Martine (une habituée)
+- Devin (un nouveau)
+- Le chien (???)
+
+
+
+
 
 
 futurs par client:
@@ -58,15 +67,17 @@ Martine:
     - Malchance - lotterie (tu te fais voler le billet gagnant) -
   - Santé
 
-
-
-Serge:
-- Serge rentre dans votre tente, c'est un homme d'a peu près votre age. Il s'assoit devant vous et votre boule de crystal et vous demande si vous pouvez lui dire si le Canadien va gagner le match de ce soir contre les Bruins
-  - Oui: Serge dit "Yes! jvais parier gros dessus ce soir debord" Vous soupirez, vous savez qu'il aurait parié sur le match peu importe ce que vous auriez dit
-  - Non: Serge dit "Shit, j'ai deja parié 417 piasses sur le Canadien" Vous soupirez, Serge est clairement décu, mais il n'apprendra pas sa lecon, vous le savez, car Serge revient ici a chaque match de hockey, il ne gagne jamais ses paris, que votre boule de crystal soit brisée ou pas. Serge vous demande ensuite si vous savez si les hotdogs du Costco vont monter de prix dans les prochaines années.
-    - Oui
-    - Non
-  
+Le chien:
+- Le chien entre dans votre tente, vous êtes un peu confuse, vous lui dites de s'asseoir (vous êtes fluente en chien, mais ca fait un bail alors vous êtes un peu rouillée). Le chien s'asseoit, et il vous demande: "Wouf wouf wrouf warf waf wif rrwar wuif?"
+  - "Woo wif waf wuff wraf wouf rrr wah rwaf grraw": Vous pensez avoir bien répondu, mais le chien se met a grogner, il vous demande en jappant: "WAF WOUF WOUF WIF WRAF??"
+    - Hocher la tete: Tristement, sa chienne est infidele envers lui, vous lui dites que c'est la vérité, et qu'elle est sortie avec un berger allemand il y a deux jours. Le chien vous regarde avec un air extremement piteux, vous avez pitié de lui. Il quitte votre tente apres avoir déposé quelques biscuits en forme d'os comme paiement pour votre service. Apres toutes ces émotions vous vous dites que vous devriez retourner chez vous, vous voulez faire sur que votre berger allemand ne soit pas en train de jouer dans votre cour.
+    - Secouer la tete: Tristement, son maitre a des plans de le mettre en adoption a la SPA, vous lui dites que c'est bel et bien la vérité. Il n'arrive pas a y croire, et jure en sortant de votre tente "Wouf wouf... waf wouf wouf" ce que, si vous avez bien compris, veut dire qu'il planifie mordre son maitre a un endroit particulier, mais vous n'avez pas bien compris quel endroit exactement... Apres toutes ces émotions vous vous dites que vous devriez retourner chez vous et nourrir votre chat.
+    - Ne pas répondre: Tristement, vous venez d'apprendre au chien qu'il a la rage en phase terminale et qu'il ne lui reste pas longtemps a vivre. Le chien vous regarde d'un air démoli, il se retourne tranquilement, dépose un os par terre en guise de paiement (vous acceptez les paiements mOStercard depuis quelques mois) et quitte votre tente. Vous vous dites que vous devriez arreter de voler innutilement l'espoir a de pauvres chiens innocents et reconsidérez votre travail. Vous vous dites que allez aller postuler a la fourriere la plus proche (au moins vous allez finir leur souffrances).
+  - "rrr wouf wif wif grr wouf arw wruif awouu waf": Vous venez d'insulter sa mere, il vous regarde avec dédain, puis sors de votre tente en pissant. Vous vous dites que vous auriez du continuer vos cours de langage canin. Mais vous vous dites que le temps que vous utilisiez pour ce cours est mieux placé maintenant (vous allez au casino a la place).
+  - "wouf": Vous croyez avoir utilisé la bonne grammaire, mais vous n'êtes pas 100% sure. Le chien vous regarde d'un air satisfait, vous venez de répondre parfaitement a sa question, et puis vous comprenez qu'il vous testait. Le chien vous pose alors la question pour laquelle il était venu aujourd'hui: "wouf wuif... waf wif grr, wawaf wrouh 'MIOOWWWW', wouf wouf wah wuff woo?"
+    - L'encourager: Vous dites au chien de prendre courage, et que selon la légende, la race féline allait bientot disparaitre dans un génocide rapide et brutal perpétrée par Le Grand Chihuahua, aussi connu sous le nom de Bibine, et son armée de Huskies enragés. Le chien vous demande "wouf waf wou?" et vous lui répondez que s'il s'entraine, il aurait une bonne chance d'etre recruté dans leur armée. Le chien, une nouvelle étincelle d'espoir dans le regard, vous remercie, dépose un 20 piasses baveux dans votre main, et quitte votre tente. Vous vous demandez pourquoi vous avez inventé cette histoire, puis vous vous dites que ca ne devrait pas vous affecter long terme, tant que vous gardez votre chat, Mystique, a l'intérieur.
+    - Le rassurer: vous le rassurez, lui disant que c'est pafaitement normal pour un grand danois comme lui de se faire intimider par le chaton des voisins, et qu'il fallait simplement qu'il montre a ce chaton c'est qui le boss. Le chien, satisfait de votre service (pas tant divinatoire mais bon, c'est un chien apres tout), vous paye et quitte votre tente.
+    - Le réprimander: vous dites au chien que c'est innacceptable de tenir des propos autant diffamatoires envers les chats. Vous lui apprennez que sans votre chat vous n'auriez jamais été dans le domaine de la divination, car cest grace a une relation symbiotique avec votre chat que vous arrivez a lire le futur (pas pour rien qu'ils étaient révérés comme des dieux a l'époque Égyptienne). Le chien, incrédule, quitte la tente sans payer (C'est un chien apres tout, a quoi vous attendiez vous apres tout cela, un os ou des petites gateries?). Vous avez a peine vu le temps passer, il est maintenant midi, vous avez faim et vous vous dirigez vers le macdo pour vous commander un big mac en réfléchissant a vos choix de vie.
 
 
 
@@ -104,8 +115,12 @@ idées de futurs possibles:
 
 
 
-# Fonctions
 
-Fonction pour afficher le résultat d'un choix en page de texte (la page correspondante)
-entrée: input de choix dans le terminal
-sortie: texte dans le terminal
+# remove serge
+Serge:
+- Serge rentre dans votre tente, c'est un homme d'a peu près votre age. Il s'assoit devant vous et votre boule de crystal et vous demande si vous pouvez lui dire si le Canadien va gagner le match de ce soir contre les Bruins
+  - Oui: Serge dit "Yes! jvais parier gros dessus ce soir debord" Vous soupirez, vous savez qu'il aurait parié sur le match peu importe ce que vous auriez dit
+  - Non: Serge dit "Shit, j'ai deja parié 417 piasses sur le Canadien" Vous soupirez, Serge est clairement décu, mais il n'apprendra pas sa lecon, vous le savez, car Serge revient ici a chaque match de hockey, il ne gagne jamais ses paris, que votre boule de crystal soit brisée ou pas. Serge vous demande ensuite si vous savez si les hotdogs du Costco vont monter de prix dans les prochaines années.
+    - Oui
+    - Non
+  
