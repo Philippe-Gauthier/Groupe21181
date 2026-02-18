@@ -261,7 +261,8 @@ Resultat_final_bayern_mensonge = "Tu lui mensTu le regardes dans les yeux et tu 
 
 
 Resultat_final_bayern_verite = "Tu baisses les yeux : Coach, j'ai vraiment mal. Je ne peux pas vous donner mon 100%. Il hoche la tête : \n \
-    Merci pour ton honnêteté. Le Bayern perd quand même 1-0. Pas de Bundesliga cette année. Le vestiaire est silencieux, la déception est lourde. \n \
+    Merci pour ton honnêteté. Le Bayern perd quand même 1-0. Pas de Bundesliga cette année. Le vestiaire est silencieux, \n \
+    la déception est lourde. \n \
     Mais toi, tu te soignes correctement. Toute l'intersaison, tu travailles plus dur que jamais. Tu reviens en feu la saison suivante,\n \
     tu es le meilleur joueur du Bayern et tu les portes jusqu'au titre. Dans le vestiaire en fête, le coach lève son verre. Ce titre,\n \
      c'est grâce à toi."
@@ -276,8 +277,9 @@ Resultat_final_aston_poste_diff_tu_tire = "- tu tires le penalty et tu es le mei
 Resultat_final_aston_meme_poste_everton= "Tu deviens un bon joueur. Les fans t'aiment, mais après tu signe avec l'équipe adverse.\n \
     Liverpool. Les fans d'Everton te déteste. Il te jette des choses quand tu joues contre eux."
 
-Resultat_final_aston_meme_poste_remplacant = "Tu restes remplaçant en espérant que ton temps de jeu augmente : Au début tu ne joues pas trop. \n \
-    Après quelques saisons un nouvel entraineur arrive et tu deviens titulaire."
+Resultat_final_aston_meme_poste_remplacant = "Tu restes remplaçant en espérant que ton temps de jeu augmente :v" \
+" Au début tu ne joues pas trop. \n \
+près quelques saisons un nouvel entraineur arrive et tu deviens titulaire."
 
 Resultat_final_seville_pret = "Tu regagne confiance en toi. Tu joues de plus en plus. À la fin Seville veut te ramener,\n \
      mais tu décides de rester dans ton nouvel club."
