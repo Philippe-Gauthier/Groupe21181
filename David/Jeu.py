@@ -68,7 +68,8 @@ Question_3_choix_8 ="BAYERN MUNICH 90 000€/semaine pour 3 ans - Rôle : Rempla
 Question_4 = "Les tranferts d'hivers sont arrivés. Ton club va te proposer 2 choix.\n \
      À toi de choisir."
 contexte_palmeiras ="Tu es un titulaire indiscutable, 16 buts, idole des supporters.\n \
-    Le président te parle franchement: Tu es notre joyau. Mais l'Europe t'appelle. Benfica veut te recruter. C'est à toi de décider."
+    Le président te parle franchement: Tu es notre joyau. Mais l'Europe t'appelle. Benfica veut te recruter.\n \
+     C'est à toi de décider."
 Question_4_choix_1 ="Rester à Palmeiras - Héros du club, confort, mais tu retardes ton passage en Europe"
 Question_4_choix_2 ="Benfica - 12M€ - 40k€/semaine, Ligue des Champions, tremplin européen, titulaire assuré"
 
