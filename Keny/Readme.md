@@ -34,10 +34,39 @@ l'utilisateur doit choisir une option entre (1 ou 2)
 chaque choix influence l'histoire de Joseph.
 
 # Example
--Comment Joseph gere t'il son horaire?
+-Comment Joseph gère t'il son horaire?
 -choix_1
 -Joseph gère bien son horaire.
 -Joseph arrive a l'heure.
 
 # Sreenshot
 ![alt text](image.png)
+
+## Programmeur
+
+# Créer son environnement de developpement
+- Installer Python
+- Utiliser VS code
+- Activer l'extension Python
+
+# Lien vers ressource externe
+
+# Comment régler des problèmes
+- Si le programme plante: Vérifier les indentations
+- Si les choix ne fonctionnent pas: Verifier le "Return"
+- Si la question ne s'affiche pas: Vérifier l'appel à "demander_choix".
+
+# Versionnage
+- une seule version complète
+
+# Test
+- Tester chaque question de façon individuelle
+- Tester les intrées invalid tel que des lettres ou des chiffres autres que 1 ou 2
+
+# Problèmes connus
+- l'itulisateur peut saisir un texte
+
+# Calendrier de fonctionnalité à venir
+- faire des interfaces graphiques
+- Ajout des couleurs dans le terminal
+
