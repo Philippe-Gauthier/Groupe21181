@@ -5,10 +5,13 @@ Projet 1: Histoire intéractive
 """
 import time, sys
 JOUER=True
-court=3.5
-long=6
 
+court=0.5 # Variable de constantes pour les time.sleep, facilite le changement de tout les délais
+long=0.5  # Variable de constantes pour les time.sleep, facilite le changement de tout les délais
+
+choix_temps=2
 nb_lecture=0   # Permet de garder le nombre de lectures plus tard
+char_1=0 
 
 def choice_user2(choix1,choix2):
     """
@@ -90,16 +93,14 @@ def texte_delai(text, delay=0.05, newline=True):
         sys.stdout.write("\n")
         sys.stdout.flush()
 
-
-
-while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa lecture
+while(JOUER==True): # Permet de looper le jeu selon l'input de l'utilisateur après sa lecture
     
     if(nb_lecture>0):
         input("\nContinuer?   -Suite") # Permet d'afficher un message différent selon le nombre de fois que l'utilisateur a joué
     else:
         input("\nCommencer?   -Suite")
 
-    print("\nLa création, la musique, l'art en général, j'ai jamais réussi à trouver une bonne raison, \nou je dirais que j'ai pas encore trouvé l'occasion d'abandonner tout et de m'y mettre pour de bon.\nJ'ai 21 ans, en ce moment je travail dans le provigo du coin. Chu, comme, zéro populaire,\npar contre c'est plus par choix que pas résultat de mes actions ou whatever.\nJe dirais pas que j'ai beaucoup d'argent, mais j'ai quand même un ford raptor 2017.   -Suite") 
+    print("\nLa création, la musique, l'art en général, j'ai jamais réussi à trouver une bonne raison, \nou je dirais que j'ai pas encore trouvé l'occasion d'abandonner tout et de m'y mettre pour de bon.\nC'est toujours juste une passion que j'ai sur le côté.\nJ'ai 21 ans, en ce moment je travail dans le provigo du coin. Chu, comme, zéro populaire,\npar contre c'est plus par choix que pas résultat de mes actions ou whatever.\nJe dirais pas que j'ai beaucoup d'argent, mais j'ai quand même un ford raptor 2017.   -Suite") 
     input()
     print("Très bon prix d'ailleurs. Ça me rappele l'interaction que j'ai eu avec le vendeur, c'était quand même vraiment mongole.\nAprès avoir démontré mon intérêt sur l'annonce facebook le gars m'avais donné un coup de fil.     -Suite")
     input() # Permet d'attendre l'input de l'utilisateur avant de continuer
@@ -110,7 +111,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     phone_1=choice_user2("-Oui","-Non")  # Évènement 1 - phone_1 appel pour la voiture
 
     if(phone_1==1): # phone_1 OUI
-        print("\n-Oui c'est bien moi.")
+        print("\n-Oui c'est moi.")
         time.sleep(court)
         print("-Je m'adresse à qui?")
         time.sleep(court)
@@ -133,15 +134,15 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
             time.sleep(court)
 
         elif(char_1==3): #char_1 option 3
-            print("\n-Scuse moi, mais es-tu sérieux avec le truck ou tu va perdre mon temps?")
+            print("\n-Scuse moi, mais es-tu sérieux pour le truck ou tu va perdre mon temps?")
             time.sleep(long)
             print("     -Pardonne moi, tu souhaites le voir? Viens à l'adresse indiqué sur l'annonce ajourd'hui à partir de 3h si tu peux.      -Suite")
             input()
-            print("C'est bon, on va se voir.")  
+            print("-C'est bon, on va se voir.")  
             time.sleep(court)
 
     elif(phone_1==2): # phone_1 NON
-        print("n-Non scuse moi lgros, tu dois avoir le mauvais numéro.") 
+        print("-Non scuse moi lgros, tu dois avoir le mauvais numéro.") 
         time.sleep(court)
         print("J'étais sûr c'était un foutu spam, j'ai pas réfléchi..   -Suite")
         input()
@@ -224,7 +225,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
             print("Ils m'ont dit que d'ici une vingtaines ils allait être en route. Au final moi et ma soeur on est rentré chez nous.\nPuis, enfin, 1 heure plus tard, de chez nous on les avait vu parir.")
             time.sleep(long)
         elif(police_1==2):
-            print("On doit avoir attendu un bon 45 minutes avant que les ambulances puis tout soit arrivé. C'était pénible. Au moins on avait l'AC dans le char.     -Suite")
+            print("On doit avoir attendu un bon 45 minutes avant que les ambulances puis tout soit arrivé. C'était pénible. Au moins on avait la musique dans le char.     -Suite")
             input()
     elif(saison=="hiver" or saison=="+hiver"): 
         print("Pas hâte de conduire, on va pas se mentir c'est vraiment laid sur les routes ce matin. \nEncore une chance que c'est supposé de réchauffer le semaine prochaine.      -Suite")
@@ -240,24 +241,24 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     time.sleep(court)
     print("-Bien, et toi?")
     time.sleep(court)
-    print("    -Ça va, le réveille était rough ce matin je l'ai poussé hier soir, deux-trois nouvelles chansons qui sont sorties autour de minuit.\nJe te les envoies plus tard.")
+    print("    -Ça va, le réveille était rough ce matin je l'ai poussé hier soir, deux ou trois nouvelles chansons qui sont sorties autour de minuit.\n    -Je te les envoies plus tard.")
     time.sleep(long)
     print("-Ah ouais shit j'ai manqué ça. Cool.")
     time.sleep(court)
 
     texto_1=choice_user2("Lui parler du texto","Le garder pour soi")
     if(texto_1==1):
-        print("- Hey, t'avais-tu reçu un texto te disant de ne pas te pointer à la job ce matin?\n-Il venait d'un numéro inconnu.       -Suite")
+        print("-Hey, t'avais-tu reçu un texto te disant de ne pas te pointer à la job ce matin?\n-Il venait d'un numéro inconnu.       -Suite")
         input()
-        print("     -Non, the fuck? J'aurais presque aimé, moi je l'aurais écouté si j'étais toi.\n      -8 heures c'est long broo.")
+        print("     -Non, the fuck? J'aurais presque aimé, moi je l'aurais écouté si j'étais toi.\n     -8 heures c'est long broo.")
         time.sleep(long)
-        print("-Weird, bref live je vois rien d'inabituel donc je vais pas trop y porter attention.     -Suite")
+        print("-Weird, bref, live je vois rien d'inabituel donc je vais pas trop y porter attention.     -Suite")
         input()
     elif(texto_1==2):
-        print("Prêt pour les 8 prochaines heures?")
+        print("-Prêt pour les 8 prochaines heures?")
         time.sleep(court)
         print("     -8 heures c'est long broo. Encore une chance qu'on est deux sur la même job aujourd'hui. Hâte à ce soir.")
-    time.sleep(court)
+        time.sleep(court)
     print("Je serais peut-être pas venu si j'avais reçu le texto avant de rembarquer sur la route.      -Suite")
     input()
     if(saison=="été" or saison=="automne" or saison=="+été"):
@@ -270,24 +271,50 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     input()
     party_1=choice_user3("-Non j'ai rien eu","Mentir","Demander des détails sur le party")
     if(party_1==1):
-        print("-Non j'ai rien reçu.\nSi Chloé est pas là je suis peut-être preneur. C'est mon ex, il y pas plus abusive qu'elle.")
-        time.sleep(long)
-        print("-Tu m'enverras l'adresse, je suis pas encore allé chez Émile.")
+        print("-Non j'ai rien reçu.")
         time.sleep(court)
+        print("Si Chloé est pas là je suis peut-être preneur. C'est mon ex, il y pas plus abusive qu'elle.")
+        time.sleep(long)
+        print("-Tu m'enverras l'adresse, je suis pas encore allé chez Émile.        -Suite")
+        input()
     elif(party_1==2):
-        print("-Ouais, pas vraiment d'intérêt. Par contre si tu me dis que Chloé ne sera pas là je vais y penser.\nQuitte à arriver plus tard dans la soirée.")
+        print("-Ouais, pas vraiment d'intérêt. Par contre si tu me dis que Chloé ne sera pas là je vais y penser.\nQuitte à arriver plus tard dans la soirée. Reste à voire si je dort là ou non si jamais.")
+    else:
+        print("-Dis moi plus.")
     print("     -C'est vers neuf heure. Il y aura le monde typique, venant du cégep surtout. Maxence et Yousef vont y être.")
     time.sleep(long)
     print("-Je vais voir. Merci     -Suite")
     input()
-
+    print("Rendu dans le provigo, on a pu décider où on voulait travailler. On a choisit le comptoir à pain.\nToujours le plus calme, c'est dans le fond, pas personne qui passe, si jamais, ils savent exactement ce qu'ils veulent.     -Suite")
+    input() 
+    print("     -J'ai commencé à écouter à du nouveau stock. Tu connais Aswell?")
+    time.sleep(court)
+    print("-Ça me dit de quoi. Il est québécois right?")
+    time.sleep(court)
+    print("     -Ouaip, lui, il a droppé une nouvelle chanson justement hier soir. Vraiment bonne. Bref, je l'ai croisé récemment.")
+    time.sleep(long)
+    print("Si je le connais??? Je capotte dessus depuis des mois. Peux pas croire qu'il habite dans le coin.")
+    time.sleep(long)
+    print("-Ah ouin? Cool, vers où? Tu lui avait parlé?")
+    print("     -Dernière fois, oui, je l'ai croisé deux fois. Les deux fois c'était au Tim au coin de la rue en bas.")
+    
 
 
 
     nb_lecture=nb_lecture+1
-    print(f"Souhaitez vous recommencer l'histroie? Cela vous fait {nb_lecture} lectures.")
-    rejouer=choice_user2("Oui,Non")
+    print(f"\n\nSouhaitez vous recommencer l'histroie? Cela vous fait {nb_lecture} lectures.")
+    rejouer=choice_user2("Oui","Non")
     if(rejouer==2):
         JOUER=False
+    elif(rejouer==1):
+        if(choix_temps==2):
+            print("\n\n**Souhaitez vous retirer les temps d'attente? Vous n'aurez plus besoin d'attendre entre les lignes de texte.**")
+            choix_temps=choice_user2("Oui","Non")
+            if(choix_temps==1):
+                court=0
+                long=0
+
+
+
 print("Fin")
-time.sleep(court)
+time.sleep(2.5)
