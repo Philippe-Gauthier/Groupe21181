@@ -60,12 +60,11 @@ Lequel faites vous entrer en premier?
 
 futurs par client:
 Martine:
-- Martine rentre dans votre tente, c'est une femme un peu plus agée que vous, mais pas de beaucoup, c'est votre cliente la plus loyale. Elle vous demande de lui dire sa chance pour la semaine ou de lui dire si sa santé sera bonne dans les prochaines années.
-  - Chance
-    - chance: Vous lui dites qu'elle sera très chanceuse dans les prochaines semaines, l'étoile Véga lui est favorable, vous lui recommendez meme d'acheter un billet de lotterie quelcoque
-      - lotterie (tu gagne en volant le billet gagnant) - 
-    - Malchance - lotterie (tu te fais voler le billet gagnant) -
-  - Santé
+- Martine entre dans votre tente, c'est une femme un peu plus agée que vous, mais pas de beaucoup, c'est votre cliente la plus loyale. Elle vous demande de lui dire sa chance pour la semaine.
+  - Beaucoup de chance: Vous lui dites qu'elle sera très chanceuse dans les prochaines semaines, l'étoile Véga lui est favorable. Vous lui dites qu'elle gangera le gros lot a la lotterie, cependant, un leger probleme, elle gagnera en volant le billet gagnant
+  - Beaucoup de malchance - Vous lui dites que sa chance augure mal cette semaine, qu'elle allait gagner le gros lot a lotterie, mais qu'elle se ferait voler son billet gagnant.
+  - Un peu des deux 
+
 
 Le chien:
 - Le chien entre dans votre tente, vous êtes un peu confuse, vous lui dites de s'asseoir (vous êtes fluente en chien, mais ca fait un bail alors vous êtes un peu rouillée). Le chien s'asseoit, et il vous demande: "Wouf wouf wrouf warf waf wif rrwar wuif?"
@@ -101,7 +100,7 @@ Devin:
       - my bad fam: Il accepte votre excuse, et, passant a la suite, il vous demande si vous savez s'il sera riche dans le futur
         - #####OPTIONS HERE IF MORE NEEDED#####if not end it here somehow########
       - (Rien dire et rouler des yeux): Il fronce les sourcils, "me prennez vous pour un idiot?", et vous répondez "oui" avec confiance. Il sort de votre tente, enragé. Vous avez perdu un client
-    - Il est riche: A la premiere mention d'argent, Il devient fou et vous saute a la gorge, et vous crie "MONEEEYYYYYYY" (vous ne parlez pas anglais donc ne savez aucunement ce que cela veut dire), vous sortez calmement votre spray au poivre et l'arrosez en plein dans les yeux, il vous lache et se met a pleurernicher et vous dire qu'il n'a jamais eu beaucoup d'argent, que ses parents avaient seulement un manoir, deux maisons, un bloc appartement, 11 roulottes et un chalet d'été a Hawai, qu'il avait toujours conduit une vieille lamborghini de 2021, et qu'il n'avait jamais été gâté de sa vie a part la fois ou ses parents lui ont donné une carte de crédit pour qu'il puisse s'acheter tout ce qu'il voulait a leur compte. Vous n'avez rien de plus a dire sur la situation. Et, de plus, en tant qu'écrivain de cette histoire je ne sais meme pas ou je veux aller avec cette branche, alors honêtement elle va finir drette la, boom, finito, allez voir les autres branches a la place.
+    - Il est riche: A la premiere mention d'argent, Il devient fou et vous saute a la gorge, et vous crie "MONEEEYYYYYYY" (vous ne parlez pas anglais donc ne savez aucunement ce que cela veut dire), vous sortez calmement votre spray au poivre et l'arrosez en plein dans les yeux, il vous lâche, se met a pleurnicher et il vous dit qu'il n'a jamais eu beaucoup d'argent, que ses parents avaient seulement un manoir, 5 maisons, 2 blocs appartement, 11 roulottes et une plage privée a Hawai, qu'il avait toujours conduit une vieille lamborghini de 2021, et qu'il n'avait jamais été gâté de sa vie a part la fois ou ses parents lui ont donné une carte de crédit pour qu'il puisse s'acheter tout ce qu'il voulait a leur compte. Vous n'avez rien de plus a dire sur la situation. Et, de plus, en tant qu'écrivain de cette histoire je ne sais meme pas ou je veux aller avec cette branche, alors honêtement elle va finir drette la, boom, finito, allez voir les autres branches a la place.
     - Il savait que son nom était très spécial: Il vous demande si vous le prennez pour un handicapé a le traiter de "spécial" comme ca, et quitte votre tente. Vous vous demandez ce qui rend ces jeunes si susceptibles de nos jours. Un peu découragée, vous retournez chez vous pour écouter la lutte professionelle (votre sport préféré).
 
   
