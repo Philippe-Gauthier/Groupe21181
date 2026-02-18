@@ -77,3 +77,24 @@ def courte_paille_winner(a):
     message=input(F"Le joueur numéro {a+1} la mauvaise paille! Voulez-vous rejouer(O) ou quitter(Q)?")
     message=message.upper()
     return message 
+
+def rpCiseaux_bienvenu():
+    message=input("Bienvenu à roche papier ciseau! \nChoisissez entre(A,B,C,Q): \nA:Roche \nB:Papier \nC:Ciseau \nQ:Quitter")
+    message=message.upper()
+    return message
+def rpCiseaux_loser():
+    message=input("Votre adversaire a choisi papier, vous avez perdu! Voulez vous rejouer?(O/N)")
+    message=message.upper()
+    return message
+def rpCiseaux_win():
+    message=input("Votre adversaire a choisi ciseau, vous avez gagné! Voulez vous rejouer?(O/N)")
+    message=message.upper()
+    return message
+def rpCiseaux_egal():
+    message=input("Votre adversaire a choisi roche, égalité! Voulez vous un prochain round?(O/N)")
+    message=message.upper()
+    return message
+def rpCiseaux_egal_choix(a):
+    message=input(F"Round {a+1}! \nChoisissez entre(A,B,C,Q): \nA:Roche \nB:Papier \nC:Ciseau \nQ:Quitter")
+    message=message.upper()
+    return message

@@ -79,7 +79,27 @@ def courte_paille():
             exit=jeux_message.courte_paille_loser()
         else:
             exit=jeux_message.courte_paille_winner(joueur[paille_loser])
+#incomplet
+def rpCiseaux():
+    choix=""
+    choix=input(jeux_message.rpCiseaux_bienvenu())
+    while choix != "N":
+        if(egal.true):
+            choix=input(jeux_message.rpCiseaux_egal_choix(egal))
 
+        match choix:
+            case"A":                   
+                                 
+                    choix_adv=random.randint(0,1)
+                    if(choix_adv.false):
+                        choix=input(jeux_message.rpCiseaux_loser()) 
+                        egal=0
 
-
-        
+                    elif(choix==choix_adv):
+                        choix=input(jeux_message.rpCiseaux_egal())      
+                        egal+=1              
+                    
+                    else:
+                        egal=0
+                        choix=input(jeux_message.rpCiseaux_win())
+                        
