@@ -4,11 +4,7 @@ import time, sys
 JOUER=True
 
 rejouer=("0") # Défénir les variable qui décide si le jeu fonctionne ou non. Pour pas que le jeu break 
-nb_lecture=0
-phone_1=0 # Évènement 1
-char_1=0 # Évènement 2
-police_1=0 # Évènement 3
-
+nb_lecture=0   # Permet de garder le nombre de 
 
 def choice_user2(choix1,choix2): # Fonction de question à 2 options
     result=0
@@ -22,7 +18,7 @@ def choice_user2(choix1,choix2): # Fonction de question à 2 options
                 result=int(decision)
                 break
             except ValueError:
-                decision=input("\nVeuillez entrer un nombre: ")
+                decision=input("Veuillez entrer un nombre: ")
     return result
 
 def choice_user3(choix1,choix2,choix3):   # Fonction de question à 3 options
@@ -183,17 +179,17 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
     print("Je dois me rendre à la job pour un shift de 8 heures après. Trop long si tu me demandes mais au moins mon buddy Alex va être là.")
 
     if(saison=="été" or saison=="automne" or saison=="+été"): 
-        print("Il fait beau la route va être plaisante. Je vais pouvoir blaster ma musique.     -Suite")
+        print("Il fait beau la route va être plaisante je crois. Je vais pouvoir blaster ma musique.     -Suite")
         input()
         print("Fallait je m'ouvre la geule, il y a un accident sur le coin de ma rue, je suis dans un foutu cul de sac.\nOn peut même pas sortir de notre rue.\nJe suis encore content que ma soeur commence ses cours aussi tôt j'ai du buffer ce matin.\nMoins cool pour elle par contre, mais moi je suis sur le point de me faire virer donc je veux pas jouer avec le feu.       -Suite")
 
-        choice_user2("Aller voir les policiers","Attendre") # Évènement policiers
+        police_1=choice_user2("Aller voir les policiers","Attendre") # Évènement policiers
         if(police_1==1):
             print("J'étais sortie du char pour aller voir c'était quoi le deal. Rendu à la auteur de leur voiture,\nj'ai vu leur char complètement détruit, y'avait une bmw sur le side qui était rentré dans une pole.\nTypique. Chépa trop comment ils ont fait mais c'était pas beau à voir.     -Suite")
             input()
             print("Ils m'ont dit que d'ici une vingtaines ils allait être en route. Au final moi et ma soeur on est rentré chez nous.\nPuis, enfin, 1 heure plus tard, de chez nous on les avait vu parir.")
         elif(police_1==2):
-            print("On doit avoir attendu une bonne heure avant que les ambulances puis tout soit arrivé. C'était pénible. Au moins on avait l'aire climatisé dans le char.     -Suite")
+            print("On doit avoir attendu une bonne heure avant que les ambulances puis tout soit arrivé. C'était pénible. Au moins on avait l'AC dans le char.     -Suite")
             input()
     elif(saison=="hiver" or saison=="+hiver"): 
         print("Pas hâte de conduire, on va pas se mentir c'est vraiment laid sur les routes ce matin. \nEncore une chance que c'est supposé de réchauffer cette semaine.      -Suite")
@@ -202,10 +198,38 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'user après sa 
         input()
     print("Après avoir déposé ma soeur je repartais avant d'avoir reçu un texto d'un numéro inconnu qui me disait de ne pas venir à la job.\nJ'aurais aimé le voir avant de partir, j'ai seulement vu le message quand j'étais arrivé.      -Suite")
     input()
+
     print("Au final chu juste arrivé et j'ai rien vu de flagrant. Le texto disait rien.")
     time.sleep(0)
     print("     -Yo Nico comment tu vas aujourd'hui?")
-    choice_user()
+    time.sleep(0)
+    print("-Bien, et toi?")
+    time.sleep(0)
+    print("    -Ça va, le réveille était rough ce matin je l'ai poussé hier soir, deux-trois nouvelles chansons qui sont sorties autour de minuit.\nJe te les envoies plus tard.")
+    time.sleep(0)
+    print("-Ah ouais shit j'ai manqué ça. Cool.")
+    time.sleep(0)
+
+    texto_1=choice_user2("Lui parler du texto","Le garder pour soi")
+    if(texto_1==1):
+        print("- Hey, t'avais-tu reçu un texto te disant de ne pas te pointer à la job ce matin?\n-Il venait d'un numéro inconnu.       -Suite")
+        input()
+        print("     -Non, the fuck? J'aurais presque aimé, moi je l'aurais écouté si j'étais toi.\n      -8 heures c'est long broo.")
+        time.sleep(0)
+        print("-Weird, bref live je vois rien d'inabituel donc je vais pas trop y porter attention.")
+
+    elif(texto_1==2):
+        print("Prêt pour les 8 prochaines heures?")
+        time.sleep(0)
+        print("     -8 heures c'est long broo. Encore une chance qu'on est deux sur la même job aujourd'hui.")
+    time.sleep(0)
+    print("Je serais peut-être pas venu si j'avais reçu le texto avant de rembarquer sur la route.      -Suite")
+        
+
+
+
+
+
 
     if(rejouer=="0"): 
         nb_lecture=nb_lecture+1
