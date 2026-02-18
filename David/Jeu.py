@@ -102,7 +102,7 @@ contexte_aston = "L'entraineur est fier de toi tu joues bien, mais il y a un aut
 Question_4_choix_11 ="Tu changes de poste"
 Question_4_choix_12 ="Tu garde ton poste et tu es remplaçant"
 
-conexte_man_Utd = "Tu as joué 12 matchs depuis la blessure du titulaire, performances correctes Le coach te convoque.\
+contexte_man_Utd = "Tu as joué 12 matchs depuis la blessure du titulaire, performances correctes Le coach te convoque.\
     Le titulaire revient le mois prochain. Je suis désolé de t'annoncer ceci, mais tu n'es plus dans les plans de l'entraineur. \
     On va te vendre il y a deux équipes intéresser en toi. On te laisse le choix de choisir laquelle tu veux "
 Question_4_choix_13 ="Newcastle - Premier League, titulaire assuré, projet ambitieux"
@@ -170,13 +170,13 @@ conexte_durtmund ="Très mauvais choix, \
 Question_5_choix_19 ="Tu joue pour l'équipe B"
 Question_5_choix_20 ="Tu ne joue plus pour eux et tu essaie de trouver un plan B"
 
-contexe_atletico ="Mauvais choix. Tu ne joues presque pas. \
+contexte_atletico ="Mauvais choix. Tu ne joues presque pas. \
     Fin de saison : 0 but, 1 passe, 6 matchs. Régression. Ils vont rompre ton contrat "
 Question_5_choix_21 ="Un coéquipier te propose de donner ton nom a un entraineur de liga B, \
     mais ce n'est pas très payants, mais tu vas être titulaire indiscutable "
 Question_5_choix_22 ="Tu arrêtes de jouer au soccer et tu essaie d'aller à l'université et devenir entraineur "
 
-contexe_newcastle ="Excellente expérience ! Fin de saison : 7 buts, 5 passes, 20 matchs titulaire"
+contexte_newcastle ="Excellente expérience ! Fin de saison : 7 buts, 5 passes, 20 matchs titulaire"
 Question_5_choix_23 ="Il te propose d'augmenter ton salaire "
 Question_5_choix_24 ="Il te propose d'aller au Real Madrid pour devenir titulaire "
 
@@ -311,14 +311,15 @@ Resulat_final_real_reste = " Malgré la frustration qui brûle dans ta poitrine,
 Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Real. Alors tu prends une décision courageuse, presque folle. Tu romps ton contrat, \
     tu appelles tes contacts, agents, directeurs sportifs, anciens coachs. Tu pars à la conquête d'un nouveau club où tu pourras jouer, exister, briller. \
     Tu quittes géant parmi les géants… pour redevenir un joueur qui compte."
-
-
+#Quand j ai pas de contexte je me aucun 
+aucun =""
 # la fonction pour le formatage
 
-def formater_question(texte, choix1, choix2):
+def formater_question(texte, choix1, choix2, contexte1 ):
     page = f"Vous devez répondre à la question suivante: {texte}"
     page = page +"\n" 
-    page = page +"\n" +"vous devez choisir parmis ces choix"
+    page = page +"\n" +"vous devez choisir parmis ces choix"+"\n"
+    page = page +"\n" + contexte1 +"\n"
     page = page + "\n" + "1  " + choix1 + "\n" + "2  " + choix2 
     return page 
 
@@ -327,14 +328,52 @@ print(Titre)
 
 print(Introduction)
 
-choix = int(input(formater_question(Question_1, Question_1_choix_1,Question_1_choix_2)))
+choix = int(input(formater_question(Question_1, Question_1_choix_1,Question_1_choix_2, aucun )))
 
 if choix == 1:
-    print(int(input(formater_question(Question_2, Question_2_choix_1,Question_2_choix_2))))
+    print(int(input(formater_question(Question_2, Question_2_choix_1,Question_2_choix_2, aucun))))
     if choix == 1:
-        print(int(input(formater_question(Question_3, Question_3_choix_1, Question_3_choix_2))))
+        choix = (int(input(formater_question(Question_3, Question_3_choix_1, Question_3_choix_2, aucun))))
+        if choix == 1:
+            choix = (int(input(formater_question(Question_4, Question_4_choix_1, Question_4_choix_2, contexte_palmeiras))))
+            if choix == 1:
+                 choix = (int(input(formater_question(Question_5, Question_5_choix_25, Question_5_choix_26, contexte_palmeiras_2 ))))
+            elif choix == 2:
+                 choix = (int(input(formater_question(Question_5, Question_5_choix_27, Question_5_choix_28, contexte_benfica ))))
+            else : 
+                print("erreur veuillez choisir un choix")
+        elif choix == 2 :
+            choix = (int(input(formater_question(Question_4, Question_4_choix_3, Question_4_choix_4, contexte_flamengo)))) 
+            if choix == 1:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_29, Question_5_choix_30, contexte_flamengo_2 ))))
+            elif choix == 2:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_31, Question_5_choix_32, contexte_FC_porto ))))
+            else:
+                    print("erreur veuillez choisir un choix")
+                    
+        else : 
+            print("erreur veuillez choisir un choix")
+
     elif choix == 2:
-        print(int(input(formater_question(Question_3, Question_3_choix_3, Question_3_choix_4))))
+        print(int(input(formater_question(Question_3, Question_3_choix_3, Question_3_choix_4, aucun))))
+        if choix == 1:
+            choix = (int(input(formater_question(Question_4, Question_4_choix_5, Question_4_choix_6, contexte_sporting))))
+            if choix == 1:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_5, Question_5_choix_6, contexte_sporting_2 ))))
+            elif choix == 2:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_7, Question_5_choix_8, contexte_Naple ))))
+            else:
+                 print("erreur veuillez choisir un choix")
+        elif choix == 2 :
+                choix = (int(input(formater_question(Question_4, Question_4_choix_7, Question_4_choix_8, contexte_real)))) 
+                if choix == 1:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_1, Question_5_choix_2, Contexte_real_2 ))))
+                elif choix == 2:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_3, Question_5_choix_4, contexte_getafe ))))
+                else:
+                 print("erreur veuillez choisir un choix")
+        else : 
+            print("erreur veuillez choisir un choix")
     else : 
         print("erreur veuillez choisir un choix")
 
@@ -342,9 +381,39 @@ if choix == 1:
 elif choix == 2:
     print(int(input(formater_question(Question_2, Question_2_choix_3,Question_2_choix_4))))
     if choix == 1:
-        print(int(input(formater_question(Question_3, Question_3_choix_5, Question_3_choix_6))))
+        choix = (int(input(formater_question(Question_3, Question_3_choix_5, Question_3_choix_6))))
+        if choix == 1:
+            choix = (int(input(formater_question(Question_4, Question_4_choix_9, Question_4_choix_10, contexte_villareal))))
+            if choix == 1:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_9, Question_5_choix_10, contexte_villareal_2 ))))
+            elif choix == 2:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_11, Question_5_choix_12, contexte_Seville ))))
+            else:
+                 print("erreur veuillez choisir un choix")
+        elif choix == 2 :    
+                choix = (int(input(formater_question(Question_4, Question_4_choix_11, Question_4_choix_12, contexte_aston))))
+                if choix == 1:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_13, Question_5_choix_14, contexte_poste_différent ))))
+                elif choix == 2:
+                    choix = (int(input(formater_question(Question_5, Question_5_choix_15, Question_5_choix_16, contexte_même_poste ))))
+                else:
+                 print("erreur veuillez choisir un choix") 
+        else : 
+            print("erreur veuillez choisir un choix")
+        
     elif choix == 2:
         print(int(input(formater_question(Question_3, Question_3_choix_7, Question_3_choix_8))))
+        if choix == 1:
+             choix = (int(input(formater_question(Question_4, Question_4_choix_13, Question_4_choix_14, contexte_man_Utd))))
+             if choix == 1:
+                  choix = (int(input(formater_question(Question_5, Question_5_choix_23, Question_5_choix_24, contexte_newcastle ))))
+             elif choix == 2:
+                  choix = (int(input(formater_question(Question_5, Question_5_choix_23, Question_5_choix_24, contexte_ ))))
+             
+        elif choix == 2 :    
+            choix = (int(input(formater_question(Question_4, Question_4_choix_15, Question_4_choix_16, contexte_bayern)))) 
+        else : 
+            print("erreur veuillez choisir un choix")
     else : 
         print("erreur veuillez choisir un choix")
 
