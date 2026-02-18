@@ -167,7 +167,7 @@ Question_5_choix_17 ="Tu lui ment et tu lui dis que tu te sens bien et tu peux j
 Question_5_choix_18 ="Tu lui dit la vérité et tu lui dis que tu as vraiment mal et que tu ne peux pas jouer."
 
 contexte_durtmund ="Très mauvais choix, \n \
-    tu ne joues plus les dirigeants t'envoie en pour jouer avec l'équipe B ou il rompe ton contrat "
+    tu ne joues plus, les dirigeants t'envoient  pour jouer avec l'équipe B ou ils rompent ton contrat "
 Question_5_choix_19 ="Tu joue pour l'équipe B"
 Question_5_choix_20 ="Tu ne joue plus pour eux et tu essaie de trouver un plan B"
 
