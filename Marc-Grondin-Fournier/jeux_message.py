@@ -27,6 +27,10 @@ def roulette_lose():
     message=input("Oh non! Vous êtes mort! Voulez-vous réssuciter? O/N\n")
     message=message.upper()
     return message
+def roulette_false():
+    message=input("Vous sélectionnez une chambre du barillet qui n'existe pas! \nContinuer ?O/N")
+    message=message.upper()
+    return message
 
 #messages pile ou face
 def pile_face_bienvenu():

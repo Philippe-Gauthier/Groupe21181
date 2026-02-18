@@ -4,34 +4,36 @@ import jeux_message
 def roulette_russe():
     reset=""
     while reset != "N":                                        
-        #Sélection entre les 6 positionnements possibles du barrilet
+        #Sélection entre les 6 positionnements possibles du barrilet       
         choix =int(input(jeux_message.roulette_bienvenu()))
-        k=choix
-        #Le barrilet spin pour atteindre une position au hasard
-        roll=random.randint(1, 6)
-        #Addition pour obtenir le nombre maximal de tour avant la munition
-        roll=roll+choix
-        #Identification bool du joueur
-        modu_player=choix%2
-            
-        reset=input("Premier tour! Prêt?\n")
-        reset=reset.upper()
+        if(choix<=6 & choix>=1):
+            k=choix
+            #Le barrilet spin pour atteindre une position au hasard
+            roll=random.randint(1, 6)
+            #Addition pour obtenir le nombre maximal de tour avant la munition
+            roll=roll+choix
+            #Identification bool du joueur
+            modu_player=choix%2
+                
+            reset=input("Premier tour! Prêt?\n")
+            reset=reset.upper()
 
-        if(reset=="N"):break
-        for k in range(choix,roll+1):
-            if(choix+k %2 == modu_player):                                    
-                if(choix+k<roll):                                      
-                    reset=jeux_message.roulette_next()
-                    if(reset=="N"):break
-                elif(choix+k==roll):
-                    reset=jeux_message.roulette_lose()      
-            else:
-                if(choix+k<roll):                                     
-                    reset=jeux_message.roulette_adv_survi()
-                    if(reset=="N"):break
-                elif(choix+k==roll):
-                    reset=jeux_message.roulette_win()
-
+            if(reset=="N"):break
+            for k in range(choix,roll+1):
+                if(choix+k %2 == modu_player):                                    
+                    if(choix+k<roll):                                      
+                        reset=jeux_message.roulette_next()
+                        if(reset=="N"):break
+                    elif(choix+k==roll):
+                        reset=jeux_message.roulette_lose()      
+                else:
+                    if(choix+k<roll):                                     
+                        reset=jeux_message.roulette_adv_survi()
+                        if(reset=="N"):break
+                    elif(choix+k==roll):
+                        reset=jeux_message.roulette_win()
+        else:
+            reset=jeux_message.roulette_false()
 def pile_face():
     choix=""
     while choix != "Q":
