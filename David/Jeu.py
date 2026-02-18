@@ -308,7 +308,8 @@ Resulat_final_real_reste = " Malgré la frustration qui brûle dans ta poitrine,
 Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Real. Alors tu prends une décision courageuse, presque folle. Tu romps ton contrat, \n \
     tu appelles tes contacts, agents, directeurs sportifs, anciens coachs. Tu pars à la conquête d'un nouveau club où tu pourras jouer, exister, briller. \n \
     Tu quittes géant parmi les géants… pour redevenir un joueur qui compte."
-#Quand j ai pas de contexte je me aucun pour q'il n'y ait pas d'erreur 
+
+#Quand j ai pas de contexte je me aucun pour qu'il n'y ait pas d'erreur 
 aucun =""
 '''
 
