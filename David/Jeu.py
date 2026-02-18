@@ -236,7 +236,8 @@ Resultat_final_newcastle_real = "Real Madrid. Titulaire assuré. C'est le rêve 
     tu reçois un hommage au Bernabéu"
 
 Resultat_final_atletico_ligue_b= ": Tu acceptes. Le niveau est moins élevé, le stade moins grand, le salaire bien plus modeste. Mais tu joues. \n \
-    Tu retrouves le plaisir du football, ta confiance revient semaine après semaine.Deux ans plus tard, un club de première division te repère et te signe."
+    Tu retrouves le plaisir du football, ta confiance revient semaine après semaine.Deux ans plus tard, un club de première division te repère \n \
+     et te signe."
 
 Resultat_final_atletico_entraineur = "Tu ranges tes crampons et tu t'inscris en sciences du sport. Dix ans plus tard, \n \
     tu es l'un des meilleurs entraîneurs du monde.Real Madrid, équipe nationale, Ligue des Champions. Les journalistes adorent te couvrir,\n \
@@ -244,26 +245,30 @@ Resultat_final_atletico_entraineur = "Tu ranges tes crampons et tu t'inscris en 
      parfois tu recales un joueur publiquement sans hésiter.Les gens t'appellent  The Chosen One. \n \
      Pas seulement pour tes résultats, mais parce que tu as le caractère d'un champion."
 
-Resultat_final_dortmund_équipe_b = "Tu acceptes sans trop aimer l'idée. L'équipe B, c'est un niveau en dessous, moins de pression, mais moins de gloire aussi. \n \
-    Les premiers matchs sont étranges. Tu croises parfois les pros à l'entraînement, tu les regardes partir vers le grand stade pendant que toi tu prends l'autre direction.\n \
-    Mais tu travailles. Tu marques, tu brilles, et trois mois plus tard le coach de l'équipe première te rappelle."
+Resultat_final_dortmund_équipe_b = "Tu acceptes sans trop aimer l'idée. L'équipe B, c'est un niveau en dessous, moins de pression, \n \
+    mais moins de gloire aussi. Les premiers matchs sont étranges. Tu croises parfois les pros à l'entraînement, \n \
+    tu les regardes partir vers le grand stade pendant que toi tu prends l'autre direction.Mais tu travailles.\n \
+     Tu marques, tu brilles, et trois mois plus tard le coach de l'équipe première te rappelle."
 
 
-Resultat_final_dortmund_plan_b =": Deux mois sans club. Tu t'entraînes seul le matin pour rester en forme. Puis un petit club de troisième division t'appelle.\n \
-    Pas glamour, mais c'est une porte.Tu signes. Parfois une carrière repart de zéro."
+Resultat_final_dortmund_plan_b =": Deux mois sans club. Tu t'entraînes seul le matin pour rester en forme. Puis un petit club \n \
+    de troisième division t'appelle. Pas glamour, mais c'est une porte.Tu signes. Parfois une carrière repart de zéro."
 
-Resultat_final_bayern_mensonge = "Tu lui mensTu le regardes dans les yeux et tu dis. Je suis prêt coach. Il sourit et t'aligne titulaire. Dès la 20e minute,\n \
-    sur un simple appui, ton genou lâche.  Tu t'effondres sur la pelouse. Le stade se tait. Tu sors sur civière, les larmes aux yeux.Le Bayern perd 1-0. \n \
-    Pas de Bundesliga. Dans le vestiaire, le coach te regarde, déçu.Pourquoi tu ne m'as pas dit la vérité ? Tu n'as pas de réponse."
+Resultat_final_bayern_mensonge = "Tu lui mensTu le regardes dans les yeux et tu dis. Je suis prêt coach. Il sourit et t'aligne titulaire.\n \
+    Dès la 20e minute,sur un simple appui, ton genou lâche.  Tu t'effondres sur la pelouse. Le stade se tait. Tu sors sur civière, \n \
+    les larmes aux yeux.Le Bayern perd 1-0. Pas de Bundesliga. Dans le vestiaire, le coach te regarde, déçu. \n \
+    Pourquoi tu ne m'as pas dit la vérité ? Tu n'as pas de réponse."
 
 
 Resultat_final_bayern_verite = "Tu baisses les yeux : Coach, j'ai vraiment mal. Je ne peux pas vous donner mon 100%. Il hoche la tête : \n \
     Merci pour ton honnêteté. Le Bayern perd quand même 1-0. Pas de Bundesliga cette année. Le vestiaire est silencieux, la déception est lourde. \n \
     Mais toi, tu te soignes correctement. Toute l'intersaison, tu travailles plus dur que jamais. Tu reviens en feu la saison suivante,\n \
-    tu es le meilleur joueur du Bayern et tu les portes jusqu'au titre. Dans le vestiaire en fête, le coach lève son verre. Ce titre, c'est grâce à toi."
+    tu es le meilleur joueur du Bayern et tu les portes jusqu'au titre. Dans le vestiaire en fête, le coach lève son verre. Ce titre,\n \
+     c'est grâce à toi."
 
 Resultat_final_aston_poste_diff_coéquipier_tire = "Tu laisses tirer ton coéquipier et tu ne gagnes pas le trophée du meilleur buteur.\n \
-    Ton coéquipier tire et le gardien l'arrête, mais ce n'est pas grave, car tu es la pour le rebond et tu marques et tu gagnes le trophée du meilleur buteur de l'année"
+    Ton coéquipier tire et le gardien l'arrête, mais ce n'est pas grave, car tu es la pour le rebond et tu marques et\n \
+     tu gagnes le trophée du meilleur buteur de l'année"
 
 Resultat_final_aston_poste_diff_tu_tire = "- tu tires le penalty et tu es le meilleur buteur de l'année : Tu le marques. Tu deviens meilleur,\n \
     mais ton coéquipier est déçu et te considère comme égoïste."
@@ -274,7 +279,8 @@ Resultat_final_aston_meme_poste_everton= "Tu deviens un bon joueur. Les fans t'a
 Resultat_final_aston_meme_poste_remplacant = "Tu restes remplaçant en espérant que ton temps de jeu augmente : Au début tu ne joues pas trop. \n \
     Après quelques saisons un nouvel entraineur arrive et tu deviens titulaire."
 
-Resultat_final_seville_pret = "Tu regagne confiance en toi. Tu joues de plus en plus. À la fin Seville veut te ramener, mais tu décides de rester dans ton nouvel club."
+Resultat_final_seville_pret = "Tu regagne confiance en toi. Tu joues de plus en plus. À la fin Seville veut te ramener,\n \
+     mais tu décides de rester dans ton nouvel club."
 
 Resultat_final_seville_remplacant = "Tu ne joues pas vraiment. Quand tu joues c'est juste pour jouer 15 minutes. Tu aurais dû partir."
 
@@ -288,8 +294,9 @@ Resulat_final_naples_sporting ="Tu regardes le contrat… puis tu le refermes do
     Dès ton arrivée, le Sporting t'accueille comme un fils qui revient à la maison. Le stade te reconnaît, le staff te serre dans ses bras. \n \
     Tu sais que tu as fait le choix du cœur. Ici, tout a commencé — et tu veux encore écrire ton nom dans leur histoire."
 
-Resultat_final_naples_rester = "Le directeur sportif te tend le contrat. Tu poses ton stylo, ton nom brille en bas de la page. Le lendemain, tu arrives à Naples.\n \
-    soleil brûlant, supporters en feu, chants dans les rues. Tu entres dans ton nouveau vestiaire… ton maillot flotte déjà sur ton casier. \n \
+Resultat_final_naples_rester = "Le directeur sportif te tend le contrat. Tu poses ton stylo, ton nom brille en bas de la page. Le lendemain, \n \
+    tu arrives à Naples.soleil brûlant, supporters en feu, chants dans les rues. Tu entres dans ton nouveau vestiaire… \n \
+    ton maillot flotte déjà sur ton casier. \n \
     Tu souris. Une nouvelle histoire commence."
 
 
@@ -297,23 +304,30 @@ Resultat_final_sporting_tacle_propore ="Tu sprintes comme jamais, chaque pas ré
     Ton gardien sort en catastrophe, le percute, stoppe l'action… faute. Jaune pour lui. Penalty. Ils marquent. La finale vous échappe.\n \
     Et toi, tu restes là, genoux au sol, le souffle brisé."
 
-Resultat_final_sporting_tacle_assasin ="Tu comprends que tu ne le rattraperas jamais. Alors tu te lances tu lui fais un tacle assassin, violent, total,\n \
-    celui qu'on fait quand la saison entière tient sur une seule action. L'attaquant s'écroule, probablement touché pour un bon moment. \n \
-    Le rouge sort immédiatement. Mais le stade explose. Les fans hurlent ton nom, célébrant ton courage et ton sacrifice. Tu es expulsé… mais grâce à toi, l'équipe tient, se bat,\n \
+Resultat_final_sporting_tacle_assasin ="Tu comprends que tu ne le rattraperas jamais. Alors tu te lances tu lui fais un tacle assassin,\n \
+      violent, total,celui qu'on fait quand la saison entière tient sur une seule action. L'attaquant s'écroule, \n \
+    probablement touché pour un bon moment. Le rouge sort immédiatement. Mais le stade explose. Les fans hurlent ton nom,\n \
+     célébrant ton courage et ton sacrifice. Tu es expulsé… mais grâce à toi,l'équipe tient, se bat,\n \
     et finit par gagner la finale."
 
-Resultat_final_getafe_tire = "Tu poses le ballon… puis tu recules, exactement comme ton idole, Cristiano Ronaldo. Large écart des jambes, souffle court, regard glacé.\n \
-    Tu t'élances. Ta frappe part sèche, montante, flottante, la signature CR7. Le ballon file en pleine lucarne. BUT ! Tu exploses, tu cours vers le coin du terrain, tu hurles ta joie."
+Resultat_final_getafe_tire = "Tu poses le ballon… puis tu recules, exactement comme ton idole, Cristiano Ronaldo. \n \
+    Large écart des jambes, souffle court, regard glacé. Tu t'élances. Ta frappe part \n \
+    sèche, montante, flottante, la signature CR7. Le ballon file en pleine lucarne. BUT ! \n \
+    Tu exploses, tu cours vers le coin du terrain, tu hurles ta joie."
 
-Resultat_final_getafe_centre =": Personne ne s'attend au centre… mais toi, tu as vu ton coéquipier démarqué. Tu envoies un centre parfait. Il coupe de la tête. \n \
-    BUT ! Vous célébrez ensemble, vous sautez, vous tombez dans les bras. Mais c'est lui que la foule acclame. Toi, tu restes en retrait, sourire discret…Parce que tu le sais : \n \
+Resultat_final_getafe_centre =": Personne ne s'attend au centre… mais toi, tu as vu ton coéquipier démarqué. Tu envoies un centre parfait.\n \
+     Il coupe de la tête. BUT ! Vous célébrez ensemble, vous sautez, vous tombez dans les bras. Mais c'est lui que la foule acclame. \n \
+    Toi, tu restes en retrait, sourire discret…Parce que tu le sais : \n \
     sans ta passe, ce but n'existe pas."
 
 Resulat_final_real_reste = " Malgré la frustration qui brûle dans ta poitrine, tu décides de rester : \n \
-    continuer à t'entraîner, attendre ton moment, même si le banc devient ton quotidien.Le rêve continue… mais il avance sans toi."
+    continuer à t'entraîner, attendre ton moment, même si le banc devient ton quotidien.\n \
+    Le rêve continue… mais il avance sans toi."
 
-Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Real. Alors tu prends une décision courageuse, presque folle. Tu romps ton contrat, \n \
-    tu appelles tes contacts, agents, directeurs sportifs, anciens coachs. Tu pars à la conquête d'un nouveau club où tu pourras jouer, exister, briller. \n \
+Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Real.\n \
+     Alors tu prends une décision courageuse, presque folle. Tu romps ton contrat, \n \
+    tu appelles tes contacts, agents, directeurs sportifs, anciens coachs. \n \
+    Tu pars à la conquête d'un nouveau club où tu pourras jouer, exister, briller. \n \
     Tu quittes géant parmi les géants… pour redevenir un joueur qui compte."
 
 #Quand j ai pas de contexte je me aucun pour qu'il n'y ait pas d'erreur 
