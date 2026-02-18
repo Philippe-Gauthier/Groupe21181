@@ -38,3 +38,6 @@ chaque choix influence l'histoire de Joseph.
 -choix_1
 -Joseph gère bien son horaire.
 -Joseph arrive a l'heure.
+
+# Sreenshot
+![alt text](image.png)
