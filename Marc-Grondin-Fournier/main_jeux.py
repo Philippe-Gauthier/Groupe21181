@@ -1,4 +1,4 @@
-import random
+
 import jeux_repertoire
 import jeux_message
 menu="O"

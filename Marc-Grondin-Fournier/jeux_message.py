@@ -37,15 +37,25 @@ def pile_face_bienvenu():
     message=input("Bienvenu à pile ou face! Quelle côté choisissez-vous? P/F\n")
     message=message.upper()
     return message
+
+def pile_face_false():
+    message=input("Côté non-reconnu, veuiller choisir entre P/F ou Q pour quitter\n")
+    message=message.upper()
+    return message
+
 def pile_face_win(choix):
     if(choix==0):
         message=input("Pile! Vous avez gagné! Voulez-vous rejouer(O) ou quitter(Q)?")
         message=message.upper()
         return message
-    else:
+    elif(choix==1):
         message=input("Face! Vous avez gagné! Voulez-vous rejouer(O) ou quitter(Q)?")
         message=message.upper()
         return message
+    else:
+        while 
+        pile_face_false()
+    
 def pile_face_lose(choix):
     if(choix==0):
         message=input("Pile! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
