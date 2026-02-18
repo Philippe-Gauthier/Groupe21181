@@ -47,10 +47,25 @@ else:
      print("Joseph ne revise pas ses cours")
      print("Joseph remet ses travaux toujours en retard")
 print("-" * 50)
+
 reponse = demander_choix(1,2, f"Comment Joseph se comporte t'il en classe?")
+if reponse == 1:
+     print("Joseph écoute attentivement l'enseignant")
+     print("Joseph participe en classe")
+else:
+     print("Jospeh est distrait")
+     print("Jospeh joue sur ordinateur pendant l'heure du cour")
 print("-" * 50)
+
 reponse = demander_choix(1,2, f"Comment Joseph gere t'il ses laboratoires?")
+if reponse == 1:
+     print("Joseph fait ses laboratoires dans le temps")
+     print("Joseph travail avec diligence")
+else:
+     print("Joseph néglige les laboratoires")
+     print("Joseph ne participe souvent pas aux laboratoires")
 print("-" * 50)
+
 reponse = demander_choix(1,2, f"Joseph travaille t'il en équipe?")
 print("-" * 50)
 reponse = demander_choix(1,2, f"Comment Joseph prépare t'il ses examens finaux?")
