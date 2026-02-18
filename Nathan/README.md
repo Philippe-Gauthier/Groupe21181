@@ -23,7 +23,7 @@ Structure en arbre, un seul chemin valide pour se rendre a chaque résultat, et 
 
 
 # Limitations:
-Pas de retour en arriere d'un seul choix, certaines chemins sont beaucoup plus courts que d'autres
+Pas de retour en arriere d'un seul choix, certaines chemins sont beaucoup plus courts que d'autres, j'ai fait un arbre très large mais pas très grand, beaucoup d'options mais pas beaucoup de conséquences.
 
 
 
@@ -91,10 +91,11 @@ Devin:
   
   - Amour: Vous lui dites que le futur en termes de sorties de jeux est assez flou ce matin (mercure retrograde) mais vous voyez clairement son futur amoureux. Il vous demande de lui en dire plus.
     - amour: Vous lui dites qu'il va rencontrer tres bientot l'amour de sa vie, vous le voyez clairement dans votre boule de crystale (brisée, mais vous ne mentionnez pas cela). Il vous supplie de lui en dire plus.
-      - good ending: vous lui dites qu'il va vivre une tres belle vie, qu'il aura des enfants, et que ses enfants auront des enfants, et qu'il allait mourrir paisiblement main dans la main avec sa femme. Il vous fait un drole de visage, puis vous revele alors qu'il est homosexuel. Il vous traite d'homophobe, et il part sans payer. Vous aviez besoin de cet argent pour votre abonnement netflix sans pubs, vous tombez donc dans la depression
+      - good ending: vous lui dites qu'il va vivre une tres belle vie, qu'il aura des enfants, et que ses enfants auront des enfants, et qu'il allait mourrir paisiblement main dans la main avec sa femme. Il vous fait un drole de visage, puis vous revele alors qu'il est homosexuel. Il vous traite d'homophobe, vous sacre une bonne claque en plein dans la tronche et il part sans payer. Vous aviez besoin de cet argent pour votre abonnement netflix sans pubs, vous tombez donc dans la depression
       - bad ending: vous lui dites que les apparences sont trompeuse, et qu'il finira par se divorcer, et de tomber dans l'alcoolisme. Il vous regarde d'un regard vide, et puis il vous remercie de l'avoir prévenu. Il part apres avoir payé pour votre service, vous vous sentez mal de détruire les espoirs d,un si jeune homme mais vous vous dites que c'est pour le plus grand bien (pouvoir vous payer votre abonnement amazon prime pour la livraison gratuite).
     - pas d'amour: Vous lui dites qu'il n'aura tristement pas la chance de vivre l'amour dans sa vie, mais c'est l'opportunité pour lui de se consacrer a d'autres passions, telles que le pickle ball professionnel. Vous voyez Devin s'affaisser un peu, puis il se leve, et quitte. Vous croyez entendre des pleurs venant de l'exterieur de votre tente. Vous realisez alors qu'il ne vous a pas payé, vous aviez besoin de l'argent pour payer votre spotify premium, vous tombez donc en depression nerveuse.
 
+  - Lui demander d'ou vient son nom: Vous l'interrompez et lui demandez d'ou vient son nom. Vous pensez 
 
   
 
