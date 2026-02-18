@@ -19,11 +19,11 @@ Structure en arbre, un seul chemin valide pour se rendre a chaque résultat, et 
 
 
 # Fonctionalités:
-(résumé plus que fonctionalité?) aventure dont vous etes le héros avec plusieurs embranchements possibles avec des choix uniques
+Aventure dont vous etes le héros avec plusieurs embranchements possibles et des choix uniques, le code print beaucoup de texte formatté sur le terminal et il prend des inputs du joueur qu'il valide ensuite, mais il n'a pas vraiment d'autre fonctionalités
 
 
 # Limitations:
-Pas de retour en arriere d'un seul choix, certaines chemins sont beaucoup plus courts que d'autres, j'ai fait un arbre très large mais pas très grand, beaucoup d'options mais pas beaucoup de conséquences.
+Pas de retour en arriere d'un seul choix, certains chemins sont beaucoup plus courts que d'autres, j'ai fait un arbre très large mais pas très grand, beaucoup d'options mais pas beaucoup de conséquences.
 
 
 
