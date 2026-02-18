@@ -11,6 +11,7 @@ def réponse (choixA, choixB, choixC, vrai_reponse) :
  print(f"2: {choixB}")
  print(f"3: {choixC}")
  decision = input("veuiller saisir votre reponse :")
+
  if decision == vrai_reponse :
      print("bonne réponse")
      return 1  
@@ -20,6 +21,7 @@ def réponse (choixA, choixB, choixC, vrai_reponse) :
  else:
     print("Erreur, Choix invalide")
     return 0
+ 
  #Niveau 1 du jeu de quiz educatif: Capitales des pays""" 
 print("niveau_1 Capital des pays")
 print("---------------------------")
