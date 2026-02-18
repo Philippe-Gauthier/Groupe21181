@@ -22,6 +22,13 @@ choix_fail = "\nCela ne faisait pas partie des choix, réessayez\n"
 
 
 
+
+
+
+
+
+
+
 #---3 layer
 
 text1_1_1 = "placeholder text"
@@ -30,25 +37,6 @@ option1_1_1_2 = "placeholder choice"
 option1_1_1_3 = "placeholder choice"
 
 lvl1_1_1 = [text1_1_1, option1_1_1_1, option1_1_1_2, option1_1_1_3]
-
-#---3 layer
-
-text1_2 = "placeholder text"
-option1_2_1 = "placeholder choice"
-option1_2_2 = "placeholder choice"
-option1_2_3 = "placeholder choice"
-
-lvl1_2 = [text1_2, option1_2_1, option1_2_2, option1_2_3]
-
-#---3 layer
-
-text1_3 = "placeholder text"
-option1_3_1 = "placeholder choice"
-option1_3_2 = "placeholder choice"
-option1_3_3 = "placeholder choice"
-
-lvl1_3 = [text1_3, option1_3_1, option1_3_2, option1_3_3]
-
 
 
 
