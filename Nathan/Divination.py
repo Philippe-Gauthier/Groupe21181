@@ -22,6 +22,15 @@ choix_fail = "\nCela ne faisait pas partie des choix, réessayez\n"
 
 
 
+#---3 layer
+
+text1_1_1 = "placeholder text"
+option1_1_1_1 = "placeholder choice"
+option1_1_1_2 = "placeholder choice"
+option1_1_1_3 = "placeholder choice"
+
+lvl1_1_1 = [text1_1_1, option1_1_1_1, option1_1_1_2, option1_1_1_3]
+
 
 
 
@@ -55,9 +64,9 @@ lvl1_3 = [text1_3] #option1_3_1, option1_3_2, option1_3_3]
 
 
 
+
+
 #-1 layer
-
-
 
 text1 = "placeholder text"
 option1_1 = "option1"
@@ -112,15 +121,19 @@ def failstate_detect(niveau_selectionne):
             break
         else:
             print(niveau_selectionne[0])
+            time.sleep(1.5)
             while True:
                 start_confirmation = input("\nVoulez vous retourner au début de la journée? (y/n) ")
                 if start_confirmation == "y":
                     print(choix_retour)
+                    time.sleep(1.5)
                     loop_niveau(lvl1)
                 elif start_confirmation == "n":
                     print("\nAh bon, au revoir alors (vous pouvez maintenant fermer le jeu)")
+                    time.sleep(1.5)
                 else:
                     print("\n? ? ?")
+                    time.sleep(1)
 
 
 
@@ -181,7 +194,7 @@ def loop_niveau(input_niveau):
                 time.sleep(1.5) #retour aux choix
             else:
                 print("Bon, tu parles chinois maintenant, j'imagine qu'on continue alors...\n")
-                time.sleep(1.5) #retour aux choix
+                time.sleep(1) #retour aux choix
         elif verif_reponse != 4:
             prochain_niveau = verif_reponse #donner l'indication pour le prochain niveau
             break
@@ -205,47 +218,85 @@ start_game()
 
 niveau = loop_niveau(lvl1)
 
+
 if niveau == 1:
-    prochain_niveau = lvl1_1
-    niveau2 = loop_niveau(prochain_niveau)
-    if niveau2 == 1:
-        prochain_niveau = lvl1_1
-        niveau2 = loop_niveau(prochain_niveau)
-    elif niveau2 == 2:
-        prochain_niveau = lvl1_2
-        niveau2 = loop_niveau(prochain_niveau)
-    elif niveau2 == 3:
-        prochain_niveau = lvl1_3
-        niveau2 = loop_niveau(prochain_niveau)
-
-
+    niveau = loop_niveau(lvl1_1)
+    if niveau == 1:
+        niveau = loop_niveau(lvl1_1_1)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_1_1_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_1_1_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_1_1_3)
+    elif niveau == 2:
+        niveau = loop_niveau(lvl1_1_2)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_1_2_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_1_2_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_1_2_3)
+    elif niveau == 3:
+        niveau = loop_niveau(lvl1_1_3)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_1_3_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_1_3_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_1_3_3)
 elif niveau == 2:
-    prochain_niveau = lvl1_2
-    niveau2 = loop_niveau(prochain_niveau)
-    if niveau2 == 1:
-        prochain_niveau = lvl1_1
-        niveau2 = loop_niveau(prochain_niveau)
-    elif niveau2 == 2:
-        prochain_niveau = lvl1_2
-        niveau2 = loop_niveau(prochain_niveau)
-    elif niveau2 == 3:
-        prochain_niveau = lvl1_3
-        niveau2 = loop_niveau(prochain_niveau)
-
-
+    niveau = loop_niveau(lvl1_2)
+    if niveau == 1:
+        niveau = loop_niveau(lvl1_2_1)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_2_1_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_2_1_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_2_1_3)
+    elif niveau == 2:
+        niveau = loop_niveau(lvl1_2_2)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_2_2_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_2_2_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_2_2_3)
+    elif niveau == 3:
+        niveau = loop_niveau(lvl1_2_3)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_2_3_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_2_3_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_2_3_3)
 elif niveau == 3:
-    prochain_niveau = lvl1_3
-    niveau2 = loop_niveau(prochain_niveau)
-    if niveau2 == 1:
-        prochain_niveau = lvl1_1
-        niveau2 = loop_niveau(prochain_niveau)
-    elif niveau2 == 2:
-        prochain_niveau = lvl1_2
-        niveau2 = loop_niveau(prochain_niveau)
-    elif niveau2 == 3:
-        prochain_niveau = lvl1_3
-        niveau2 = loop_niveau(prochain_niveau)
-
+    niveau = loop_niveau(lvl1_3)
+    if niveau == 1:
+        niveau = loop_niveau(lvl1_3_1)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_3_1_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_3_1_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_3_1_3)
+    elif niveau == 2:
+        niveau = loop_niveau(lvl1_3_2)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_3_2_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_3_2_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_3_2_3)
+    elif niveau == 3:
+        niveau = loop_niveau(lvl1_3_3)
+        if niveau == 1:
+            niveau = loop_niveau(lvl1_3_3_1)
+        elif niveau == 2:
+            niveau = loop_niveau(lvl1_3_3_2)
+        elif niveau == 3:
+            niveau = loop_niveau(lvl1_3_3_3)
 
 
 
