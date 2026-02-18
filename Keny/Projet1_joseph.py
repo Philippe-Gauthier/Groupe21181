@@ -67,5 +67,21 @@ else:
 print("-" * 50)
 
 reponse = demander_choix(1,2, f"Joseph travaille t'il en équipe?")
+if reponse == 1:
+     print("Joseph travail avec ses collegues")
+     print("Joseph assiste souvent ses collegues dans leurs exercices")
+else:
+     print("Joseph travail seul à la maison")
+     print("Joseph ne partage pas ces lacunes")
 print("-" * 50)
+
 reponse = demander_choix(1,2, f"Comment Joseph prépare t'il ses examens finaux?")
+if reponse == 1:
+     print("Joseph se prépare efficacement")
+     print("Joseph reussit son examen")
+else:
+     print("Joseph ne se prepare pas comme il se doit")
+     print("Joseph echoue son examen")
+print("-" * 50)
+
+#Fin du programme
