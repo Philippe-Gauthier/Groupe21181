@@ -1,10 +1,19 @@
+
+#Documenter le code avec des """ et des #, mettre le """ dans une fonction pour documenter le but de la fonction, les entrés et les sorties
+
+
+
+
+
 #pour pouvoir utiliser time.sleep plus loin dans le code
 import time
 
 
 #definition des variables
 
-regles_instructions = "placeholder instructions (Au moment de choisir, entrez 0 si vous voulez retourner au début de la journée)"
+mise_en_contexte = "Vous êtes la grande Yisma, voyante reconnue a travers le monde (le monde étant Longueil), mais ce matin vous avez échappé votre boule de crystal en vous faisant un bol de céréales, vous devez donc inventer de toutes pieces le futur de vos clients de la journée, en attente de voir le réparateur de boules de crystal (qui est occupé pour les 3 prochaines semaines, son service est très en demande, les boules sont devenues glissantes de nos jours)."
+
+regles_instructions = "L'aventure se joue en une journée, composée de deux parties, la mise en situation et la prise de décision. Pour la partie mise en situation, vous allez avoir un texte unique au niveau a lire, ensuite, 3 options apparaitront sur le terminal, chacune des options commencent par 1, 2, ou 3. Après, vous aurez une décision a prendre. Pour faire cela, entrez le numéro du choix que vous voulez prendre, soit 1, 2, ou 3, et rentrez le dans le terminal (ce serait clairement indiqué qu'il est pret a recevoir votre décision). Ca recommence ensuite avec une nouvelle mise en situation, puis une décision, et ainsi de suite jusqu'a une mise en situation finale qui terminera l'aventure.\n (Au moment de choisir, entrez 0 si vous voulez retourner au début de la journée)"
 
 choix_retour = "retour au début de la journée..."
 choix_fail = "Cela ne faisait pas partie des choix, réessayez"
@@ -168,7 +177,7 @@ def loop_niveau(input_niveau):
 
 #début du code du jeu (i have to nest everything under one single if statement)
 
-
+print(mise_en_contexte)
 print(regles_instructions)
 
 time.sleep(1.5)

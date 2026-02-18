@@ -1,16 +1,30 @@
 # Read Me Plan Work In Progress
 
 
-Entrées: Imputs par le terminal, soit des mots (oui, non, etc), soit des chiffres pour selectionner une option
+# Résumé du projet:
+Ce premier projet consiste d'une aventure dont vous etes le héros avec plusieurs embranchements possibles avec des choix uniques. 
+Vous êtes une voyante mais votre boule de crystal est brisée, inventez le futur de vos clients.
 
 
-Sorties: tout se fait a partir du terminal. le logiciel va afficher du texte selon ce que l'on imput dans le terminal, après avoir affiché le résultat, il y aura toujours des instructions ou des options qui seront données a l'utilisateur pour savoir comment continuer
+# Entrées: 
+Imputs par le terminal, soit des mots (oui, non, etc), soit des chiffres pour selectionner une option
 
 
-controle: structure en arbre, un seul chemin valide pour se rendre a chaque résultat, et non une infinité de chemins possibles. il y aura toujours une facon de retourner a l'étape précédente en rentrant un mot ou un chiffre dans le terminal, 
+# Sorties: 
+Tout se fait a partir du terminal. le logiciel va afficher du texte selon ce que l'on imput dans le terminal, après avoir affiché le résultat, il y aura toujours des instructions ou des options qui seront données a l'utilisateur pour savoir comment continuer
 
 
-Vous etes une voyante mais votre boule de crystal est brisée, inventez le futur de vos clients
+# Controle: 
+Structure en arbre, un seul chemin valide pour se rendre a chaque résultat, et non une infinité de chemins possibles. il y aura toujours une facon de retourner a l'étape précédente en rentrant un mot ou un chiffre dans le terminal, 
+
+
+# Fonctionalités:
+(résumé plus que fonctionalité?) aventure dont vous etes le héros avec plusieurs embranchements possibles avec des choix uniques
+
+
+# Limitations:
+Pas de retour en arriere d'un seul choix, certaines chemins sont beaucoup plus courts que d'autres
+
 
 
 
@@ -27,7 +41,7 @@ Vous etes une voyante mais votre boule de crystal est brisée, inventez le futur
 
 Mini tutoriel en imput avec une option: start
 
-minimum 50 choix pour l'arbre
+minimum 40 choix pour l'arbre
 
 
 Premiere option:
