@@ -11,7 +11,7 @@ def roulette_russe():
             #Le barrilet spin pour atteindre une position au hasard
             roll=random.randint(1, 6)
             #Addition pour obtenir le nombre maximal de tour avant la munition
-            roll=roll+choix
+            roll=+choix
             #Identification bool du joueur
             modu_player=choix%2
                 
@@ -36,9 +36,9 @@ def roulette_russe():
             reset=jeux_message.roulette_false()
 
 def pile_face():
+
     choix=""
-    choix=input(jeux_message.pile_face_bienvenu())
-        
+    choix=input(jeux_message.pile_face_bienvenu())        
     while choix != "Q":       
         result=random.randint(0,1)
 
@@ -46,11 +46,10 @@ def pile_face():
         elif(choix =="F"):choix=1
             # pile ou face lancé        
         
-        elif(choix>1 or choix<0):                 
+        if(choix>1 or choix<0):                 
             choix=jeux_message.pile_face_false()
             if(choix =="P"):choix=0
-            elif(choix =="F"):choix=1
-                                   
+            elif(choix =="F"):choix=1                                   
         else:                    
         # message gagnant ou perdant selon le choix
             if(result == choix):jeux_message.pile_face_win(choix)
@@ -76,10 +75,8 @@ def courte_paille():
 
         #choix de la paille
         choix=jeux_message.courte_paille_select(total)
-
         #creation de la plus courte paille      
         paille_loser=random.randint(1,total)
-
         #début tirage
         for k in range(len(joueur)):
             if(joueur[k]==choix-1):

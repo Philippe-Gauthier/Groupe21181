@@ -28,43 +28,48 @@ def roulette_lose():
     message=message.upper()
     return message
 def roulette_false():
-    message=input("Vous sélectionnez une chambre du barillet qui n'existe pas! \nContinuer ?O/N")
+    message=input("Entré inconnu! \nContinuer ?O/N")
     message=message.upper()
     return message
 
 #messages pile ou face
 def pile_face_bienvenu():
+    exit=1
     message=input("Bienvenu à pile ou face! Quelle côté choisissez-vous? P/F\n")
     message=message.upper()
-    return message
 
-def pile_face_false():
-    message=input("Côté non-reconnu, veuiller choisir entre P/F ou Q pour quitter\n")
-    message=message.upper()
-    return message
+    while exit.true:
+        if(message =="P"):
+            message=0 
+            break
+        elif(message =="F"):
+            message=1
+            break
+        else:
+            exit=1
+            choix=input("Côté non-reconnu, veuiller choisir entre P/F ou Q pour quitter\n")
+            choix=choix.upper()
+    return message        
 
 def pile_face_win(choix):
+        
     if(choix==0):
         message=input("Pile! Vous avez gagné! Voulez-vous rejouer(O) ou quitter(Q)?")
         message=message.upper()
-        return message
-    elif(choix==1):
-        message=input("Face! Vous avez gagné! Voulez-vous rejouer(O) ou quitter(Q)?")
-        message=message.upper()
-        return message
     else:
-        while 
-        pile_face_false()
+        message=input("Face! Vous avez gagné! Voulez-vous rejouer(O) ou quitter(Q)?")
+        message=message.upper()            
+    return message        
     
 def pile_face_lose(choix):
+    
     if(choix==0):
         message=input("Pile! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
         message=message.upper()
-        return message
     else:
         message=input("Face! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
-        message=message.upper()
-        return message
+        message=message.upper()            
+    return message
 
 #messages courte paille
 def courte_paille_bienvenu():
