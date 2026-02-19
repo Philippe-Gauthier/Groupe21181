@@ -22,7 +22,7 @@ def réponse (choixA, choixB, choixC, vrai_reponse) :
     print("Erreur, Choix invalide")
     return 0
  
- #Niveau 1 du jeu de quiz educatif: Capitales des pays""" 
+ #Niveau 1 du jeu de quiz educatif: Capitales des pays
 print("niveau_1 Capital des pays")
 print("---------------------------")
 
