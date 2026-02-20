@@ -10,21 +10,27 @@ def demander_choix(choix_1,choix_2, question):
     Sortie: choisir une option (1 ou 2)
     But: Demander a l'utilisateur de faire un choix
     """
-
+# Présentation du personnage
     print("Joseph est un étudiant en electronique programmable")
     print("joseph a pour ambition de reussir sa session")
 
+# Afficher la question
     print("\n" + question)
+
+# Demander un choix à l'utilisateur
     choix = int(input(f"Vous pouvez entrez votre choix svp ({choix_1} ou {choix_2})"))
     
     print("-" * 50)
- 
+
+# Vérifier si le choix est valide 
     if choix == choix_1:
         return choix_1
     elif choix == choix_2:
         return choix_2
     else:
         print("choix invalid")
+
+# Si le choix est invalid recommancer à faire un choix
     return demander_choix (choix_1, choix_2, question)  
 print("-" * 50)
 
