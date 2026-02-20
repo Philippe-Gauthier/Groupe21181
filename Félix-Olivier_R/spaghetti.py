@@ -1,5 +1,5 @@
 """
-Projet 1: Histoire intéractive
+
 Félx-Olivier Rioux
 """
 import sys
