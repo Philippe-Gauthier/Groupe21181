@@ -241,7 +241,7 @@ Resultat_final_atletico_ligue_b= ": Tu acceptes. Le niveau est moins élevé, le
 
 Resultat_final_atletico_entraineur = "Tu ranges tes crampons et tu t'inscris en sciences du sport. Dix ans plus tard, \n \
     tu es l'un des meilleurs entraîneurs du monde.Real Madrid, équipe nationale, Ligue des Champions. Les journalistes adorent te couvrir,\n \
-     mais savent que tu n'as pas ta langue dans ta poche.  \n \Parfois tu t'emportes en conférence de presse, parfois tu rentres dans les arbitres,\n \
+     mais savent que tu n'as pas ta langue dans ta poche. Parfois tu t'emportes en conférence de presse, parfois tu rentres dans les arbitres,\n \
      parfois tu recales un joueur publiquement sans hésiter.Les gens t'appellent  The Chosen One. \n \
      Pas seulement pour tes résultats, mais parce que tu as le caractère d'un champion."
 
@@ -343,7 +343,8 @@ def formater_question(texte, choix1, choix2, contexte1 ):
     page = page +"\n" 
     page = page +"\n" +"vous devez choisir parmis ces choix"+"\n"
     page = page +"\n" + contexte1 +"\n"
-    page = page + "\n" + "1  " + choix1 + "\n" + "2  " + choix2 + "\n"
+    page = page + "\n" + "1  " + choix1 + "\n" + "\n" + "2  " + choix2 + "\n"
+    page = page + "\n" + "Quelle est votre choix?"
     return page 
 
 
