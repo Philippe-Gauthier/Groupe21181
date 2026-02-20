@@ -19,7 +19,7 @@ Question_1_choix_2 ="Milieu de terrain : Tu es le maestro. Vision du jeu, passes
 
 
 # Les 2 premiers sont pour le choix1(attaquants) et les 2 autres choix 2(millieu de terrain)
-Question_2 = "Quelle est ta nationalité"
+Question_2 = "Quelle est ta nationalité ?"
 Question_2_choix_1 = "Brésilienne:\n \
     Tu viens du pays du jogo bonito. Formé sur les terrains de terre battue,\n \
     tu as la magie brésilienne dans les pieds. Dribble, technique pure, créativité.\n \
@@ -200,7 +200,7 @@ contexte_FC_porto = "Tu joues très bien. C'est la final de la champions League 
 Question_5_choix_31 ="Tu tire à gauche très fort "
 Question_5_choix_32 ="Tu tire de panenka "
 
-# Les résulats final de chaque choix
+# Les résulats final de chaque choix de parcours 
 Resultat_final_porto_panenka = "Tu poses le ballon calmement. Tu regardes le gardien dans les yeux. Ta décision est déjà prise.\n \
       Tu prends ton élan lentement. Le gardien plonge à droite... et tu soulèves délicatement le ballon au centre. \n \
     Il retombe doucement au fond des filets.Silence. Puis le stade explose. Tes coéquipiers te sautent dessus."
@@ -334,21 +334,33 @@ Resultat_final_real_rompre_contrat ="Tu ne peux plus vivre comme une ombre au Re
 
 #Quand je n'ai pas de contexte je met aucun pour qu'il n'y ait pas d'erreur 
 aucun =""
-'''
 
 '''
+Entrés: 
+-TexteLa question en str 
+-Choix1 le choix numéro 1 en str 
+-Choix2 le choix numéro 2 en str
+-Contexte c'est le contexte pour les choix en str
 
-def formater_question(texte, choix1, choix2, contexte1 ):
+Sortie: le format que l'utilisateur va voir la question, les choix et le contexte
+
+
+But: Le but est de formater ma question, avec mes choix et mon contexte 
+pour que ça soit organiser pour l'utilisateur, 
+identique pour chacune et de ne pas devoir refaire chaque fois cela 
+'''
+
+def formater_question(texte, choix1, choix2, contexte ):
     page = f"Vous devez répondre à la question suivante: {texte}"
     page = page +"\n" 
     page = page +"\n" +"vous devez choisir parmis ces choix"+"\n"
-    page = page +"\n" + contexte1 +"\n"
+    page = page +"\n" + contexte +"\n"
     page = page + "\n" + "1  " + choix1 + "\n" + "\n" + "2  " + choix2 + "\n"
     page = page + "\n" + "Quelle est votre choix?"
     return page 
 
 
-print(Titre) 
+print(Titre)
 
 print(Introduction)
 
