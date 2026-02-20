@@ -1,7 +1,6 @@
 """
-Félx-Olivier Rioux
 Projet 1: Histoire intéractive
-
+Félx-Olivier Rioux
 """
 import sys
 from time import sleep
@@ -16,12 +15,9 @@ char_1=0
 
 def choice_user2(choix1,choix2):
     """
-Permet de formatter les questions toujours de la même façon. Celle-ci à 2 options
-    result = 0 Pour permettre de looper dans un while lorsque l'input n'égal pas une des trois options
-    Print option 1 entrée dans le re-call de la fonction
-    Print option 2 entrée dans le re-call de la fonction
-    While qui loop jusqu'à ce que (1) ou (2) ou (3) soit rentré
-    Return le choix du l'utilisateur 
+    Entrées: Choix de réponse pour l'utilisateur.
+    Sortie: La réponse de l'utilisateur en INT.
+    But: Optimizer les choix de réponose et limiter les risques d'erreurs.
     """
     result=0
     print("\n______________________________________________")
@@ -39,13 +35,9 @@ Permet de formatter les questions toujours de la même façon. Celle-ci à 2 opt
 
 def choice_user3(choix1,choix2,choix3): 
     """
-Permet de formatter les questions toujours de la même façon. Celle-ci à 3 options
-    result = 0 Pour permettre de looper dans un while lorsque l'input n'égal pas une des trois options
-    Print option 1 entrée dans le re-call de la fonction
-    Print option 2 entrée dans le re-call de la fonction
-    Print option 3 entrée dans le re-call de la fonction
-    While qui loop jusqu'à ce que (1) ou (2) ou (3) soit rentré
-    Return le choix du l'utilisateur 
+    Entrées: Choix de réponse pour l'utilisateur.
+    Sortie: La réponse de l'utilisateur en INT.
+    But: Optimizer les choix de réponose et limiter les risques d'erreurs.
     """
     result=0
     print("\n______________________________________________")
@@ -64,13 +56,9 @@ Permet de formatter les questions toujours de la même façon. Celle-ci à 3 opt
 
 def choice_num(question): 
     """
-    While true = boucle sans fin.
-        Print la question entrée dans le re-call de la fonction et stock la réponse dans "number"
-        Le programme essaie de convertir la réponse de "number" vers "result" en un INTEGER
-            Si ça break pas on continuer avec le return
-        Si ça chie.
-            Demande de re-rentrer un nombre et recommence d'en haut dans le while.
-    Return le résultat en INTEGER
+    Entrée: La question posé à l'utilisateur.
+    Sortie: Un numéro INT, entrée par l'utilisateur.
+    But: S'assurer que l'utilisateur rentre un nombre pour pouvoir l'affecter avec des maths.
     """
     while True: 
         number=input(f"{question} : ") 
@@ -84,7 +72,10 @@ def choice_num(question):
 def texte_delai(text, delay=0.05, newline=True): 
     """
     Code emprunté de monsieur copilot. Permet d'écrire une lettre à la fois
-    Je sais pas comment il fonctionne.
+    Je sais pas comment il fonctionne pour être honnête.
+    Entrée: Le temps de délai.
+    Sortie: Un delai d'écriture sur le print.
+    But: Ajouter un delai entre les littres à l'intérieur d'un print.
     """
     for ch in text:
         sys.stdout.write(ch)
