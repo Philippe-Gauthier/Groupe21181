@@ -3,11 +3,12 @@ Félx-Olivier Rioux
 Projet 1: Histoire intéractive
 
 """
-import time, sys
+import sys
+from time import sleep
 JOUER=True
 
-court=0.5 # Variable de constantes pour les time.sleep, facilite le changement de tout les délais
-long=0.5  # Variable de constantes pour les time.sleep, facilite le changement de tout les délais
+court=0 # Variable de constantes pour les time.sleep, facilite le changement de tout les délais
+long=0  # Variable de constantes pour les time.sleep, facilite le changement de tout les délais
 
 choix_temps=2
 nb_lecture=0   # Permet de garder le nombre de lectures plus tard
@@ -27,7 +28,7 @@ Permet de formatter les questions toujours de la même façon. Celle-ci à 2 opt
     print(f"|     1 = {choix1}")
     print(f"|     2 = {choix2}")
     while(result!=1 and result!=2):
-        decision=input("       Entrée: ")
+        decision=input("       Choix: ")
         while True:
             try:
                 result=int(decision)
@@ -52,7 +53,7 @@ Permet de formatter les questions toujours de la même façon. Celle-ci à 3 opt
     print(f"|     2 = {choix2}")
     print(f"|     3 = {choix3}")
     while(result!=1 and result!=2 and result!=3):
-        decision=input("       Entrée: ")
+        decision=input("       Choix: ")
         while True:
             try: 
                 result=int(decision)
@@ -88,7 +89,7 @@ def texte_delai(text, delay=0.05, newline=True):
     for ch in text:
         sys.stdout.write(ch)
         sys.stdout.flush()   
-        time.sleep(delay)
+        sleep(delay)
     if newline:
         sys.stdout.write("\n")
         sys.stdout.flush()
@@ -107,77 +108,77 @@ while(JOUER==True):
     input() # Permet d'attendre l'input de l'utilisateur avant de continuer
 
     print("     -Bonjour, est-ce que je parle à Nicolas?\n")
-    time.sleep(court)
+    sleep(court)
     print("   **Regardez le README s'il y a confusion.** ")
     phone_1=choice_user2("-Oui","-Non")  # Évènement 1 - phone_1 appel pour la voiture
 
     if(phone_1==1): # phone_1 OUI
         print("\n-Oui c'est moi.")
-        time.sleep(court)
+        sleep(court)
         print("-Je m'adresse à qui?")
-        time.sleep(court)
+        sleep(court)
         print("     -C'est George, voyons criss tu sonne bin jeune, c'est tu vraiment toi sur facebook?")
-        time.sleep(court)
-        texte_delai("ouch" , delay=(0.4))
+        sleep(court)
+        texte_delai("ouch" , delay=(court*0.2))
 
         char_1=choice_user3("-Oui c'est bien moi","Racrocher","-Es-tu sérieux pour le truck ou non?") # char_1 réponse - Évènement 2
 
         if(char_1==1): #char_1 option 1
             print("\n-Oui oui, c'est moi, on me le dit souvent, toé t'as quel age? Tu sonnes crissement vieux.")
-            time.sleep(court)
+            sleep(court)
             print("J'ai pas pu me retenir sa voix criait la vieillesse.")
-            time.sleep(court)
+            sleep(court)
             print("Au final il m'avait offert de passer chez eux la même journée.")
-            time.sleep(court)
+            sleep(court)
 
         elif(char_1==2): #char_1 option 2
             print("\nBon.. J'ai racroché.")
-            time.sleep(court)
+            sleep(court)
 
         elif(char_1==3): #char_1 option 3
             print("\n-Scuse moi, mais es-tu sérieux pour le truck ou tu va perdre mon temps?")
-            time.sleep(long)
+            sleep(long)
             print("     -Pardonne moi, tu souhaites le voir? Viens à l'adresse indiqué sur l'annonce ajourd'hui à partir de 3h si tu peux.      -Suite")
             input()
             print("-C'est bon, on va se voir.")  
-            time.sleep(court)
+            sleep(court)
 
     elif(phone_1==2): # phone_1 NON
         print("-Non scuse moi lgros, tu dois avoir le mauvais numéro.") 
-        time.sleep(court)
+        sleep(court)
         print("J'étais sûr c'était un foutu spam, j'ai pas réfléchi..   -Suite")
         input()
         print("     -Ah je suis désolé. C'est pas toi qui m'avait envoyé un message pour le ford ce matin?")
-        time.sleep(long)
-        texte_delai("Ah, shit.",delay=(0.2)) # Effet type writter
-        time.sleep(court)
+        sleep(long)
+        texte_delai("Ah, shit.",delay=(court*0.1)) # Effet type writter
+        sleep(court)
         print("Je ne pouvais pas retourner la situation, je sais pas si j'avais simplement pas allumé, mais j'ai choké.\nJ'avais 18 ans je sais pas trop quoi te dire. Compte-tenu qu'il savait pas j'étais qui je ne me suis pas retenue..       -Suite")
         input()
         print("-Non désolé. Je te souhaite une bonne journée.")
-        time.sleep(court)
+        sleep(court)
         print("     -Ah pardon, bonne journée à toi aussi.")
-        time.sleep(court)
+        sleep(court)
 
     print("Je dois l'admettre j'étais un peu impuslif..\nAu moins j'ai le char.       -Suite")
     input()
 
     if(char_1==2 or phone_1==2): 
         print("Au final chu juste aller voir le gars sans m'annoncer. Quand même content que tout ait fonctionné.")
-        time.sleep(long)
+        sleep(long)
 
     print("     -Chérie? T'avais tu fais la lessive ou pas encore? Moi et ton père on a du linge à laver pour la semaine prochaine.")
-    time.sleep(long)
+    sleep(long)
     print("Ouaip, j'habite encore chez mes parents, tu serais fou de croire que je peux me permettre un chez moi dans cette économie.    -Suite")
     input()
 
     print("Ils s'en vont en vacances la semaine prochaine, j'ai quand même hâte ça va me donner tellement de temps pour moi. ")
-    time.sleep(long)
+    sleep(long)
     print("-Ouais je m'en vais justement sortir mon stock tu va pouvoir y aller.")
-    time.sleep(court)
+    sleep(court)
     print("-Vous partez quand déjà?")
-    time.sleep(court)
+    sleep(court)
     print("     -Dimanche vers 11 heures. Dis moi, il fait combien dehors aujourd'hui?\n")
-    time.sleep(court)
+    sleep(court)
     
     num_temp_1=choice_num("Température: ") # Commande pour défénire la saison pour le reste de l'histoire
     if(num_temp_1 >= 30):
@@ -192,7 +193,7 @@ while(JOUER==True):
         saison="+hiver"
 
     print(f"Il fait {num_temp_1} avec du soleil dehors. Au plus chaud {num_temp_1+5}.")        # Définir la saison selon la température entrée par l'utilisateur.
-    time.sleep(court)
+    sleep(court)
     if(saison=="+été"): 
         print("     -Sérieux?? Cibole, je penses que je me suis trop habillé ce matin.")
     elif(saison=="été"):
@@ -203,14 +204,14 @@ while(JOUER==True):
         print("     -Merci chérie. On se revoit tantôt.")
     elif(saison=="+hiver"):
         print("     -C'est sûr tu me niaise. Ok merci, je vais prendre ma tuque. À tantôt.")
-    time.sleep(court)
+    sleep(court)
 
     print("-Bonne journée et à ce soir.")
-    time.sleep(court)
+    sleep(court)
     print("Ce matin je dois aller porter ma soeur à son cégep, sa voiture a eu un pépin. Au moins c'est vendredi j'ai pas besoin d'y aller demain.       -Suite")
     input()
     print("Je dois me rendre à la job pour un shift de 8 heures après. Trop long si tu me demandes mais au moins mon buddy Alex va être là.")
-    time.sleep(long)
+    sleep(long)
 
     if(saison=="été" or saison=="automne" or saison=="+été"): 
         print("Il fait beau la route va être plaisante je crois. Je vais pouvoir blaster ma musique.     -Suite")
@@ -218,13 +219,13 @@ while(JOUER==True):
         print("Fallait je m'ouvre la geule, il y a un accident sur le coin de ma rue, je suis dans un foutu cul de sac.\nOn peut même pas sortir de notre rue.\nJe suis encore content que ma soeur commence ses cours aussi tôt j'ai du temps ce matin.        -Suite")
         input()
         print("Moins cool pour elle par contre, mais moi je suis sur le point de me faire virer donc je veux pas jouer avec le feu.")
-        time.sleep(long)
+        sleep(long)
         police_1=choice_user2("Aller voir les policiers","Attendre") # Évènement policiers
         if(police_1==1):
             print("J'étais sortie du char pour aller voir c'était quoi le problème. Rendu à la auteur de leur voiture,\nje l'ai vu, complètement détruite, y'avait une BMW sur le côté qui était rentré dans un poteau électrique.\nTypique. Chépa trop comment ils ont fait mais c'était pas beau à voir.     -Suite")
             input()
             print("Ils m'ont dit que d'ici une vingtaines ils allait être en route. Au final moi et ma soeur on est rentré chez nous.\nPuis, enfin, 1 heure plus tard, de chez nous on les avait vu parir.")
-            time.sleep(long)
+            sleep(long)
         elif(police_1==2):
             print("On doit avoir attendu un bon 45 minutes avant que les ambulances puis tout soit arrivé. C'était pénible. Au moins on avait la musique dans le char.     -Suite")
             input()
@@ -237,45 +238,45 @@ while(JOUER==True):
     input()
 
     print("Au final j'ai rien vu de flagrant. Le texto disait rien.")
-    time.sleep(court)
+    sleep(court)
     print("     -Yo Nico comment tu vas aujourd'hui?")
-    time.sleep(court)
+    sleep(court)
     print("-Bien, et toi?")
-    time.sleep(court)
+    sleep(court)
     print("    -Ça va, le réveille était rough ce matin je l'ai poussé hier soir, deux ou trois nouvelles chansons qui sont sorties autour de minuit.\n    -Je te les envoies plus tard.")
-    time.sleep(long)
+    sleep(long)
     print("-Ah ouais shit j'ai manqué ça. Cool.")
-    time.sleep(court)
+    sleep(court)
 
     texto_1=choice_user2("Lui parler du texto","Le garder pour soi")
     if(texto_1==1):
         print("-Hey, t'avais-tu reçu un texto te disant de ne pas te pointer à la job ce matin?\n-Il venait d'un numéro inconnu.       -Suite")
         input()
         print("     -Non, the fuck? J'aurais presque aimé, moi je l'aurais écouté si j'étais toi.\n     -8 heures c'est long broo.")
-        time.sleep(long)
+        sleep(long)
         print("-Weird, bref, live je vois rien d'inabituel donc je vais pas trop y porter attention.     -Suite")
         input()
     elif(texto_1==2):
         print("-Prêt pour les 8 prochaines heures?")
-        time.sleep(court)
+        sleep(court)
         print("     -8 heures c'est long broo. Encore une chance qu'on est deux sur la même job aujourd'hui. Hâte à ce soir.")
-        time.sleep(court)
+        sleep(court)
     print("Je serais peut-être pas venu si j'avais reçu le texto avant de rembarquer sur la route.      -Suite")
     input()
     if(saison=="été" or saison=="automne" or saison=="+été"):
         print("-Ce matin sur ma rue il y avait un accident, une BMW avec un char de police, une Charger. On est resté pogné pendant une heures sans pouvoir passer.     -Suite")
         input()
         print("     -Ah ouin? Damn ouais c'est vraiment fort ça. Un vendredi en plus, leur journé est ruiné.")
-        time.sleep(long)
+        sleep(long)
 
     print("     -Parlant de, ce soir, t'avais reçu une invitation pour la party chez Émile ou non? Tu devrais venir, je sais que Chloé sera pas là.       -Suite")
     input()
     party_1=choice_user3("-Non j'ai rien eu","Mentir","Demander des détails sur le party")
     if(party_1==1):
         print("-Non j'ai rien reçu.")
-        time.sleep(court)
+        sleep(court)
         print("Si Chloé est pas là je suis peut-être preneur. C'est mon ex, il y pas plus abusive qu'elle.")
-        time.sleep(long)
+        sleep(long)
         print("-Tu m'enverras l'adresse, je suis pas encore allé chez Émile.        -Suite")
         input()
     elif(party_1==2):
@@ -283,27 +284,27 @@ while(JOUER==True):
     else:
         print("-Dis moi plus.")
     print("     -C'est vers neuf heure. Il y aura le monde typique, venant du cégep surtout. Maxence et Yousef vont y être.")
-    time.sleep(long)
+    sleep(long)
     print("-Je vais voir. Merci     -Suite")
     input()
     print("Rendu dans le provigo, on a pu décider où on voulait travailler. On a choisit le comptoir à pain.\nToujours le plus calme, c'est dans le fond, pas personne qui passe, si jamais, ils savent exactement ce qu'ils veulent.     -Suite")
     input() 
     
     print("     -J'ai commencé à écouter à du nouveau stock. Tu connais Aswell?")
-    time.sleep(court)
+    sleep(court)
     print("-Ça me dit de quoi. Il est québécois right?")
-    time.sleep(court)
+    sleep(court)
     print("     -Ouaip, lui, il a droppé une nouvelle chanson justement hier soir. Vraiment bonne. Bref, je l'ai croisé récemment.")
-    time.sleep(long)
+    sleep(long)
     print("Si je le connais??? Je capotte dessus depuis des mois. Peux pas croire qu'il habite dans le coin.")
-    time.sleep(long)
+    sleep(long)
     print("-Ah ouin? Cool, vers où? Tu lui avait parlé?")
     print("     -Dernière fois, oui, je l'ai croisé deux fois. Les deux fois c'était au Tim au coin de la rue en bas.")
-    time.sleep(long)
+    sleep(long)
     print("Noté, j'ai mon voyage. Très clairement que je vais commencer à y aller plus souvent. J'aime pas le café remarque. \nJe vais me trouver une raison.   -Suite")
     input()
     print("Ah fuck pas monsieur Robert.")
-    time.sleep(court)
+    sleep(court)
     print("     -Salut mon cher, je vais te prendre 7 baguette s'il te plait.")
     print("C'est mon prof de philo, c'était. Il me donnait les pires notes à cause que ma mère c'est son ex.\nCriss que j'aurais dû le snitch. J'ai jamais passé ma philo j'ai droppé le cours.\nJe voulais vraiment pas le voir.   -Suite")
     input()
@@ -313,23 +314,23 @@ while(JOUER==True):
         print("-Avec plaisir.\nJ'ai pris les baguettes de vla deux jours. C'était ma job de m'en départir, j'ai oublié deux fois.\n C'est juste parfait.        -Suite") 
     elif(robert==2):
         print("-Ça s'en vient.\nLe total devrait être de 24.50$ avant taxe, il va pas le voir venir mais il va payer pour les 4 prochaines aussi.")
-        time.sleep(long)       
+        sleep(long)       
         print("-Cela vous fera 41.50$. Voilà la facture vous pourrez la scanner rendu à la caisse.\nSur la facture ça ne mentionne pas les baguettes d'extra, je peux ajouter le montant que je veux.    -Suite")
         input()
         print("     -41? C'est pas beaucoup?")
-        time.sleep(court)
+        sleep(court)
         print("-Ouais, je sais, c'est rendu cher. J'ai comme pas le contrôle sur les prix. Bonne journée.")
-        time.sleep(long)
+        sleep(long)
     print("     -Merci, bonne journée.")
-    time.sleep(court)
+    sleep(court)
     print("Là chu fier par contre. Ça fait au moins 10 fois que je le vois je me devait de faire quelque chose.")
-    time.sleep(long)
+    sleep(long)
     print("-Yo Alex. Tu te rapelle de Robert?")
-    time.sleep(court)
+    sleep(court)
     print("     -Lui qui vient de repartir?")
-    time.sleep(court)
+    sleep(court)
     print("-Ouaip. Faut je te montre de quoi.")
-    time.sleep(court)
+    sleep(court)
     if(robert==1):
         print("-Check là.\nJe lui pointe la pile des baguettes d'avant hier. Il en manque 7.     -Suite")
         input()
@@ -337,11 +338,11 @@ while(JOUER==True):
         input()
     elif(robert==2):
         print("-Check la facture la plus récent dans le système.")    
-        time.sleep(court)   
+        sleep(court)   
         print("     -Hahaha je peux pas croire que t'as fait passé ça.      -Suite") 
         input()
     print("-Merci haha\nReste plus qu'à voire s'il va revenir se plaindre ou non.\nHonnêtement ça me donnerait une bonne raison de me trouver une autre job.")
-    time.sleep(long)
+    sleep(long)
 
 
 
@@ -359,4 +360,4 @@ while(JOUER==True):
                 court=0
                 long=0
 print("Fin")
-time.sleep(2.5)
+sleep(2.5)
