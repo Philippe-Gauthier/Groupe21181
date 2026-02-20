@@ -1,6 +1,5 @@
 """
-Nom du fichier: Divination.py
-Description: Aventure dont vous êtes le héros ou vous êtes une voyante et devez inventer le futur de vos clients
+Futurs dont vous êtes l'auteur!
 Auteur: Nathan Paradis
 """
 
@@ -84,9 +83,6 @@ option1_2 = "option2"
 option1_3 = "option3"
 
 lvl1 = [text1, option1_1, option1_2, option1_3]
-
-
-
 
 
 
