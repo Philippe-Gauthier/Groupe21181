@@ -1,7 +1,7 @@
 
 '''
-Titre:
-Nom:
+Titre: Projet 1, L'ascension d'une étoile
+Nom: David Santiago Caicedo Valbuena
 '''
 
 
