@@ -32,7 +32,7 @@ Pas de retour en arriere d'un seul choix, certains chemins sont beaucoup plus co
 
 
 
-# NE PAS LIRE PLUS BAS POUR NE PAS SE SPOILER #
+# NE PAS LIRE PLUS BAS POUR NE PAS SE SPOILER #   "REMISE FINALE" DANS LA DESCRIPTION DU COMMIT DE LA BRANCHE MAIN
 
 
 
