@@ -93,7 +93,8 @@ def texte_delai(text, delay=0.05, newline=True):
         sys.stdout.write("\n")
         sys.stdout.flush()
 
-while(JOUER==True): # Permet de looper le jeu selon l'input de l'utilisateur après sa lecture
+# Permet de looper le jeu selon l'input de l'utilisateur après sa lecture
+while(JOUER==True): 
     
     if(nb_lecture>0):
         input("\nContinuer?   -Suite") # Permet d'afficher un message différent selon le nombre de fois que l'utilisateur a joué
@@ -287,6 +288,7 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'utilisateur apr
     input()
     print("Rendu dans le provigo, on a pu décider où on voulait travailler. On a choisit le comptoir à pain.\nToujours le plus calme, c'est dans le fond, pas personne qui passe, si jamais, ils savent exactement ce qu'ils veulent.     -Suite")
     input() 
+    
     print("     -J'ai commencé à écouter à du nouveau stock. Tu connais Aswell?")
     time.sleep(court)
     print("-Ça me dit de quoi. Il est québécois right?")
@@ -297,24 +299,64 @@ while(JOUER==True): # Permet de looper le jeu selon l'input de l'utilisateur apr
     time.sleep(long)
     print("-Ah ouin? Cool, vers où? Tu lui avait parlé?")
     print("     -Dernière fois, oui, je l'ai croisé deux fois. Les deux fois c'était au Tim au coin de la rue en bas.")
-    
+    time.sleep(long)
+    print("Noté, j'ai mon voyage. Très clairement que je vais commencer à y aller plus souvent. J'aime pas le café remarque. \nJe vais me trouver une raison.   -Suite")
+    input()
+    print("Ah fuck pas monsieur Robert.")
+    time.sleep(court)
+    print("     -Salut mon cher, je vais te prendre 7 baguette s'il te plait.")
+    print("C'est mon prof de philo, c'était. Il me donnait les pires notes à cause que ma mère c'est son ex.\nCriss que j'aurais dû le snitch. J'ai jamais passé ma philo j'ai droppé le cours.\nJe voulais vraiment pas le voir.   -Suite")
+    input()
+
+    robert=choice_user2("Lui donner une mauvaise soirée","Le charger double")
+    if(robert==1):
+        print("-Avec plaisir.\nJ'ai pris les baguettes de vla deux jours. C'était ma job de m'en départir, j'ai oublié deux fois.\n C'est juste parfait.        -Suite") 
+    elif(robert==2):
+        print("-Ça s'en vient.\nLe total devrait être de 24.50$ avant taxe, il va pas le voir venir mais il va payer pour les 4 prochaines aussi.")
+        time.sleep(long)       
+        print("-Cela vous fera 41.50$. Voilà la facture vous pourrez la scanner rendu à la caisse.\nSur la facture ça ne mentionne pas les baguettes d'extra, je peux ajouter le montant que je veux.    -Suite")
+        input()
+        print("     -41? C'est pas beaucoup?")
+        time.sleep(court)
+        print("-Ouais, je sais, c'est rendu cher. J'ai comme pas le contrôle sur les prix. Bonne journée.")
+        time.sleep(long)
+    print("     -Merci, bonne journée.")
+    time.sleep(court)
+    print("Là chu fier par contre. Ça fait au moins 10 fois que je le vois je me devait de faire quelque chose.")
+    time.sleep(long)
+    print("-Yo Alex. Tu te rapelle de Robert?")
+    time.sleep(court)
+    print("     -Lui qui vient de repartir?")
+    time.sleep(court)
+    print("-Ouaip. Faut je te montre de quoi.")
+    time.sleep(court)
+    if(robert==1):
+        print("-Check là.\nJe lui pointe la pile des baguettes d'avant hier. Il en manque 7.     -Suite")
+        input()
+        print("     -Osti je peux pas croire. Pas pire, ton secret est en sécurité. Félicitation man.     -Suite")
+        input()
+    elif(robert==2):
+        print("-Check la facture la plus récent dans le système.")    
+        time.sleep(court)   
+        print("     -Hahaha je peux pas croire que t'as fait passé ça.      -Suite") 
+        input()
+    print("-Merci haha\nReste plus qu'à voire s'il va revenir se plaindre ou non.\nHonnêtement ça me donnerait une bonne raison de me trouver une autre job.")
+    time.sleep(long)
 
 
 
     nb_lecture=nb_lecture+1
-    print(f"\n\nSouhaitez vous recommencer l'histroie? Cela vous fait {nb_lecture} lectures.")
+    print(f"\n\nSouhaitez vous recommencer l'histoire? Cela vous fait {nb_lecture} lectures.")
     rejouer=choice_user2("Oui","Non")
     if(rejouer==2):
         JOUER=False
     elif(rejouer==1):
-        if(choix_temps==2):
-            print("\n\n**Souhaitez vous retirer les temps d'attente? Vous n'aurez plus besoin d'attendre entre les lignes de texte.**")
+        #Si l'utilisateur a jouer au minimum 3 fois, un prompt demande s'ils veulent retirer les "time.sleep"
+        if(choix_temps==2 and nb_lecture>=3):
+            print("\n\n**Souhaitez vous retirer les temps d'attente? Vous n'aurez plus besoin d'attendre après les lignes de texte.**")
             choix_temps=choice_user2("Oui","Non")
             if(choix_temps==1):
                 court=0
                 long=0
-
-
-
 print("Fin")
 time.sleep(2.5)
