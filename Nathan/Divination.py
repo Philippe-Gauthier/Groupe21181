@@ -1,6 +1,6 @@
 """
 Futurs dont vous êtes l'auteur!
-Auteur: Nathan Paradis
+Par: Nathan Paradis
 """
 
 
@@ -175,9 +175,9 @@ def level_extractor(niveau_selectionne):
 #module de présentation des choix, utiliser avec la fonction ci dessus
 def presentation_choix(situation0, choix_1, choix_2, choix_3):
     """
-    Fonction qui formatte le texte et les choix d'un niveau en liste lisible et claire
+    Fonction qui formatte le texte et les choix d'un niveau en liste lisible et claire, puis demande une question a l'utilisateur
     Inputs: Output de la derniere fonction, soit les variables pour chaque choix et le texte formattés
-    Outputs: Liste formattée de la situation et des choix possibles, et une variable de réponse au choix en int
+    Outputs: Liste formattée de la situation et des choix possibles sur le terminal, et une variable de réponse au choix en int
     """
     time.sleep(0.5)
     print(f"\n{situation0}\n")
