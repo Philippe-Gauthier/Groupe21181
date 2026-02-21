@@ -44,6 +44,7 @@ def pile_face_false():
             
             choix=input("Côté non-reconnu, appuyer sur toutes touches pour recommencer ou Q pour quitter\n")
             choix=choix.upper()
+            return choix
 
 def pile_face_win(choix):
         
