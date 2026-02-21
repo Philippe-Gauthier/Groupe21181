@@ -78,7 +78,7 @@ textdevined6 = "Vous lui dites qu'Elder Scrolls 6 sortira avant les autres, mais
 devined6 = [textdevined6]
 
 #ending
-textdevinbb2 = "Vous lui dites que vous n'etes pas sur quel jeu sortira en premier, mais vous lui dites avec certitude que Bloodborne 2 ne sortira jamais. Son visage s'affaisse, il sort son portefeuille, vous paye, et s'en va. Vous venez de perdre un futur client."
+textdevinbb2 = "Vous lui dites que vous n'êtes pas sur quel jeu sortira en premier, mais vous lui dites avec certitude que Bloodborne 2 ne sortira jamais. Son visage s'affaisse, il sort son portefeuille, vous paye, et s'en va. Vous venez de perdre un futur client."
 devinbb2 = [textdevinbb2]
 
 #ending
@@ -95,11 +95,23 @@ devinjeux = [textdevinjeux, devinjeu1, devinjeu2, devinjeu3]
 
 
 
+#-----5 layer
 
+#ending
+textdevingoodending = "Vous lui dites qu'il va vivre une très belle vie, qu'il aura des enfants, et que ses enfants auront des enfants, et qu'il allait mourrir paisiblement main dans la main avec sa femme. Il vous fait un drole de visage, puis vous revele alors qu'il est homosexuel. Il vous traite d'homophobe, vous sacre une bonne claque en plein dans la tronche et il part sans payer. Vous aviez besoin de cet argent pour votre abonnement netflix sans pubs, vous tombez donc dans la depression."
+devingoodending = [textdevingoodending]
+
+#ending
+textdevinbadending = "Vous lui dites que les apparences sont trompeuse, et qu'il finira par se divorcer, et de tomber dans l'alcoolisme. Il vous regarde d'un regard vide, et puis il vous remercie de l'avoir prévenu. Il part apres avoir payé pour votre service, vous vous sentez mal de détruire les espoirs d,un si jeune homme mais vous vous dites que c'est pour le plus grand bien (pouvoir vous payer votre abonnement amazon prime pour la livraison gratuite)."
+devinbadending = [textdevinbadending]
+
+#ending
+textdevindepressed = "Est-ce vraiment une fin??? qui sait, peut etre que lorsque voux cliquerez pour recommencer le jeu et voir les autres fins vous allez trouver quelquechose de noueau ici, qui sait (et pour les gens qui sont encore ici, rebonjour, et ca me tentait vraiment pas de continuer cette branche. J'avais besoin d'une troisieme option, et je suis trop pareusseux pour l'écrire.)"
+devindepressed = [textdevindepressed]
 
 #----4 layer
 
-textdevinlove = ""
+textdevinlove = "Vous lui dites qu'il va rencontrer tres bientot l'amour de sa vie, vous le voyez clairement dans votre boule de crystale (brisée, mais vous ne mentionnez pas cela). Il vous supplie de lui en dire plus.\n\n Quel est son futur amoureux?"
 devinlove1 = "Good ending"
 devinlove2 = "Bad ending"
 devinlove3 = "Depressing ending"
@@ -110,14 +122,12 @@ devinlove = [textdevinlove, devinlove1, devinlove2, devinlove3]
 textdevinnolove = "Vous lui dites qu'il n'aura tristement pas la chance de vivre l'amour dans sa vie, mais c'est l'opportunité pour lui de se consacrer a d'autres passions, telles que le pickle ball professionnel. Vous voyez Devin s'affaisser un peu, puis il se leve, et quitte. Vous croyez entendre des pleurs venant de l'exterieur de votre tente. Vous realisez alors qu'il ne vous a pas payé, vous aviez besoin de l'argent pour payer votre spotify premium, vous tombez donc en depression nerveuse."
 devinnolove = [textdevinnolove]
 
-
 textdevindevier = "Vous ne pensiez pas avoir besoin d'en dire plus, il vous a pris au dépourvu, et vous ne pouveaz pas vous fier sur votre boule de crystal. vous décidez donc de sortir l'artillerie lourde. Vous dites a Devin d'attendre quelques secondes pour que vous puissiez aller chercher votre matériel.\n\nQuel item prennez-vous?"
 devindevier1 = "Cartes de Tarot"
 devindevier2 = "Livre sur les lignes de la main"
 devindevier3 = "Feuilles de thé"
 
 devindevier = [textdevindevier, devindevier1, devindevier2, devindevier3]
-
 
 #---3 layer
 textdevinamour = "Vous lui dites que le futur en termes de sorties de jeux est assez flou ce matin (mercure retrograde) mais vous voyez clairement son futur amoureux. Il vous demande de lui en dire plus.\n\nQue lui dites-vous?"
@@ -129,16 +139,36 @@ devinamour = [textdevinamour, devinamour1, devinamour2, devinamour3]
 
 
 
+#-----5 layer
 
+#ending
+textdevinrepete = "Il vous regarde fixemment et vous dit très lentement: 'oui... je... m'appelle... Devin'. Vous lui expliquez alors ce qu'est un devin, il rougit s'excuse alors de son ignorance. Il est si désemparé qu'il vous paye et quitte la tente après ses excuses. Vous regardez l'entré de votre tente et vous dites a vous memes: 'les jeunes de nos jours...'. Vous vous dites que vous ne voulez pas gérer ce genre de personnages aujourd'hui, et vous retournez vous couchez chez vous."
+devinrepete = [textdevinrepete]
 
+#ending???
+textdevinexcuse = "Il accepte votre excuse, et, passant a la suite, il vous demande si vous savez s'il sera riche dans le futur. (4th wall break jumpscare, je me gardais ici des options pour continuer au cas ou j'aurais pas assez de choix, mais puisque vous lisez ceci, j'imagine que j'avais assez d'options.)"
+devinexcuse = [textdevinexcuse]
 
+#ending
+textdevinriendire = "Il fronce les sourcils, 'me prennez vous pour un idiot?', et vous répondez 'oui' avec confiance. Il sort de votre tente, enragé. Vous avez perdu un client"
+devinriendire = [textdevinriendire]
 
+#----4 layer
 
+textdevindevin = "Il vous dit que oui il s'appelle Devin\n\nVous le regardez dans les yeux et lui dites:"
+devindevin1 = "'Non, êtes-vous devin?'"
+devindevin2 = "'My bad fam'"
+devindevin3 = "Rien dire et rouler des yeux"
 
+devindevin = [textdevindevin, devindevin1, devindevin2, devindevin3]
 
+#ending
+textdevinriche = "A la premiere mention d'argent, Il devient fou et vous saute a la gorge, et vous crie 'MONEEEYYYYYYY' (vous ne parlez pas anglais donc ne savez aucunement ce que cela veut dire), vous sortez calmement votre spray au poivre et l'arrosez en plein dans les yeux, il vous lâche, se met a pleurnicher et il vous dit qu'il n'a jamais eu beaucoup d'argent, que ses parents avaient seulement un manoir, 5 maisons, 2 blocs appartement, 11 roulottes et une plage privée a Hawai, qu'il avait toujours conduit une vieille lamborghini de 2021, et qu'il n'avait jamais été gâté de sa vie a part la fois ou ses parents lui ont donné une carte de crédit pour qu'il puisse s'acheter tout ce qu'il voulait a leur compte. Vous n'avez rien de plus a dire sur la situation. Et, de plus, en tant qu'écrivain de cette histoire je ne sais meme pas ou je veux aller avec cette branche, alors honêtement elle va finir drette la, boom, finito, allez voir les autres branches a la place."
+devinriche = [textdevinriche]
 
-
-
+#ending
+textdevinspecial = "Il vous demande si vous le prennez pour un handicapé a le traiter de 'spécial' comme ca, et quitte votre tente. Vous vous demandez ce qui rend ces jeunes si susceptibles de nos jours. Un peu découragée, vous retournez chez vous pour écouter la lutte professionelle (votre sport préféré)."
+devinspecial = [textdevinspecial]
 
 #---3 layer
 textdevinnom = "Vous l'interrompez et lui demandez d'ou vient son nom. Vous pensiez que seuls les devins de grandes familles pouvaient s'appeller Devin, mais vous trouvez que ce jeune homme n'a vraiment pas l'air du genre 'famille riche et connue avec des pouvoirs divinatoires'.\n\nVous lui demandez si:"
@@ -147,6 +177,7 @@ devinnom2 = "Il est riche"
 devinnom3 = "Il savait que son nom était spécial"
 
 devinnom = [textdevinnom, devinnom1, devinnom2, devinnom3]
+
 
 
 #--2 layer
