@@ -71,7 +71,7 @@ martineclient1 = [text1_1, option1_1_1, option1_1_2, option1_1_3]
 
 
 
-
+#----4 layer
 
 #ending
 textdevined6 = "Vous lui dites qu'Elder Scrolls 6 sortira avant les autres, mais qu'il sera décevant après toute cette attente. Vous voyez qu'il est décu de votre réponse, il dit 'Vous ne connaissez rien sur ce sujet, vous êtes une fraude!'. Il part en vous payant en dessous de votre taux habituel. Vous continuez a fixer la sortie de votre tente pour quelques secondes avant de vous dire que vous etes trop vieille pour faire ce travail et que vous devriez prendre votre retraite."
@@ -94,6 +94,31 @@ devinjeu3 = "Half-Life 3"
 devinjeux = [textdevinjeux, devinjeu1, devinjeu2, devinjeu3]
 
 
+
+
+
+#----4 layer
+
+textdevinlove = ""
+devinlove1 = "Good ending"
+devinlove2 = "Bad ending"
+devinlove3 = "Depressing ending"
+
+devinlove = [textdevinlove, devinlove1, devinlove2, devinlove3]
+
+
+textdevinnolove = "Vous lui dites qu'il n'aura tristement pas la chance de vivre l'amour dans sa vie, mais c'est l'opportunité pour lui de se consacrer a d'autres passions, telles que le pickle ball professionnel. Vous voyez Devin s'affaisser un peu, puis il se leve, et quitte. Vous croyez entendre des pleurs venant de l'exterieur de votre tente. Vous realisez alors qu'il ne vous a pas payé, vous aviez besoin de l'argent pour payer votre spotify premium, vous tombez donc en depression nerveuse."
+devinnolove = [textdevinnolove]
+
+
+textdevindevier = "Vous ne pensiez pas avoir besoin d'en dire plus, il vous a pris au dépourvu, et vous ne pouveaz pas vous fier sur votre boule de crystal. vous décidez donc de sortir l'artillerie lourde. Vous dites a Devin d'attendre quelques secondes pour que vous puissiez aller chercher votre matériel.\n\nQuel item prennez-vous?"
+devindevier1 = "Cartes de Tarot"
+devindevier2 = "Livre sur les lignes de la main"
+devindevier3 = "Feuilles de thé"
+
+devindevier = [textdevindevier, devindevier1, devindevier2, devindevier3]
+
+
 #---3 layer
 textdevinamour = "Vous lui dites que le futur en termes de sorties de jeux est assez flou ce matin (mercure retrograde) mais vous voyez clairement son futur amoureux. Il vous demande de lui en dire plus.\n\nQue lui dites-vous?"
 devinamour1 = "Amour"
@@ -101,6 +126,18 @@ devinamour2 = "Pas d'amour"
 devinamour3 = "Dévier le sujet"
 
 devinamour = [textdevinamour, devinamour1, devinamour2, devinamour3]
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #---3 layer
@@ -114,9 +151,9 @@ devinnom = [textdevinnom, devinnom1, devinnom2, devinnom3]
 
 #--2 layer
 textdevin = "Votre premier client de la journée rentre dans votre tente, c'est un jeune homme d'environ vingt-trente ans, il vous donne son nom: Devin. Devin vous demande si vous pouvez lui parler de son futur amoureux ou du futur des jeux videos (vous ne conaissez rien aux jeux videos, ca commence bien la journée...).\n\n De quoi lui parlez-vous?"
-devin1 = "Jeux videos"
-devin2 = "Amour"
-devin3 = "Lui demander d'on vient son nom"
+devin1 = "De jeux videos"
+devin2 = "D'amour"
+devin3 = "D'on vient son nom"
 
 devinclient2 = [textdevin, devin1, devin2, devin3]
 
@@ -134,17 +171,13 @@ devinclient2 = [textdevin, devin1, devin2, devin3]
 textchienhocher = "Tristement, sa chienne est infidele envers lui, vous lui dites que c'est la vérité, et qu'elle a couché avec un berger allemand il y a deux jours. Le chien vous regarde avec un air extremement piteux, vous avez pitié de lui. Il quitte votre tente apres avoir déposé quelques biscuits en forme d'os comme paiement pour votre service. Apres toutes ces émotions vous vous dites que vous devriez retourner chez vous, vous voulez faire sur que votre berger allemand ne soit pas en train de jouer dans votre cour."
 chienhocher = [textchienhocher]
 
-#----4 layer
 #ending
 textchiensecouer = "Tristement, son maitre a des plans de le mettre en adoption a la SPA, vous lui dites que c'est bel et bien la vérité. Il n'arrive pas a y croire, et jure en sortant de votre tente 'Wouf wouf... waf wouf wouf' ce que, si vous avez bien compris, veut dire qu'il planifie mordre son maitre a un endroit particulier, mais vous n'avez pas bien compris quel endroit exactement... Apres toutes ces émotions vous vous dites que vous devriez retourner chez vous et nourrir votre chat."
 chiensecouer = [textchiensecouer]
 
-
-#----4 layer
 #ending
 textchienrien = "Tristement, vous venez d'apprendre au chien qu'il a la rage en phase terminale et qu'il ne lui reste pas longtemps a vivre. Le chien vous regarde d'un air démoli, il se retourne tranquilement, dépose un os par terre en guise de paiement (vous acceptez les paiements mOStercard depuis quelques mois) et quitte votre tente. Vous vous dites que vous devriez arreter de voler innutilement l'espoir a de pauvres chiens innocents et reconsidérez votre travail. Vous vous dites que allez aller postuler a la fourriere la plus proche (au moins vous allez abréger leur souffrances)."
 chienrien = [textchienrien]
-
 
 #---3 layer
 textchienwraf = "Vous pensez avoir bien répondu, mais le chien se met a grogner Il vous demande en jappant: 'WAF WOUF WOUF WIF WRAF??'\n\nQue faites-vous?"
@@ -166,17 +199,13 @@ chienrrr = [textchienrrr]
 textchienencourager = "Vous dites au chien de prendre courage, et que selon la légende, la race féline allait bientot disparaitre dans un génocide rapide et brutal perpétrée par Le Grand Chihuahua, aussi connu sous le nom de Bibine, et son armée de Huskies enragés. Le chien vous demande "wouf waf wou?" et vous lui répondez que s'il s'entraine, il aurait une bonne chance d'etre recruté dans leur armée. Le chien, une nouvelle étincelle d'espoir dans le regard, vous remercie, dépose un 20 piasses baveux dans votre main, et quitte votre tente. Vous vous demandez pourquoi vous avez inventé cette histoire, puis vous vous dites que ca ne devrait pas vous affecter long terme, tant que vous gardez votre chat, Mystique, a l'intérieur."
 chienencourager = [textchienencourager]
 
-#----4 layer
 #ending
 textchienrassurer = "Vous le rassurez, lui disant que c'est pafaitement normal pour un grand danois comme lui de se faire intimider par le chaton des voisins, et qu'il fallait simplement qu'il montre a ce chaton c'est qui le boss. Le chien, satisfait de votre service (pas tant divinatoire mais bon, c'est un chien apres tout), vous paye et quitte votre tente."
 chienrassurer = [textchienrassurer]
 
-
-#----4 layer
 #ending
 textchienreprimander = "Vous dites au chien que c'est innacceptable de tenir des propos autant diffamatoires envers les chats. Vous lui apprennez que sans votre chat vous n'auriez jamais été dans le domaine de la divination, car cest grace a une relation symbiotique avec votre chat que vous arrivez a lire le futur (pas pour rien qu'ils étaient révérés comme des dieux a l'époque Égyptienne). Le chien, incrédule, quitte la tente sans payer (C'est un chien apres tout, a quoi vous attendiez vous apres tout cela, un os ou des petites gateries?). Vous avez a peine vu le temps passer, il est maintenant midi, vous avez faim et vous vous dirigez vers le macdo pour vous commander un big mac en réfléchissant a vos choix de vie."
 chienreprimander = [textchienreprimander]
-
 
 #---3 layer
 textchienwoof = " Vous croyez avoir utilisé la bonne grammaire, mais vous n'êtes pas 100% sure. Le chien vous regarde d'un air satisfait, vous venez de répondre parfaitement a sa question, et puis vous comprenez qu'il vous testait. Le chien vous pose alors la question pour laquelle il était venu aujourd'hui: 'wouf wuif... waf wif grr, wawaf wrouh 'MIOOWWWW', wouf wouf wah wuff woo?'\n\nQue faites-vous?"
