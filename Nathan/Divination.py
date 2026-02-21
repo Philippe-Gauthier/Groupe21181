@@ -195,7 +195,7 @@ devinnom = [textdevinnom, devinnom1, devinnom2, devinnom3]
 textdevin = "Votre premier client de la journée rentre dans votre tente, c'est un jeune homme d'environ vingt-trente ans, il vous donne son nom: Devin. Devin vous demande si vous pouvez lui parler de son futur amoureux ou du futur des jeux videos (vous ne conaissez rien aux jeux videos, ca commence bien la journée...).\n\n De quoi lui parlez-vous?"
 devin1 = "De jeux videos"
 devin2 = "D'amour"
-devin3 = "D'on vient son nom"
+devin3 = "De ou son nom provient"
 
 devinclient2 = [textdevin, devin1, devin2, devin3]
 
