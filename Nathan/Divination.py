@@ -260,6 +260,7 @@ niveau = loop_niveau(lvl1) #début du niveau 1
 
 
 #suite de if pour passer a chaque prochain niveau
+#la position de ligne en ligne de "if niveau" forme un sinus verticale! C'est de l'art!!
 if niveau == 1:
     niveau = loop_niveau(lvl1_1)
     if niveau == 1:
@@ -339,6 +340,6 @@ elif niveau == 3:
         elif niveau == 3:
             niveau = loop_niveau(lvl1_3_3_3)
 
-
+#343ième ligne de if terminé ainsi que le mal de tête
 
 
