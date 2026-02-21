@@ -26,9 +26,18 @@ choix_fail = "\nCela ne faisait pas partie des choix, réessayez\n"
 
 
 
+#TEMPLATE
+textdevin = ""
+devin = ""
+devin = ""
+devin = ""
+
+devin = [textdevin, devin, devin, devin]
 
 
-
+#ending
+text = ""
+lvl = [text]
 
 
 
@@ -46,13 +55,75 @@ option1_1_3 = "placeholder choice"
 martineclient1 = [text1_1, option1_1_1, option1_1_2, option1_1_3]
 
 
-#--2 layer
-text1_2 = "placeholder text"
-option1_2_1 = "placeholder choice"
-option1_2_2 = "placeholder choice"
-option1_2_3 = "placeholder choice"
 
-devinclient2 = [text1_2, option1_2_1, option1_2_2, option1_2_3]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ending
+textdevined6 = "Vous lui dites qu'Elder Scrolls 6 sortira avant les autres, mais qu'il sera décevant après toute cette attente. Vous voyez qu'il est décu de votre réponse, il dit 'Vous ne connaissez rien sur ce sujet, vous êtes une fraude!'. Il part en vous payant en dessous de votre taux habituel. Vous continuez a fixer la sortie de votre tente pour quelques secondes avant de vous dire que vous etes trop vieille pour faire ce travail et que vous devriez prendre votre retraite."
+devined6 = [textdevined6]
+
+#ending
+textdevinbb2 = "Vous lui dites que vous n'etes pas sur quel jeu sortira en premier, mais vous lui dites avec certitude que Bloodborne 2 ne sortira jamais. Son visage s'affaisse, il sort son portefeuille, vous paye, et s'en va. Vous venez de perdre un futur client."
+devinbb2 = [textdevinbb2]
+
+#ending
+textdevinhl3 = "Vous lui dites que Half-Life 3 sortira le premier, et de plus, ce sera plus tot qu'il l'esperait! Devin sourit, et vous paye généreusement. Vous vous êtes fait un nouveau client régulier."
+devinhl3 = [textdevinhl3]
+
+#---3 layer
+textdevinjeux = "Vous lui dites que l'amour est difficile a lire en ces temps incertains (l'ombre de vénus vous bloque la vue) mais que vous voyez clairement le futur des jeux videos. Soudainement tout excité, Devin vous demande avec passion lequel entre trois jeux sortira en premier.\n\n Quel jeu sortira en premier?"
+devinjeu1 = "Elder Scrolls 6"
+devinjeu2 = "Bloodborne 2"
+devinjeu3 = "Half-Life 3"
+
+devinjeux = [textdevinjeux, devinjeu1, devinjeu2, devinjeu3]
+
+
+#---3 layer
+textdevinamour = "Vous lui dites que le futur en termes de sorties de jeux est assez flou ce matin (mercure retrograde) mais vous voyez clairement son futur amoureux. Il vous demande de lui en dire plus.\n\nQue lui dites-vous?"
+devinamour1 = "Amour"
+devinamour2 = "Pas d'amour"
+devinamour3 = "Dévier le sujet"
+
+devinamour = [textdevinamour, devinamour1, devinamour2, devinamour3]
+
+
+#---3 layer
+textdevinnom = "Vous l'interrompez et lui demandez d'ou vient son nom. Vous pensiez que seuls les devins de grandes familles pouvaient s'appeller Devin, mais vous trouvez que ce jeune homme n'a vraiment pas l'air du genre 'famille riche et connue avec des pouvoirs divinatoires'.\n\nVous lui demandez si:"
+devinnom1 = "Il est devin"
+devinnom2 = "Il est riche"
+devinnom3 = "Il savait que son nom était spécial"
+
+devinnom = [textdevinnom, devinnom1, devinnom2, devinnom3]
+
+
+#--2 layer
+textdevin = "Votre premier client de la journée rentre dans votre tente, c'est un jeune homme d'environ vingt-trente ans, il vous donne son nom: Devin. Devin vous demande si vous pouvez lui parler de son futur amoureux ou du futur des jeux videos (vous ne conaissez rien aux jeux videos, ca commence bien la journée...).\n\n De quoi lui parlez-vous?"
+devin1 = "Jeux videos"
+devin2 = "Amour"
+devin3 = "Lui demander d'on vient son nom"
+
+devinclient2 = [textdevin, devin1, devin2, devin3]
+
+
+
+
+
 
 
 
