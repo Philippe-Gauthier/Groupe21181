@@ -30,14 +30,7 @@ choix_fail = "\nCela ne faisait pas partie des choix, réessayez\n"
 
 
 
-#---3 layer
 
-text1_1_1 = "placeholder text"
-option1_1_1_1 = "placeholder choice"
-option1_1_1_2 = "placeholder choice"
-option1_1_1_3 = "placeholder choice"
-
-lvl1_1_1 = [text1_1_1, option1_1_1_1, option1_1_1_2, option1_1_1_3]
 
 
 
@@ -45,44 +38,102 @@ lvl1_1_1 = [text1_1_1, option1_1_1_1, option1_1_1_2, option1_1_1_3]
 
 
 #--2 layer
-
 text1_1 = "placeholder text"
 option1_1_1 = "placeholder choice"
 option1_1_2 = "placeholder choice"
 option1_1_3 = "placeholder choice"
 
-lvl1_1 = [text1_1, option1_1_1, option1_1_2, option1_1_3]
+martineclient1 = [text1_1, option1_1_1, option1_1_2, option1_1_3]
+
 
 #--2 layer
-
 text1_2 = "placeholder text"
 option1_2_1 = "placeholder choice"
 option1_2_2 = "placeholder choice"
 option1_2_3 = "placeholder choice"
 
-lvl1_2 = [text1_2, option1_2_1, option1_2_2, option1_2_3]
+devinclient2 = [text1_2, option1_2_1, option1_2_2, option1_2_3]
+
+
+
+#=====CHIEN=====#
+
+#----4 layer
+#ending
+textchienhocher = "Tristement, sa chienne est infidele envers lui, vous lui dites que c'est la vérité, et qu'elle a couché avec un berger allemand il y a deux jours. Le chien vous regarde avec un air extremement piteux, vous avez pitié de lui. Il quitte votre tente apres avoir déposé quelques biscuits en forme d'os comme paiement pour votre service. Apres toutes ces émotions vous vous dites que vous devriez retourner chez vous, vous voulez faire sur que votre berger allemand ne soit pas en train de jouer dans votre cour."
+chienhocher = [textchienhocher]
+
+#----4 layer
+#ending
+textchiensecouer = "Tristement, son maitre a des plans de le mettre en adoption a la SPA, vous lui dites que c'est bel et bien la vérité. Il n'arrive pas a y croire, et jure en sortant de votre tente 'Wouf wouf... waf wouf wouf' ce que, si vous avez bien compris, veut dire qu'il planifie mordre son maitre a un endroit particulier, mais vous n'avez pas bien compris quel endroit exactement... Apres toutes ces émotions vous vous dites que vous devriez retourner chez vous et nourrir votre chat."
+chiensecouer = [textchiensecouer]
+
+
+#----4 layer
+#ending
+textchienrien = "Tristement, vous venez d'apprendre au chien qu'il a la rage en phase terminale et qu'il ne lui reste pas longtemps a vivre. Le chien vous regarde d'un air démoli, il se retourne tranquilement, dépose un os par terre en guise de paiement (vous acceptez les paiements mOStercard depuis quelques mois) et quitte votre tente. Vous vous dites que vous devriez arreter de voler innutilement l'espoir a de pauvres chiens innocents et reconsidérez votre travail. Vous vous dites que allez aller postuler a la fourriere la plus proche (au moins vous allez abréger leur souffrances)."
+chienrien = [textchienrien]
+
+
+#---3 layer
+textchienwraf = "Vous pensez avoir bien répondu, mais le chien se met a grogner Il vous demande en jappant: 'WAF WOUF WOUF WIF WRAF??'\n\nQue faites-vous?"
+chienwraf1 = "Hocher la tête"
+chienwraf2 = "Secouer la tête"
+chienwraf3 = "Rien faire"
+
+chienwraf = [textchienwraf, chienwraf1, chienwraf2, chienwraf3]
+
+
+#---3 layer
+#ending
+textchienrrr = "Vous venez d'insulter sa mere. Le chien vous regarde avec dédain, puis sort de votre tente en pissant. Vous vous dites que vous auriez du continuer vos cours de langage canin. Mais vous vous dites aussi que le temps que vous utilisiez pour ce cours est mieux placé maintenant (vous allez au casino a la place)."
+chienrrr = [textchienrrr]
+
+
+#----4 layer
+#ending
+textchienencourager = "Vous dites au chien de prendre courage, et que selon la légende, la race féline allait bientot disparaitre dans un génocide rapide et brutal perpétrée par Le Grand Chihuahua, aussi connu sous le nom de Bibine, et son armée de Huskies enragés. Le chien vous demande "wouf waf wou?" et vous lui répondez que s'il s'entraine, il aurait une bonne chance d'etre recruté dans leur armée. Le chien, une nouvelle étincelle d'espoir dans le regard, vous remercie, dépose un 20 piasses baveux dans votre main, et quitte votre tente. Vous vous demandez pourquoi vous avez inventé cette histoire, puis vous vous dites que ca ne devrait pas vous affecter long terme, tant que vous gardez votre chat, Mystique, a l'intérieur."
+chienencourager = [textchienencourager]
+
+#----4 layer
+#ending
+textchienrassurer = "Vous le rassurez, lui disant que c'est pafaitement normal pour un grand danois comme lui de se faire intimider par le chaton des voisins, et qu'il fallait simplement qu'il montre a ce chaton c'est qui le boss. Le chien, satisfait de votre service (pas tant divinatoire mais bon, c'est un chien apres tout), vous paye et quitte votre tente."
+chienrassurer = [textchienrassurer]
+
+
+#----4 layer
+#ending
+textchienreprimander = "Vous dites au chien que c'est innacceptable de tenir des propos autant diffamatoires envers les chats. Vous lui apprennez que sans votre chat vous n'auriez jamais été dans le domaine de la divination, car cest grace a une relation symbiotique avec votre chat que vous arrivez a lire le futur (pas pour rien qu'ils étaient révérés comme des dieux a l'époque Égyptienne). Le chien, incrédule, quitte la tente sans payer (C'est un chien apres tout, a quoi vous attendiez vous apres tout cela, un os ou des petites gateries?). Vous avez a peine vu le temps passer, il est maintenant midi, vous avez faim et vous vous dirigez vers le macdo pour vous commander un big mac en réfléchissant a vos choix de vie."
+chienreprimander = [textchienreprimander]
+
+
+#---3 layer
+textchienwoof = " Vous croyez avoir utilisé la bonne grammaire, mais vous n'êtes pas 100% sure. Le chien vous regarde d'un air satisfait, vous venez de répondre parfaitement a sa question, et puis vous comprenez qu'il vous testait. Le chien vous pose alors la question pour laquelle il était venu aujourd'hui: 'wouf wuif... waf wif grr, wawaf wrouh 'MIOOWWWW', wouf wouf wah wuff woo?'\n\nQue faites-vous?"
+chienwoof1 = "L'encourager"
+chienwoof2 = "Le rassurer"
+chienwoof3 = "Le réprimander"
+
+chienwoof = [textchienwoof, chienwoof1, chienwoof2, chienwoof3]
+
 
 #--2 layer
+textchien = "Le chien entre dans votre tente, vous êtes un peu confuse, vous lui dites de s'asseoir (vous êtes fluente en chien, mais ca fait un bail alors vous êtes un peu rouillée). Le chien s'asseoit, et il vous demande: 'Wouf wouf wrouf warf waf wif rrwar wuif?'\n\n Que lui répondez-vous?"
+chien1 = "'Wraf wif waf wuff wraf wouf rrr wah rwaf grraw'"
+chien2 = "'rrr wouf wif wif grr wouf arw wruif awouu waf'"
+chien3 = "wouf"
 
-text1_3 = "placeholder text"
-option1_3_1 = "placeholder choice"
-option1_3_2 = "placeholder choice"
-option1_3_3 = "placeholder choice"
-
-lvl1_3 = [text1_3, option1_3_1, option1_3_2, option1_3_3]
-
+chienclient3 = [textchien, chien1, chien2, chien3]
 
 
-
+#=====CLIENTS=====#
 
 #-1 layer
+text1 = "Vous arrivez a votre tente de divination au milieu d'un petit centre d'achat, juste a coté du dollarama, pour attirer toutes les superstitieuses qui magasinnent là bas. Vous avez une petite file qui vous attend devant votre tente, deux personnes et un chien (?).\n\nQui faites-vous entrer en premier?"
+client1 = "Martine (une habituée)"
+client2 = "Devin (un nouveau)"
+client3 = "Le chien (???)"
 
-text1 = "placeholder text"
-option1_1 = "option1"
-option1_2 = "option2"
-option1_3 = "option3"
-
-lvl1 = [text1, option1_1, option1_2, option1_3]
+lvl1 = [text1, client1, client2, client3]
 
 
 
@@ -261,7 +312,7 @@ niveau = loop_niveau(lvl1) #début du niveau 1
 
 #suite de if pour passer a chaque prochain niveau
 if niveau == 1:
-    niveau = loop_niveau(lvl1_1)
+    niveau = loop_niveau(martineclient1)
     if niveau == 1:
         niveau = loop_niveau(lvl1_1_1)
         if niveau == 1:
@@ -287,7 +338,7 @@ if niveau == 1:
         elif niveau == 3:
             niveau = loop_niveau(lvl1_1_3_3)
 elif niveau == 2:
-    niveau = loop_niveau(lvl1_2)
+    niveau = loop_niveau(devinclient2)
     if niveau == 1:
         niveau = loop_niveau(lvl1_2_1)
         if niveau == 1:
@@ -313,32 +364,39 @@ elif niveau == 2:
         elif niveau == 3:
             niveau = loop_niveau(lvl1_2_3_3)
 elif niveau == 3:
-    niveau = loop_niveau(lvl1_3)
+    niveau = loop_niveau(chienclient3)
     if niveau == 1:
-        niveau = loop_niveau(lvl1_3_1)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_3_1_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_3_1_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_3_1_3)
+            niveau = loop_niveau()
     elif niveau == 2:
-        niveau = loop_niveau(lvl1_3_2)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_3_2_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_3_2_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_3_2_3)
+            niveau = loop_niveau()
     elif niveau == 3:
-        niveau = loop_niveau(lvl1_3_3)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_3_3_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_3_3_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_3_3_3)
+            niveau = loop_niveau()
 
 
 
-
+#loop a copier
+niveau = loop_niveau()
+if niveau == 1:
+    niveau = loop_niveau()
+elif niveau == 2:
+    niveau = loop_niveau()
+elif niveau == 3:
+    niveau = loop_niveau()
