@@ -5,15 +5,15 @@ def roulette_russe():
     reset=""
     while reset != "N":                                        
         #Sélection entre les 6 positionnements possibles du barrilet       
-        choix =int(input(jeux_message.roulette_bienvenu()))
-        if(choix<=6 & choix>=1):
+        choix =jeux_message.roulette_bienvenu()
+        if(choix <= 6 and choix >= 0):
             k=choix
             #Le barrilet spin pour atteindre une position au hasard
-            roll=random.randint(1, 6)
+            roll = random.randint(1, 6)
             #Addition pour obtenir le nombre maximal de tour avant la munition
-            roll=+choix
+            roll =+ choix
             #Identification bool du joueur
-            modu_player=choix%2
+            modu_player = choix%2
                 
             reset=input("Premier tour! Prêt?\n")
             reset=reset.upper()
@@ -37,16 +37,15 @@ def roulette_russe():
 
 def pile_face():
 
-    choix=""
-    choix=input(jeux_message.pile_face_bienvenu())        
+    choix=""    
     while choix != "Q":       
-        result=random.randint(0,1)
+        choix=input(jeux_message.pile_face_bienvenu())               
+        if(choix =="F" or choix =="P"):
 
-        if(choix =="P"):choix=0
-        elif(choix =="F"):choix=1
-            # pile ou face lancé        
-        
-        if(choix>1 or choix<0):                 
+            result=random.randint(0,1)
+            if(choix =="P"):choix=0
+            elif(choix =="F"):choix=1
+            # pile ou face lancé                                   
             choix=jeux_message.pile_face_false()
             if(choix =="P"):choix=0
             elif(choix =="F"):choix=1                                   

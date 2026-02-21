@@ -9,7 +9,7 @@ def menu():
 #messages roulette russe
 def roulette_bienvenu():
     message=input("Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
-    message=message.upper()
+    message=int(message)
     return message
 def roulette_next():
     message=input("Vous avez survécu! Au tour de l'adversaire! Prêt ? O/N\n")
@@ -38,7 +38,7 @@ def pile_face_bienvenu():
     message=input("Bienvenu à pile ou face! Quelle côté choisissez-vous? P/F\n")
     message=message.upper()
 
-    while exit.true:
+    while exit:
         if(message =="P"):
             message=0 
             break
