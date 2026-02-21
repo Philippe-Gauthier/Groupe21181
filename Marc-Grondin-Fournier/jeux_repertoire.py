@@ -91,7 +91,7 @@ def courte_paille():
             exit = jeux_message.courte_paille_loser()
         else:
             exit = jeux_message.courte_paille_winner(joueur[paille_loser])
-#incomplet
+#en cours de modification
 def rpCiseaux():
     choix=""
     choix=input(jeux_message.rpCiseaux_bienvenu())
