@@ -21,53 +21,64 @@ regles_instructions = "Instructions:\nL'aventure se joue en une journée, compos
 choix_retour = "\nretour au début de la journée...\n"
 choix_fail = "\nCela ne faisait pas partie des choix, réessayez\n"
 
+jeu_fin = "Fin! Rejouez pour voir toutes les options"
 
 
 
+#---3 layer
+#ending
+textmartinechance = "Vous lui dites qu'elle sera tres chanceuse cette semaine! Vous lui suggerez meme d'acheter un billet de 6 49. Elle vous sourit, vous dit merci et quitte votre tente. Vous savez qu'elle reviendra demain, et le jour d'apres, Martine vient vous voir a chaque jour depuis l'ouverture de votre tente il y a 29 ans."
+martinechance = [textmartinechance]
 
 
-#TEMPLATE
-textdevin = ""
-devin = ""
-devin = ""
-devin = ""
-
-devin = [textdevin, devin, devin, devin]
-
+#layer----4 layer
+#ending
+textmartinebain = "Vous lui dites qu'elle devrait prendre un bain avec du sel magique (que vous vendez 14,59$ le gramme). Elle rit et vous demande si ce n'est pas le genre de truc qu'un medecin recommanderait normalement. Elle quitte en riant, vous savez qu'elle reviendra quand même. (je suis désolé pour ces storylines autant pourries mais j'ai pu de jus creatif lol)"
+martinebain = [textmartinebain]
 
 #ending
-text = ""
-lvl = [text]
+textmartineesprits = "Vous lui dites qu'elle devrait prendre une séance avec ces ancetres (vous offrez ce service a 71.19$ pour 5 minutes). Elle vous dit qu'elle ne voit pas ce que parler a ses ancetres feraient a sa situation, mais elle accepte et vous dit qu'elle reviendrait demain pour faire une séance de 15 minutes. Bravo, vous pourrez enfin vous acheter mario kart world pour la switch 2 avec cet argent."
+martineesprits = [textmartineesprits]
 
+#ending
+textmartinefil = "Vous lui dites qu'un très ancien truc pour repousser la malchance est de porter un petit bout de fil rouge autour de la cheville (vous ne savez pas pourquoi, mais vous en vendez a 47,68$ le bracelet). Elle vous dit qu'elle en prendrait bien un. Bravo, vous venez de vous faire 47,68$ sur le dos d'une innocente qui n'est même pas malchanceuse pour vrai."
+martinefil = [textmartinefil]
 
+#---3 layer
+textmartinemalchance = "Vous lui dites de faire attention cette semaine, car selon le positionnement de l'étoile vega elle sera malchanceuse jusqu'a la fin de la semaine. Martine vous demande s'il y a quelquechose qu'elle pourrait faire pour se protèger contre sa malchance.\n\nQue lui proposez-vous?"
+martinemalchance1 = "Un bain de sel"
+martinemalchance2 = "Une seance avec les esprits"
+martinemalchance3 = "Un fil rouge"
 
+martinemalchance = [textmartinemalchance, martinemalchance1, martinemalchance2, martinemalchance3]
 
+#----4 layer
+#ending
+textmartinenormal = "Vous lui dites que c'est parfaitement normal que certaines semaines soient plus 'normales' que les autres. Ce n'est pas a chaque semaine que l'on gagne la loto. Elle semble un peu décue, mais elle comprends. (j'suis tanné d'écrire des options help me pls)"
+martinenormal = [textmartinenormal]
 
+#ending
+textmartineverite = "Vous lui dites que votre boule de crystal est cassée, que vous ne pouvez pas voir son futur pour vrai, c'est pour ca que vous avez fait une estimation si 'normale' de sa chance de la semaine. Elle comprends votre situation, et vous recommande un réparateur de boules de crystal dont vous n'aviez jamais entendu parler auparavent, et de plus, selon elle, il est celibataire. Lui dire la vérité était le meilleur choix semble-t'il."
+martineverite = [textmartineverite]
 
+#ending
+textmartinedouter = "Vous lui dites que c'est une insulte de douter une voyante, et que cela double sa malchance. Elle s'excuse profusément et vous demande s'il y a une facon de réduire sa malchance. Vous lui dites que vous vendez des plantes magiques qui chassent les mauvais esprits, et que ca lui ferait un total de 258,37$. Bravo vous vous êtes fait trop d'argent pour un service de voyance frauduleux, vous vous sentirez mal pour le reste de votre vie, mais au moins vous pourrez renouvelez votre abonnement costco pour les deux prochaines années."
+martinedouter = [textmartinedouter]
 
+#---3 layer
+textmartinelesdeux = "Vous lui dites que sa chance sera un peu des deux cette semaine, soit un peu de chance, et un peu de malchance. Elle vous regarde suspicieusement 'alors la normale?'. Vous vous dites que vous devriez peut etre faire plus attention a comment vous répondez aux questions avant que quelqu'un réalise que votre boule est cassée et que vous êtes une fraude (aujourd'hui en tout cas).\n\nQue dites-vous?"
+martinelesdeux1 = "Lui dire que c'est l'habituel d'avoir un peu des deux"
+martinelesdeux2 = "Lui dire la vérité: que votre boule est brisée"
+martinelesdeux3 = "Lui dire que c'est innaceptable de douter une voyante"
+martinelesdeux = [textmartinelesdeux, martinelesdeux1, martinelesdeux2, martinelesdeux3]
 
 #--2 layer
-text1_1 = "placeholder text"
-option1_1_1 = "placeholder choice"
-option1_1_2 = "placeholder choice"
-option1_1_3 = "placeholder choice"
+textmartine = " Martine entre dans votre tente, c'est une femme un peu plus agée que vous, mais pas de beaucoup, c'est votre cliente la plus loyale. Elle vous demande de lui dire sa chance pour la semaine.\n\nQuelle sera sa chance?"
+martine1 = "Beaucoup de chance"
+martine2 = "Beaucoup de malchance"
+martine3 = "Un peu des deux"
 
-martineclient1 = [text1_1, option1_1_1, option1_1_2, option1_1_3]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+martineclient1 = [textmartine, martine1, martine2, martine3]
 
 
 
@@ -445,55 +456,55 @@ niveau = loop_niveau(lvl1) #début du niveau 1
 if niveau == 1:
     niveau = loop_niveau(martineclient1)
     if niveau == 1:
-        niveau = loop_niveau(lvl1_1_1)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_1_1_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_1_1_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_1_1_3)
+            niveau = loop_niveau()
     elif niveau == 2:
-        niveau = loop_niveau(lvl1_1_2)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_1_2_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_1_2_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_1_2_3)
+            niveau = loop_niveau()
     elif niveau == 3:
-        niveau = loop_niveau(lvl1_1_3)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_1_3_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_1_3_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_1_3_3)
+            niveau = loop_niveau()
 elif niveau == 2:
     niveau = loop_niveau(devinclient2)
     if niveau == 1:
-        niveau = loop_niveau(lvl1_2_1)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_2_1_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_2_1_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_2_1_3)
+            niveau = loop_niveau()
     elif niveau == 2:
-        niveau = loop_niveau(lvl1_2_2)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_2_2_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_2_2_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_2_2_3)
+            niveau = loop_niveau()
     elif niveau == 3:
-        niveau = loop_niveau(lvl1_2_3)
+        niveau = loop_niveau()
         if niveau == 1:
-            niveau = loop_niveau(lvl1_2_3_1)
+            niveau = loop_niveau()
         elif niveau == 2:
-            niveau = loop_niveau(lvl1_2_3_2)
+            niveau = loop_niveau()
         elif niveau == 3:
-            niveau = loop_niveau(lvl1_2_3_3)
+            niveau = loop_niveau()
 elif niveau == 3:
     niveau = loop_niveau(chienclient3)
     if niveau == 1:
@@ -523,7 +534,7 @@ elif niveau == 3:
 
 
 
-#loop a copier
+#loop a copier TEMPLATE
 niveau = loop_niveau()
 if niveau == 1:
     niveau = loop_niveau()
