@@ -12,5 +12,6 @@ while menu != "Q":
         case "B":
             jeux_repertoire.pile_face()    
 
-        case "C":
+        case "C":            
             jeux_repertoire.courte_paille()
+
