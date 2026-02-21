@@ -37,22 +37,28 @@ def roulette_russe():
 
 def pile_face():
 
-    choix=""    
-    while choix != "Q":       
-        choix=input(jeux_message.pile_face_bienvenu())               
+    exit=0
+    choix="" 
+    tracer=0   
+    while exit != "Q":       
+        choix=jeux_message.pile_face_bienvenu(tracer)               
         if(choix =="F" or choix =="P"):
-
-            result=random.randint(0,1)
+            tracer=1
+            # Identification bool du joueur
             if(choix =="P"):choix=0
             elif(choix =="F"):choix=1
-            # pile ou face lancé                                   
+            # pile ou face lancé
+            result=random.randint(0,1)
+
+            # message gagnant ou perdant selon le choix
+            if(result == choix):exit=jeux_message.pile_face_win(choix)
+            else:exit=jeux_message.pile_face_lose(choix)
+
+        elif(choix=="Q"):break
+
+        else:  
             choix=jeux_message.pile_face_false()
-            if(choix =="P"):choix=0
-            elif(choix =="F"):choix=1                                   
-        else:                    
-        # message gagnant ou perdant selon le choix
-            if(result == choix):jeux_message.pile_face_win(choix)
-            else:jeux_message.pile_face_lose(choix)
+            tracer=1                   
                         
 def courte_paille():
     exit=""

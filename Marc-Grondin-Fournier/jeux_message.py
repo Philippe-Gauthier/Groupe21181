@@ -33,23 +33,17 @@ def roulette_false():
     return message
 
 #messages pile ou face
-def pile_face_bienvenu():
-    exit=1
-    message=input("Bienvenu à pile ou face! Quelle côté choisissez-vous? P/F\n")
-    message=message.upper()
+def pile_face_bienvenu(tracer):
 
-    while exit:
-        if(message =="P"):
-            message=0 
-            break
-        elif(message =="F"):
-            message=1
-            break
-        else:
-            exit=1
-            choix=input("Côté non-reconnu, veuiller choisir entre P/F ou Q pour quitter\n")
-            choix=choix.upper()
+    if(tracer==0): message=input("Bienvenu à pile ou face! Quelle côté choisissez-vous? P/F\n")              
+    else: message=input("Quelle côté choisissez-vous? P/F\n") 
+         
+    message=message.upper()         
     return message        
+def pile_face_false():
+            
+            choix=input("Côté non-reconnu, appuyer sur toutes touches pour recommencer ou Q pour quitter\n")
+            choix=choix.upper()
 
 def pile_face_win(choix):
         
@@ -64,10 +58,10 @@ def pile_face_win(choix):
 def pile_face_lose(choix):
     
     if(choix==0):
-        message=input("Pile! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
+        message=input("Face! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
         message=message.upper()
     else:
-        message=input("Face! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
+        message=input("Pile! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
         message=message.upper()            
     return message
 
