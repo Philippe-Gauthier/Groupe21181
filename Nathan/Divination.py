@@ -4,6 +4,21 @@ Par: Nathan Paradis
 """
 
 
+
+
+
+
+#faire attention avec les \n, qui ne sont pas comptés dans les textwrap, 
+# modifier certains passages, surtout les "que faites vous" a la fin des mises en situation.
+
+
+
+
+
+
+
+
+
 #imports
 import time #pour pouvoir utiliser time.sleep dans le code
 import textwrap #pour formatter le text présenté dans le terminal
@@ -13,7 +28,7 @@ import textwrap #pour formatter le text présenté dans le terminal
 #definition des variables
 
 #text début du jeu
-mise_en_contexte = "Vous êtes la grande Yisma, voyante reconnue a travers le monde (le monde étant Longueil), mais ce matin vous avez échappé votre boule de crystal en vous faisant un bol de céréales, vous devez donc inventer de toutes pieces le futur de vos clients de la journée, en attente de voir le réparateur de boules de crystal (qui est occupé pour les 3 prochaines semaines, son service est très en demande, les boules sont devenues glissantes de nos jours)."
+mise_en_contexte = "Vous êtes la grande Yisma, voyante reconnue a travers le monde (le monde étant Longueil), mais ce matin vous avez échappé votre boule de crystal en vous faisant un bol de céréales, vous devez donc inventer de toutes pieces le futur de vos clients de la journée en attendant de voir le réparateur de boules de crystal (qui est occupé pour les 3 prochaines semaines. Son service est très en demande, les boules sont devenues glissantes de nos jours)."
 regles_instructions = "Instructions:\nL'aventure se joue en une journée, composée de deux parties, la mise en situation et la prise de décision.\nPour la partie mise en situation, vous allez avoir un texte unique au niveau a lire, ensuite, 3 options apparaitront sur le terminal, chacune\ndes options commencent par 1, 2, ou 3.\n\nAprès, vous aurez une décision a prendre. Pour faire cela, entrez le numéro de l'option que vous voulez choisir, soit 1, 2, ou 3, et entrez\nle dans le terminal (ce serait clairement indiqué qu'il est pret a recevoir votre décision).\n\nCa recommence ensuite avec une nouvelle mise en situation, puis une décision, et ainsi de suite jusqu'a une mise en situation finale qui\nterminera l'aventure.\n(Au moment de choisir, entrez 0 si vous voulez retourner au début de la journée)\n"
 
 #text utilisé a plusieurs endroits
@@ -248,7 +263,7 @@ chienrrr = [textchienrrr]
 
 #----4 layer
 #ending
-textchienencourager = "Vous dites au chien de prendre courage, et que selon la légende, la race féline allait bientot disparaitre dans un génocide rapide et brutal perpétrée par Le Grand Chihuahua, aussi connu sous le nom de Bibine, et son armée de Huskies enragés. Le chien vous demande "wouf waf wou?" et vous lui répondez que s'il s'entraine, il aurait une bonne chance d'etre recruté dans leur armée. Le chien, une nouvelle étincelle d'espoir dans le regard, vous remercie, dépose un 20 piasses baveux dans votre main, et quitte votre tente. Vous vous demandez pourquoi vous avez inventé cette histoire, puis vous vous dites que ca ne devrait pas vous affecter long terme, tant que vous gardez votre chat, Mystique, a l'intérieur."
+textchienencourager = "Vous dites au chien de prendre courage, et que selon la légende, la race féline allait bientot disparaitre dans un génocide rapide et brutal perpétrée par Le Grand Chihuahua, aussi connu sous le nom de Bibine, et son armée de Huskies enragés. Le chien vous demande 'wouf waf wou?' et vous lui répondez que s'il s'entraine, il aurait une bonne chance d'etre recruté dans leur armée. Le chien, une nouvelle étincelle d'espoir dans le regard, vous remercie, dépose un 20 piasses baveux dans votre main, et quitte votre tente. Vous vous demandez pourquoi vous avez inventé cette histoire, puis vous vous dites que ca ne devrait pas vous affecter long terme, tant que vous gardez votre chat, Mystique, a l'intérieur."
 chienencourager = [textchienencourager]
 
 #ending
@@ -260,7 +275,7 @@ textchienreprimander = "Vous dites au chien que c'est innacceptable de tenir des
 chienreprimander = [textchienreprimander]
 
 #---3 layer
-textchienwoof = " Vous croyez avoir utilisé la bonne grammaire, mais vous n'êtes pas 100% sure. Le chien vous regarde d'un air satisfait, vous venez de répondre parfaitement a sa question, et puis vous comprenez qu'il vous testait. Le chien vous pose alors la question pour laquelle il était venu aujourd'hui: 'wouf wuif... waf wif grr, wawaf wrouh 'MIOOWWWW', wouf wouf wah wuff woo?'\n\nQue faites-vous?"
+textchienwoof = "Vous croyez avoir utilisé la bonne grammaire, mais vous n'êtes pas 100% sure. Le chien vous regarde d'un air satisfait, vous venez de répondre parfaitement a sa question, et puis vous comprenez qu'il vous testait. Le chien vous pose alors la question pour laquelle il était venu aujourd'hui: 'wouf wuif... waf wif grr, wawaf wrouh 'MIOOWWWW', wouf wouf wah wuff woo?'\n\nQue faites-vous?"
 chienwoof1 = "L'encourager"
 chienwoof2 = "Le rassurer"
 chienwoof3 = "Le réprimander"
@@ -281,7 +296,7 @@ chienclient3 = [textchien, chien1, chien2, chien3]
 #=====CLIENTS=====#
 
 #-1 layer
-text1 = "Vous arrivez a votre tente de divination au milieu d'un petit centre d'achat, juste a coté du dollarama, pour attirer toutes les superstitieuses qui magasinnent là bas. Vous avez une petite file qui vous attend devant votre tente, deux personnes et un chien (?).\n\nQui faites-vous entrer en premier?"
+text1 = "Vous arrivez a votre tente de divination au milieu d'un petit centre d'achat, juste a coté du dollarama (pour attirer toutes les superstitieuses qui magasinnent là bas). Vous avez une petite file qui vous attend devant votre tente, deux personnes et un chien (?).\n\nQui faites-vous entrer en premier?"
 client1 = "Martine (une habituée)"
 client2 = "Devin (un nouveau)"
 client3 = "Le chien (???)"
@@ -341,14 +356,16 @@ def failstate_detect(niveau_selectionne):
         if fail_check > 1:
             break
         else:
-            print(niveau_selectionne[0])
+            print(f"\n{niveau_selectionne[0]}")
             time.sleep(1.5)
             while True:
                 print(jeu_fin)
                 start_confirmation = input("\nVoulez vous retourner au début de la journée? (y/n) ")
                 if start_confirmation == "y":
                     print(choix_retour)
-                    time.sleep(1.5)
+                    time.sleep(1)
+                    print_par_lettre(".....")
+                    time.sleep(0.5)
                     loop_niveau(lvl1)
                 elif start_confirmation == "n":
                     print("\nAh bon, au revoir alors (vous pouvez maintenant fermer le jeu)")
@@ -433,7 +450,9 @@ def loop_niveau(input_niveau):
             confirmation = input("Voulez vous vraiment retourner au début de la journée? (y/n) ")
             if confirmation == "y":
                 print(choix_retour)
-                time.sleep(1.5)
+                time.sleep(1)
+                print_par_lettre(".....")
+                time.sleep(0.5)
                 loop_niveau(lvl1) #retour au niveau1
             elif confirmation == "n":
                 print("continuons alors...\n")
