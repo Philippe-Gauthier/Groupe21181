@@ -4,32 +4,33 @@ Par: Nathan Paradis
 """
 
 
-
+#imports
 import time #pour pouvoir utiliser time.sleep dans le code
 import textwrap #pour formatter le text présenté dans le terminal
 
 
 
-
-
 #definition des variables
 
+#text début du jeu
 mise_en_contexte = "Vous êtes la grande Yisma, voyante reconnue a travers le monde (le monde étant Longueil), mais ce matin vous avez échappé votre boule de crystal en vous faisant un bol de céréales, vous devez donc inventer de toutes pieces le futur de vos clients de la journée, en attente de voir le réparateur de boules de crystal (qui est occupé pour les 3 prochaines semaines, son service est très en demande, les boules sont devenues glissantes de nos jours)."
-
 regles_instructions = "Instructions:\nL'aventure se joue en une journée, composée de deux parties, la mise en situation et la prise de décision.\nPour la partie mise en situation, vous allez avoir un texte unique au niveau a lire, ensuite, 3 options apparaitront sur le terminal, chacune\ndes options commencent par 1, 2, ou 3.\n\nAprès, vous aurez une décision a prendre. Pour faire cela, entrez le numéro de l'option que vous voulez choisir, soit 1, 2, ou 3, et entrez\nle dans le terminal (ce serait clairement indiqué qu'il est pret a recevoir votre décision).\n\nCa recommence ensuite avec une nouvelle mise en situation, puis une décision, et ainsi de suite jusqu'a une mise en situation finale qui\nterminera l'aventure.\n(Au moment de choisir, entrez 0 si vous voulez retourner au début de la journée)\n"
 
+#text utilisé a plusieurs endroits
 choix_retour = "\nretour au début de la journée...\n"
 choix_fail = "\nCela ne faisait pas partie des choix, réessayez\n"
 
-jeu_fin = "Fin! Rejouez pour voir toutes les options"
+#textfin
+jeu_fin = "\nFin! Rejouez pour voir toutes les options"
 
 
+
+#variables de niveaux
 
 #---3 layer
 #ending
 textmartinechance = "Vous lui dites qu'elle sera tres chanceuse cette semaine! Vous lui suggerez meme d'acheter un billet de 6 49. Elle vous sourit, vous dit merci et quitte votre tente. Vous savez qu'elle reviendra demain, et le jour d'apres, Martine vient vous voir a chaque jour depuis l'ouverture de votre tente il y a 29 ans."
 martinechance = [textmartinechance]
-
 
 #layer----4 layer
 #ending
@@ -130,8 +131,20 @@ devinlove3 = "Depressing ending"
 devinlove = [textdevinlove, devinlove1, devinlove2, devinlove3]
 
 
+
 textdevinnolove = "Vous lui dites qu'il n'aura tristement pas la chance de vivre l'amour dans sa vie, mais c'est l'opportunité pour lui de se consacrer a d'autres passions, telles que le pickle ball professionnel. Vous voyez Devin s'affaisser un peu, puis il se leve, et quitte. Vous croyez entendre des pleurs venant de l'exterieur de votre tente. Vous realisez alors qu'il ne vous a pas payé, vous aviez besoin de l'argent pour payer votre spotify premium, vous tombez donc en depression nerveuse."
 devinnolove = [textdevinnolove]
+
+
+
+textdevintarot = "Cartes tarot, haha, balatro reference. J'ai pas eu le temps (et la patience) d'écrire cette fin."
+devintarot = [textdevintarot]
+
+textdevinlignes = "lignes de la main, J'ai pas eu le temps (et la patience) d'écrire cette fin."
+devinlignes = [textdevinlignes]
+
+textdevinthe = "feuilles de thé, j'ai pas eu le temps (et la patience) d'écrire cette fin."
+devinthe = [textdevinthe]
 
 textdevindevier = "Vous ne pensiez pas avoir besoin d'en dire plus, il vous a pris au dépourvu, et vous ne pouveaz pas vous fier sur votre boule de crystal. vous décidez donc de sortir l'artillerie lourde. Vous dites a Devin d'attendre quelques secondes pour que vous puissiez aller chercher votre matériel.\n\nQuel item prennez-vous?"
 devindevier1 = "Cartes de Tarot"
@@ -203,9 +216,6 @@ devinclient2 = [textdevin, devin1, devin2, devin3]
 
 
 
-
-
-
 #=====CHIEN=====#
 
 #----4 layer
@@ -267,6 +277,7 @@ chien3 = "wouf"
 chienclient3 = [textchien, chien1, chien2, chien3]
 
 
+
 #=====CLIENTS=====#
 
 #-1 layer
@@ -281,10 +292,7 @@ lvl1 = [text1, client1, client2, client3]
 
 
 
-
-
 #definition des fonctions du jeu
-
 
 #petite fonction de print, seulement utlisée pour "l'animation" de "loading" dans le jeu
 def print_par_lettre(text):
@@ -336,6 +344,7 @@ def failstate_detect(niveau_selectionne):
             print(niveau_selectionne[0])
             time.sleep(1.5)
             while True:
+                print(jeu_fin)
                 start_confirmation = input("\nVoulez vous retourner au début de la journée? (y/n) ")
                 if start_confirmation == "y":
                     print(choix_retour)
@@ -365,6 +374,7 @@ def level_extractor(niveau_selectionne):
     return situation0, choix1, choix2, choix3
 
 
+
 #module de présentation des choix, utiliser avec la fonction ci dessus
 def presentation_choix(situation0, choix_1, choix_2, choix_3):
     """
@@ -385,6 +395,7 @@ def presentation_choix(situation0, choix_1, choix_2, choix_3):
     return reponse
 
 
+
 #module d'assignation de valeur au résultat du choix, prends le résultat de la fonction ci dessus et lui assigne une valeur fixe
 def resultat_choix(reponse):
     """
@@ -398,6 +409,7 @@ def resultat_choix(reponse):
         choix_final = 4
     
     return choix_final
+
 
 
 #combinaison de toutes les fonctions ci dessus sauf les 2 premieres, + fonction de "looping" du code au cas ou la réponse n'est pas valide 
@@ -440,6 +452,7 @@ def loop_niveau(input_niveau):
 
 
 #début du code du jeu
+
 fmise_en_contexte = textwrap.fill(mise_en_contexte, width = 140) #simple formattage
 print(f"{fmise_en_contexte}\n\n\n")
 time.sleep(1.5)
@@ -454,91 +467,86 @@ niveau = loop_niveau(lvl1) #début du niveau 1
 
 #suite de if pour passer a chaque prochain niveau
 if niveau == 1:
-    niveau = loop_niveau(martineclient1)
+    niveau = loop_niveau(martineclient1)#option 1 lvl1
     if niveau == 1:
-        niveau = loop_niveau()
-        if niveau == 1:
-            niveau = loop_niveau()
-        elif niveau == 2:
-            niveau = loop_niveau()
-        elif niveau == 3:
-            niveau = loop_niveau()
+        niveau = loop_niveau(martinechance)
     elif niveau == 2:
-        niveau = loop_niveau()
+        niveau = loop_niveau(martinemalchance)
         if niveau == 1:
-            niveau = loop_niveau()
+            niveau = loop_niveau(martinebain)
         elif niveau == 2:
-            niveau = loop_niveau()
+            niveau = loop_niveau(martineesprits)
         elif niveau == 3:
-            niveau = loop_niveau()
+            niveau = loop_niveau(martinefil)
     elif niveau == 3:
-        niveau = loop_niveau()
+        niveau = loop_niveau(martinelesdeux)
         if niveau == 1:
-            niveau = loop_niveau()
+            niveau = loop_niveau(martinenormal)
         elif niveau == 2:
-            niveau = loop_niveau()
+            niveau = loop_niveau(martineverite)
         elif niveau == 3:
-            niveau = loop_niveau()
+            niveau = loop_niveau(martinedouter)
 elif niveau == 2:
-    niveau = loop_niveau(devinclient2)
+    niveau = loop_niveau(devinclient2)#option 2 lvl1
     if niveau == 1:
-        niveau = loop_niveau()
+        niveau = loop_niveau(devinjeux)
         if niveau == 1:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devined6)
         elif niveau == 2:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devinbb2)
         elif niveau == 3:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devinhl3)
     elif niveau == 2:
-        niveau = loop_niveau()
+        niveau = loop_niveau(devinamour)
         if niveau == 1:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devinlove)
+            if niveau == 1:
+                niveau = loop_niveau(devingoodending)
+            elif niveau == 2:
+                niveau = loop_niveau(devinbadending)
+            elif niveau == 3:
+                niveau = loop_niveau(devindepressed)
         elif niveau == 2:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devinnolove)
         elif niveau == 3:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devindevier)
+            if niveau == 1:
+                niveau = loop_niveau(devintarot)
+            elif niveau == 2:
+                niveau = loop_niveau(devinlignes)
+            elif niveau == 3:
+                niveau = loop_niveau(devinthe)
     elif niveau == 3:
-        niveau = loop_niveau()
+        niveau = loop_niveau(devinnom)
         if niveau == 1:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devindevin)
+            if niveau == 1:
+                niveau = loop_niveau(devinrepete)
+            elif niveau == 2:
+                niveau = loop_niveau(devinexcuse)
+            elif niveau == 3:
+                niveau = loop_niveau(devinriendire)
         elif niveau == 2:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devinriche)
         elif niveau == 3:
-            niveau = loop_niveau()
+            niveau = loop_niveau(devinspecial)
 elif niveau == 3:
-    niveau = loop_niveau(chienclient3)
+    niveau = loop_niveau(chienclient3)#option 3 lvl1
     if niveau == 1:
-        niveau = loop_niveau()
+        niveau = loop_niveau(chienwraf)
         if niveau == 1:
-            niveau = loop_niveau()
+            niveau = loop_niveau(chienhocher)
         elif niveau == 2:
-            niveau = loop_niveau()
+            niveau = loop_niveau(chiensecouer)
         elif niveau == 3:
-            niveau = loop_niveau()
+            niveau = loop_niveau(chienrien)
     elif niveau == 2:
-        niveau = loop_niveau()
-        if niveau == 1:
-            niveau = loop_niveau()
-        elif niveau == 2:
-            niveau = loop_niveau()
-        elif niveau == 3:
-            niveau = loop_niveau()
+        niveau = loop_niveau(chienrrr)
     elif niveau == 3:
-        niveau = loop_niveau()
+        niveau = loop_niveau(chienwoof)
         if niveau == 1:
-            niveau = loop_niveau()
+            niveau = loop_niveau(chienencourager)
         elif niveau == 2:
-            niveau = loop_niveau()
+            niveau = loop_niveau(chienrassurer)
         elif niveau == 3:
-            niveau = loop_niveau()
-
-
-
-#loop a copier TEMPLATE
-niveau = loop_niveau()
-if niveau == 1:
-    niveau = loop_niveau()
-elif niveau == 2:
-    niveau = loop_niveau()
-elif niveau == 3:
-    niveau = loop_niveau()
+            niveau = loop_niveau(chienreprimander)
