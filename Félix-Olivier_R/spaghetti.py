@@ -20,7 +20,7 @@ def choice_user2(choix1,choix2):
     But: Optimizer les choix de réponose et limiter les risques d'erreurs.
     """
     result=0
-    print("\n______________________________________________")
+    print(f"\n" + "_"*40)
     print(f"|     1 = {choix1}")
     print(f"|     2 = {choix2}")
     while(result!=1 and result!=2):
@@ -40,7 +40,7 @@ def choice_user3(choix1,choix2,choix3):
     But: Optimizer les choix de réponose et limiter les risques d'erreurs.
     """
     result=0
-    print("\n______________________________________________")
+    print(f"\n" + "_"*40)
     print(f"|     1 = {choix1}")
     print(f"|     2 = {choix2}")
     print(f"|     3 = {choix3}")
@@ -95,13 +95,15 @@ while(JOUER==True):
 
     print("\nLa création, la musique, l'art en général, j'ai jamais réussi à trouver une bonne raison, \nou je dirais que j'ai pas encore trouvé l'occasion d'abandonner tout et de m'y mettre pour de bon.\nC'est toujours juste une passion que j'ai sur le côté.\nJ'ai 21 ans, en ce moment je travail dans le provigo du coin. Chu, comme, zéro populaire,\npar contre c'est plus par choix que pas résultat de mes actions ou whatever.\nJe dirais pas que j'ai beaucoup d'argent, mais j'ai quand même un ford raptor 2017.   -Suite") 
     input()
+
     print("Très bon prix d'ailleurs. Ça me rappele l'interaction que j'ai eu avec le vendeur, c'était quand même vraiment mongole.\nAprès avoir démontré mon intérêt sur l'annonce facebook le gars m'avais donné un coup de fil.     -Suite")
     input() # Permet d'attendre l'input de l'utilisateur avant de continuer
 
     print("     -Bonjour, est-ce que je parle à Nicolas?\n")
     sleep(court)
     print("   **Regardez le README s'il y a confusion.** ")
-    phone_1=choice_user2("-Oui","-Non")  # Évènement 1 - phone_1 appel pour la voiture
+    # Évènement 1 - phone_1 appel pour la voiture
+    phone_1=choice_user2("-Oui","-Non")  
 
     if(phone_1==1): # phone_1 OUI
         print("\n-Oui c'est moi.")
@@ -131,6 +133,7 @@ while(JOUER==True):
             sleep(long)
             print("     -Pardonne moi, tu souhaites le voir? Viens à l'adresse indiqué sur l'annonce ajourd'hui à partir de 3h si tu peux.      -Suite")
             input()
+
             print("-C'est bon, on va se voir.")  
             sleep(court)
 
@@ -139,12 +142,14 @@ while(JOUER==True):
         sleep(court)
         print("J'étais sûr c'était un foutu spam, j'ai pas réfléchi..   -Suite")
         input()
+
         print("     -Ah je suis désolé. C'est pas toi qui m'avait envoyé un message pour le ford ce matin?")
         sleep(long)
         texte_delai("Ah, shit.",delay=(court*0.1)) # Effet type writter
         sleep(court)
         print("Je ne pouvais pas retourner la situation, je sais pas si j'avais simplement pas allumé, mais j'ai choké.\nJ'avais 18 ans je sais pas trop quoi te dire. Compte-tenu qu'il savait pas j'étais qui je ne me suis pas retenue..       -Suite")
         input()
+
         print("-Non désolé. Je te souhaite une bonne journée.")
         sleep(court)
         print("     -Ah pardon, bonne journée à toi aussi.")
@@ -187,44 +192,54 @@ while(JOUER==True):
     sleep(court)
     if(saison=="+été"): 
         print("     -Sérieux?? Cibole, je penses que je me suis trop habillé ce matin.")
+        saison="été"
     elif(saison=="été"):
         print("     -Parfait comme température, je vais pouvoir manger dehors. Bonne journée.")
     elif(saison=="automne"):
         print("     -Ok, merci, je penses que je vais me mettre une veste.")
+        saison="été"
     elif(saison=="hiver"):
         print("     -Merci chérie. On se revoit tantôt.")
     elif(saison=="+hiver"):
         print("     -C'est sûr tu me niaise. Ok merci, je vais prendre ma tuque. À tantôt.")
+        saison="hiver"
     sleep(court)
 
     print("-Bonne journée et à ce soir.")
     sleep(court)
     print("Ce matin je dois aller porter ma soeur à son cégep, sa voiture a eu un pépin. Au moins c'est vendredi j'ai pas besoin d'y aller demain.       -Suite")
     input()
+
     print("Je dois me rendre à la job pour un shift de 8 heures après. Trop long si tu me demandes mais au moins mon buddy Alex va être là.")
     sleep(long)
 
-    if(saison=="été" or saison=="automne" or saison=="+été"): 
+    if(saison=="été"): 
         print("Il fait beau la route va être plaisante je crois. Je vais pouvoir blaster ma musique.     -Suite")
         input()
+
         print("Fallait je m'ouvre la geule, il y a un accident sur le coin de ma rue, je suis dans un foutu cul de sac.\nOn peut même pas sortir de notre rue.\nJe suis encore content que ma soeur commence ses cours aussi tôt j'ai du temps ce matin.        -Suite")
         input()
-        print("Moins cool pour elle par contre, mais moi je suis sur le point de me faire virer donc je veux pas jouer avec le feu.")
+
+        print("Moins cool pour elle par contre, mais moi je suis sur le point de me faire virer donc je veux pas jouer avec le feu. Il y a des policiers.")
         sleep(long)
         police_1=choice_user2("Aller voir les policiers","Attendre") # Évènement policiers
         if(police_1==1):
-            print("J'étais sortie du char pour aller voir c'était quoi le problème. Rendu à la auteur de leur voiture,\nje l'ai vu, complètement détruite, y'avait une BMW sur le côté qui était rentré dans un poteau électrique.\nTypique. Chépa trop comment ils ont fait mais c'était pas beau à voir.     -Suite")
+            print("J'étais sortie du char pour aller voir c'était quoi le problème. Rendu à la hauteur de leur voiture,\nje l'ai vu, complètement détruite, y'avait une BMW sur le côté qui était rentré dans un poteau électrique.\nTypique. Chépa trop comment ils ont fait mais c'était pas beau à voir.     -Suite")
             input()
-            print("Ils m'ont dit que d'ici une vingtaines ils allait être en route. Au final moi et ma soeur on est rentré chez nous.\nPuis, enfin, 1 heure plus tard, de chez nous on les avait vu parir.")
+
+            print("Ils m'ont dit que d'ici une vingtaines ils allait être en route. Au final moi et ma soeur on est rentré chez nous.\nPuis, enfin, 1 heure plus tard, de chez nous on les voyait parir.")
             sleep(long)
         elif(police_1==2):
             print("On doit avoir attendu un bon 45 minutes avant que les ambulances puis tout soit arrivé. C'était pénible. Au moins on avait la musique dans le char.     -Suite")
             input()
-    elif(saison=="hiver" or saison=="+hiver"): 
+
+    elif(saison=="hiver"): 
         print("Pas hâte de conduire, on va pas se mentir c'est vraiment laid sur les routes ce matin. \nEncore une chance que c'est supposé de réchauffer le semaine prochaine.      -Suite")
         input()
+
         print("J'embarquais sur l'autoroute et là... mon truck fait un gros 'CLANK', vraiment pas rassurant.\nPas rien entendu d'anormal après mais j'ai pas trippé on va pas se mentir.. Ma soeur non plus d'ailleurs, le bruit était de son bord.     -Suite")
         input()
+
     print("Après l'avoir déposé je repartais avant d'avoir reçu un texto d'un numéro inconnu qui me disait de ne pas venir à la job.\nJ'aurais aimé le voir avant de partir, j'ai seulement vu le message quand j'étais arrivé.      -Suite")
     input()
 
@@ -243,10 +258,12 @@ while(JOUER==True):
     if(texto_1==1):
         print("-Hey, t'avais-tu reçu un texto te disant de ne pas te pointer à la job ce matin?\n-Il venait d'un numéro inconnu.       -Suite")
         input()
+
         print("     -Non, the fuck? J'aurais presque aimé, moi je l'aurais écouté si j'étais toi.\n     -8 heures c'est long broo.")
         sleep(long)
         print("-Weird, bref, live je vois rien d'inabituel donc je vais pas trop y porter attention.     -Suite")
         input()
+
     elif(texto_1==2):
         print("-Prêt pour les 8 prochaines heures?")
         sleep(court)
@@ -254,14 +271,17 @@ while(JOUER==True):
         sleep(court)
     print("Je serais peut-être pas venu si j'avais reçu le texto avant de rembarquer sur la route.      -Suite")
     input()
+
     if(saison=="été" or saison=="automne" or saison=="+été"):
         print("-Ce matin sur ma rue il y avait un accident, une BMW avec un char de police, une Charger. On est resté pogné pendant une heures sans pouvoir passer.     -Suite")
         input()
+
         print("     -Ah ouin? Damn ouais c'est vraiment fort ça. Un vendredi en plus, leur journé est ruiné.")
         sleep(long)
 
     print("     -Parlant de, ce soir, t'avais reçu une invitation pour la party chez Émile ou non? Tu devrais venir, je sais que Chloé sera pas là.       -Suite")
     input()
+
     party_1=choice_user3("-Non j'ai rien eu","Mentir","Demander des détails sur le party")
     if(party_1==1):
         print("-Non j'ai rien reçu.")
@@ -270,6 +290,7 @@ while(JOUER==True):
         sleep(long)
         print("-Tu m'enverras l'adresse, je suis pas encore allé chez Émile.        -Suite")
         input()
+
     elif(party_1==2):
         print("-Ouais, pas vraiment d'intérêt. Par contre si tu me dis que Chloé ne sera pas là je vais y penser.\nQuitte à arriver plus tard dans la soirée. Reste à voire si je dort là ou non si jamais.")
     else:
@@ -278,6 +299,7 @@ while(JOUER==True):
     sleep(long)
     print("-Je vais voir. Merci     -Suite")
     input()
+
     print("Rendu dans le provigo, on a pu décider où on voulait travailler. On a choisit le comptoir à pain.\nToujours le plus calme, c'est dans le fond, pas personne qui passe, si jamais, ils savent exactement ce qu'ils veulent.     -Suite")
     input() 
     
@@ -290,10 +312,12 @@ while(JOUER==True):
     print("Si je le connais??? Je capotte dessus depuis des mois. Peux pas croire qu'il habite dans le coin.")
     sleep(long)
     print("-Ah ouin? Cool, vers où? Tu lui avait parlé?")
-    print("     -Dernière fois, oui, je l'ai croisé deux fois. Les deux fois c'était au Tim au coin de la rue en bas.")
-    sleep(long)
+    print("     -Dernière fois, oui, je l'ai croisé deux fois. Les deux fois c'était au Tim au coin de la rue en bas.\n     -Les seules fois que j'y suis allé.     -Suite")
+    input()
+
     print("Noté, j'ai mon voyage. Très clairement que je vais commencer à y aller plus souvent. J'aime pas le café remarque. \nJe vais me trouver une raison.   -Suite")
     input()
+
     print("Ah fuck pas monsieur Robert.")
     sleep(court)
     print("     -Salut mon cher, je vais te prendre 7 baguette s'il te plait.")
@@ -325,29 +349,133 @@ while(JOUER==True):
     if(robert==1):
         print("-Check là.\nJe lui pointe la pile des baguettes d'avant hier. Il en manque 7.     -Suite")
         input()
-        print("     -Osti je peux pas croire. Pas pire, ton secret est en sécurité. Félicitation man.     -Suite")
+
+        print("     -Osti je peux pas croire. Pas pire, ton secret est en sécurité. Félicitation man. Depuis le temps haha.     -Suite")
         input()
+
     elif(robert==2):
         print("-Check la facture la plus récent dans le système.")    
         sleep(court)   
         print("     -Hahaha je peux pas croire que t'as fait passé ça.      -Suite") 
         input()
-    print("-Merci haha\nReste plus qu'à voire s'il va revenir se plaindre ou non.\nHonnêtement ça me donnerait une bonne raison de me trouver une autre job.")
+
+    print("-Merci haha\nReste plus qu'à voire s'il va revenir se plaindre ou non.")
+    sleep(court)
+    print("Honnêtement ça me donnerait une bonne raison de me trouver une autre job. Ou occupation..")
     sleep(long)
+    print("Bon finir mon shift c'est ma priorité en ce moment.\nRendu à la maison je vais pouvoir réfléchir pour ce party. J'ai pas d'intérêt vraiment parce que ça m'apporte pas grand chose.    -Suite")
+    input()
+    if robert==2:
+        print("-Bonjour madame. Le monsieur qui est passé avant vous a payé pour le pain baguette des 4 prochaines personnes qui passaient.")
+        sleep(long)
+        print("-Souhaitez vous repartir avec une?")
+        sleep(court)
+        print("     -Oh mais quel ange oserait-il faire une chose telle!")
+        print("Un très gentil monsieur. Très très gentil. Tellement gentil. Bon, c'est bon.\nÇa c'était ma dose de sarcasme aujourd'hui.    -Suite")
+        input()
+
+        print("-Je vous souhaites une bonne journée!")
+        sleep(court)
+        print("     -Merci à vous!")
+        sleep(court)
+        print("     -Vous de même!    -Suite")
+        input()
+
+    print("-Merci encore Alex, on a été productif aujourd'hui. On se voit bientôt.")
+    sleep(long)
+    print("     -Fait plaisir. Oublie pas pour ce soir by the way.")
+    sleep(court)
+    print("T'inquiète mon cher. Là il me reste plus qu'à retrouver mon bolide.\nJ'ai aucune idée du là ou je me suis parké.     -Suite") 
+    input()
+
+    print("Je pourrais peut-être demander au gens au party s'ils ont déjà reçu un texto comme ce que j'ai eu ce matin.")
+    sleep(court)
+    print("-EILLE TOI SACRÉ-FILS REGARDE OÙ TU CONDUIS.")
+    sleep(court)
+    print("On a comme oubilé de savoir comment conduire ou comment ça se passe??  -Suite")
+    input()
+
+    print("Bref, j'aimerais me rendre au moins à la maison avant de penser de pouvoir aller au party.\nJe penses y aller pour m'enrichir sur ce qui s'est passé ce matin et peut-être faire de nouvelles connexions.    -Suite")
+    input()
+
+    print("---CHAPITRE 2---")
+    sleep(court)
+    print("Je crois que je serais prêt à y aller, il est 8h30.\nJ'avais reçu un message d'Alex.\n    'Tu devrais venir plus tôt que tard si tu planifiais venir. Quelqu'un souhaiterait de rencontrer.'       -Suite")
+    input()
+
+    #Le vrai départ des "branches" ils ne retourneront plus dans la "main" :) 
+    party_aller=choice_user2("Ce faire à manger avant","Demander à Alex s'il va y être tôt")
+    if party_aller==1:
+        print("Je pourrais me faire réchauffer de la pizza avant d'y aller. Je commence à avoir faim. Pas sûr de rester toute la soirée.\nDe toute façon, je veux pas boire.     -Suite")
+        input()
+
+        print("La bonne pizza dominos. Je ferais mieux de regarder avec Alex ce qu'il voulait dire.     -Suite")
+        print("'Je voulais te demander. Tu voulais dire quoi par quelqu'un qui veut me rencontrer?'")
+        sleep(long)
+        print("     'Je voulais dire que le fils du manager de la gallerie d'art du coin y sera, ce dit manager a zyeuter ton instagram le gros'")
+        sleep(long)
+        print("'Ah ouin?? Okay je regarde ça. Je fini ma pizza et je m'en viens'       -Suite")
+        input()
+
+        print("---QUELQUES MINUTES PLUS TARD---")
+        sleep(court)
+    elif party_aller==2:
+        print("Selon sa réponse, il va y être au plus tard à 9h05. J'ai regardé sur la map et la maison d'émile serait à 30 minutes.\nLe timing est parfait.     -Suite")
+        input()
+        print("Je me sens sur les tracks aujourd'hui. Tout arrive en même temps. Je re-entends le bruit métalique sur mon char.\nCette fois-ci c'est en sortant de mon driveway.    -Suite")
+        input()
+
+        print("     -Hey salut Nico. Tu es en avance.")
+        sleep(court)
+        print("-Ouais toute l'histoire du gérant de la gallerie d'art m'a intrigué. Tu sais où je pourrais trouver son fils?")
+        sleep(long)
+        print("     -Ouais c'est George là bas. Chandail vert.")
+        sleep(court)
+        print("Ah fuck pas lui. C'est un de mes 'ex' intimidateur. Il avait vraiment les pires motifs dans le temps.\nC'était au primaire.")
+        party_george=choice_user2("Aller parler à George","Trouver un autre moyen de rentrer en contact")
+        if party_george==1:
+            print("-Hey, scuse moi de te déranger George, c'est bel et bien ton père celui qui est à la tête de la gallerie d'art du coin? ")
+            sleep(long)
+            print("     -Oui, oui. Il voulait te parler c'est ça?")
+            sleep(court)
+            print("-Je crois bien que oui. Tu sais comment je pourrais rentrer en contact avec lui?     -Suite")
+            input()
+
+            print("J'ai eu son numéro. Je vais pouvoir l'appeler demain.")
+
+        elif party_george==2:
+            if saison=="été":
+                print("-Je vais trouver un autre moyen, je t'explique plus tard.\n-Bon, on va tu dans la piscine? J'ai pas apporté mon maillot pour rien.\nChloé est en effet pas là, je vais pas mde retenir.      -Suite")
+                input()
+                print("     -Avec plaisir.")
+                sleep(court)
+                print("Au final je suis resté jusqu'à 11 heures")
+            else:
+                print("Tabarnak. Chloé s'est quand même pointé.")
+                sleep(court)
+                print("-Alex, check dans le hall d'entrée.")
+                sleep(court)
+                print("     -Ah wow. Okay je suis désolé veux-tu on va ailleurs? Moi j'ai bu mais on peut prendre ton truck.")
+                fini_party=choice_user2("Quitter","Rester")
+                if fini_party==1:
+                    print("Je déteste pas l'idée.\n-Ouais viens on va passer par en arrière. Prends ton manteau.")
+                elif fini_party==2: 
+                    print("-Non écoute c'est good. Je veux rester voir qu'est-ce qu'elle va faire.\nÇa risque d'être divertissant. Elle a une mauvaise réputation.      -Suite")
+
 
 
 
     nb_lecture=nb_lecture+1
     print(f"\n\nSouhaitez vous recommencer l'histoire? Cela vous fait {nb_lecture} lectures.")
     rejouer=choice_user2("Oui","Non")
-    if(rejouer==2):
+    if rejouer==2:
         JOUER=False
-    elif(rejouer==1):
+    elif rejouer==1:
         #Si l'utilisateur a jouer au minimum 3 fois, un prompt demande s'ils veulent retirer les "time.sleep"
-        if(choix_temps==2 and nb_lecture>=3):
+        if choix_temps==2 and nb_lecture>=3:
             print("\n\n**Souhaitez vous retirer les temps d'attente? Vous n'aurez plus besoin d'attendre après les lignes de texte.**")
-            choix_temps=choice_user2("Oui","Non")
-            if(choix_temps==1):
+            choix_tempssleep=choice_user2("Oui","Non")
+            if choix_tempssleep==1 :
                 court=0
                 long=0
 print("Fin")
