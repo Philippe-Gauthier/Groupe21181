@@ -5,7 +5,8 @@ def menu():
     tracer=0
     message=input("Menu jeux \nSélectionner un jeu! \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
     message=message.upper()
-    while (tracer.false):
+    while tracer==0:
+
         if message==("A","B","C","D","Q"):
             tracer=1
         else:
