@@ -7,7 +7,7 @@ def menu():
     message=message.upper()
     while tracer==0:
 
-        if message==("A"or"B"or"C"or"D"or"Q"):
+        if message==("A")or("B")or("C")or("D")or("Q"):
             tracer=1
         else:
             message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
@@ -85,7 +85,9 @@ def pile_face_lose(choix):
 
 #messages courte paille
 def courte_paille_bienvenu():
-    message=input("Bienvenu au jeu de la courte paille! Combien de joueurs?:\n")
+    message=input("Bienvenu au jeu de la courte paille! \nCombien de joueurs y participent?:\n")
+    while int(message)==False:
+        message=input("Quantité de joueurs inconnus! \nCombien de joueurs y participent?:\n")
     message=int(message)
     return message
 def courte_paille_select(total):
