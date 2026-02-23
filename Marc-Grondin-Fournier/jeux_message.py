@@ -2,15 +2,25 @@
 import random
 #message main
 def menu():
+    
     message=input("Menu jeux \nSélectionner un jeu! \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
+    
+    while message!=("A","B","C","D","Q"):   
+           message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
+
     message=message.upper()
     return message
 
 #messages roulette russe
-def roulette_bienvenu():
-    message=input("Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
+def roulette_bienvenu(tracker):
+    if(tracker):
+        message=input("Sélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
+    else:
+        message=input("Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
+    
     message=int(message)
     return message
+
 def roulette_next():
     message=input("Vous avez survécu! Au tour de l'adversaire! Prêt ? O/N\n")
     message=message.upper()
@@ -36,34 +46,35 @@ def roulette_false():
 def pile_face_bienvenu(tracer):
 
     if(tracer==0): message=input("Bienvenu à pile ou face! Quelle côté choisissez-vous? P/F\n")              
-    else: message=input("Quelle côté choisissez-vous? P/F\n") 
-         
+    else: message=input("Quelle côté choisissez-vous? P/F\n")
+
     message=message.upper()         
-    return message        
+    return message    
+    
 def pile_face_false():
             
-            choix=input("Côté non-reconnu, appuyer sur toutes touches pour recommencer ou Q pour quitter\n")
-            choix=choix.upper()
-            return choix
+    choix=input("Côté non-reconnu, appuyer sur toutes touches pour recommencer ou Q pour quitter\n")
+    choix=choix.upper()
+    return choix
 
 def pile_face_win(choix):
         
     if(choix==0):
         message=input("Pile! Vous avez gagné! Voulez-vous rejouer(O) ou quitter(Q)?")
-        message=message.upper()
     else:
         message=input("Face! Vous avez gagné! Voulez-vous rejouer(O) ou quitter(Q)?")
-        message=message.upper()            
+
+    message=message.upper()            
     return message        
     
 def pile_face_lose(choix):
     
     if(choix==0):
         message=input("Face! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
-        message=message.upper()
     else:
         message=input("Pile! Vous avez perdu! Voulez-vous rejouer(O) ou quitter(Q)?")
-        message=message.upper()            
+
+    message=message.upper()            
     return message
 
 #messages courte paille

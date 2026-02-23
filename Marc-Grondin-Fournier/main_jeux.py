@@ -3,8 +3,7 @@ import jeux_repertoire
 import jeux_message
 menu="O"
 while menu != "Q":
-    menu=jeux_message.menu()
-    menu=menu.upper()
+    menu=jeux_message.menu(menu)
     match menu:
         case "A":
             jeux_repertoire.roulette_russe() 

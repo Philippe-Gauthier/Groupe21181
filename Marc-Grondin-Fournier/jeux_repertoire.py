@@ -2,11 +2,13 @@
 import random
 import jeux_message
 def roulette_russe():
-    reset=""
+    reset = ""
+    tracker = 0
     while reset != "N":                                        
         #Sélection entre les 6 positionnements possibles du barrilet       
-        choix = jeux_message.roulette_bienvenu()
-        if(choix <= 6 and choix >= 0):
+        choix = jeux_message.roulette_bienvenu(tracker)
+        if(choix <= 6 and choix >= 1):
+            tracker = 1
             k = choix
             #Le barrilet spin pour atteindre une position au hasard
             roll = random.randint(1, 6)
@@ -34,6 +36,7 @@ def roulette_russe():
                         reset = jeux_message.roulette_win()
         else:
             reset = jeux_message.roulette_false()
+            tracker = 1
 
 def pile_face():
 
