@@ -7,7 +7,7 @@ def menu():
     message=message.upper()
     while tracer==0:
 
-        if message==("A","B","C","D","Q"):
+        if message==("A"or"B"or"C"or"D"or"Q"):
             tracer=1
         else:
             message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
@@ -16,10 +16,13 @@ def menu():
 
 #messages roulette russe
 def roulette_bienvenu(tracker):
-    if(tracker):
+    if(tracker):        
         message=input("Sélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
-    else:
+    else:    
         message=input("Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
+    
+    while message != ("1"or "2" or "3" or "4" or "5" or "6"): 
+        message=input("Entré inconnue! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
     
     message=int(message)
     return message
