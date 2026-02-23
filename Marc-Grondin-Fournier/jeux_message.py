@@ -2,13 +2,11 @@
 import random
 #message main
 def menu():
-    
     message=input("Menu jeux \nSélectionner un jeu! \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
-    
-    while message!=("A","B","C","D","Q"):   
-           message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
-
     message=message.upper()
+    while message!=("A","B","C","D","Q"):   
+        message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
+        message=message.upper()    
     return message
 
 #messages roulette russe
