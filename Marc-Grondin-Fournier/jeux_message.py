@@ -92,10 +92,12 @@ def courte_paille_bienvenu():
     return message
 def courte_paille_select(total):
     message=input(F"Choisir parmi les {total+1} pailles!\n")
+    while (message.isdigit()==False):               
+        message=input(F"Paille inexistante! \nChoisir parmi les {total+1} pailles!:\n")
     message=int(message)
     return message
 def courte_paille_loser():
-    message=input("Vous avez la plus petite paille! Voulez-vous rejouer(O) ou quitter(Q)?")
+    message=input("Vous avez la plus petite paille! Voulez-vous rejouer(Toutes touches) ou quitter(Q)?")
     message=message.upper()
     return message   
 def courte_paille_user(k):
@@ -107,7 +109,7 @@ def courte_paille_next(k):
     message=message.upper()
     return message      
 def courte_paille_winner(a):
-    message=input(F"Le joueur numéro {a+1} la mauvaise paille! Voulez-vous rejouer(O) ou quitter(Q)?")
+    message=input(F"Le joueur numéro {a+1} la mauvaise paille! Voulez-vous rejouer(Toutes touches) ou quitter(Q)?")
     message=message.upper()
     return message 
 
