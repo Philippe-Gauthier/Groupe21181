@@ -86,7 +86,7 @@ def pile_face_lose(choix):
 #messages courte paille
 def courte_paille_bienvenu():
     message=input("Bienvenu au jeu de la courte paille! \nCombien de joueurs y participent?:\n")
-    while int(message)==False:
+    while (message.isdigit()==False):               
         message=input("Quantité de joueurs inconnus! \nCombien de joueurs y participent?:\n")
     message=int(message)
     return message
