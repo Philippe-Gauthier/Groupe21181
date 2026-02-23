@@ -20,10 +20,10 @@ def roulette_bienvenu(tracker):
         message=input("Sélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
     else:    
         message=input("Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
-    
-    while message != ("1"or "2" or "3" or "4" or "5" or "6"): 
+    check=message.isdigit()
+    while check == False or message <1 or message>6: 
         message=input("Entré inconnue! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
-    
+        check=message.isdigit()
     message=int(message)
     return message
 
