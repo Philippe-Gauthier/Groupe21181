@@ -4,9 +4,12 @@ import random
 def menu():
     message=input("Menu jeux \nSélectionner un jeu! \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
     message=message.upper()
-    while message!=("A","B","C","D","Q"):   
-        message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
-        message=message.upper()    
+    while (tracer.true):
+        if message==("A","B","C","D","Q"):
+            tracer=1
+        else:
+            message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
+            message=message.upper()    
     return message
 
 #messages roulette russe
