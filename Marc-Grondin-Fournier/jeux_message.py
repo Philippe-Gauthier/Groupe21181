@@ -2,6 +2,7 @@
 import random
 #message main
 def menu():
+    tracer=0
     message=input("Menu jeux \nSélectionner un jeu! \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
     message=message.upper()
     while (tracer.false):
