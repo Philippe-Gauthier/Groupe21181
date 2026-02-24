@@ -571,8 +571,4 @@ elif niveau == 3:
         elif niveau == 2:
             niveau = loop_niveau(chienrassurer)
         elif niveau == 3:
-<<<<<<< HEAD
-            niveau = loop_niveau(lvl1_3_3_3)
-=======
             niveau = loop_niveau(chienreprimander)
->>>>>>> main
