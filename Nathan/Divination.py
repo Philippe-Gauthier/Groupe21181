@@ -339,7 +339,3 @@ elif niveau == 3:
             niveau = loop_niveau(lvl1_3_3_2)
         elif niveau == 3:
             niveau = loop_niveau(lvl1_3_3_3)
-
-#343ième ligne de if terminé ainsi que le mal de tête
-
-
