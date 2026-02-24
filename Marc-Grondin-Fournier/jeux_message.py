@@ -16,15 +16,17 @@ def menu():
 
 #messages roulette russe
 def roulette_bienvenu(tracker):
-    if(tracker):        
-        message=input("Sélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
-    else:    
-        message=input("Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
-    check=message.isdigit()
-    while check == False or message <1 or message>6: 
+    intSearch=0
+    check=0           
+    message=input("Sélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
+    intSearch=message.isdigit()
+    while check == False : 
         message=input("Entré inconnue! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
-        check=message.isdigit()
-    message=int(message)
+        intSearch=message.isdigit()
+        if intSearch==True:
+            message=int(message)
+            if message <1 or message>6: check=0           
+            else: check=1
     return message
 
 def roulette_next():
