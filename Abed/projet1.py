@@ -68,16 +68,57 @@ def fonction_arbre():
                         print("Fin : LE bucheron tue Bobby parce que la viande étaitun humain. Il était un tueur en serie en cavale.")
                     
                     elif choix5 == "2":
-                        print("Fin : Bobby reste un peu et pendant que le bucheron dormait il s'enfuit pendant la nuit en volant des chose utile a sa survie.")
-                
-
+                      print("Fin : Bobby reste un peu et pendant que le bucheron dormait il s'enfuit pendant la nuit en volant des chose utile a sa survie.")
+            
                 elif choix4 == "2":
+
+                    choix9 = poser_question(
+                        "Bobby assome le bucheron et il fouille la cabanne pour trouver des choses utiles pour sa survie",
+                        "il trouve une carte de la foret et il decide de suivre la carte pour trouver une sortie",
+                        "il trouve une carte de la foret mais il decide de ne pas la suivre et de tuer le bucheron pour prendre sa place et vivre dans la cabanne"
+                    )
+
+                    if choix9 == "1":
+                        print("Fin : Bobby suit la carte et il trouve une sortie et il est sauvé")
+                    elif choix9 == "2":
+                        print("Fin : Bobby tue le bucheron et il prend sa place et il vit dans la cabanne mais il ne sait pas que le bucheron était un tueur en serie en cavale et il finit par se faire tuer par la police qui vient enqueter sur les meurtres du bucheron")
             
             elif choix3 == "2":
 
-
+                choix8 = poser_question(
+                    "Bobby s'enfuit dans la direction opposé du bruit et il se perd dans la foret",
+                    "il continue a avancer dans la foret en esperant trouver une sortie",
+                    "il decide de rester la et d'attendre que quelqu'un vienne le chercher"
+                )
+                if choix8 == "1":
+                    print("Fin : Bobby continue a avancer dans la foret et il trouve une sortie et il est sauvé")
+                elif choix8 == "2":        
+                    print("Fin : Bobby decide de rester la et d'attendre que quelqu'un vienne le chercher, mais personne ne vient et il meurt de faim et de froid")
+        
         elif choix2 == "2":
+            choix7 = poser_question(
+                "Bobby s'enfuit dans la direction opposé du bruit et il se perd encore plus dans la foret",
+                "il continue a avancer dans la foret en esperant trouver une sortie",
+                "il decide de rester la et d'attendre que quelqu'un vienne le chercher"
+            )
 
-
-
+            if choix7 == "1":
+                print("Fin : Bobby continue a avancer dans la foret et il trouve une sortie et il est sauvé")
+            elif choix7 == "2":        
+                print("Fin : Bobby decide de rester la et d'attendre que quelqu'un vienne le chercher, mais personne ne vient et il meurt de faim et de froid")
+        
     elif choix1 == "2":
+        choix6 = poser_question(
+            "Bobby reste la et reflechit a une solution pour s'en sortir, il se rappelle que dans sa poche il a un briquet",
+            "il decide d'allumer le briquet pour faire du feu et se rechauffer",
+            "il decide de garder le briquet pour plus tard"
+        )      
+        if choix6 == "1":
+            print("Fin : Bobby allume le feu et le bruit effrayant est un ours qui s'approche de lui, le feu l'effraie et il s'enfuit dans la direction opposé a Bobby et Bobby est sauvé")
+        
+        elif choix6 == "2":
+            print("Fin : Bobby decide de garder le briquet pour plus tard, malheureusement il se fait attaquer par un loup pendant la nuit et il n'a pas de moyen de se proteger contre le loup et il meurt")
+
+
+# Lancer le jeu
+fonction_arbre()
