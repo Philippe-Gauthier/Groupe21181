@@ -4,7 +4,9 @@ Auteur: Arnaud Baril TGE G.21181
 Version de remise
 """
 
+#les variables contenant les textes sont stocké dans le fichier Texteprojet1
 import Texteprojet1
+
 #La variable constante NOUVEL_ESSAI sert à la boucle while permetant de recommencer le jeu après une mauvaise fin.
 NOUVEL_ESSAI = True
 
@@ -36,7 +38,6 @@ while  NOUVEL_ESSAI == True:
     
     lire_la_suite(Texteprojet1.page_debut)
     lire_la_suite(Texteprojet1.page_debut1)
-
     choix = prochainepage(Texteprojet1.page_debut2)
     if choix == 1:
         choix = prochainepage(Texteprojet1.page_dance)
@@ -131,7 +132,6 @@ while  NOUVEL_ESSAI == True:
                                         choix = lire_la_suite(Texteprojet1.page_boom_dino)
                     if choix == 2:
                         choix = lire_la_suite(Texteprojet1.page_oeil)
-                        
                     if choix == 2:
                         choix = lire_la_suite(Texteprojet1.page_borat)
                 if choix == 2:
