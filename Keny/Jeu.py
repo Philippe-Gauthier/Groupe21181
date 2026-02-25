@@ -1,1 +1,0 @@
-un utlisateur son age qui ensuite comparé à 18 à l'aide d'une décision il doit choisir et le resultat indique s'il est majeur ou mineur
