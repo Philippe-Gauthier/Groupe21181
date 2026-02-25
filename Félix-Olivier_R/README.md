@@ -1,5 +1,5 @@
 # Introduction
-Ceci est une histoire intéractive sur Nicolas. Un jeune homme dans sa vingtaine passionné pas l'art. L'utilisatuer va être exposé à plusieurs choix de réponses qui vont altérer le courant de l'histoire.
+Ceci est une histoire intéractive sur Nicolas. Un jeune homme dans sa vingtaine passionné pas l'art. L'utilisateur va être exposé à plusieurs choix de réponses qui vont altérer le courant de l'histoire.
 
 ## Instructions
 
@@ -15,4 +15,6 @@ Ceci est une histoire intéractive sur Nicolas. Un jeune homme dans sa vingtaine
 ### Sorties
  - Les zones de texte et les dialogues.
  - Les questions posés à l'utilisateur.
+### Restrictions
+- Il n'y a pas de retour en arrière. Le programme ne le permet pas, à la place lorsque vous arrivez vers la fin de l'histoire vous aurez le choix de recommencer du début.
 ----
