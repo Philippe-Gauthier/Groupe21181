@@ -310,7 +310,7 @@ def print_par_lettre(text):
 def debut_jeu():
     """
     Fonction pour confirmer le début du jeu avec un input du joueur
-    Entrées: confirmation du joueur par un input de y ou n
+    Entrées: pas d'entrées
     Sorties: strings de texte
     """
     while True:
