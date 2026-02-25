@@ -9,39 +9,40 @@ import random
 import jeux_message
 
 """
+**********************************************
 Fonction principale du jeu roulette russe
-Entré:Aucune
+Entrée:Aucune
 Sortie:Aucune
 """
 def roulette_russe():    
     reset = ""
     tracker = 0
     while reset != "N":  
-        roll=0
-        choix=0                                      
+        roll = 0
+        choix = 0                                      
         #Sélection entre les 6 
         #positionnements possibles du barrilet       
         choix = jeux_message.roulette_bienvenu(tracker)
         tracker = 1
-        choix=choix-1
+        choix = choix-1
         #Le barrilet spin pour atteindre une position au hasard
         roll = random.randint(1, 6)
         #Addition pour obtenir le nombre maximal de tour avant la munition
         roll = roll + choix
-        tour=choix
+        tour = choix
 
         #Identification bool du joueur
         modu_player = choix%2           
         #porte de sortie
         reset = input("Premier tour! Prêt?\n")
         reset = reset.upper()       
-        if(reset == "N"):break
+        if(reset == "N"): break
 
         for k in range(choix,roll+1):       
             #position selon le choix, l'incrementation et la position de la mutinion     
-            if(tour==choix):tour=choix+1
-            else:tour=tour+1            
-            tour_modulo=tour%2
+            if(tour == choix): tour= choix+1
+            else:tour = tour+1            
+            tour_modulo = tour%2
             #Le perdant sera identifié 1 si on choisi nombre pair
             if(tour_modulo == modu_player): 
 
@@ -59,8 +60,11 @@ def roulette_russe():
                 elif(tour == roll):
                     reset = jeux_message.roulette_win()
 """
+**********************************************
+
+**********************************************
 Fonction principale du jeu pile ou face
-Entré:Aucune
+Entrée:Aucune
 Sortie:Aucune
 """
 def pile_face():
@@ -84,12 +88,15 @@ def pile_face():
             exit = jeux_message.pile_face_false()
             tracer = 1                   
 """
+**********************************************
+
+**********************************************
 Fonction principale du jeu de la courte paille
-Entré:Aucune
+Entrée:Aucune
 Sortie:Aucune
 """                        
 def courte_paille():
-    exit=""
+    exit = ""
     while exit != "Q":
         #choix du nb de joueur
         choix = jeux_message.courte_paille_bienvenu()
@@ -117,7 +124,10 @@ def courte_paille():
             else:             
                 exit = jeux_message.courte_paille_next(k)                    
         #conclusion
-        if(choix==paille_loser):
+        if(choix == paille_loser):
             exit = jeux_message.courte_paille_loser()
         else:
             exit = jeux_message.courte_paille_winner(joueur[paille_loser])
+"""
+**********************************************
+"""

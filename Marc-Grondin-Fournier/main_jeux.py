@@ -10,6 +10,7 @@ Nom du fichier: main_jeux.py
 import jeux_repertoire
 import jeux_message
 menu="O"
+#menu principal
 while menu != "Q":
     menu=jeux_message.menu()
     match menu:
