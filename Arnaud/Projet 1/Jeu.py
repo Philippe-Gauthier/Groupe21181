@@ -1,19 +1,17 @@
 """
-nom du jeu:
+nom du jeu: J'avais une bonne excuse...
 Auteur: Arnaud Baril TGE G.21181
-
-(identifier dans le commit final sur la main branche que c<Est la bonne version)
+Version de remise
 """
 
 import Texteprojet1
-#IMPORTANT! LIRE LE DOCUMENT DES STANDARDS DE CODE
-RETRY = True
-choix = 0
+#La variable constante NOUVEL_ESSAI sert à la boucle while permetant de recommencer le jeu après une mauvaise fin.
+NOUVEL_ESSAI = True
 
 """
-entree de la fonction:
-sortie de la fonction:
-but de la fonction:
+entré de la fonction: La page de texte actuelle.
+sortie de la fonction: Retourne le choix de l'utilisateur.
+but de la fonction: print la page actuel et prépare la prochaine selon son choix.
 """
 def prochainepage(texte):
     print(texte)
@@ -23,118 +21,118 @@ def prochainepage(texte):
     choix = int(choix)
     return choix
 
-def lire_la_suite(page)
+"""
+entré de la fonction: page actuelle.
+sortie de la fonction: rien
+but de la fonction: faire une pause entre deux pages se suivant et sans choix.
+"""
+def lire_la_suite(page):
     print(page)
-    input("peser entrer pour la suite")
+    input("peser Entrer pour la suite")
     return
 
-
-while  RETRY == True:
-
-        
+#Permet a l'utilisateur de recommencer après avoir atteint une fin.
+while  NOUVEL_ESSAI == True:
+    
     lire_la_suite(Texteprojet1.page_debut)
-
     lire_la_suite(Texteprojet1.page_debut1)
 
     choix = prochainepage(Texteprojet1.page_debut2)
     if choix == 1:
         choix = prochainepage(Texteprojet1.page_dance)
         if choix == 1:
-            choix = prochainepage(Texteprojet1.page_danse_robot)
-            Choix = prochainepage(Texteprojet1.page_robot_break)
-        elif choix == 2:
-            choix = prochainepage(Texteprojet1.page_gige) 
+            choix = lire_la_suite(Texteprojet1.page_dance_robot)
+            Choix = lire_la_suite(Texteprojet1.page_dance_break)
+        if choix == 2:
+            choix = lire_la_suite(Texteprojet1.page_gigue) 
     if choix == 2:
         choix = prochainepage(Texteprojet1.page_heehee)
         if choix == 1:
-            choix = prochainepage(Texteprojet1.page_tamiat)
+            choix = lire_la_suite(Texteprojet1.page_tamiat)
         if choix == 2:
             choix = prochainepage(Texteprojet1.page_autopsie)
             if choix == 1:
-                choix = prochainepage(Texteprojet1.page_glandis)
+                choix = lire_la_suite(Texteprojet1.page_glandis)
             if choix == 2:
                 choix = prochainepage(Texteprojet1.page_kazakstan)
                 if choix == 1:
                     choix = prochainepage(Texteprojet1.page_politique)
                     if choix == 1:
-                        choix = prochainepage(Texteprojet1.page_coeur)
+                        choix = lire_la_suite(Texteprojet1.page_coeur)
                         choix = prochainepage(Texteprojet1.page_reptilien)
                         if choix == 1:
                             choix = prochainepage(Texteprojet1.page_beurre)
                             if choix == 1:
-                                choix = prochainepage(Texteprojet1.page_baba)
+                                choix = lire_la_suite(Texteprojet1.page_baba)
                             if choix == 2:
-                                choix = prochainepage(Texteprojet1.page_again)
+                                choix = lire_la_suite(Texteprojet1.page_again)
                         if choix == 2: 
                             choix = prochainepage(Texteprojet1.page_portal)
                             if choix == 1:
-                                choix = prochainepage(Texteprojet1.page_beurre)
+                                choix = lire_la_suite(Texteprojet1.page_beurre)
                             if choix == 2:
                                 choix = prochainepage(Texteprojet1.page_double)
                                 if choix == 1:
-                                    choix = prochainepage(Texteprojet1.page_retour)
-                                    choix = prochainepage(Texteprojet1.page_retour2)
+                                    choix = lire_la_suite(Texteprojet1.page_retour)
+                                    choix = lire_la_suite(Texteprojet1.page_retour2)
                                 if choix == 2:
-                                    choix = prochainepage(Texteprojet1.page_dopleganger)
+                                    choix = lire_la_suite(Texteprojet1.page_dopleganger)
                             if choix == 2:
                                 choix = prochainepage(Texteprojet1.page_jurassic)
                                 if choix == 1:
                                     choix = prochainepage(Texteprojet1.page_explication)
                                     if choix == 1:
-                                        choix = prochainepage(Texteprojet1.page_space_jesus)
+                                        choix = lire_la_suite(Texteprojet1.page_space_jesus)
                                         choix = prochainepage(Texteprojet1.page_nouveau_monde)
                                         if choix == 1:
                                             choix = prochainepage(Texteprojet1.page_anglais)
                                             if choix == 1:
-                                                choix = prochainepage(Texteprojet1.page_magie)
+                                                choix = lire_la_suite(Texteprojet1.page_magie)
                                                 choix = prochainepage(Texteprojet1.page_magie_chat)
                                                 if choix == 1:
-                                                    choix = prochainepage(Texteprojet1.page_magie_portail)
-                                                    choix = prochainepage(Texteprojet1.page_monologue)
-                                                    choix = prochainepage(Texteprojet1.page_wtf)
+                                                    choix = lire_la_suite(Texteprojet1.page_magie_portail)
+                                                    choix = lire_la_suite(Texteprojet1.page_monologue)
+                                                    choix = lire_la_suite(Texteprojet1.page_wtf)
                                             if choix == 2:
                                                 choix = prochainepage(Texteprojet1.page_hero)
                                                 if choix == 1:
-                                                    choix = prochainepage(Texteprojet1.page_hero_bad_sword)
+                                                    choix = lire_la_suite(Texteprojet1.page_hero_bad_sword)
                                                 if choix == 2:
                                                     choix = prochainepage(Texteprojet1.page_hero_operation)
                                                     if choix == 1:
-                                                        choix = prochainepage(Texteprojet1.page__hero_quest)
+                                                        choix = lire_la_suite(Texteprojet1.page_hero_quest)
                                                     if choix == 2:
-                                                        choix = prochainepage(Texteprojet1.page_glandalf)
+                                                        choix = lire_la_suite(Texteprojet1.page_glandalf)
                                                 if choix == 2:
-                                                    choix = prochainepage(Texteprojet1.page_magie_combat)
+                                                    choix = lire_la_suite(Texteprojet1.page_magie_combat)
                                             if choix == 2:
-                                                choix = prochainepage(Texteprojet1.page_hero)
+                                                choix = lire_la_suite(Texteprojet1.page_hero)
                                         if choix == 2:
-                                            choix = prochainepage(Texteprojet1.page_boude)
+                                            choix = lire_la_suite(Texteprojet1.page_boude)
                                     if choix == 2: 
                                         choix = prochainepage(Texteprojet1.page_nobel)
                                         if choix == 1:
                                             choix = prochainepage(Texteprojet1.page_noel)
                                             if choix == 1:
-                                                choix = prochainepage(Texteprojet1.page_nomnom_divin)
+                                                choix = lire_la_suite(Texteprojet1.page_nomnom_divin)
                                             if choix == 2:
-                                                choix = prochainepage(Texteprojet1.page_retour_space_jesus)
+                                                choix = lire_la_suite(Texteprojet1.page_retour_space_jesus)
                                         if choix == 2:
-                                            choix = prochainepage(Texteprojet1.page_prout)        
+                                            choix = lire_la_suite(Texteprojet1.page_prout)        
                                 if choix == 2:
                                     choix = prochainepage(Texteprojet1.page_rein)
                                     if choix == 1:
                                         choix = prochainepage(Texteprojet1.page_dinogarou)
                                         if choix == 1:
-                                            choix = prochainepage(Texteprojet1.page_fin_rein)
+                                            choix = lire_la_suite(Texteprojet1.page_fin_rein)
                                         if choix == 2: 
-                                            choix = prochainepage(Texteprojet1.page_rein_garou)
+                                            choix = lire_la_suite(Texteprojet1.page_rein_garou)
                                     if choix == 2:
-                                        choix = prochainepage(Texteprojet1.page_boom)
+                                        choix = lire_la_suite(Texteprojet1.page_boom_dino)
                     if choix == 2:
-                        choix = prochainepage(Texteprojet1.page_oeil)
+                        choix = lire_la_suite(Texteprojet1.page_oeil)
                         
                     if choix == 2:
-                        choix = prochainepage(Texteprojet1.page_borat)
+                        choix = lire_la_suite(Texteprojet1.page_borat)
                 if choix == 2:
-                    choix = prochainepage(Texteprojet1.page_borat)
-             
-    else:
-        print("Essayer de nouveau")
+                    choix = lire_la_suite(Texteprojet1.page_borat)

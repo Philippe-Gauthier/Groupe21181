@@ -1,4 +1,4 @@
-page_debut = """
+page_debut = r"""
 
 
    ,=""=,
@@ -23,8 +23,6 @@ Tu regardes ta douce moitié commencer à perdre patience, pour la quatrième fo
 
 Ta décision est prise. Tu vas aller chercher du lait et des cigarettes au dépanneur.
 
-(Enter 1)
-
 *********************************************************************************
 """
 
@@ -42,7 +40,6 @@ Les rues sont désertes, te donnant l'impression d'être l'unique personne en vi
 
 C'est alors que tu marches sur le trottoir que soudainement tu entends "Hee Hee!".
 
-(Enter 1)
 
 *********************************************************************************
 """
@@ -132,7 +129,7 @@ Tes mouvements de danse ne les impressionnent pas. Ils ont déjà vu mieux.
 d'un mouvement synchronisé, les trois créatures font une slide à droite et commencent à claquer des doigts en continuant a te ce rapprocher.
 Aucun "Beep Bop", aussi robotique soit-il, ne les intimide. Tu as clairement perdu ce round. 
 
-Enchaine avec du break dance (Enter 1)
+Enchaine avec du break dance
 
 *********************************************************************************
 """
@@ -367,7 +364,7 @@ Fin
 *********************************************************************************
 """
 
-page_coeur = """
+page_coeur = r"""
 -un couteau au niveau du cœur-
 
 Tu te réveilles avec un couteau dans le torse et une terrible douleur au rein.
@@ -400,10 +397,10 @@ l  .                _.^   ___     _>-y~
                       `. ~(
                         )  \
                   /,`--'~\--'~\
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-(Enter 1)
-
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            
+            
+*********************************************************************************
 """                 
                   
 page_reptilien = """
@@ -422,9 +419,9 @@ Serais-ce un portail vers leur base?
 
 -------------------------------------------
 
-- Jouer avec les contrôles du portail avant de le prendre. 
+1 - Jouer avec les contrôles du portail avant de le prendre. 
 
-- suivre le docteur directement.
+2 - suivre le docteur directement.
 
 *********************************************************************************
 
@@ -568,7 +565,7 @@ Tu ne peux pas t'empêcher de sourire. La route fut longue.
 *********************************************************************************
 """
 
-page_retour2 = """
+page_retour2 = r"""
 
 la poignée tourne entre tes doigts. Tu entends encore le bébé pleurer,
 mais ses pleurs ne te dérangent plus ce soir.
@@ -739,7 +736,7 @@ Fin
 *********************************************************************************
 """
 
-page_boom_dino = """
+page_boom_dino = r"""
 
 -Une lumière dans le ciel brille de plus en plus-
 
@@ -819,7 +816,7 @@ ils t'envoient:
 *********************************************************************************
 """
 
-page_Noel = """
+page_noel = """
 
 -Ho ho ho-
 
@@ -849,7 +846,7 @@ C'est le SAINT PRÉPUCE!
 
 page_nomnom_divin = """
 
-Le DLC pourra être débloqué sur demande. Je suis parfaitement achetable avec de la nourriture.
+Le DLC pourra être écrit sur demande. Je suis parfaitement achetable avec de la nourriture.
 
 en attendant,
 
@@ -860,7 +857,7 @@ Fin
 
 page_retour_space_jesus = """
 
-Le DLC pourra être débloqué sur demande. Je suis parfaitement achetable avec de la nourriture.
+Le DLC pourra être écrit sur demande. Je suis parfaitement achetable avec de la nourriture.
 
 en attendant,
 
@@ -935,9 +932,6 @@ Tu vois la lumière du ciel grandir et se rapprocher. Tu prépares le bouton de 
 
 Maintenant!
 
-
-(Enter 1)
-
 *********************************************************************************
 """
 
@@ -972,9 +966,14 @@ Que fais-tu?
 page_boude = """
 -boude l'univers-
 
-Tu refuses de recommencer. noooooooope. Ça termine là. Fini. Nada. Regarde l’univers. Je suis capable de le dire moi-même.
+Tu refuses de recommencer. noooooooope. Ça termine là. Fini. Nada. Regarde l’univers.
 
-Comme un grand: "Fin"
+Je suis capable de le dire moi-même.
+
+Comme un grand.
+
+"Fin"
+
 """
 
 page_anglais = """
@@ -1005,18 +1004,17 @@ Les petites personnes du village t'apprennent les bases de la magie.
 Dans ce monde, ta puissance magique est équivalente au nombre de chats dont tu t'occupes.
 Les vieilles cat ladies domine le monde de la magie d'une poigne de fer,
 contrôlant l'accès a la source de votre puissance.
+
 Cela fait quelques années que tu vis en cachette de ces femmes terribles,
 cherchant les chatons et accumulant les chats que tu as obtenus
 dans un paradis félins sous-terrain. Il ne te manque que un chaton supplémentaire
 pour atteindre la puissance d'un mage du cercle de la 7ieme litière.
 
 
-(Enter 1)
-
 *********************************************************************************
 """
 
-page_magie_chat = """
+page_magie_chat = r"""
 
 Tu te téléportes au rendez-vous. Micro-Biscuit, ton chat calico de mana-reserve,
 miaule pour te dire qu'il pense que le périmètre est sécure.
@@ -1094,7 +1092,7 @@ Fin
 *********************************************************************************
 """
 
-Page_magie_portail = """
+page_magie_portail = """
 
 -téléporte toi-
  
@@ -1115,11 +1113,9 @@ Rapidement, tu sors ta bouteille de lait de chatte pour en prendre une grande go
  
  ton univers.
  
-(Enter 1)
- 
  *********************************************************************************
  """
-Page_monologue ="""
+page_monologue ="""
 
  Tu apparait dans le ciel de Weedon dans une explosion de chat.
  
@@ -1190,9 +1186,6 @@ Ce n’était plus toi."
 
 
 scroll up si tu n'as pas lu le début du monologue.
-
-
-(Enter 1)
 
 *********************************************************************************
 """
@@ -1309,14 +1302,14 @@ Que fais-tu?
 *********************************************************************************
 """
 
-Page_hero_quest = """
+page_hero_quest = """
 
 -Partir vaincre le roi des démon-
 
 Tu veux connaitre à quel point dans le futur toutes tes autres versions se rassemblent dans le Colisée pour connaitre la version  qui les dominera tous?
 Ou tu préfères connaitre quand tu dois sauver la galaxie par le pouvoir de la massothérapie spirituelle? 
 
-Le DLC pourra être débloquée sur demande. Je suis parfaitement achetable avec de la nourriture.
+Le DLC pourra être écris sur demande. Je suis parfaitement achetable avec de la nourriture.
 
 en attendant, il te reste encore beaucoup a découvrir.
 
@@ -1332,7 +1325,7 @@ page_glandalf ="""
 
 Tu veux les aventures de Glandalf et les nobits?
 
-Le DLC pourra être débloquée sur demande. Je suis parfaitement achetable avec de la nourriture.
+Le DLC pourra être écris sur demande. Je suis parfaitement achetable avec de la nourriture.
 
 En attendant, il te reste encore beaucoup a découvrir.
 
