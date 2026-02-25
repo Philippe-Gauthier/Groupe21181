@@ -90,4 +90,4 @@ else:
      print("Joseph echoue son examen")
 print("-" * 50)
 
-# Fin du programme
+# Fin du programme.
