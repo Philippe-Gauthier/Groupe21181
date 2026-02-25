@@ -294,8 +294,8 @@ lvl1 = [text1, client1, client2, client3]
 def print_par_lettre(text):
     """ 
     Petite fonction pour print des caracteres les uns apres les autres
-    Inputs: strings de text courts (certains problemes de formattage, seulement utiliser avec des petites strings)
-    Outputs: la meme string qu'a l'input, mais écrit caractere par caractere avec un délai
+    Entrées: strings de text courts (certains problemes de formattage, seulement utiliser avec des petites strings)
+    Sorties: la meme string qu'a l'input, mais écrit caractere par caractere avec un délai
     """
     for caracteres in text:
         print(f"{caracteres}", end="", flush=True)
@@ -308,8 +308,8 @@ def print_par_lettre(text):
 def start_game():
     """
     Fonction pour confirmer le début du jeu avec un input du joueur
-    Inputs: confirmation du joueur par un input de y ou n
-    Outputs: strings de texte
+    Entrées: confirmation du joueur par un input de y ou n
+    Sorties: strings de texte
     """
     while True:
         start_confirmation = input("Pret a jouer? (y/n) ")
@@ -329,8 +329,8 @@ def start_game():
 def detecteur_fin(niveau_selectionne):
     """
     Fonction pour vérifier si le prochain choix du joueur sera son dernier dans chaque branche de l'arbre
-    Inputs: variable du niveau actuel contenant une liste de choix (ou pas)
-    Outputs: retour au début du jeu ou continution du jeu
+    Entrées: variable du niveau actuel contenant une liste de choix (ou pas)
+    Sorties: retour au début du jeu ou continution du jeu
     """
     while True:
         nombre_choix = len(niveau_selectionne)
@@ -361,8 +361,8 @@ def detecteur_fin(niveau_selectionne):
 def level_extractor(niveau_selectionne):
     """
     Fonction d'extraction et de formattage du texte et des options possible d'une variable de niveau
-    Inputs: output de la derniere fonction, soit une variable de niveau avec une liste de choix
-    Outputs: variables pour chaque choix et le texte du niveau, formattés pour ne pas séparer un mot en deux
+    Entrées: Sorties de la derniere fonction, soit une variable de niveau avec une liste de choix
+    Sorties: variables pour chaque choix et le texte du niveau, formattés pour ne pas séparer un mot en deux
     """
     situation0 = textwrap.fill(niveau_selectionne[0], width = 140)
     choix1 = textwrap.fill(niveau_selectionne[1], width = 140)
@@ -377,8 +377,8 @@ def level_extractor(niveau_selectionne):
 def presentation_choix(situation0, choix_1, choix_2, choix_3):
     """
     Fonction qui formatte le texte et les choix d'un niveau en liste lisible et claire, puis demande une question a l'utilisateur
-    Inputs: Output de la derniere fonction, soit les variables pour chaque choix et le texte formattés
-    Outputs: Liste formattée de la situation et des choix possibles sur le terminal, et une variable de réponse au choix en int
+    Entrées: Sorties de la derniere fonction, soit les variables pour chaque choix et le texte formattés
+    Sorties: Liste formattée de la situation et des choix possibles sur le terminal, et une variable de réponse au choix en int
     """
     time.sleep(0.5)
     print(f"\n{situation0}\n")
@@ -398,8 +398,8 @@ def presentation_choix(situation0, choix_1, choix_2, choix_3):
 def resultat_choix(reponse):
     """
     Fonction d'assignation de valeur au résultat du choix fait a la fonction plus haut
-    Inputs: réponse en int a la question posée par la fonction ci dessus
-    Output: Chiffre en int entre 0 et 4 dans une variable
+    Entrées: réponse en int a la question posée par la fonction ci dessus
+    Sorties: Chiffre en int entre 0 et 4 dans une variable
     """
     if reponse == 1 or reponse == 2 or reponse == 3 or reponse == 0:
         choix_final = reponse
@@ -415,8 +415,8 @@ def loop_niveau(input_niveau):
     """
     Fonction combinant presque toutes les fonctions ci dessus afin de les mettre dans une "loop" qui valide que le choix du joueur est valide
     et répete cette boucle jusqu'a ce que le joueur entre une réponse valide.
-    Inputs: Variable de niveau
-    Output: Variable pour déterminer le prochain niveau
+    Entrées: Variable de niveau
+    Sorties: Variable pour déterminer le prochain niveau
     """
     while True:
         detecteur_fin(input_niveau)
