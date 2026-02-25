@@ -1,1 +1,2 @@
-print(1)
+#ceci est une erreur de merge
+print("code")
