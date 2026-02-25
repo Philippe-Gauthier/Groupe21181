@@ -274,6 +274,8 @@ chienclient3 = [textchien, chien1, chien2, chien3]
 
 
 
+
+
 #=====CLIENTS PREMIER CHOIX=====#
 
 #-1ere couche options 1, 2, 3
