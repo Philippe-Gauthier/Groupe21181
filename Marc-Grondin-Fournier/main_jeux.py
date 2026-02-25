@@ -1,4 +1,10 @@
-
+"""**********************************************
+Projet: 1
+Auteur: Marc-André Grondin-Fournier
+But du projet: Jeux à arbres multiples
+Date: 2023/09/05
+Nom du fichier: main_jeux.py
+**********************************************"""
 import jeux_repertoire
 import jeux_message
 menu="O"

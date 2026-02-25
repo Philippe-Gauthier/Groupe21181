@@ -16,7 +16,6 @@ def menu():
 
 #messages roulette russe
 def roulette_bienvenu(tracker):
-    intSearch=0
     check=0
     while check==False:
 
@@ -39,7 +38,7 @@ def roulette_bienvenu(tracker):
         else:
             print("Entré inconnue! \n") 
             tracker=1
-
+    message=int(message)
     return message
 
 def roulette_next():

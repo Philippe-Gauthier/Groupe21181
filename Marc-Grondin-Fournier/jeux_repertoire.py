@@ -10,6 +10,7 @@ def roulette_russe():
         #Sélection entre les 6 positionnements possibles du barrilet       
         choix = jeux_message.roulette_bienvenu(tracker)
         tracker = 1
+
         #Le barrilet spin pour atteindre une position au hasard
         roll = random.randint(1, 6)
         #Addition pour obtenir le nombre maximal de tour avant la munition
@@ -22,20 +23,22 @@ def roulette_russe():
 
         if(reset == "N"):break
         for k in range(choix,roll+1):
-            tour=(choix+k)%2
-            if(tour == modu_player): 
+            tour=choix+k
+            tour_modulo=tour%2
+            if(tour_modulo == modu_player): 
 
-                if(choix+k < roll): 
+                if(tour < roll): 
                     reset = jeux_message.roulette_next()
-
                     if(reset == "N"):break
-                elif(choix+k == roll):
+
+                elif(tour == roll):
                     reset = jeux_message.roulette_lose()      
             else:
-                if(choix+k < roll):                                     
+                if(tour < roll):                                     
                     reset = jeux_message.roulette_adv_survi()
                     if(reset == "N"):break
-                elif(choix+k == roll):
+                    
+                elif(tour == roll):
                     reset = jeux_message.roulette_win()
 
 def pile_face():
