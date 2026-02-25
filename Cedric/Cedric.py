@@ -1,6 +1,6 @@
 """
 Nom Prenom: ATTIEPO N'GBA JEAN MICHEL CEDRIC
-Tritre du projet1: jeu de quiz éducatif 
+Tritre du projet1: jeu de quiz éducatif
 """
 score = 0
 

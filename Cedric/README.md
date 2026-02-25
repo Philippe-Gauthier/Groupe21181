@@ -1,6 +1,6 @@
 Nom: ATTIEPO N'GBA JEAN MICHEL CEDRIC 
 
-Titre: jeu de quiz educatif 
+Titre: jeu de quiz educatif. 
 
 # But du programme 
 Le but de ce programme est de créer un jeu de quiz educatif. Le joueur doit répondre à 50 questions ou il y a trois (3) niveaux: 
