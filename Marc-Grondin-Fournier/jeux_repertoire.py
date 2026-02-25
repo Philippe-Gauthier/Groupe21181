@@ -4,39 +4,39 @@ import jeux_message
 def roulette_russe():
     reset = ""
     tracker = 0
-    while reset != "N":                                        
+    while reset != "N":  
+        roll=0
+        choix=0                                      
         #Sélection entre les 6 positionnements possibles du barrilet       
         choix = jeux_message.roulette_bienvenu(tracker)
-        if(choix <= 6 and choix >= 1):
-            tracker = 1
-            k = choix
-            #Le barrilet spin pour atteindre une position au hasard
-            roll = random.randint(1, 6)
-            #Addition pour obtenir le nombre maximal de tour avant la munition
-            roll =+ choix
-            #Identification bool du joueur
-            modu_player = choix%2
-                
-            reset = input("Premier tour! Prêt?\n")
-            reset = reset.upper()
+        tracker = 1
+        #Le barrilet spin pour atteindre une position au hasard
+        roll = random.randint(1, 6)
+        #Addition pour obtenir le nombre maximal de tour avant la munition
+        roll = roll + choix
+        #Identification bool du joueur
+        modu_player = choix%2
+            
+        reset = input("Premier tour! Prêt?\n")
+        reset = reset.upper()
 
-            if(reset == "N"):break
-            for k in range(choix,roll+1):
-                if(choix+k %2 == modu_player):                                    
-                    if(choix+k < roll):                                      
-                        reset = jeux_message.roulette_next()
-                        if(reset == "N"):break
-                    elif(choix+k == roll):
-                        reset = jeux_message.roulette_lose()      
-                else:
-                    if(choix+k < roll):                                     
-                        reset = jeux_message.roulette_adv_survi()
-                        if(reset == "N"):break
-                    elif(choix+k == roll):
-                        reset = jeux_message.roulette_win()
-        else:
-            reset = jeux_message.roulette_false()
-            tracker = 1
+        if(reset == "N"):break
+        for k in range(choix,roll+1):
+            tour=(choix+k)%2
+            if(tour == modu_player): 
+
+                if(choix+k < roll): 
+                    reset = jeux_message.roulette_next()
+
+                    if(reset == "N"):break
+                elif(choix+k == roll):
+                    reset = jeux_message.roulette_lose()      
+            else:
+                if(choix+k < roll):                                     
+                    reset = jeux_message.roulette_adv_survi()
+                    if(reset == "N"):break
+                elif(choix+k == roll):
+                    reset = jeux_message.roulette_win()
 
 def pile_face():
 
@@ -94,6 +94,7 @@ def courte_paille():
             exit = jeux_message.courte_paille_loser()
         else:
             exit = jeux_message.courte_paille_winner(joueur[paille_loser])
+##
 #en cours de modification
 def rpCiseaux():
     choix=""
