@@ -67,6 +67,7 @@ print("aaa")
 ```
 
 
+
 ---
 
 ## Utilisateur
@@ -94,5 +95,20 @@ print("aaa")
 - Requis
 ## Légal
 - License
-- Contribution
-- Remerciement
+
+
+-Usage
+-Configuration
+-Features
+-Screenshots and videos
+-Authors
+-licence
+-downloads
+-getting help
+-reporting issues
+-hardware compatibility
+-installation
+-update
+-dependencies
+-plugins
+
