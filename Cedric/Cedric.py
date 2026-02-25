@@ -1,24 +1,27 @@
-"""Nom Prenom: ATTIEPO N'GBA JEAN MICHEL CEDRIC"""
-"""Tritre du projet1: jeu de quiz éducatif""" 
-
+"""
+Nom Prenom: ATTIEPO N'GBA JEAN MICHEL CEDRIC
+Tritre du projet1: jeu de quiz éducatif 
+"""
 score = 0
 
 def réponse (choixA, choixB, choixC, vrai_reponse) :
- """But: Poser une question de quiz et vérifier la réponse de l'utilisateur. """
- """Entrées: choixA, choixB et choixC sont les choix proposés et vrai réponse estle numéro de la vrai réponse"""
- """Sorties: retourne 1 point si la réponse est correct sinon 0 piont et s'il écrit n'importe quoi qui n'est pas 1,2,3 retourne 0  """
- print(f"1: {choixA}")
- print(f"2: {choixB}")
- print(f"3: {choixC}")
- decision = input("veuiller saisir votre reponse :")
+  """
+ But: Poser une question de quiz et vérifier la réponse de l'utilisateur. 
+ Entrées: choixA, choixB et choixC sont les choix proposés et vrai réponse estle numéro de la vrai réponse
+ Sorties: retourne 1 point si la réponse est correct sinon 0 piont et s'il écrit n'importe quoi qui n'est pas 1,2,3 retourne 0 
+ """
+  print(f"1: {choixA}")
+  print(f"2: {choixB}")
+  print(f"3: {choixC}")
+  decision = input("veuiller saisir votre reponse :")
 
- if decision == vrai_reponse :
+  if decision == vrai_reponse :
      print("bonne réponse")
      return 1  
- elif decision in ["1", "2", "3"]: 
+  elif decision in ["1", "2", "3"]: 
     print("mauvais réponse")
     return 0
- else:
+  else:
     print("Erreur, Choix invalide")
     return 0
  

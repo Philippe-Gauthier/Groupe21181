@@ -10,18 +10,18 @@ Le but de ce programme est de créer un jeu de quiz educatif. Le joueur doit ré
 
 # Entrées 
    Les entrées du programme sont: 
-  -Les réponses du joueur saisies au clavier 
-  -le joueur choisir entre les variables 1, 2 ou 3 pour chaque question 
+  -Les réponses du joueur saisies au clavier. 
+  -le joueur choisir entre les variables 1, 2 ou 3 pour chaque question. 
 
 # Sorties 
-  -Affichage des questions 
-  -Affichage des choix de réponse (1,2,3)
+  -Affichage des questions. 
+  -Affichage des choix de réponse (1,2,3).
 
 # Structure de controle 
   -le programme demande une réponse à l'utilisateur.
-  -si l'utilisateur choisir la bonne réponse entre les variables 1,2 et 3,le programme affiche "bonne réponse"
-  -si l'utilisateur choisir entre les variables 1,2 et 3 mais qui n'est pas la bonne réponse le programme affiche "mauvais réponse"
-  -sinon le programme affiche "Erreur, Choix invalide" 
+  -si l'utilisateur choisir la bonne réponse entre les variables 1,2 et 3,le programme affiche "bonne réponse."
+  -si l'utilisateur choisir entre les variables 1,2 et 3 mais qui n'est pas la bonne réponse le programme affiche "mauvais réponse."
+  -sinon le programme affiche "Erreur, Choix invalide." 
 
 
  
