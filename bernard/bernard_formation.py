@@ -1,25 +1,31 @@
 """NOM: NTOM BERNARD
 PROJET1: examen de revision pour son cours d'electronique
 partie_1 de l'examen de revision en electronique"""
-
+score = 0
 def reponse(choix1, choix2, choix3, vrai_reponse): 
     print(f"1: {choix1}") 
     print(f"2: {choix2}")
     print(f"3: {choix3}")
     decision = input("donner la reponse :")
     if decision == vrai_reponse :
-        print("reponse bonne")
+        print("reponse bonne",)
+        return 1
+    elif decision in ["1","2","3"]:
+        print(f"fausse reponse",)
+        return -1
     else:
-        print("fausse reponse")
-        return decision
+        print("Erreur, choix non existant")
+
 print("partie_1 element de base")
 print("-------------------------")
 
 print("1- quel est l'unite du courant")
-reponse("voltage", "ampere", "volmetre", "2")
+score += reponse("voltage", "ampere", "volmetre", "2")
+print("score actuel :", score)
 
 print("2- quel est l'unite de la tension")
-reponse("volmetre", "ampere", "volt", "1")
+score += reponse("volmetre", "ampere", "volt", "1")
+print("score actuel", score)
 
 print("3- quel est l'unite de la resistance")
 reponse("faraday", "ampere", "ohm", "3")

@@ -56,79 +56,45 @@ Ceci est un deuxième paragraphe.
 
 ##Ceci est un paragraphe je suis en train d'écrire des choses qui sont formatées automatiquement.##
 
-#Firefoxxx
-1.##**Contributing**
-2.##**Resources**
+
+
 ---
 
 ```python
 code
 prendre en compte saut à la ligne
 print("aaa")
-<<<<<<< HEAD
-`Prepare Data
-``Build and Train Models
-Deploy and Monitor
-Generative AI
-ML Ops
-Responsible AI
- License
-  Contributing
-  Building in a custom directory
-  Building OpenJDK from a non-Adoptium repository
-=======
 ```
 
-## Nintendont
-- Features:
-- Features: (Wii only)
-- What Nintendont will never support:
-- Quick Installation:
-- Compiling:
-- Notes
 
-## Flashpoint
-- Building from source
-- Development Setup
-- Package Scripts
-- Troubleshooting
-    
-- Frequently Asked Questions
-- Community
-- Contribute
-- Packaging status
-- Releases
-- Contents
+
+---
+
+## Utilisateur
+- Fonctionnalités
+- Limitations
 - Installation
-- Usage
-- Contributing
+- FAQ
+- Communauté
+- Table des matières
+- Utilisation
+- Résumé du projet
+- Exemples
+- Images, vidéos, screenshot
+## Programmeur
+- Créer son environnement de développement
+- Lien vers ressource externe
+- Comment régler des problèmes
+- Communauté
+- Versionnage (nouveautés)
+- Test
+- Problèmes connus
+- Calendrier fonctionnalités à venir
+- Chose à faire
+- Dépendance
+- Requis
+## Légal
 - License
-- Announcements   
-- Getting Started
-- Features
-- Supported Platforms
-- Related Open Source Projects
-- Contributing Changes    
-- About
-- Quick start
-- Projects and Softwares using Spleeter
-- Development and Testing
-- Reference
-- Disclaimer
-- Troubleshooting
-- Windows users
-- Contributing
-- Note
-- Approach
-- Setup
-- Available models and languages
-- Command-line usage
-- Python usage
-- More examples
-- License
-=======
-**Announcements**
-**Documentation Updates**
 
 
 -Usage
