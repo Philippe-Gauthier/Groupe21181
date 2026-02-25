@@ -1,14 +1,36 @@
-#Titre#
-##sous-titre##
-###sous-sous-titre###
-#sous-sous-sous-titre#
-#sous-sous-sous-sous-titre#
-#sous-sous-sous-sous-sous-titre#
-#liste#
-#liste2#
-#liste3#
+# Jeux de hasard
+### Groupe
+- 21181
+### Enseignant
+- Philippe Gauthier
+### Étudiant
+- Marc-André Grondin-Fournier
+  
+### - Table des matières 
+- Résumé du projet
+- Utilisation
+- Installation
+- Fonctionnalités
+- Exemples
+- Limitations
 
-##Ceci est un paragraphe je suis en train d'écrire des choses qui sont formatées automatiquement.##
+### - Résumé du projet
+Répertoire en menu de 3 jeux de hasard, chacun est fidèle à son système de hasard respectif.
+Les trois jeux sont la roulette russe, pile ou face et la courte paille.
 
-###Ceci est un deuxième paragraphe.###
+### - Utilisation
+Permet de simuler plusieurs jeux de hasard au choix, chaque choix est protégé avec possibilité de retour en arrière ou de continuer dans l'arbre Lorsque necessaire. De plus, le programme reconnait si l'entrée de l'utilisateur est un nombre entier ou un caractère.
+
+### - Fonctionnalités
+Entrées: Caractères ou nombres demandés 
+Sorties: Résultats du choix ou hasard
+### - Exemples
+
+### - Limitations
+Toutes les limitations connues sont corrigées
+
+
+
+
+
 
