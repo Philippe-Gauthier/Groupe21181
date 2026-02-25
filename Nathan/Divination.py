@@ -274,6 +274,8 @@ chienclient3 = [textchien, chien1, chien2, chien3]
 
 
 
+
+
 #=====CLIENTS PREMIER CHOIX=====#
 
 #-1ere couche options 1, 2, 3
@@ -305,7 +307,7 @@ def print_par_lettre(text):
 
 
 #fonction pour demander au jouer s'il est pret a commencer le jeu
-def start_game():
+def debut_jeu():
     """
     Fonction pour confirmer le début du jeu avec un input du joueur
     Entrées: confirmation du joueur par un input de y ou n
@@ -337,7 +339,8 @@ def detecteur_fin(niveau_selectionne):
         if nombre_choix > 1:
             break
         else:
-            print(f"\n{niveau_selectionne[0]}")
+            fin_niveau = textwrap.fill(niveau_selectionne[0], width = 140)
+            print(f"\n{fin_niveau}")
             time.sleep(1.5)
             while True:
                 print(jeu_fin)
@@ -347,7 +350,7 @@ def detecteur_fin(niveau_selectionne):
                     time.sleep(1)
                     print_par_lettre(".....")
                     time.sleep(0.5)
-                    loop_niveau(lvl1)
+                    boucle_niveau(lvl1)
                 elif debuter_confirmation == "n":
                     print("\nAh bon, au revoir alors (vous pouvez maintenant fermer le jeu)")
                     time.sleep(1.5)
@@ -358,7 +361,7 @@ def detecteur_fin(niveau_selectionne):
 
 
 #module d'extraction d'information de niveau + formattage de texte pour le terminal. À utiliser avec la prochaine fonction
-def level_extractor(niveau_selectionne):
+def extraction_niveau(niveau_selectionne):
     """
     Fonction d'extraction et de formattage du texte et des options possible d'une variable de niveau
     Entrées: Sorties de la derniere fonction, soit une variable de niveau avec une liste de choix
@@ -411,16 +414,16 @@ def resultat_choix(reponse):
 
 
 #combinaison de presque toutes les fonctions ci dessus, + fonction de "looping" du code au cas ou la réponse n'est pas valide 
-def loop_niveau(input_niveau):
+def boucle_niveau(input_niveau):
     """
-    Fonction combinant presque toutes les fonctions ci dessus afin de les mettre dans une "loop" qui valide que le choix du joueur est valide
+    Fonction combinant presque toutes les fonctions ci dessus afin de les mettre dans une boucle qui valide que le choix du joueur est valide
     et répete cette boucle jusqu'a ce que le joueur entre une réponse valide.
     Entrées: Variable de niveau
     Sorties: Variable pour déterminer le prochain niveau
     """
     while True:
         detecteur_fin(input_niveau)
-        situation0, choix1, choix2, choix3 = level_extractor(input_niveau)
+        situation0, choix1, choix2, choix3 = extraction_niveau(input_niveau)
         reponse_joueur = presentation_choix(situation0, choix1, choix2, choix3)
 
         verif_reponse = resultat_choix(reponse_joueur)
@@ -434,7 +437,7 @@ def loop_niveau(input_niveau):
                 time.sleep(1)
                 print_par_lettre(".....")
                 time.sleep(0.5)
-                loop_niveau(lvl1) #retour au niveau1
+                boucle_niveau(lvl1) #retour au niveau1
             elif confirmation == "n":
                 print("continuons alors...\n")
                 time.sleep(1.5) #retour aux choix
@@ -460,94 +463,94 @@ time.sleep(1.5)
 print(regles_instructions)
 time.sleep(1.5)
 
-start_game() #commencement du jeu si le joueur entre "y"
+debut_jeu() #commencement du jeu si le joueur entre "y"
 
-niveau = loop_niveau(lvl1) #début du niveau 1
+niveau = boucle_niveau(lvl1) #début du niveau 1
 
 
 #suite de if pour passer a chaque prochain niveau
 #la position de ligne en ligne de "if niveau" forme un sinus verticale! C'est de l'art!!
 if niveau == 1:
-    niveau = loop_niveau(martineclient1)#option 1 lvl1
+    niveau = boucle_niveau(martineclient1)#option 1 lvl1
     if niveau == 1:
-        niveau = loop_niveau(martinechance)
+        niveau = boucle_niveau(martinechance)
     elif niveau == 2:
-        niveau = loop_niveau(martinemalchance)
+        niveau = boucle_niveau(martinemalchance)
         if niveau == 1:
-            niveau = loop_niveau(martinebain)
+            niveau = boucle_niveau(martinebain)
         elif niveau == 2:
-            niveau = loop_niveau(martineesprits)
+            niveau = boucle_niveau(martineesprits)
         elif niveau == 3:
-            niveau = loop_niveau(martinefil)
+            niveau = boucle_niveau(martinefil)
     elif niveau == 3:
-        niveau = loop_niveau(martinelesdeux)
+        niveau = boucle_niveau(martinelesdeux)
         if niveau == 1:
-            niveau = loop_niveau(martinenormal)
+            niveau = boucle_niveau(martinenormal)
         elif niveau == 2:
-            niveau = loop_niveau(martineverite)
+            niveau = boucle_niveau(martineverite)
         elif niveau == 3:
-            niveau = loop_niveau(martinedouter)
+            niveau = boucle_niveau(martinedouter)
 elif niveau == 2:
-    niveau = loop_niveau(devinclient2)#option 2 lvl1
+    niveau = boucle_niveau(devinclient2)#option 2 lvl1
     if niveau == 1:
-        niveau = loop_niveau(devinjeux)
+        niveau = boucle_niveau(devinjeux)
         if niveau == 1:
-            niveau = loop_niveau(devined6)
+            niveau = boucle_niveau(devined6)
         elif niveau == 2:
-            niveau = loop_niveau(devinbb2)
+            niveau = boucle_niveau(devinbb2)
         elif niveau == 3:
-            niveau = loop_niveau(devinhl3)
+            niveau = boucle_niveau(devinhl3)
     elif niveau == 2:
-        niveau = loop_niveau(devinamour)
+        niveau = boucle_niveau(devinamour)
         if niveau == 1:
-            niveau = loop_niveau(devinamour_1)
+            niveau = boucle_niveau(devinamour_1)
             if niveau == 1:
-                niveau = loop_niveau(devinbonnefin)
+                niveau = boucle_niveau(devinbonnefin)
             elif niveau == 2:
-                niveau = loop_niveau(devinmauvaisefin)
+                niveau = boucle_niveau(devinmauvaisefin)
             elif niveau == 3:
-                niveau = loop_niveau(devinfindeprimante)
+                niveau = boucle_niveau(devinfindeprimante)
         elif niveau == 2:
-            niveau = loop_niveau(devinpasamour)
+            niveau = boucle_niveau(devinpasamour)
         elif niveau == 3:
-            niveau = loop_niveau(devindevier)
+            niveau = boucle_niveau(devindevier)
             if niveau == 1:
-                niveau = loop_niveau(devintarot)
+                niveau = boucle_niveau(devintarot)
             elif niveau == 2:
-                niveau = loop_niveau(devinlignes)
+                niveau = boucle_niveau(devinlignes)
             elif niveau == 3:
-                niveau = loop_niveau(devinthe)
+                niveau = boucle_niveau(devinthe)
     elif niveau == 3:
-        niveau = loop_niveau(devinnom)
+        niveau = boucle_niveau(devinnom)
         if niveau == 1:
-            niveau = loop_niveau(devindevin)
+            niveau = boucle_niveau(devindevin)
             if niveau == 1:
-                niveau = loop_niveau(devinrepete)
+                niveau = boucle_niveau(devinrepete)
             elif niveau == 2:
-                niveau = loop_niveau(devinexcuse)
+                niveau = boucle_niveau(devinexcuse)
             elif niveau == 3:
-                niveau = loop_niveau(devinriendire)
+                niveau = boucle_niveau(devinriendire)
         elif niveau == 2:
-            niveau = loop_niveau(devinriche)
+            niveau = boucle_niveau(devinriche)
         elif niveau == 3:
-            niveau = loop_niveau(devinspecial)
+            niveau = boucle_niveau(devinspecial)
 elif niveau == 3:
-    niveau = loop_niveau(chienclient3)#option 3 lvl1
+    niveau = boucle_niveau(chienclient3)#option 3 lvl1
     if niveau == 1:
-        niveau = loop_niveau(chienwraf)
+        niveau = boucle_niveau(chienwraf)
         if niveau == 1:
-            niveau = loop_niveau(chienhocher)
+            niveau = boucle_niveau(chienhocher)
         elif niveau == 2:
-            niveau = loop_niveau(chiensecouer)
+            niveau = boucle_niveau(chiensecouer)
         elif niveau == 3:
-            niveau = loop_niveau(chienrien)
+            niveau = boucle_niveau(chienrien)
     elif niveau == 2:
-        niveau = loop_niveau(chienrrr)
+        niveau = boucle_niveau(chienrrr)
     elif niveau == 3:
-        niveau = loop_niveau(chienwoof)
+        niveau = boucle_niveau(chienwoof)
         if niveau == 1:
-            niveau = loop_niveau(chienencourager)
+            niveau = boucle_niveau(chienencourager)
         elif niveau == 2:
-            niveau = loop_niveau(chienrassurer)
+            niveau = boucle_niveau(chienrassurer)
         elif niveau == 3:
-            niveau = loop_niveau(chienreprimander)
+            niveau = boucle_niveau(chienreprimander)
