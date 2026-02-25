@@ -1,2 +1,2 @@
-#ceci est une erreur de merge
-print("code")
+texte = input()
+print(texte)
