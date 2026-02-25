@@ -469,6 +469,7 @@ niveau = boucle_niveau(lvl1) #début du niveau 1
 
 
 #suite de if pour passer a chaque prochain niveau
+#la position de ligne en ligne de "if niveau" forme un sinus verticale! C'est de l'art!!
 if niveau == 1:
     niveau = boucle_niveau(martineclient1)#option 1 lvl1
     if niveau == 1:
