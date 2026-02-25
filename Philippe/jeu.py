@@ -1,0 +1,2 @@
+texte = input()
+print(texte)
