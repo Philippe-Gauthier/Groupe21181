@@ -1,6 +1,16 @@
-# lib messages
-import random
-#message main
+"""
+**********************************************
+Auteur: Marc-André Grondin-Fournier
+But des fonctions: messages adaptés selon la situation et retour de choix sécurisés
+Nom du fichier: jeux_message.py
+**********************************************
+"""
+
+"""
+Fonction menu principale
+Entré:Aucune
+Sortie:Choix sécurisés
+"""
 def menu():
     tracer=0
     message=input("Menu jeux \nSélectionner un jeu! \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
@@ -13,7 +23,11 @@ def menu():
             message=input("Entré inconnue! \nMenu jeux \nA: Roulette russe \nB: Pile ou face \nC: Courte paille \nD: Roche, papier, ciseau \nQ: Quitter \n" )
             message=message.upper()    
     return message
-
+"""
+Fonction de triage des choix input INT ou STR 
+Entré: tracker, se rappeler si c'est le premier message
+Sortie: Choix sécurisés et convertis
+"""
 #messages roulette russe
 def roulette_bienvenu(tracker):
     check=0
@@ -25,7 +39,7 @@ def roulette_bienvenu(tracker):
             message=input("Bienvenu au jeu de la roulette russe! \nSélectionner la chambre du barrilet à 6 coups pour y insérer la munition! (1,2,3,4,5,6)\n")
         
         intSearch=message.isdigit()                   
-        
+        # si le input est un int ou str avant la conversion
         if intSearch==True: 
 
             message=int(message)
@@ -34,13 +48,18 @@ def roulette_bienvenu(tracker):
                 tracker=1
                 print("Entré inconnue! \n")
             else:check=1
-
         else:
             print("Entré inconnue! \n") 
             tracker=1
     message=int(message)
     return message
-
+"""
+**********************************************
+But des fonctions: messages adaptés selon la situation et retour de choix 
+Entré: Aucune
+Sortie: choix
+**********************************************
+"""
 def roulette_next():
     message=input("Vous avez survécu! Au tour de l'adversaire! Prêt ? O/N\n")
     message=message.upper()
@@ -61,7 +80,13 @@ def roulette_false():
     message=input("Entré inconnu! \nContinuer ?O/N")
     message=message.upper()
     return message
-
+"""
+**********************************************
+Fonction de triage des choix input pile ou face
+Entré: tracer, se rappeler si c'est le premier message
+Sortie: Choix sécurisés et convertis
+**********************************************
+"""
 #messages pile ou face
 def pile_face_bienvenu(tracer):
 
@@ -126,7 +151,7 @@ def courte_paille_winner(a):
     message=input(F"Le joueur numéro {a+1} la mauvaise paille! Voulez-vous rejouer(Toutes touches) ou quitter(Q)?")
     message=message.upper()
     return message 
-
+##fonction délaissé
 def rpCiseaux_bienvenu():
     message=input("Bienvenu à roche papier ciseau! \nChoisissez entre(A,B,C,Q): \nA:Roche \nB:Papier \nC:Ciseau \nQ:Quitter")
     message=message.upper()
