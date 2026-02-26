@@ -411,7 +411,7 @@ while(JOUER==True):
 
     print("---CHAPITRE 2---")
     sleep(court)
-    print("Je crois que je serais prêt à y aller, il est 8h30.\nJ'avais reçu un message d'Alex.\n    'Tu devrais venir plus tôt que tard si tu planifiais venir. Quelqu'un souhaiterait de voir.'       -Suite")
+    print("Je crois que je serais prêt à y aller, il est 8h30.\nJ'avais reçu un message d'Alex.\n    'Tu devrais venir plus tôt que tard si tu planifiais venir. Quelqu'un souhaiterait de voir. Le gérant de la gallerie d'art'       -Suite")
     input()
 
     #Le vrai départ des "branches" ils ne retourneront plus dans la principale :) 
@@ -512,7 +512,7 @@ while(JOUER==True):
         print("Ah fuck pas lui. C'est un de mes 'ex' intimidateur. Il avait vraiment les pires motifs dans le temps.\nC'était au primaire.")
         party_george=choice_user2("Aller parler à George","Trouver un autre moyen de rentrer en contact avec simon") # Parler ou non à George + 2
         if party_george==1: # Parler à George 
-            print("-Hey, scuse moi de te déranger George, c'est bel et bien ton père Olivier celui qui est à la tête de la gallerie d'art du coin? ")
+            print("-Hey, scuse moi de te déranger George, c'est bel et bien ton père Simon celui qui est à la tête de la gallerie d'art du coin? ")
             sleep(long)
             print("     -Oui, oui. Il voulait te parler c'est ça?")
             sleep(court)
