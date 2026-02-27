@@ -71,8 +71,6 @@ while  NOUVEL_ESSAI == True:
                             choix = prochainepage(Texteprojet1.page_portal)
                             if choix == 1:
                                 choix = lire_la_suite(Texteprojet1.page_beurre)
-                            if choix == 2:
-                                choix = prochainepage(Texteprojet1.page_double)
                                 if choix == 1:
                                     choix = lire_la_suite(Texteprojet1.page_retour)
                                     choix = lire_la_suite(Texteprojet1.page_retour2)
@@ -94,6 +92,8 @@ while  NOUVEL_ESSAI == True:
                                                     choix = lire_la_suite(Texteprojet1.page_magie_portail)
                                                     choix = lire_la_suite(Texteprojet1.page_monologue)
                                                     choix = lire_la_suite(Texteprojet1.page_wtf)
+                                                if choix == 2:
+                                                    choix = lire_la_suite(Texteprojet1.page_magie_combat)
                                             if choix == 2:
                                                 choix = prochainepage(Texteprojet1.page_hero)
                                                 if choix == 1:
@@ -106,8 +106,6 @@ while  NOUVEL_ESSAI == True:
                                                         choix = lire_la_suite(Texteprojet1.page_glandalf)
                                                 if choix == 2:
                                                     choix = lire_la_suite(Texteprojet1.page_magie_combat)
-                                            if choix == 2:
-                                                choix = lire_la_suite(Texteprojet1.page_hero)
                                         if choix == 2:
                                             choix = lire_la_suite(Texteprojet1.page_boude)
                                     if choix == 2: 
