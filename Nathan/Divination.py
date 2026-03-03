@@ -392,7 +392,7 @@ def presentation_choix(situation0, choix_1, choix_2, choix_3):
     time.sleep(0.5)
     print(f"3: {choix_3}\n")
     time.sleep(0.5)
-    reponse = int(input("Quel est votre choix? "))
+    reponse = input("Quel est votre choix? ")
     return reponse
 
 
