@@ -335,7 +335,7 @@ def detecteur_fin(niveau_selectionne):
     Sorties: retour au début du jeu ou continution du jeu
     """
     while True:
-        nombre_choix = len(niveau_selectionne)
+        nombre_choix = len(niveau_selectionne) 
         if nombre_choix > 1:
             break
         else:
@@ -350,7 +350,7 @@ def detecteur_fin(niveau_selectionne):
                     time.sleep(1)
                     print_par_lettre(".....")
                     time.sleep(0.5)
-                    boucle_niveau(lvl1)
+                    boucle_niveau(lvl1) #boucle dans une boucle, ca crée une duplicate de la branche ce qui fait que tu reviens toujours au meme choix (add handicap timeline)
                 elif debuter_confirmation == "n":
                     print("\nAh bon, au revoir alors (vous pouvez maintenant fermer le jeu)")
                     time.sleep(1.5)
@@ -392,7 +392,7 @@ def presentation_choix(situation0, choix_1, choix_2, choix_3):
     time.sleep(0.5)
     print(f"3: {choix_3}\n")
     time.sleep(0.5)
-    reponse = input("Quel est votre choix? ")
+    reponse = int(input("Quel est votre choix? "))
     return reponse
 
 
