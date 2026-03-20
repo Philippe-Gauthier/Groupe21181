@@ -1,0 +1,19 @@
+import FONCTIONSP2 as fonc
+
+while True: 
+    
+    
+        
+    fonc.logs(input())
+    txt=open("Projet2logs", "r")
+    lecture = txt.read()
+    print(f"Logs: {lecture}")
+    txt.close
+
+
+
+
+
+
+
+
