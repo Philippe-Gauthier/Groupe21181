@@ -6,9 +6,9 @@ flogs="Projet2logs"
 # Document ("texte à ajouter","nom fichier où ajouter", flogs)
 ajout=input("Que souhaitez vous ajouter dans vos notes de cours? (Laisse vide pour ignorer.)\n")
 if ajout!=(""):
-    cours=input("\nPour quel cours?\n: prog\n: french\n") # Pour Phil: Ils ne comptent pas comme deux "formats" de fichiers différents (prog et french).
+    cours=input("\nPour quel cours?\n: prog\n: french\n") #Premier type de fichier : txt write and read
     fonc.Document(f"{ajout}",f"{cours}.txt",f"{flogs}")
-exam=input("\nAjouter une nouvelle date d'examen? (Laisse vide pour ignorer.)\njj,mm,aaaa\n")
+exam=input("\nAjouter une nouvelle date d'examen? (Laisse vide pour ignorer.)\njj,mm,aaaa\n") # Deuxième type de fichier : csv write and read
 if exam!=(""):
     cours=input("\nPour quel cours?\n: prog\n: french\n")
     info=input("\nPécisions sur l'examen: ")

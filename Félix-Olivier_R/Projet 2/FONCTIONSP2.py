@@ -37,6 +37,11 @@ def Document(append,file,log):
     logs.close
 
 def dateexam(cours,date,info,log):
+    '''
+    Entrée: Le nom du cours pour écrire dans le fichier rattaché, la date entrée par l'user, l'information en rapport à l'exam, le fichier log pour logger l'info
+    Sortie: Dans le fichier rattaché écrire l'information de la date et info, alongside rentrer les log dans le fichier log
+    But: Stocker dans un fichier CSV l'information entrée par l'utilisateur pour l'utiliser comme dictionnaire quand on désire print.
+    '''
     time=datetime.datetime.now()
     fichier=open(f"{cours}.csv","a")
     while True:
@@ -50,7 +55,7 @@ def dateexam(cours,date,info,log):
                     fichier.close
                 except FileExistsError:
                         logs = open(f"{log}.txt", "a")
-                        logs.write(f"[In {cours} added {date},{info} {time}]\n")
+                        logs.write(f"[In {cours}.csv added {date},{info} {time}]\n")
                         logs.close
                         fichier=open(f"{cours}.csv","a")
                         fichier.write(f"{date},{info}")
@@ -60,6 +65,11 @@ def dateexam(cours,date,info,log):
                 
 
 def lecture(cours):
+    '''
+    Entrée: le nom du cours
+    Sortie: un print de l'information dans le fichier choisi
+    But: Print l'information demandé par l'utilisateur
+    '''
     try:
         lecturetxt=open(f"{cours}.txt","r")
         lecturecsv=open(f"{cours}.csv","r")
