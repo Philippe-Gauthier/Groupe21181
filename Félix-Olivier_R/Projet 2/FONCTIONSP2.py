@@ -17,13 +17,12 @@ def Document(append,file,log):
         try:
             logs = open(f"{log}.txt", "x")
             logs.close
+            logs = open(f"{log}.txt", "w")
+            logs.write(f"[Created file - {log} - ; {time}]\n")
+            logs.close
         except FileExistsError: 
             logs = open(f"{log}.txt", "a")
-            logs.write(f"[Try create file - {log} - : {time}]\n")
-            logs.write(f"[ERROR: Fichier existant - {log} - : {time}]\n")
-            logs.close
-            logs = open(f"{log}.txt", "a")
-            logs.write(f"[- {append} - was added to {file} : {time}]\n")
+            logs.write(f"[- {append} - was added to {file} ; {time}]\n")
             while True:
                 try:
                     fichier=open(f"{file}","x")
@@ -55,7 +54,7 @@ def dateexam(cours,date,info,log):
                     fichier.close
                 except FileExistsError:
                         logs = open(f"{log}.txt", "a")
-                        logs.write(f"[In {cours}.csv added {date},{info} {time}]\n")
+                        logs.write(f"[In {cours}.csv added {date},{info} ; {time}]\n")
                         logs.close
                         fichier=open(f"{cours}.csv","a")
                         fichier.write(f"{date},{info}")

@@ -1,4 +1,0 @@
-[Try create file - Projet2logs - : 2026-03-25 10:36:04.817917]
-[ERROR: Fichier existant - Projet2logs - : 2026-03-25 10:36:04.817917]
-[- Apporter un cahier canada pour le prochain cours - was added to french.txt : 2026-03-25 10:36:04.817917]
-[In french added 26,03,2026,Dissertation sur le malentendu 2026-03-25 10:36:29.855763]
