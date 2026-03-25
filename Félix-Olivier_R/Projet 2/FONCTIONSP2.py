@@ -63,7 +63,7 @@ def lecture(cours):
     try:
         lecturetxt=open(f"{cours}.txt","r")
         lecturecsv=open(f"{cours}.csv","r")
-        print(f"\nNotes -------------------\n {lecturetxt.readlines()}")
+        print(f"\nNotes ----------------------------\n {lecturetxt.readlines()}")
         csv=lecturecsv.readlines()
         dateinfo=[]
         for ligne in csv:
@@ -77,7 +77,7 @@ def lecture(cours):
             }
             dateinfo.append(dictionnaire)
         for i in dateinfo:
-            print(f"Examen le {i["jj"]}/y:{i["mm"]}/{i["aaaa"]}. Info: {i["info"]}")
+            print(f"Examens --------------------------\n{i["jj"]}/{i["mm"]}/{i["aaaa"]}. \nInfo: {i["info"]}")
         lecturetxt.close
         lecturecsv.close
     except FileNotFoundError:
