@@ -1,0 +1,5 @@
+[Created file - Projet2logs - ; 2026-03-25 10:49:11.861423]
+[- bacon soup - was added to french.txt ; 2026-03-25 10:49:11.861423]
+[In french.csv added 01,02,0002,ne pas mourir de faim ; 2026-03-25 10:49:28.307533]
+[In french.csv added 01,01,0000,oui ; 2026-03-25 10:50:49.353213]
+[In french.csv added 01,02,0027,je sais plus quoi dire ; 2026-03-25 10:51:25.289613]

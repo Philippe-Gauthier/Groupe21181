@@ -57,7 +57,7 @@ def dateexam(cours,date,info,log):
                         logs.write(f"[In {cours}.csv added {date},{info} ; {time}]\n")
                         logs.close
                         fichier=open(f"{cours}.csv","a")
-                        fichier.write(f"{date},{info}")
+                        fichier.write(f"{date},{info}\n")
                         fichier.close
                         break
         break
@@ -85,8 +85,9 @@ def lecture(cours):
                 "info": date[3],
             }
             dateinfo.append(dictionnaire)
+        print("Examens --------------------------")
         for i in dateinfo:
-            print(f"Examens --------------------------\n{i["jj"]}/{i["mm"]}/{i["aaaa"]}. \nInfo: {i["info"]}")
+            print(f"{i["jj"]}/{i["mm"]}/{i["aaaa"]}. \nInfo: {i["info"]}\n")
         lecturetxt.close
         lecturecsv.close
     except FileNotFoundError:

@@ -14,7 +14,8 @@ if exam!=(""):
     info=input("\nPécisions sur l'examen: ")
     fonc.dateexam(f"{cours}",f"{exam}",f"{info}",f"{flogs}")
 lecture=input("\nVoir vos notes et les dates d'examen pour l'un de vos cours? (Laisse vide pour ignorer.)\n: prog\n: french\n")
-fonc.lecture(f"{lecture}")
+if lecture!=(""):
+    fonc.lecture(f"{lecture}")
 
-input("Terminé?")
+input("Terminate?")
 
