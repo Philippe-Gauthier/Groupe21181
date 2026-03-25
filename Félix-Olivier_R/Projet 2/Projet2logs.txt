@@ -3,3 +3,5 @@
 [In french.csv added 01,02,0002,ne pas mourir de faim ; 2026-03-25 10:49:28.307533]
 [In french.csv added 01,01,0000,oui ; 2026-03-25 10:50:49.353213]
 [In french.csv added 01,02,0027,je sais plus quoi dire ; 2026-03-25 10:51:25.289613]
+[- les singes ces cool - was added to prog.txt ; 2026-03-25 12:05:10.927895]
+[In french.csv added 26,04,2026,dissertation maletnu ; 2026-03-25 12:05:28.776869]

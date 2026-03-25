@@ -42,7 +42,6 @@ def dateexam(cours,date,info,log):
     But: Stocker dans un fichier CSV l'information entrée par l'utilisateur pour l'utiliser comme dictionnaire quand on désire print.
     '''
     time=datetime.datetime.now()
-    fichier=open(f"{cours}.csv","a")
     while True:
         try:
             logs = open(f"{log}.txt", "x")
