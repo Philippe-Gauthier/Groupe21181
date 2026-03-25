@@ -1,19 +1,20 @@
 import FONCTIONSP2 as fonc
 
-while True: 
-    
-    
-        
-    fonc.logs(input())
-    txt=open("Projet2logs", "r")
-    lecture = txt.read()
-    print(f"Logs: {lecture}")
-    txt.close
+#Définir le fichier pour les logs
+flogs="Projet2logs"
 
+# Document ("texte à ajouter","nom fichier où ajouter", flogs)
+ajout=input("Que souhaitez vous ajouter dans vos notes de cours? (Laisse vide pour ignorer.)\n")
+if ajout!=(""):
+    cours=input("\nPour quel cours?\n: prog\n: french\n") # Pour Phil: Ils ne comptent pas comme deux "formats" de fichiers différents (prog et french).
+    fonc.Document(f"{ajout}",f"{cours}.txt",f"{flogs}")
+exam=input("\nAjouter une nouvelle date d'examen? (Laisse vide pour ignorer.)\njj,mm,aaaa\n")
+if exam!=(""):
+    cours=input("\nPour quel cours?\n: prog\n: french\n")
+    info=input("\nPécisions sur l'examen: ")
+    fonc.dateexam(f"{cours}",f"{exam}",f"{info}",f"{flogs}")
+lecture=input("\nVoir vos notes et les dates d'examen pour l'un de vos cours? (Laisse vide pour ignorer.)\n: prog\n: french\n")
+fonc.lecture(f"{lecture}")
 
-
-
-
-
-
+input("Terminé?")
 
