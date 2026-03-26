@@ -1,0 +1,27 @@
+import json
+
+etudiants = [
+    {"id": 1, "nom": "Alice", "age": 20},
+    {"id": 2, "nom": "Bob", "age": 22},
+    {"id": 3, "nom": "Charlie", "age": 21},
+    {"id": 4, "nom": "Diana", "age": 19},
+    {"id": 5, "nom": "Eve", "age": 23},
+    {"id": 6, "nom": "Frank", "age": 20},
+    {"id": 7, "nom": "Grace", "age": 22},
+    {"id": 8, "nom": "Henry", "age": 21},
+    {"id": 9, "nom": "Ivy", "age": 20},
+    {"id": 10, "nom": "Jack", "age": 22},
+    {"id": 11, "nom": "Kate", "age": 19},
+    {"id": 12, "nom": "Liam", "age": 23},
+    {"id": 13, "nom": "Mia", "age": 21},
+    {"id": 14, "nom": "Noah", "age": 20},
+    {"id": 15, "nom": "Olivia", "age": 22},
+    {"id": 16, "nom": "Peter", "age": 19},
+    {"id": 17, "nom": "Quinn", "age": 23},
+    {"id": 18, "nom": "Rachel", "age": 21},
+    {"id": 19, "nom": "Steve", "age": 20},
+    {"id": 20, "nom": "Tina", "age": 22} 
+]
+
+with open("etudiants.json", "w") as f:
+    json.dump(etudiants, f, indent=4)
