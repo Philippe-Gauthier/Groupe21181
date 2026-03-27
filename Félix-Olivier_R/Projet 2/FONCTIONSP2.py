@@ -2,7 +2,7 @@ import datetime
 from time import sleep
 
 '''
-Projet 2 Lecture et écriture de fichiers FICHIER DE FONCTIONS :)
+Projet 2 Lecture et écriture de fichiers : FICHIER DE FONCTIONS :)
 Félix-Olivier rioux
 '''
 
@@ -69,9 +69,13 @@ def lecture(cours):
     But: Print l'information demandé par l'utilisateur
     '''
     try:
-        lecturetxt=open(f"{cours}.txt","r")
-        lecturecsv=open(f"{cours}.csv","r")
+        lecturetxt=open(f"{cours}.txt","r")     
         print(f"\nNotes ----------------------------\n {lecturetxt.readlines()}")
+        lecturetxt.close
+    except FileNotFoundError:
+        print(f"\nNotes ----------------------------\nAucunes notes trouvées")
+    try: 
+        lecturecsv=open(f"{cours}.csv","r")
         csv=lecturecsv.readlines()
         dateinfo=[]
         for ligne in csv:
@@ -87,10 +91,9 @@ def lecture(cours):
         print("Examens --------------------------")
         for i in dateinfo:
             print(f"{i["jj"]}/{i["mm"]}/{i["aaaa"]}. \nInfo: {i["info"]}\n")
-        lecturetxt.close
         lecturecsv.close
     except FileNotFoundError:
-        print("Fichiers non trouvé")
+        print("Examens --------------------------\nAucun examen à venir")
         
 
 

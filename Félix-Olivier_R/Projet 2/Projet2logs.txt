@@ -5,3 +5,8 @@
 [In french.csv added 01,02,0027,je sais plus quoi dire ; 2026-03-25 10:51:25.289613]
 [- les singes ces cool - was added to prog.txt ; 2026-03-25 12:05:10.927895]
 [In french.csv added 26,04,2026,dissertation maletnu ; 2026-03-25 12:05:28.776869]
+[- patate - was added to french.txt ; 2026-03-27 11:24:43.239911]
+[- ppatete - was added to french.txt ; 2026-03-27 11:25:34.550725]
+[-  - was added to C:\Users\xenre\AppData\Local\Programs\Python\Python314\python.exe "c:/Users/xenre/OneDrive/Documents/CÉGEP/PROG/Groupe21181/Félix-Olivier_R/Projet 2/Projet 2 Félix-Olivier_Rioux".txt ; 2026-03-27 11:28:07.488434]
+[- patate - was added to french.txt ; 2026-03-27 11:28:48.956595]
+[In prog.csv added 31,01,2023,oui ; 2026-03-27 11:29:05.312951]
