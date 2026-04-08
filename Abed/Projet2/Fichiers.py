@@ -41,7 +41,6 @@ for e in etudiants:
 with open("etudiants.json", "w") as f:
     json.dump(etudiants_dict, f, indent=4)
 
-print(json.dumps(etudiants_dict, indent=4))
 
 
 
@@ -95,4 +94,3 @@ with open("notes_etudiants.csv", "r") as f:
         }
         notes_propres[notes["id"]] = notes
 
-print(json.dumps(notes_propres, indent=4))
