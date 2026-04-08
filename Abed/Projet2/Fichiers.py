@@ -2,6 +2,9 @@ import json
 
 import csv
 
+
+###FICHIERS  SUR LES INFORMATIONS DES ÉTUDIANTS###
+
 etudiants = [
     {"id": 1, "nom": "Alice", "age": 20},
     {"id": 2, "nom": "Bob", "age": 22},
@@ -30,6 +33,25 @@ with open("etudiants.json", "w") as f:
 
 #json.load permet de lire un fichier json
 
+etudiants_dict = {}
+
+for e in etudiants:
+    etudiants_dict[e["id"]] = e
+
+with open("etudiants.json", "w") as f:
+    json.dump(etudiants_dict, f, indent=4)
+
+print(json.dumps(etudiants_dict, indent=4))
+
+
+
+
+
+
+
+
+###FICHIERS POUR LES NOTES DES ÉTUDIANTS###
+
 
 notes = [
     ["id", "maths", "français", "anglais"],
@@ -55,15 +77,15 @@ notes = [
     [20, 79, 81, 77]
 ]
 
-with open("notes_etudiants.csv", "w", newline="") as f: #with ferme le fichier automatiquement apres l'ecriture
+with open("notes_etudiants.csv", "w", newline="") as f: #with ferme le fichier automatiquement elle garantit que le fichier sera ferme apres l'ecriture meme si je fais des erreur
     writer = csv.writer(f) #csv.writer permet d'ecrire dans un fichier csv, il prend en argument le fichier ouvert en mode ecriture
     writer.writerows(notes) #writerows ecrit toutes les lignes du tableau notes dans le fichier csv
 
 notes_propres = {}
 
-with open("notes_etudiants.csv", "r") as f:
+with open("notes_etudiants.csv", "r") as f: 
     reader = csv.reader(f)  # csv.reader permet de lire un fichier csv, il prend en argument le fichier ouvert en mode lecture
-    next(reader)
+    next(reader) #next(reader) permet de sauter la premiere ligne du fichier csv qui contient les en-tetes des colonnes
     for row in reader:
         notes = {
             "id": int(row[0]),

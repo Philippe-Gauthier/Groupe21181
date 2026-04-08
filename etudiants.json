@@ -1,102 +1,102 @@
-[
-    {
+{
+    "1": {
         "id": 1,
         "nom": "Alice",
         "age": 20
     },
-    {
+    "2": {
         "id": 2,
         "nom": "Bob",
         "age": 22
     },
-    {
+    "3": {
         "id": 3,
         "nom": "Charlie",
         "age": 21
     },
-    {
+    "4": {
         "id": 4,
         "nom": "Diana",
         "age": 19
     },
-    {
+    "5": {
         "id": 5,
         "nom": "Eve",
         "age": 23
     },
-    {
+    "6": {
         "id": 6,
         "nom": "Frank",
         "age": 20
     },
-    {
+    "7": {
         "id": 7,
         "nom": "Grace",
         "age": 22
     },
-    {
+    "8": {
         "id": 8,
         "nom": "Henry",
         "age": 21
     },
-    {
+    "9": {
         "id": 9,
         "nom": "Ivy",
         "age": 20
     },
-    {
+    "10": {
         "id": 10,
         "nom": "Jack",
         "age": 22
     },
-    {
+    "11": {
         "id": 11,
         "nom": "Kate",
         "age": 19
     },
-    {
+    "12": {
         "id": 12,
         "nom": "Liam",
         "age": 23
     },
-    {
+    "13": {
         "id": 13,
         "nom": "Mia",
         "age": 21
     },
-    {
+    "14": {
         "id": 14,
         "nom": "Noah",
         "age": 20
     },
-    {
+    "15": {
         "id": 15,
         "nom": "Olivia",
         "age": 22
     },
-    {
+    "16": {
         "id": 16,
         "nom": "Peter",
         "age": 19
     },
-    {
+    "17": {
         "id": 17,
         "nom": "Quinn",
         "age": 23
     },
-    {
+    "18": {
         "id": 18,
         "nom": "Rachel",
         "age": 21
     },
-    {
+    "19": {
         "id": 19,
         "nom": "Steve",
         "age": 20
     },
-    {
+    "20": {
         "id": 20,
         "nom": "Tina",
         "age": 22
     }
-]
+}
