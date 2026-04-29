@@ -1,8 +1,11 @@
 class car:
-    def  __init__(self, vitesse, couleur):
+    def  __init__(self, vitesse, nombre):
         self.vitesse = vitesse
-        self.couleur = couleur
+    
         
+    def nombre(roue):
+        roue = roue*2
+        return roue
 
 
 toyota = car( "fast", "rouge")
